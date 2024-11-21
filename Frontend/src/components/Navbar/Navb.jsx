@@ -494,7 +494,7 @@ function Navb() {
                   </Dropdown.Item>
 
                   <Dropdown.Item
-                    href="#action5"
+                    href="/owner-plan"
                     className="text-dark text-decoration-none"
                     style={{ fontSize: "normal" }} // Ensures normal font size
                   >
@@ -502,7 +502,7 @@ function Navb() {
                   </Dropdown.Item>
 
                   <Dropdown.Item
-                    href="#action5"
+                    href="/buyer-plan"
                     className="text-dark text-decoration-none"
                     style={{ fontSize: "normal" }} // Ensures normal font size
                   >
@@ -510,7 +510,7 @@ function Navb() {
                   </Dropdown.Item>
 
                   <Dropdown.Item
-                    href="#action5"
+                    href="seller-plan"
                     className="text-dark text-decoration-none"
                     style={{ fontSize: "normal" }} // Ensures normal font size
                   >

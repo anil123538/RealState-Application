@@ -1,0 +1,17 @@
+.hero {
+  height: 60vh;
+  width: 100%;
+  background: linear-gradient(180deg, #fff, #e8e8e8);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  position: absolute;
+}
+
+.top {
+  position: relative;
+}
+.star-icon {
+  margin-right: 5px; 
+  width: 20px; 
+  height: auto;
+}
