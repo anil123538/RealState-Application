@@ -246,7 +246,7 @@ const RentalAgreement = () => {
                 <div className="text-3xl mb-2">
                   Online Rent Agreement in Mumbai
                 </div>
-                <span className="opacity-80">
+                <span className="opacity-70 text-xs">
                   Now available in 150+ cities in india
                 </span>
 
@@ -261,7 +261,7 @@ const RentalAgreement = () => {
                         <div>Renew Your Agreement</div>
                         <div className="w-2 h-2 bg-red-500 rounded-full ml-1"></div>
                       </div>
-                      <div className="text-sm opacity-80">
+                      <div className="text-xs opacity-60">
                         Renew your existing agreement
                       </div>
                     </div>
@@ -317,7 +317,7 @@ const RentalAgreement = () => {
           </div>
 
           {/* SELECT A RENT AGREEMENT */}
-          <div className="flex justify-center gap-2 mt-44 text-sm">
+          <div className="flex justify-center gap-2 mt-44 text-xs">
             <div className="flex items-center gap-2">
               <PiStamp className="text-3xl text-orange-800" />
               <div className="opacity-80">Mahrashtra Govt. Registered</div>
@@ -336,7 +336,7 @@ const RentalAgreement = () => {
 
           {/* Available Add ons */}
           <div className="p-8 bg-white rounded-2xl w-11/12 mx-auto my-10">
-            <div className="font-semibold text-3xl mb-8">Available Add ons</div>
+            <div className="font-semibold text-2xl mb-8">Available Add ons</div>
             <div className="grid grid-cols-3 gap-4 flex-wrap">
               {availableAddOns.map((item) => (
                 <div
@@ -355,7 +355,7 @@ const RentalAgreement = () => {
                     />
                   </div>
                   <div className="font-medium text-lg mt-2">{item.heading}</div>
-                  <div className="opacity-80">{item.desc}</div>
+                  <div className="opacity-80 text-sm">{item.desc}</div>
 
                   {clickAddOns === item.id ? (
                     <Modal
@@ -411,8 +411,8 @@ const RentalAgreement = () => {
                       className="h-[80%] w-[80%] m-0"
                     />
                   </div>
-                  <div className="font-medium text-lg mt-2">{item.heading}</div>
-                  <div className="opacity-80">{item.desc}</div>
+                  <div className="font-medium mt-2">{item.heading}</div>
+                  <div className="opacity-80 text-sm">{item.desc}</div>
                 </div>
               ))}
             </div>
@@ -423,11 +423,11 @@ const RentalAgreement = () => {
       {/* Select to Compare Agreement */}
       <div className="text-white text-center py-10 bg-[#121a45]">
         <div className="w-[90%] mx-auto">
-          <div className="font-medium text-3xl">
+          <div className="font-medium text-2xl">
             Select to Compare Agreement
           </div>
           <div
-            className={`grid grid-cols-3 xl:w-9/12 mx-auto text-left opacity-70 text-xl mt-10`}
+            className={`grid grid-cols-3 xl:w-9/12 mx-auto text-left opacity-80 text-xl mt-10`}
           >
             {compareAgreement.map((item) => (
               <div
@@ -441,7 +441,7 @@ const RentalAgreement = () => {
                 {Object.values(item.details).map((itemDetail, index) => (
                   <div className="flex align-middle gap-2" key={index}>
                     <FaCheck className="mt-1" />
-                    {itemDetail} helo
+                    {itemDetail}
                   </div>
                 ))}
               </div>
@@ -461,7 +461,7 @@ const RentalAgreement = () => {
       <div className="bg-[#f0f0f0] pb-10">
         <div className=" xl:w-9/12 mx-auto w-[98%] flex flex-col gap-8">
           {/* Discount Coupons */}
-          <div className="bg-white rounded-xl p-8 w-[90%] mt-10 mx-auto">
+          <div className="bg-white rounded-xl p-8 w-[90%] mt-10 mx-auto opacity-80">
             <div className="text-3xl font-semibold">Discount Coupons</div>
             <div className="text-sm">Apply Coupon at the summary Screen</div>
             <div className="flex justify-between gap-4 mt-10">
@@ -484,7 +484,9 @@ const RentalAgreement = () => {
 
           {/* NoBroker Promise */}
           <div className="bg-white rounded-xl p-8 w-[90%] mx-auto">
-            <div className="text-3xl font-semibold">NoBroker Promise</div>
+            <div className="text-3xl font-medium opacity-80">
+              NoBroker Promise
+            </div>
             <div className="flex justify-between mt-10">
               <div className="flex flex-col gap-10">
                 <div className="flex gap-2">
@@ -522,7 +524,7 @@ const RentalAgreement = () => {
                     </div>
                   </div>
                 </div>
-                <div className="flex gap-2">
+                <div className="flex gap-4">
                   <div>
                     <img
                       src="https://assets.nobroker.in/hs-new/public/LegalServiceNew/convenient.svg"
@@ -553,7 +555,7 @@ const RentalAgreement = () => {
 
           {/* Other legal services that we offer */}
           <div className="bg-white rounded-xl px-8 py-12 w-[90%] mx-auto">
-            <div className="font-semibold text-3xl">
+            <div className="font-medium opacity-80 text-2xl">
               Other legal services that we offer
             </div>
             <div className="flex gap-8 overflow-x-scroll flex-nowrap mt-10">
@@ -601,7 +603,9 @@ const RentalAgreement = () => {
                 <BiStar />
                 <BiStar />
               </div>
-              <div className="opacity-80">4.5 rating out of 4,500 Reviews</div>
+              <div className="text-sm opacity-60">
+                4.5 rating out of 4,500 Reviews
+              </div>
             </div>
             <div className="flex gap-4 mt-10 overflow-x-auto overscroll-none">
               {[...customerReviews, ...customerReviews, ...customerReviews].map(
@@ -620,7 +624,7 @@ const RentalAgreement = () => {
                         alt=""
                       />
                     </div>
-                    <div>{item.review}</div>
+                    <div className="text-sm">{item.review}</div>
                   </div>
                 )
               )}
@@ -637,22 +641,22 @@ const RentalAgreement = () => {
             {faq.map((item, i) => (
               <div key={i}>
                 <div
-                  className="flex justify-between cursor-pointer py-4"
+                  className="flex justify-between cursor-pointer py-2"
                   onClick={() => toggleFaq(i)}
                 >
-                  <div className="flex flex-col gap-4 w-full">
+                  <div className="flex flex-col w-full">
                     <div
-                      className={`text-xl font-medium flex justify-between ${
+                      className={`font-medium flex justify-between ${
                         multipleFaqExpanded.includes(i) ? "text-blue" : ""
                       }`}
                     >
-                      {item.que}
+                      <div className="py-2">{item.que}</div>
                       <div>
                         <FaPlus
                           className={`${
                             multipleFaqExpanded.includes(i)
-                              ? "rotate-45 duration-300 ease-linear"
-                              : "duration-300 ease-linear"
+                              ? "rotate-45 duration-200 ease-linear"
+                              : "duration-200 ease-linear"
                           }`}
                         />
                       </div>
@@ -662,7 +666,7 @@ const RentalAgreement = () => {
                     )}
                   </div>
                 </div>
-                <hr className="text-zinc-300" />
+                <hr className="text-zinc-300 m-2" />
               </div>
             ))}
           </div>
