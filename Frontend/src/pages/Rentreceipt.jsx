@@ -11,7 +11,7 @@ function Rentreceipt() {
   return (
     <>
       <QuickChart />
-      <div className="container mb-5">
+      <div className="container mb-5" style={{marginTop: "85px"}}>
         <div className="page-heading text-center">Create Rent Receipts</div>
         <div className="page-subheading" style={{ color: "#464646" }}>
           Looking for rent receipts for tax saving? Do it in a click by filling
