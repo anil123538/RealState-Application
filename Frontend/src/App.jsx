@@ -3,6 +3,7 @@ import { Outlet, useLocation } from "react-router-dom";
 import Navb from "./components/Navbar/Navb";
 import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   const location = useLocation();

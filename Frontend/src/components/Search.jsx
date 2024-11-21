@@ -14,6 +14,7 @@ const Search = ({ selectedOption, setSelectedOption }) => {
     { value: "Pune", label: "Pune" },
     { value: "Delhi", label: "Delhi" },
   ];
+
   const [selectedCityOption, setSelectedCityOption] = useState(cities[0]);
   const [selectedPropertyStatusOption, setSelectedPropertyStatusOption] =
     useState(null);
@@ -96,12 +97,12 @@ const Search = ({ selectedOption, setSelectedOption }) => {
   return (
     <>
       <div className="flex flex-col justify-center items-center md:px-10 pt-10">
-        <div className="flex flex-col gap-4 mt-5 mx-4 md:mx-0">
-          <h1 className="text-3xl">
+        <div className="flex flex-col gap-4 mt-2 mx-4 md:mx-0">
+          <div className="text-3xl font-normal text-[#787676]">
             World's Largest NoBrokerage Property Site
-          </h1>
+          </div>
 
-          <div className="flex bg-[rgba(252,178,68,0.2)] h-14 gap-2 md:w-fit w-full mx-auto md:p-4 p-2 py-3 text-sm justify-center">
+          <div className="flex bg-[rgba(252,178,68,0.2)] h-14 gap-2 md:w-fit w-full mx-auto md:p-4 p-2 py-3 text-xs justify-center text-[#464646]">
             <div className="flex items-center">
               {selectedOption === "Buy" ? (
                 <>
@@ -123,7 +124,7 @@ const Search = ({ selectedOption, setSelectedOption }) => {
                 </>
               )}
             </div>
-            |
+            <div className="mr-1 border  border-stone-500"></div>
             <div className="flex items-center">
               {selectedOption === "Buy" ? (
                 <>
@@ -147,9 +148,9 @@ const Search = ({ selectedOption, setSelectedOption }) => {
             </div>
           </div>
 
-          <div className="grid grid-cols-3 items-center md:border border-zinc-200 md:w-9/12 mx-auto text-center">
+          <div className="grid grid-cols-3 items-center md:border border-zinc-200 md:w-7/12 mx-auto text-center text-[15px]">
             <div
-              className={`px-4 py-3 cursor-pointer ${
+              className={`p-2 cursor-pointer ${
                 selectedOption === "Buy"
                   ? "border-b-4 border-red-500"
                   : "md:border-r border-zinc-200"
@@ -160,14 +161,14 @@ const Search = ({ selectedOption, setSelectedOption }) => {
                 className={`no-underline ${
                   selectedOption === "Buy"
                     ? " text-red-500 no-underline"
-                    : "text-black"
+                    : "text-zinc-400"
                 }`}
               >
                 Buy
               </Link>
             </div>
             <div
-              className={` px-4 py-3 cursor-pointer ${
+              className={` p-2 cursor-pointer ${
                 selectedOption === "Rent"
                   ? "border-b-4 border-red-500"
                   : "md:border-x border-zinc-200"
@@ -178,14 +179,14 @@ const Search = ({ selectedOption, setSelectedOption }) => {
                 className={`no-underline ${
                   selectedOption === "Rent"
                     ? " text-red-500 no-underline"
-                    : "text-black"
+                    : "text-zinc-400"
                 }`}
               >
                 Rent
               </Link>
             </div>
             <div
-              className={` px-4 py-3 cursor-pointer ${
+              className={` p-2 cursor-pointer ${
                 selectedOption === "Commercial"
                   ? "border-b-4 border-red-500"
                   : "md:border-l border-zinc-200"
@@ -196,7 +197,7 @@ const Search = ({ selectedOption, setSelectedOption }) => {
                 className={`no-underline ${
                   selectedOption === "Commercial"
                     ? " text-red-500 no-underline"
-                    : "text-black"
+                    : "text-zinc-400"
                 }`}
               >
                 Commercial
@@ -211,7 +212,8 @@ const Search = ({ selectedOption, setSelectedOption }) => {
               defaultValue={selectedCityOption}
               onChange={setSelectedCityOption}
               options={cities}
-              className="min-w-fit"
+              className="min-w-fit text-sm"
+              isSearchable={false}
               styles={{
                 control: (base) => ({
                   ...base,
@@ -225,11 +227,11 @@ const Search = ({ selectedOption, setSelectedOption }) => {
               type="search"
               name="search"
               id="search"
-              className="border border-zinc-200 px-4 w-full outline-none"
+              className="border border-zinc-200 px-4 text-sm w-full outline-none"
               placeholder="Search upto 3 localities or landmarks"
             />
-            <div className="w-fit bg-[#fd3752] text-white flex items-center text-xl px-12 cursor-pointer hover:bg-[#d03c3c]">
-              <BiSearch />
+            <div className="w-fit bg-[#fd3752] text-white flex items-center text-lg px-10 cursor-pointer hover:bg-[#d03c3c]">
+              <BiSearch className="text-2xl opacity-80" />
               <button type="submit">Search</button>
             </div>
           </div>
@@ -245,7 +247,10 @@ const Search = ({ selectedOption, setSelectedOption }) => {
                     id="full_house"
                     value="full_house"
                   />
-                  <label htmlFor="full_house" className="ml-1 cursor-pointer">
+                  <label
+                    htmlFor="full_house"
+                    className="ml-1 text-[13px] cursor-pointer"
+                  >
                     Full House
                   </label>
                 </div>
@@ -256,7 +261,10 @@ const Search = ({ selectedOption, setSelectedOption }) => {
                     id="land_plot"
                     value="land_plot"
                   />
-                  <label htmlFor="land_plot" className="ml-1 cursor-pointer">
+                  <label
+                    htmlFor="land_plot"
+                    className="ml-1 cursor-pointer text-[13px]"
+                  >
                     Land/Plot
                   </label>
                 </div>
@@ -268,10 +276,11 @@ const Search = ({ selectedOption, setSelectedOption }) => {
                   isMulti
                   defaultValue={selectedBhkOption}
                   onChange={setSelectedBhkOption}
+                  isSearchable={false}
                   styles={{
                     control: (base) => ({
                       ...base,
-                      fontSize: "12px",
+                      fontSize: "11px",
                       padding: "0 10px", // Add horizontal padding instead
                       minWidth: "100px",
                       border: "1px solid #d1d5db", // Adjust border color
@@ -285,16 +294,17 @@ const Search = ({ selectedOption, setSelectedOption }) => {
                   defaultValue={selectedPropertyStatusOption}
                   onChange={setSelectedPropertyStatusOption}
                   className="min-w-fit"
+                  isSearchable={false}
                   styles={{
                     control: (base) => ({
                       ...base,
-                      fontSize: "12px",
+                      fontSize: "11px",
                       padding: "0 10px", // Add horizontal padding instead
                       border: "1px solid #d1d5db", // Adjust border color
                     }),
                   }}
                 />
-                <div className="border border-[#d1d5db] flex gap-2 px-2.5 py-1.5">
+                <div className="border border-[#d1d5db] flex gap-2 px-2.5 py-1.5 items-center">
                   <input type="checkbox" name="new_project" id="new_project" />
                   <label for="new_project" className="text-xs">
                     New Builder Projects
@@ -313,7 +323,10 @@ const Search = ({ selectedOption, setSelectedOption }) => {
                     id="full_house"
                     value="full_house"
                   />
-                  <label htmlFor="full_house" className="ml-1 cursor-pointer">
+                  <label
+                    htmlFor="full_house"
+                    className="ml-1 cursor-pointer text-[13px]"
+                  >
                     Full House
                   </label>
                 </div>
@@ -324,7 +337,10 @@ const Search = ({ selectedOption, setSelectedOption }) => {
                     id="land_plot"
                     value="land_plot"
                   />
-                  <label htmlFor="land_plot" className="ml-1 cursor-pointer">
+                  <label
+                    htmlFor="land_plot"
+                    className="ml-1 cursor-pointer text-[13px]"
+                  >
                     Land/Plot
                   </label>
                 </div>
@@ -335,7 +351,10 @@ const Search = ({ selectedOption, setSelectedOption }) => {
                     id="flatmates"
                     value="flatmates"
                   />
-                  <label htmlFor="flatmates" className="ml-1 cursor-pointer">
+                  <label
+                    htmlFor="flatmates"
+                    className="ml-1 cursor-pointer text-[13px]"
+                  >
                     Flatmates
                   </label>
                 </div>
@@ -347,10 +366,11 @@ const Search = ({ selectedOption, setSelectedOption }) => {
                   isMulti
                   defaultValue={selectedBhkOption}
                   onChange={setSelectedBhkOption}
+                  isSearchable={false}
                   styles={{
                     control: (base) => ({
                       ...base,
-                      fontSize: "12px",
+                      fontSize: "11px",
                       padding: "0 10px", // Add horizontal padding instead
                       minWidth: "100px",
                       border: "1px solid #d1d5db", // Adjust border color
@@ -364,10 +384,11 @@ const Search = ({ selectedOption, setSelectedOption }) => {
                   defaultValue={selectedAvailabilityOption}
                   onChange={setSelectedAvailabilityOption}
                   className="min-w-fit"
+                  isSearchable={false}
                   styles={{
                     control: (base) => ({
                       ...base,
-                      fontSize: "12px",
+                      fontSize: "11px",
                       padding: "0 10px", // Add horizontal padding instead
                       minWidth: "100px",
                       border: "1px solid #d1d5db", // Adjust border color
@@ -382,13 +403,19 @@ const Search = ({ selectedOption, setSelectedOption }) => {
               <div className="flex gap-2">
                 <div>
                   <input type="radio" name="land_type" id="rent" value="rent" />
-                  <label htmlFor="full_house" className="ml-1 cursor-pointer">
+                  <label
+                    htmlFor="full_house"
+                    className="ml-1 cursor-pointer text-[13px]"
+                  >
                     Rent
                   </label>
                 </div>
                 <div>
                   <input type="radio" name="land_type" id="buy" value="buy" />
-                  <label htmlFor="buy" className="ml-1 cursor-pointer">
+                  <label
+                    htmlFor="buy"
+                    className="ml-1 cursor-pointer text-[13px]"
+                  >
                     Buy
                   </label>
                 </div>
@@ -399,10 +426,11 @@ const Search = ({ selectedOption, setSelectedOption }) => {
                 defaultValue={selectedPropertyTypeOption}
                 onChange={setSelectedPropertyTypeOption}
                 className="min-w-fit"
+                isSearchable={false}
                 styles={{
                   control: (base) => ({
                     ...base,
-                    fontSize: "12px",
+                    fontSize: "11px",
                     padding: "0 10px", // Add horizontal padding instead
                     minWidth: "100px",
                     border: "1px solid #d1d5db", // Adjust border color
@@ -415,9 +443,11 @@ const Search = ({ selectedOption, setSelectedOption }) => {
 
         <div className="flex flex-col gap-4 items-center">
           <div className="flex flex-nowrap items-center gap-2 mt-10">
-            <hr className="border border-black text-xl w-20" />
-            <span>Are you a Property Owner?</span>
-            <hr className="border border-black text-xl w-20" />
+            <hr className="border opacity-20 w-20" />
+            <span className="text-sm opacity-80">
+              Are you a Property Owner?
+            </span>
+            <hr className="border opacity-20  w-20" />
           </div>
           <button className="px-4 py-2.5 w-fit bg-teal-600 hover:bg-teal-700">
             <Link to="/post-property" className="text-white">

@@ -105,13 +105,13 @@ const HomeTestimonial = () => {
           className="my-10"
         ></iframe>
         <div
-          className="flex gap-12 w-11/12 flex-nowrap overflow-x-scroll behavior mt-10 scroll-smooth"
+          className="flex gap-8 xl:gap-12 w-11/12 flex-nowrap overflow-x-scroll behavior mt-10 scroll-smooth"
           ref={testimonialContainerRef}
         >
           {[...review, ...review].map((item, index) => (
             <div
               key={index}
-              className="bg-white p-3 min-w-[430px] h-64 overflow-y-scroll mb-2"
+              className="bg-white p-3 min-w-[300px] xl:min-w-[430px] xl:h-64 h-56 overflow-y-scroll mb-2"
             >
               <div className="flex items-center">
                 <img
@@ -120,7 +120,7 @@ const HomeTestimonial = () => {
                   className="w-9 h-9 rounded-full"
                 />
                 <div className="flex flex-col gap-2">
-                  <div>{item.user_name}</div>
+                  <div className="text-[13px]">{item.user_name}</div>
                   <div className="flex">
                     {Array.from({ length: item.star }).map((_, index) => (
                       <img
@@ -134,8 +134,8 @@ const HomeTestimonial = () => {
                 </div>
               </div>
               <div className="mt-6">
-                <div className="font-bold">{item.heading}</div>
-                <div className="text-sm">{item.description}</div>
+                <div className="font-semibold text-sm">{item.heading}</div>
+                <div className="text-[12.5px]">{item.description}</div>
               </div>
             </div>
           ))}
@@ -156,7 +156,7 @@ const HomeTestimonial = () => {
         </div>
         <hr className="border-2 border-white w-11/12 mt-4 mb-10" />
         <div className=" underline cursor-pointer text-sm">
-          <Link to="/testimonials" className="text-white">
+          <Link to="/testimonials" className="text-white underline text-[13px]">
             More Testimonials
           </Link>
         </div>
@@ -176,7 +176,7 @@ const HomeTestimonial = () => {
           </h2>
           <div className="my-10">
             <div className="font-normal text-xl">Download our app</div>
-            <span className="font-light">
+            <span className="font-extralight">
               Where convenience is at your fingertip
             </span>
           </div>

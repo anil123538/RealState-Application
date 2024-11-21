@@ -1,5 +1,4 @@
 import PhoneInput from "react-phone-input-2";
-import "bootstrap/dist/css/bootstrap.min.css";
 import "react-phone-input-2/lib/style.css";
 import "../style/postproperty.css";
 import { useState } from "react";
@@ -244,7 +243,7 @@ function PostProperty() {
                   className="form-select"
                   aria-label="Default select example"
                 >
-                  <option >Select City</option>
+                  <option>Select City</option>
                   <option value="1">One</option>
                   <option value="2">Two</option>
                   <option value="3">Three</option>

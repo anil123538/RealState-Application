@@ -108,12 +108,12 @@ const CheckEligibility = ({ selectedOption }) => {
   ];
 
   return (
-    <div className="hidden md:block">
+    <div className="">
       <div className="text-sm mt-4">
         {selectedOption === "Buy" || selectedOption === "Rent" ? (
           <div className="bg-[#384d6c] p-3.5 flex items-center justify-center gap-2.5">
             <img src="home/check_eligibility.png" alt="" className="mr-0" />
-            <div className="text-white">
+            <div className="text-white font-extralight">
               <span>Do you know how much </span>
               <span className="font-bold">loan </span>
               <span>you can get? Get maximum with </span>
@@ -143,15 +143,15 @@ const CheckEligibility = ({ selectedOption }) => {
         ) : null}
       </div>
 
-      <div className="flex justify-between items-end text-sm overflow-x-auto gap-4 px-20">
+      <div className="flex justify-between items-end overflow-x-auto gap-4 px-20">
         {(selectedOption === "Buy" ? buyData : rentData).map((item) => (
           <Link
             to={`/${item.text.toLowerCase().replaceAll(" ", "-")}`}
             key={item.id}
           >
-            <div className="flex flex-col md:justify-center items-center text-center p-2 cursor-pointer border md:border-0 rounded-tl-2xl rounded-br-2xl">
+            <div className="flex flex-col md:justify-center items-center text-center p-2 cursor-pointer border-0 md:border-0 rounded-tl-2xl rounded-br-2xl">
               {item.condition && (
-                <span className="text-xs bg-orange-200/50 px-2 py-1 rounded-2xl mb-1 w-fit">
+                <span className="text-[11px] bg-orange-200/50 px-2 py-1 rounded-2xl mb-1 w-fit">
                   {item.condition}
                 </span>
               )}
@@ -160,7 +160,7 @@ const CheckEligibility = ({ selectedOption }) => {
                 alt=""
                 className="mr-0 w-[60px] h-[60px] hover:scale-110 transition duration-300"
               />
-              <span className="mt-3">{item.text}</span>
+              <span className="mt-3 text-xs font-light">{item.text}</span>
             </div>
           </Link>
         ))}
@@ -168,12 +168,12 @@ const CheckEligibility = ({ selectedOption }) => {
 
       <div className="py-10">
         <div className="flex flex-nowrap items-center justify-center gap-4">
-          <hr className="w-full" />
-          <h2 className="opacity-60">Why&nbsp;use&nbsp;NoBroker</h2>
-          <hr className="w-full" />
+          <hr className="w-full opacity-40" />
+          <h2 className="text-[30px] opacity-60">Why&nbsp;use&nbsp;NoBroker</h2>
+          <hr className="w-full opacity-40" />
         </div>
         <div>
-          <div className="flex flex-row justify-between gap-4 mt-4">
+          <div className="flex flex-row justify-between gap-4 mt-8">
             {whyUseNoBroker.map((item) => (
               <Link key={item.id}>
                 <div className="flex flex-col gap-2 items-center text-center">
@@ -183,7 +183,7 @@ const CheckEligibility = ({ selectedOption }) => {
                     className="mr-0 w-auto h-auto hover:scale-125 transition duration-300"
                   />
                   <div className="">{item.heading}</div>
-                  <span className="text-sm w-8/12">{item.text}</span>
+                  <span className="text-xs font-light w-8/12">{item.text}</span>
                 </div>
               </Link>
             ))}
@@ -193,21 +193,21 @@ const CheckEligibility = ({ selectedOption }) => {
 
       <div className="bg-neutral-100 py-10">
         <div>
-          <div className="grid grid-cols-3 items-center text-center">
-            <hr />
-            <div className="text-2xl text-neutral-600">
+          <div className="grid grid-cols-4 items-center text-center">
+            <hr className="opacity-20" />
+            <div className="text-3xl col-span-2 opacity-50">
               NoBroker Business Assit Plan For Builders
             </div>
-            <hr />
+            <hr className="opacity-20" />
           </div>
           <div className="flex items-center justify-center gap-10 mt-10">
             <img src="home/builder_assist.png" alt="Builder Assist" />
             <div>
-              <div className="mb-10">
+              <div className="mb-10 opacity-70">
                 Get in touch with us to Sell or Rent Your Projects
               </div>
               <button className="bg-red-500 text-white p-3">Enquire Now</button>
-              <hr className="m-0" />
+              <hr className="m-0 opacity-10" />
               <div className="text-xs">
                 For Builder Enquiries: +91 91080 50400
               </div>
@@ -218,9 +218,11 @@ const CheckEligibility = ({ selectedOption }) => {
 
       <div className="py-10">
         <div className="flex items-center justify-between gap-4">
-          <hr className="w-full" />
-          <div className="min-w-fit text-2xl">We Make A Difference</div>
-          <hr className="w-full" />
+          <hr className="w-full opacity-20" />
+          <div className="min-w-fit text-3xl opacity-70">
+            We Make A Difference
+          </div>
+          <hr className="w-full opacity-20" />
         </div>
 
         <div className="flex justify-center items-center gap-14 mt-10">

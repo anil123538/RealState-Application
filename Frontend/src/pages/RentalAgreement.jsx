@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { AiOutlineSafety } from "react-icons/ai";
 import { BiStar } from "react-icons/bi";
 import { FaCheck, FaChevronRight, FaPlus } from "react-icons/fa";
 import { PiShareFatThin, PiStamp } from "react-icons/pi";
-import { RxCross1, RxDotFilled } from "react-icons/rx";
+import { RxDotFilled } from "react-icons/rx";
 import { Link } from "react-router-dom";
 import Modal from "../components/Modal";
 import { LiaGreaterThanSolid } from "react-icons/lia";
