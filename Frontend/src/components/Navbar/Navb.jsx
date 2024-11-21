@@ -459,12 +459,12 @@ function Navb() {
                 >
                   Packers and Movers
                 </Dropdown.Item>
-                <Dropdown.Item
-                  href="#action5"
+                <Link
+                  to="refer-and-earn"
                   className="text-dark text-decoration-none"
                 >
                   Refer & Earn
-                </Dropdown.Item>
+                </Link>
                 <Dropdown.Item
                   href="#action5"
                   className="text-dark text-decoration-none"
