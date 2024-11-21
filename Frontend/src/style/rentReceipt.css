@@ -1,0 +1,154 @@
+body {
+  line-height: inherit;
+}
+.page-heading {
+  color: #464646;
+  font-size: 30px;
+  /* font-weight: 400; */
+}
+.page-subheading {
+  color: #464646;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+}
+form input::placeholder {
+  font-size: 14px;
+}
+form input {
+  border: 1px solid #ccc !important;
+  border-radius: 2px !important;
+  box-shadow: none !important;
+  font-size: 14px;
+  line-height: 1.4;
+  background-color: #fff;
+  color: #555;
+}
+form input:focus {
+  border: 1px solid rgb(51, 51, 51) !important;
+}
+.rentReceipt-btn {
+  border-radius: 2px;
+  font-size: 0.937rem;
+  font-weight: 600;
+  height: 100%;
+  overflow: hidden;
+  padding: 10px 25px;
+  border: 1px solid transparent;
+  width: auto;
+  max-width: 50%;
+}
+
+.rent-receipt {
+  background: url(https://assets.nobroker.in/nb-new/public/RentoPay/landing_features_bgr.png)
+    no-repeat center;
+  background-size: cover;
+  color: #fff;
+  padding: 35px 20px;
+  width: 100%;
+  min-height: 65vh;
+}
+
+.rent-receipt h1 {
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
+
+.rent-receipt h4 {
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin-bottom: 14px;
+}
+
+.rent-receipt .card-section {
+  width: 100%;
+  overflow: hidden;
+}
+
+.rent-receipt .cards {
+  background-color: transparent;
+  border: unset !important;
+  border-radius: 8px;
+  padding: 15px;
+  display: flex;
+  max-width: 48%;
+}
+
+.rent-receipt .img-box {
+  background-color: #fff;
+  height: 75px;
+  width: 75px;
+  border-radius: 6px;
+}
+
+.rent-receipt .title {
+  font-size: 1.1rem;
+  font-weight: 200;
+}
+
+.rent-receipt .sub-title {
+  font-size: 0.9rem;
+  font-weight: 200;
+}
+
+.rent-receipt .getting-started {
+  width: 100%;
+  max-width: 400px;
+  border-radius: unset;
+  border-radius: 2px;
+  padding: 8px 20px;
+  font-weight: 500;
+}
+
+.rentReceipt-text h2 {
+  font-size: 22px;
+  font-weight: inherit;
+}
+
+.rentReceipt-text p {
+  font-size: 14px;
+}
+
+.rentReceipt-text ul li,
+ol li {
+  font-size: 14px;
+}
+
+.Rentreceiptfaq .faq-item {
+  border-bottom: 1.5px solid #b1b1b1;
+  padding: 20px 0;
+}
+
+.Rentreceiptfaq .faq-question {
+  display: flex;
+  font-weight: 500;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  color: #464646;
+  transition: color 0.1s ease;
+}
+
+.Rentreceiptfaq .faq-question.active {
+  color: #009587;
+}
+
+.Rentreceiptfaq .faq-icon {
+  font-size: 1.2rem;
+  color: #464949;
+  transition: transform 0.3s ease;
+}
+
+.Rentreceiptfaq .faq-icon.rotate {
+  transform: rotate(-45deg);
+}
+
+.Rentreceiptfaq .faq-answer {
+  margin-top: 10px;
+  color: #555;
+  font-size: 14px;
+}

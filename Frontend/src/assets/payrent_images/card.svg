@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="37.55" height="34.198" viewBox="0 0 37.55 34.198">
+  <g id="Card" transform="translate(-1.699)">
+    <circle id="Ellipse_12" data-name="Ellipse 12" cx="17.099" cy="17.099" r="17.099" transform="translate(3.251)" fill="#e9eaeb"/>
+    <g id="Group_616" data-name="Group 616" transform="translate(-519.958 -150.037)">
+      <path id="Path_3101" data-name="Path 3101" d="M548.691,161.693v-9.235a1.421,1.421,0,0,0-1.421-1.421H523.828a1.421,1.421,0,0,0-1.421,1.421v14.207a1.421,1.421,0,0,0,1.421,1.421h14.891" transform="translate(0 2)" fill="#fff" stroke="#3240a0" stroke-miterlimit="10" stroke-width="1.5"/>
+      <line id="Line_135" data-name="Line 135" x1="26.284" transform="translate(522.407 156.589)" fill="none" stroke="#3240a0" stroke-miterlimit="10" stroke-width="1.5"/>
+      <line id="Line_136" data-name="Line 136" x1="26.284" transform="translate(522.407 160.851)" fill="none" stroke="#3240a0" stroke-miterlimit="10" stroke-width="1.5"/>
+      <path id="Path_3102" data-name="Path 3102" d="M220.949,212.514h-.093c-.268,1.958-.83,3.507-3.759,3.793v.106c2.929.286,3.49,1.834,3.759,3.793h.092c.269-1.958.83-3.507,3.759-3.793v-.106C221.779,216.021,221.217,214.472,220.949,212.514Z" transform="translate(334.499 -56.636)" fill="#3240a0"/>
+      <path id="Path_3103" data-name="Path 3103" d="M210.815,227.136h-.068c-.2,1.427-.6,2.557-2.74,2.765v.077c2.135.208,2.545,1.338,2.741,2.765h.067c.2-1.427.605-2.557,2.74-2.765V229.9C211.42,229.693,211.01,228.563,210.815,227.136Z" transform="translate(320.793 -54.477)" fill="#3240a0"/>
+      <g id="Group_614" data-name="Group 614" transform="translate(540.166 165.824)">
+        <circle id="Ellipse_53" data-name="Ellipse 53" cx="7.814" cy="7.814" r="7.814" transform="translate(0)" fill="#fd3753" stroke="#3240a0" stroke-miterlimit="10" stroke-width="1.5"/>
+        <line id="Line_133" data-name="Line 133" y2="8.524" transform="translate(7.814 3.552)" fill="none" stroke="#3240a0" stroke-miterlimit="10" stroke-width="1.5"/>
+        <line id="Line_134" data-name="Line 134" x1="8.524" transform="translate(3.552 7.814)" fill="none" stroke="#3240a0" stroke-miterlimit="10" stroke-width="1.5"/>
+      </g>
+    </g>
+  </g>
+</svg>
