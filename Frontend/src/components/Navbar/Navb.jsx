@@ -63,6 +63,7 @@ import aboutUs from "../../assets/small_nav_images/aboutUs.png";
 import chatWithUs from "../../assets/small_nav_images/chatWithUs.png";
 import Modal from "../Modal";
 import LoginSignup from "../LoginSignup";
+import { NonceProvider } from "react-select";
 
 function Navb() {
   const location = useLocation();
@@ -190,1320 +191,1352 @@ function Navb() {
 
   return (
     <>
-      <Navbar
-        user={user}
-        expand="lg"
-        className="bg-body-tertiary "
-        fixed="top"
-        style={{ boxShadow: "0 5px 10px rgba(0,0,0,0.1)" }}
-      >
-        <Container fluid>
-          {/* Image as Navbar Brand */}
-          <Navbar.Brand href="/">
-            <img
-              src={logo} // Use your imported image here
-              alt="Brand Logo"
-              width="160" // Adjust width as needed
-            />
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="navbarScroll" />
-
-          <Nav
-            className="ms-auto my-2 my-lg-0 d-none d-lg-flex"
-            style={{ fontSize: "0.8rem" }}
-          >
-            <Nav.Link href="pay-rent">
-              <span className="d-flex align-items-center border p-1">
-                {" "}
-                <img
-                  src={rent} // Use your imported image here
-                  alt="Brand Logo"
-                  width="30" // Adjust width as needed
-                />{" "}
-                | Pay Rent
-              </span>
-            </Nav.Link>
-            <Nav.Link href="post-property">
-              <button className="nav-property">For Property Owners</button>
-            </Nav.Link>
-
-            {user ? (
-              <>
-                <Nav.Link href="../../pages/PostProperty">
+      <div className="d-flex ">
+        <Navbar
+          user={user}
+          expand="lg"
+          className="bg-body-tertiary"
+          fixed="top"
+          style={{ boxShadow: "0 5px 10px rgba(0,0,0,0.1)" }}
+        >
+          <Container fluid className="">
+            {/* Image as Navbar Brand */}
+            <Navbar.Brand href="/">
+              <img
+                src={logo} // Use your imported image here
+                alt="Brand Logo"
+                width="160" // Adjust width as needed
+              />
+            </Navbar.Brand>
+            <Navbar.Toggle aria-controls="navbarScroll" />
+            <Nav
+              className="ms-auto my-2 my-lg-0 d-none d-lg-flex justify-content align-items-center"
+              style={{ fontSize: "0.8rem" }}
+            >
+              <Nav.Link href="pay-rent">
+                <span className="d-flex align-items-center border p-1">
+                  {" "}
                   <img
-                    src={neww} // Use your imported image here
-                    alt="Property Icon"
-                    width="40" // Adjust width as needed
-                    height="auto" // Maintain aspect ratio
-                  />
-                </Nav.Link>
-                <Dropdown align="end" onToggle={toggleShowUserOptions}>
-                  <Dropdown.Toggle
-                    variant="link"
-                    id="dropdown-basic"
-                    className="p-0 text-black no-arrow " // Text color black and no padding
+                    src={rent} // Use your imported image here
+                    alt="Brand Logo"
+                    width="30" // Adjust width as needed
+                  />{" "}
+                  | Pay Rent
+                </span>
+              </Nav.Link>
+              <Nav.Link href="post-property">
+                <button className="nav-property">For Property Owners</button>
+              </Nav.Link>
+
+              {user ? (
+                <>
+                  <Nav.Link href="../../pages/PostProperty">
+                    <img
+                      src={neww} // Use your imported image here
+                      alt="Property Icon"
+                      width="40" // Adjust width as needed
+                      height="auto" // Maintain aspect ratio
+                    />
+                  </Nav.Link>
+                  <Dropdown align="end" onToggle={toggleShowUserOptions}>
+                    <Dropdown.Toggle
+                      variant="link"
+                      id="dropdown-basic"
+                      className="p-0 text-black no-arrow " // Text color black and no padding
+                    >
+                      <span className="d-flex align-items-center">
+                        <i class="fa-regular fa-circle-user"></i> {user.name}{" "}
+                        {showUserOptions ? (
+                          <FaChevronUp className="ms-1" />
+                        ) : (
+                          <FaChevronDown className="ms-1" />
+                        )}
+                      </span>
+                    </Dropdown.Toggle>
+                    <Dropdown.Menu className="dropdown-menu border-1">
+                      <Dropdown.Item
+                        href="#action3"
+                        className="text-dark text-decoration-none"
+                      >
+                        Profile
+                      </Dropdown.Item>
+
+                      <Dropdown.Item
+                        href="#action3"
+                        className="text-dark text-decoration-none"
+                      >
+                        My Chats
+                      </Dropdown.Item>
+
+                      <Dropdown.Item
+                        className="text-dark text-decoration-none "
+                        onClick={toggleResidentialPlans}
+                        style={{ cursor: "pointer" }}
+                      >
+                        <span className="d-flex align-items-center">
+                          My Residential Plans
+                          {showResidentialPlans ? (
+                            <FaChevronUp className="ms-5" />
+                          ) : (
+                            <FaChevronDown className="ms-5" />
+                          )}
+                        </span>
+
+                        {showResidentialPlans && (
+                          <li>
+                            <ul className="custom-dropdown-ul">
+                              <Nav.Link>Tenant Plan</Nav.Link>
+                              <Nav.Link>Owner Plan</Nav.Link>
+                              <Nav.Link>Buyer Plan</Nav.Link>
+                              <Nav.Link>Seller Plans</Nav.Link>
+                            </ul>
+                          </li>
+                        )}
+                      </Dropdown.Item>
+
+                      <Dropdown.Item
+                        className="text-dark text-decoration-none "
+                        onClick={toggleCommercialPlans}
+                        style={{ cursor: "pointer" }}
+                      >
+                        <span className="d-flex align-items-center">
+                          My Commercial Plan
+                          {showCommercialPlans ? (
+                            <FaChevronUp className="ms-5" />
+                          ) : (
+                            <FaChevronDown className="ms-5" />
+                          )}
+                        </span>
+
+                        {showCommercialPlans && (
+                          <li>
+                            <ul className="custom-dropdown-ul">
+                              <Nav.Link>Tenant Plan</Nav.Link>
+                              <Nav.Link>Owner Plan</Nav.Link>
+                              <Nav.Link>Buyer Plan</Nav.Link>
+                              <Nav.Link>Seller Plans</Nav.Link>
+                            </ul>
+                          </li>
+                        )}
+                      </Dropdown.Item>
+
+                      <Dropdown.Item
+                        className="text-dark text-decoration-none "
+                        onClick={toggleDashboard}
+                        style={{ cursor: "pointer" }}
+                      >
+                        <span className="d-flex align-items-center">
+                          My Dashboard
+                          {showDashboard ? (
+                            <FaChevronUp className="ms-5" />
+                          ) : (
+                            <FaChevronDown className="ms-5" />
+                          )}
+                        </span>
+
+                        {showDashboard && (
+                          <li>
+                            <ul className="custom-dropdown-ul">
+                              <Nav.Link>Tenant Plan</Nav.Link>
+                              <Nav.Link>Owner Plan</Nav.Link>
+                              <Nav.Link>Buyer Plan</Nav.Link>
+                              <Nav.Link>Seller Plans</Nav.Link>
+                            </ul>
+                          </li>
+                        )}
+                      </Dropdown.Item>
+
+                      <Dropdown.Item
+                        className="text-dark text-decoration-none "
+                        onClick={toggleListing}
+                        style={{ cursor: "pointer" }}
+                      >
+                        <span className="d-flex align-items-center">
+                          My Listing
+                          {showListing ? (
+                            <FaChevronUp className="ms-5" />
+                          ) : (
+                            <FaChevronDown className="ms-5" />
+                          )}
+                        </span>
+
+                        {showListing && (
+                          <li>
+                            <ul className="custom-dropdown-ul">
+                              <Nav.Link>Tenant Plan</Nav.Link>
+                              <Nav.Link>Owner Plan</Nav.Link>
+                              <Nav.Link>Buyer Plan</Nav.Link>
+                              <Nav.Link>Seller Plans</Nav.Link>
+                            </ul>
+                          </li>
+                        )}
+                      </Dropdown.Item>
+
+                      <Dropdown.Item
+                        href="#action3"
+                        className="text-dark text-decoration-none"
+                      >
+                        My Rental Adreements
+                      </Dropdown.Item>
+
+                      <Dropdown.Item
+                        href="#action3"
+                        className="text-dark text-decoration-none"
+                      >
+                        Sign Out
+                      </Dropdown.Item>
+                    </Dropdown.Menu>
+                  </Dropdown>
+                  <Nav.Link href="#" disabled>
+                    |
+                  </Nav.Link>
+                  <Nav.Link href="#">
+                    <i class="fa-solid fa-bell"></i>
+                  </Nav.Link>
+
+                  <Nav.Link href="#" disabled>
+                    |
+                  </Nav.Link>
+                </>
+              ) : (
+                <>
+                  <Nav.Link onClick={() => setLoginSignupModelOpen(true)}>
+                    Sign Up
+                  </Nav.Link>
+                  <Nav.Link href="#" disabled>
+                    |
+                  </Nav.Link>
+                  <Nav.Link onClick={() => setLoginSignupModelOpen(true)}>
+                    Log In
+                  </Nav.Link>
+                  <Nav.Link href="#" disabled>
+                    |
+                  </Nav.Link>
+                  <Modal
+                    isOpen={isLoginSignupModelOpen}
+                    onClose={() => setLoginSignupModelOpen(false)}
+                  >
+                    <LoginSignup />
+                  </Modal>
+                </>
+              )}
+
+              {/* Dropdown Menu with Hamburger Icon */}
+              <Dropdown align="end">
+                {/* Aligns the dropdown items to the right */}
+                <Dropdown.Toggle
+                  variant="link"
+                  id="dropdown-basic"
+                  className="p-0 text-black no-arrow" // Text color black and no padding
+                  style={{ fontSize: "15px", textDecoration: "None" }} // Ensures normal font size
+                >
+                  <span className="d-flex align-items-center font-light">
+                    <FaBars /> Menu{" "}
+                  </span>
+                </Dropdown.Toggle>
+
+                {/* Dropdown menu items */}
+                <Dropdown.Menu className="dropdown-menu border-1 custom-scroll">
+                  <Dropdown.Item
+                    href="post-property"
+                    className="text-dark text-decoration-none"
+                    style={{ fontSize: "normal" }} // Ensures normal font size
+                  >
+                    Post Your Property
+                  </Dropdown.Item>
+
+                  <Link
+                    to="/rental-agreement"
+                    className="text-dark text-decoration-none"
+                    style={{ fontSize: "normal" }} // Ensures normal font size
+                  >
+                    Rental Agreement
+                  </Link>
+
+                  <Dropdown.Item
+                    href="#action5"
+                    className="text-dark text-decoration-none"
+                    style={{ fontSize: "normal" }} // Ensures normal font size
+                  >
+                    Painting & Cleaning
+                  </Dropdown.Item>
+
+                  <Dropdown.Item
+                    href="#action5"
+                    className="text-dark text-decoration-none"
+                    style={{ fontSize: "normal" }} // Ensures normal font size
+                  >
+                    Packers and Movers
+                  </Dropdown.Item>
+
+                  <Dropdown.Item
+                    href="#action5"
+                    className="text-dark text-decoration-none"
+                    style={{ fontSize: "normal" }} // Ensures normal font size
+                  >
+                    Refer & Earn
+                  </Dropdown.Item>
+
+                  <Dropdown.Item
+                    href="#action5"
+                    className="text-dark text-decoration-none"
+                    style={{ fontSize: "normal" }} // Ensures normal font size
+                  >
+                    Rent Receipts
+                  </Dropdown.Item>
+
+                  <Dropdown.Item
+                    href="#action5"
+                    className="text-dark text-decoration-none"
+                    style={{ fontSize: "normal" }} // Ensures normal font size
+                  >
+                    Tenant Plans
+                  </Dropdown.Item>
+
+                  <Dropdown.Item
+                    href="#action5"
+                    className="text-dark text-decoration-none"
+                    style={{ fontSize: "normal" }} // Ensures normal font size
+                  >
+                    Owner Plans
+                  </Dropdown.Item>
+
+                  <Dropdown.Item
+                    href="#action5"
+                    className="text-dark text-decoration-none"
+                    style={{ fontSize: "normal" }} // Ensures normal font size
+                  >
+                    Buyer Plans
+                  </Dropdown.Item>
+
+                  <Dropdown.Item
+                    href="#action5"
+                    className="text-dark text-decoration-none"
+                    style={{ fontSize: "normal" }} // Ensures normal font size
+                  >
+                    Seller Plans
+                  </Dropdown.Item>
+
+                  <Dropdown.Item
+                    className="text-dark text-decoration-none"
+                    onClick={toggleCommercialPlans}
+                    style={{ cursor: "pointer", fontSize: "normal" }} // Ensures normal font size
                   >
                     <span className="d-flex align-items-center">
-                      <i class="fa-regular fa-circle-user"></i> {user.name}{" "}
-                      {showUserOptions ? (
-                        <FaChevronUp className="ms-1" />
+                      Commercial Plans
+                      {showCommercialPlans ? (
+                        <FaChevronUp className="ms-5" />
                       ) : (
-                        <FaChevronDown className="ms-1" />
+                        <FaChevronDown className="ms-5" />
                       )}
                     </span>
-                  </Dropdown.Toggle>
-                  <Dropdown.Menu className="dropdown-menu border-1">
-                    <Dropdown.Item
-                      href="#action3"
-                      className="text-dark text-decoration-none"
-                    >
-                      Profile
-                    </Dropdown.Item>
 
-                    <Dropdown.Item
-                      href="#action3"
-                      className="text-dark text-decoration-none"
-                    >
-                      My Chats
-                    </Dropdown.Item>
-
-                    <Dropdown.Item
-                      className="text-dark text-decoration-none "
-                      onClick={toggleResidentialPlans}
-                      style={{ cursor: "pointer" }}
-                    >
-                      <span className="d-flex align-items-center">
-                        My Residential Plans
-                        {showResidentialPlans ? (
-                          <FaChevronUp className="ms-5" />
-                        ) : (
-                          <FaChevronDown className="ms-5" />
-                        )}
-                      </span>
-
-                      {showResidentialPlans && (
-                        <li>
-                          <ul className="custom-dropdown-ul">
-                            <Nav.Link>Tenant Plan</Nav.Link>
-                            <Nav.Link>Owner Plan</Nav.Link>
-                            <Nav.Link>Buyer Plan</Nav.Link>
-                            <Nav.Link>Seller Plans</Nav.Link>
-                          </ul>
-                        </li>
-                      )}
-                    </Dropdown.Item>
-
-                    <Dropdown.Item
-                      className="text-dark text-decoration-none "
-                      onClick={toggleCommercialPlans}
-                      style={{ cursor: "pointer" }}
-                    >
-                      <span className="d-flex align-items-center">
-                        My Commercial Plan
-                        {showCommercialPlans ? (
-                          <FaChevronUp className="ms-5" />
-                        ) : (
-                          <FaChevronDown className="ms-5" />
-                        )}
-                      </span>
-
-                      {showCommercialPlans && (
-                        <li>
-                          <ul className="custom-dropdown-ul">
-                            <Nav.Link>Tenant Plan</Nav.Link>
-                            <Nav.Link>Owner Plan</Nav.Link>
-                            <Nav.Link>Buyer Plan</Nav.Link>
-                            <Nav.Link>Seller Plans</Nav.Link>
-                          </ul>
-                        </li>
-                      )}
-                    </Dropdown.Item>
-
-                    <Dropdown.Item
-                      className="text-dark text-decoration-none "
-                      onClick={toggleDashboard}
-                      style={{ cursor: "pointer" }}
-                    >
-                      <span className="d-flex align-items-center">
-                        My Dashboard
-                        {showDashboard ? (
-                          <FaChevronUp className="ms-5" />
-                        ) : (
-                          <FaChevronDown className="ms-5" />
-                        )}
-                      </span>
-
-                      {showDashboard && (
-                        <li>
-                          <ul className="custom-dropdown-ul">
-                            <Nav.Link>Tenant Plan</Nav.Link>
-                            <Nav.Link>Owner Plan</Nav.Link>
-                            <Nav.Link>Buyer Plan</Nav.Link>
-                            <Nav.Link>Seller Plans</Nav.Link>
-                          </ul>
-                        </li>
-                      )}
-                    </Dropdown.Item>
-
-                    <Dropdown.Item
-                      className="text-dark text-decoration-none "
-                      onClick={toggleListing}
-                      style={{ cursor: "pointer" }}
-                    >
-                      <span className="d-flex align-items-center">
-                        My Listing
-                        {showListing ? (
-                          <FaChevronUp className="ms-5" />
-                        ) : (
-                          <FaChevronDown className="ms-5" />
-                        )}
-                      </span>
-
-                      {showListing && (
-                        <li>
-                          <ul className="custom-dropdown-ul">
-                            <Nav.Link>Tenant Plan</Nav.Link>
-                            <Nav.Link>Owner Plan</Nav.Link>
-                            <Nav.Link>Buyer Plan</Nav.Link>
-                            <Nav.Link>Seller Plans</Nav.Link>
-                          </ul>
-                        </li>
-                      )}
-                    </Dropdown.Item>
-
-                    <Dropdown.Item
-                      href="#action3"
-                      className="text-dark text-decoration-none"
-                    >
-                      My Rental Adreements
-                    </Dropdown.Item>
-
-                    <Dropdown.Item
-                      href="#action3"
-                      className="text-dark text-decoration-none"
-                    >
-                      Sign Out
-                    </Dropdown.Item>
-                  </Dropdown.Menu>
-                </Dropdown>
-                <Nav.Link href="#" disabled>
-                  |
-                </Nav.Link>
-                <Nav.Link href="#">
-                  <i class="fa-solid fa-bell"></i>
-                </Nav.Link>
-
-                <Nav.Link href="#" disabled>
-                  |
-                </Nav.Link>
-              </>
-            ) : (
-              <>
-                <Nav.Link onClick={() => setLoginSignupModelOpen(true)}>
-                  Sign Up
-                </Nav.Link>
-                <Nav.Link href="#" disabled>
-                  |
-                </Nav.Link>
-                <Nav.Link onClick={() => setLoginSignupModelOpen(true)}>
-                  Log In
-                </Nav.Link>
-                <Nav.Link href="#" disabled>
-                  |
-                </Nav.Link>
-                <Modal
-                  isOpen={isLoginSignupModelOpen}
-                  onClose={() => setLoginSignupModelOpen(false)}
-                >
-                  <LoginSignup />
-                </Modal>
-              </>
-            )}
-
-            {/* Dropdown Menu with Hamburger Icon */}
-            <Dropdown align="end">
-              {" "}
-              {/* Aligns the dropdown items to the right */}
-              <Dropdown.Toggle
-                variant="link"
-                id="dropdown-basic"
-                className="p-0 text-black no-arrow " // Text color black and no padding
-              >
-                <span className="d-flex align-items-center">
-                  <FaBars /> Menu{" "}
-                </span>
-              </Dropdown.Toggle>
-              {/* Dropdown menu items */}
-              <Dropdown.Menu className="dropdown-menu border-1 custom-scroll">
-                <Dropdown.Item
-                  href="post-property"
-                  className="text-dark text-decoration-none"
-                >
-                  Post Your Property
-                </Dropdown.Item>
-                <Link
-                  to="/rental-agreement"
-                  className="text-dark text-decoration-none"
-                >
-                  Rental Agreement
-                </Link>
-                <Dropdown.Item
-                  href="#action5"
-                  className="text-dark text-decoration-none"
-                >
-                  Painting & Cleaning
-                </Dropdown.Item>
-                <Dropdown.Item
-                  href="#action5"
-                  className="text-dark text-decoration-none"
-                >
-                  Packers and Movers
-                </Dropdown.Item>
-                <Link
-                  to="refer-and-earn"
-                  className="text-dark text-decoration-none"
-                >
-                  Refer & Earn
-                </Link>
-                <Dropdown.Item
-                  href="#action5"
-                  className="text-dark text-decoration-none"
-                >
-                  Rent Receipts
-                </Dropdown.Item>
-                <Dropdown.Item
-                  href="#action5"
-                  className="text-dark text-decoration-none"
-                >
-                  Tenant Plans
-                </Dropdown.Item>
-                <Dropdown.Item
-                  href="#action5"
-                  className="text-dark text-decoration-none"
-                >
-                  Owner Plans
-                </Dropdown.Item>
-                <Dropdown.Item
-                  href="#action5"
-                  className="text-dark text-decoration-none"
-                >
-                  Buyer Plans
-                </Dropdown.Item>
-                <Dropdown.Item
-                  href="#action5"
-                  className="text-dark text-decoration-none"
-                >
-                  Seller Plans
-                </Dropdown.Item>
-
-                <Dropdown.Item
-                  className="text-dark text-decoration-none "
-                  onClick={toggleCommercialPlans}
-                  style={{ cursor: "pointer" }}
-                >
-                  <span className="d-flex align-items-center">
-                    Commercial Plans
-                    {showCommercialPlans ? (
-                      <FaChevronUp className="ms-5" />
-                    ) : (
-                      <FaChevronDown className="ms-5" />
-                    )}
-                  </span>
-
-                  {showCommercialPlans && (
-                    <li>
-                      <ul className="custom-dropdown-ul">
-                        <Nav.Link>Tenant Plan</Nav.Link>
-                        <Nav.Link>Owner Plan</Nav.Link>
-                        <Nav.Link>Buyer Plan</Nav.Link>
-                        <Nav.Link>Seller Plans</Nav.Link>
-                      </ul>
-                    </li>
-                  )}
-                </Dropdown.Item>
-
-                <Dropdown.Item
-                  href="#action5"
-                  className="text-dark text-decoration-none"
-                >
-                  Careers
-                </Dropdown.Item>
-                <Dropdown.Item
-                  href="#action5"
-                  className="text-dark text-decoration-none"
-                >
-                  Corporate Enquiry
-                </Dropdown.Item>
-                <Dropdown.Item
-                  href="#action5"
-                  className="text-dark text-decoration-none"
-                >
-                  Blog
-                </Dropdown.Item>
-                <Dropdown.Item
-                  href="#action5"
-                  className="text-dark text-decoration-none"
-                >
-                  No Broker Support
-                </Dropdown.Item>
-
-                <Dropdown.Item
-                  href="#action3"
-                  className="text-dark text-decoration-none "
-                  onClick={toggleContactUs}
-                >
-                  <span className="d-flex align-items-center">
-                    Contact Us
-                    {showContactUs ? (
-                      <FaChevronUp className="ms-5" />
-                    ) : (
-                      <FaChevronDown className="ms-5" />
-                    )}
-                  </span>
-
-                  {showContactUs && (
-                    <>
+                    {showCommercialPlans && (
                       <li>
                         <ul className="custom-dropdown-ul">
-                          {" "}
-                          Email <br />
-                          hello@noroker.in
-                          <div className="d-flex justify-content-center">
-                            <Nav.Link>
-                              {" "}
-                              <img
-                                src={flogo} // Use your imported image here
-                                alt="Rent Icon"
-                                width="50" // Adjust width as needed
-                                height="auto" // Maintain aspect ratio
-                                padding="0"
-                              />
-                            </Nav.Link>
-
-                            <Nav.Link>
-                              <img
-                                src={tlogo} // Use your imported image here
-                                alt="Rent Icon"
-                                width="50" // Adjust width as needed
-                                height="auto" // Maintain aspect ratio
-                                padding="0"
-                              />
-                            </Nav.Link>
-
-                            <Nav.Link>
-                              <img
-                                src={glogo} // Use your imported image here
-                                alt="Rent Icon"
-                                width="50" // Adjust width as needed
-                                height="auto" // Maintain aspect ratio
-                                padding="0"
-                              />
-                            </Nav.Link>
-                          </div>
+                          <Nav.Link>Tenant Plan</Nav.Link>
+                          <Nav.Link>Owner Plan</Nav.Link>
+                          <Nav.Link>Buyer Plan</Nav.Link>
+                          <Nav.Link>Seller Plans</Nav.Link>
                         </ul>
                       </li>
-                    </>
-                  )}
-                </Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
-          </Nav>
-        </Container>
-      </Navbar>
+                    )}
+                  </Dropdown.Item>
 
-      <Navbar
-        ref={navRef}
-        user={user}
-        expand="lg"
-        className="bg-body-tertiary d-flex d-lg-none"
-        fixed="top"
-      >
-        <Container fluid>
-          <button
-            onClick={toggleNav}
-            className="text-2xl p-2 bg-gray-100 rounded-md shadow-md lg:hidden"
-          >
-            {showNav ? "✕" : "☰"}
-          </button>
-          <Navbar.Brand href="/" className="mx-auto align-middle">
-            <img
-              src={logo} // Use your imported image here
-              alt="Brand Logo"
-              width="160" // Adjust width as needed
-            />
-          </Navbar.Brand>
-
-          {isHomePage ? (
-            // Options for the home page
-            <>
-              {/* Dropdown Menu */}
-
-              <div
-                className={`transform transition-transform duration-300 ease-in-out ${
-                  showNav ? "translate-x-0" : "-translate-x-full"
-                } fixed top-0 left-0 w-3/4 h-full bg-white z-50  lg:hidden`}
-              >
-                <div id="navContainer" className="nav-container">
-                  <Nav
-                    className="me-auto d-lg-none custom-scroll"
-                    style={{ fontSize: "0.9rem" }}
+                  <Dropdown.Item
+                    href="#action5"
+                    className="text-dark text-decoration-none"
+                    style={{ fontSize: "normal" }} // Ensures normal font size
                   >
-                    <div
-                      className="container-fluid"
-                      style={{
-                        backgroundColor: "red",
-                        fontSize: "1.2rem ",
-                        padding: "5px",
-                      }}
+                    Careers
+                  </Dropdown.Item>
+
+                  <Dropdown.Item
+                    href="#action5"
+                    className="text-dark text-decoration-none"
+                    style={{ fontSize: "normal" }} // Ensures normal font size
+                  >
+                    Corporate Enquiry
+                  </Dropdown.Item>
+
+                  <Dropdown.Item
+                    href="#action5"
+                    className="text-dark text-decoration-none"
+                    style={{ fontSize: "normal" }} // Ensures normal font size
+                  >
+                    Blog
+                  </Dropdown.Item>
+
+                  <Dropdown.Item
+                    href="#action5"
+                    className="text-dark text-decoration-none"
+                    style={{ fontSize: "normal" }} // Ensures normal font size
+                  >
+                    No Broker Support
+                  </Dropdown.Item>
+
+                  <Dropdown.Item
+                    href="#action3"
+                    className="text-dark text-decoration-none"
+                    onClick={toggleContactUs}
+                    style={{ fontSize: "normal" }} // Ensures normal font size
+                  >
+                    <span className="d-flex align-items-center">
+                      Contact Us
+                      {showContactUs ? (
+                        <FaChevronUp className="ms-5" />
+                      ) : (
+                        <FaChevronDown className="ms-5" />
+                      )}
+                    </span>
+
+                    {showContactUs && (
+                      <>
+                        <li>
+                          <ul className="custom-dropdown-ul">
+                            Email <br />
+                            hello@noroker.in
+                            <div className="d-flex justify-content-center">
+                              <Nav.Link>
+                                <img
+                                  src={flogo} // Use your imported image here
+                                  alt="Rent Icon"
+                                  width="50" // Adjust width as needed
+                                  height="auto" // Maintain aspect ratio
+                                  padding="0"
+                                />
+                              </Nav.Link>
+
+                              <Nav.Link>
+                                <img
+                                  src={tlogo} // Use your imported image here
+                                  alt="Rent Icon"
+                                  width="50" // Adjust width as needed
+                                  height="auto" // Maintain aspect ratio
+                                  padding="0"
+                                />
+                              </Nav.Link>
+
+                              <Nav.Link>
+                                <img
+                                  src={glogo} // Use your imported image here
+                                  alt="Rent Icon"
+                                  width="50" // Adjust width as needed
+                                  height="auto" // Maintain aspect ratio
+                                  padding="0"
+                                />
+                              </Nav.Link>
+                            </div>
+                          </ul>
+                        </li>
+                      </>
+                    )}
+                  </Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
+            </Nav>
+          </Container>
+        </Navbar>
+
+        <Navbar
+          ref={navRef}
+          user={user}
+          expand="lg"
+          className="bg-body-tertiary d-flex d-lg-none"
+          fixed="top"
+        >
+          <Container fluid>
+            <button
+              onClick={toggleNav}
+              className="text-2xl p-2 bg-gray-100 rounded-md shadow-md lg:hidden font-light"
+              style={{ fontSize: "15px", fontFamily: "light" }} // Ensures normal font size
+            >
+              {showNav ? "✕" : "☰"}
+            </button>
+            <Navbar.Brand href="/" className="mx-auto align-middle">
+              <img
+                src={logo} // Use your imported image here
+                alt="Brand Logo"
+                width="160" // Adjust width as needed
+              />
+            </Navbar.Brand>
+
+            {isHomePage ? (
+              // Options for the home page
+              <>
+                {/* Dropdown Menu */}
+
+                <div
+                  className={`transform transition-transform duration-300 ease-in-out ${
+                    showNav ? "translate-x-0" : "-translate-x-full"
+                  } fixed top-0 left-0 w-3/4 h-full bg-white z-50  lg:hidden`}
+                >
+                  <div id="navContainer" className="nav-container">
+                    <Nav
+                      className="me-auto d-lg-none custom-scroll"
+                      style={{ fontSize: "0.9rem" }}
                     >
-                      <Nav.Link
-                        href="LoginSignUp"
-                        style={{ color: "white" }}
-                        className="d-flex justify-content-between "
-                      >
-                        <span style={{ marginBottom: "10px" }}>
-                          <i className="fa-regular fa-circle-user mx-2"></i>
-                          Login/Sign Up
-                        </span>
-                        <FaChevronRight />
-                      </Nav.Link>
-
-                      <Nav.Link
-                        href="PostProperty"
+                      <div
+                        className="container-fluid"
                         style={{
-                          backgroundColor: "white",
-                          fontSize: "0.8rem",
-                          marginLeft: "5px",
+                          backgroundColor: "red",
+                          fontSize: "1.2rem ",
+                          padding: "5px",
                         }}
-                        className="d-flex justify-content-between align-items-center border rounded"
                       >
-                        <div className="d-flex align-items-center">
-                          <img
-                            src={house}
-                            alt="House Icon"
-                            width="40"
-                            height="auto"
-                            style={{ marginRight: "8px" }}
-                          />
-                          <span>
-                            Post your property
-                            <span
-                              style={{
-                                backgroundColor: "black",
-                                color: "white",
-                                padding: "0 5px",
-                                marginLeft: "5px",
-                              }}
-                            >
-                              FREE
-                            </span>
+                        <Nav.Link
+                          href="LoginSignUp"
+                          style={{ color: "white" }}
+                          className="d-flex justify-content-between "
+                        >
+                          <span style={{ marginBottom: "10px" }}>
+                            <i className="fa-regular fa-circle-user mx-2"></i>
+                            Login/Sign Up
                           </span>
-                        </div>
-                        <FaChevronRight />
-                      </Nav.Link>
+                          <FaChevronRight />
+                        </Nav.Link>
 
-                      <br />
-                    </div>
-                    <div className="d-flex justify-content-between align-items-center my-3 mx-3">
-                      <span style={{ fontSize: "1.2rem" }}>
-                        Because{" "}
-                        <span style={{ color: "green" }}> Your Home</span>
-                        <br /> Deserves The Best.
-                      </span>
-                      <div className="d-flex justify-content-between align-items-center">
-                        <div className="text-end">
-                          <div className="d-flex flex-column align-items-end">
+                        <Nav.Link
+                          href="PostProperty"
+                          style={{
+                            backgroundColor: "white",
+                            fontSize: "0.8rem",
+                            marginLeft: "5px",
+                          }}
+                          className="d-flex justify-content-between align-items-center border rounded"
+                        >
+                          <div className="d-flex align-items-center">
                             <img
-                              src={userss}
-                              alt="Users Icon"
-                              width="30"
+                              src={house}
+                              alt="House Icon"
+                              width="40"
                               height="auto"
+                              style={{ marginRight: "8px" }}
                             />
-                            <div
-                              className="text-right text-end"
-                              style={{ fontSize: "0.6rem" }}
-                            >
-                              <b>3Lacs+</b> Services <br />
-                              booked in <b>last 3 months</b>
+                            <span>
+                              Post your property
+                              <span
+                                style={{
+                                  backgroundColor: "black",
+                                  color: "white",
+                                  padding: "0 5px",
+                                  marginLeft: "5px",
+                                }}
+                              >
+                                FREE
+                              </span>
+                            </span>
+                          </div>
+                          <FaChevronRight />
+                        </Nav.Link>
+
+                        <br />
+                      </div>
+                      <div className="d-flex justify-content-between align-items-center my-3 mx-3">
+                        <span style={{ fontSize: "1.2rem" }}>
+                          Because{" "}
+                          <span style={{ color: "green" }}> Your Home</span>
+                          <br /> Deserves The Best.
+                        </span>
+                        <div className="d-flex justify-content-between align-items-center">
+                          <div className="text-end">
+                            <div className="d-flex flex-column align-items-end">
+                              <img
+                                src={userss}
+                                alt="Users Icon"
+                                width="30"
+                                height="auto"
+                              />
+                              <div
+                                className="text-right text-end"
+                                style={{ fontSize: "0.6rem" }}
+                              >
+                                <b>3Lacs+</b> Services <br />
+                                booked in <b>last 3 months</b>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div>
                       <div>
-                        <video
-                          className="object-cover w-full rounded-0.8p"
-                          type="video/mp4"
-                          autoPlay
-                          loop
-                          playsInline
-                          src="blob:https://www.nobroker.in/cbd719f6-bc72-4621-8b6e-680031d0f281"
-                          style={{
-                            transition: "0.5s",
-                            height: "12rem",
-                            opacity: "1",
-                          }}
-                        >
-                          Your browser does not support the video tag.
-                        </video>
+                        <div>
+                          <video
+                            className="object-cover w-full rounded-0.8p"
+                            type="video/mp4"
+                            autoPlay
+                            loop
+                            playsInline
+                            src="blob:https://www.nobroker.in/cbd719f6-bc72-4621-8b6e-680031d0f281"
+                            style={{
+                              transition: "0.5s",
+                              height: "12rem",
+                              opacity: "1",
+                            }}
+                          >
+                            Your browser does not support the video tag.
+                          </video>
+                        </div>
                       </div>
-                    </div>
-                    <div>
-                      <div
-                        className="d-flex align-items-center gap-5 mx-5"
-                        style={{ fontSize: "0.8rem" }}
-                      >
-                        <Nav.Link
-                          href="#"
-                          className="d-flex flex-column align-items-center gap-2 mx-4"
-                        >
-                          <img
-                            src={painting}
-                            alt="Painting Icon"
-                            width="100"
-                            height="auto"
-                          />
-                          <span>Painting</span>
-                        </Nav.Link>
-                        <Nav.Link
-                          href="#"
-                          className="d-flex flex-column align-items-center gap-2 mx-4"
-                        >
-                          <img
-                            src={packers}
-                            alt="Packers & Movers Icon"
-                            width="150"
-                            height="auto"
-                          />
-                          <span>Packers & Movers</span>
-                        </Nav.Link>
-                        <Nav.Link
-                          href="#"
-                          className="d-flex flex-column align-items-center gap-2 mx-4"
-                        >
-                          <img
-                            src={homeCleaning}
-                            alt="Home Cleaning Icon"
-                            width="150"
-                            height="auto"
-                          />
-                          <span>Home Cleaning</span>
-                        </Nav.Link>
-                        <Nav.Link
-                          href="#"
-                          className="d-flex flex-column align-items-center gap-2 mx-4"
-                        >
-                          <img
-                            src={acRepair}
-                            alt="AC Repair Icon"
-                            width="150"
-                            height="auto"
-                          />
-                          <span>AC Repair</span>
-                        </Nav.Link>
-                      </div>
-
-                      {/* Toggle content appears above the button */}
-                      {showServices && (
+                      <div>
                         <div
-                          className="d-flex align-items-center gap-5 mx-5 mt-3"
+                          className="d-flex align-items-center gap-2 text-center"
                           style={{ fontSize: "0.8rem" }}
                         >
                           <Nav.Link
                             href="#"
-                            className="d-flex flex-column align-items-center gap-2 mx-4"
+                            className="d-flex flex-column align-items-center gap-2"
                           >
                             <img
-                              src={electrician}
-                              alt="Electrician Icon"
-                              width="100"
+                              src={painting}
+                              alt="Painting Icon"
+                              width="50px"
                               height="auto"
+                              className="m-0"
                             />
-                            <span>Electrician</span>
+                            <span>Painting</span>
                           </Nav.Link>
                           <Nav.Link
                             href="#"
-                            className="d-flex flex-column align-items-center gap-2 mx-4"
+                            className="d-flex flex-column align-items-center gap-2"
                           >
                             <img
-                              src={carpentry}
-                              alt="Carpentry Icon"
-                              width="150"
+                              src={packers}
+                              alt="Packers & Movers Icon"
+                              width="50px"
                               height="auto"
+                              className="m-0"
                             />
-                            <span>Carpentry</span>
+                            <span>Packers & Movers</span>
                           </Nav.Link>
                           <Nav.Link
                             href="#"
-                            className="d-flex flex-column align-items-center gap-2 mx-4"
+                            className="d-flex flex-column align-items-center gap-2"
                           >
                             <img
-                              src={plumbing}
-                              alt="Plumbing Icon"
-                              width="150"
+                              src={homeCleaning}
+                              alt="Home Cleaning Icon"
+                              width="50px"
                               height="auto"
+                              className="m-0"
                             />
-                            <span>Plumbing</span>
+                            <span>Home Cleaning</span>
                           </Nav.Link>
                           <Nav.Link
                             href="#"
-                            className="d-flex flex-column align-items-center gap-2 mx-4"
+                            className="d-flex flex-column align-items-center gap-2"
                           >
                             <img
-                              src={homeRenovation}
-                              alt="Home Renovation Icon"
-                              width="150"
+                              src={acRepair}
+                              alt="AC Repair Icon"
+                              width="50px"
                               height="auto"
+                              className="m-0"
                             />
-                            <span>Home Renovation</span>
+                            <span>AC Repair</span>
                           </Nav.Link>
                         </div>
-                      )}
 
-                      {/* Button for the content */}
-                      <div className="d-flex justify-content-center mt-3">
-                        <button
-                          className="nav-property w-100"
-                          onClick={toggleServices}
+                        {/* Toggle content appears above the button */}
+                        {showServices && (
+                          <div
+                            className="d-flex align-items-center gap-5 mx-5 mt-3"
+                            style={{ fontSize: "0.8rem" }}
+                          >
+                            <Nav.Link
+                              href="#"
+                              className="d-flex flex-column align-items-center gap-2 mx-4"
+                            >
+                              <img
+                                src={electrician}
+                                alt="Electrician Icon"
+                                width="100"
+                                height="auto"
+                              />
+                              <span>Electrician</span>
+                            </Nav.Link>
+                            <Nav.Link
+                              href="#"
+                              className="d-flex flex-column align-items-center gap-2 mx-4"
+                            >
+                              <img
+                                src={carpentry}
+                                alt="Carpentry Icon"
+                                width="150"
+                                height="auto"
+                              />
+                              <span>Carpentry</span>
+                            </Nav.Link>
+                            <Nav.Link
+                              href="#"
+                              className="d-flex flex-column align-items-center gap-2 mx-4"
+                            >
+                              <img
+                                src={plumbing}
+                                alt="Plumbing Icon"
+                                width="150"
+                                height="auto"
+                              />
+                              <span>Plumbing</span>
+                            </Nav.Link>
+                            <Nav.Link
+                              href="#"
+                              className="d-flex flex-column align-items-center gap-2 mx-4"
+                            >
+                              <img
+                                src={homeRenovation}
+                                alt="Home Renovation Icon"
+                                width="150"
+                                height="auto"
+                              />
+                              <span>Home Renovation</span>
+                            </Nav.Link>
+                          </div>
+                        )}
+
+                        {/* Button for the content */}
+                        <div className="d-flex justify-content-center mt-3">
+                          <button
+                            className="nav-property w-100"
+                            onClick={toggleServices}
+                          >
+                            <span className="d-flex justify-content-center align-items-center">
+                              {showServices ? "View Less" : "+4 More Services"}
+                              {showServices ? (
+                                <FaChevronUp className="ms-2" />
+                              ) : (
+                                <FaChevronDown className="ms-2" />
+                              )}
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+
+                      <div
+                        className="w-90 mx-4 my-2 pb-2 drop border-bottom border-white"
+                        onClick={handleWalletToggle}
+                      >
+                        <div
+                          className="d-flex justify-content-between align-items-center w-100"
+                          style={{ cursor: "pointer" }}
                         >
-                          <span className="d-flex justify-content-center align-items-center">
-                            {showServices ? "View Less" : "+4 More Services"}
-                            {showServices ? (
-                              <FaChevronUp className="ms-2" />
-                            ) : (
-                              <FaChevronDown className="ms-2" />
-                            )}
-                          </span>
-                        </button>
-                      </div>
-                    </div>
-
-                    <div
-                      className="w-90 mx-4 my-2 pb-2 drop border-bottom border-white"
-                      onClick={handleWalletToggle}
-                    >
-                      <div
-                        className="d-flex justify-content-between align-items-center w-100"
-                        style={{ cursor: "pointer" }}
-                      >
-                        <b> NBcash Wallet</b>
-                        {showWallet ? (
-                          <FaChevronUp className="ms-auto" />
-                        ) : (
-                          <FaChevronDown className="ms-auto" />
-                        )}
-                      </div>
-                      {showWallet && (
-                        <li>
-                          <ul className="custom-dropdown-ul">
-                            <Nav.Link>
-                              <span className="d-flex align-items-center">
-                                <img
-                                  src={walletSummary}
-                                  alt="wallet icon"
-                                  width="40"
-                                  height="auto"
-                                  style={{ marginRight: "8px" }}
-                                />
-                                Wallet Summary
-                              </span>
-                            </Nav.Link>
-                            <Nav.Link>
-                              <span className="d-flex align-items-center">
-                                <img
-                                  src={rewards}
-                                  alt="rewards Icon"
-                                  width="40"
-                                  height="auto"
-                                  style={{ marginRight: "8px" }}
-                                />
-                                Rewards
-                              </span>
-                            </Nav.Link>
-                          </ul>
-                        </li>
-                      )}
-                    </div>
-
-                    <div
-                      className="w-90 mx-4 my-2 pb-2 drop border-bottom border-white"
-                      onClick={handleResidentialToggle}
-                    >
-                      <div
-                        className="d-flex justify-content-between align-items-center w-100"
-                        style={{ cursor: "pointer" }}
-                      >
-                        <b> Residential Plans</b>
-                        {showSmallResidentialPlans ? (
-                          <FaChevronUp className="ms-auto" />
-                        ) : (
-                          <FaChevronDown className="ms-auto" />
-                        )}
-                      </div>
-                      {showSmallResidentialPlans && (
-                        <li>
-                          <ul className="custom-dropdown-ul">
-                            <Nav.Link>
-                              <span className="d-flex align-items-center">
-                                <img
-                                  src={forOwner}
-                                  alt="House Icon"
-                                  width="40"
-                                  height="auto"
-                                  style={{ marginRight: "8px" }}
-                                />
-                                For Owner
-                              </span>
-                            </Nav.Link>
-                            <Nav.Link>
-                              <span className="d-flex align-items-center">
-                                <img
-                                  src={forSellers}
-                                  alt="House Icon"
-                                  width="40"
-                                  height="auto"
-                                  style={{ marginRight: "8px" }}
-                                />
-                                For Sellers
-                              </span>
-                            </Nav.Link>
-                            <Nav.Link>
-                              {" "}
-                              <span className="d-flex align-items-center">
-                                <img
-                                  src={forTenants}
-                                  alt="key Icon"
-                                  width="40"
-                                  height="auto"
-                                  style={{ marginRight: "8px" }}
-                                />
-                                For Tenants
-                              </span>
-                            </Nav.Link>
-                            <Nav.Link>
-                              {" "}
-                              <span className="d-flex align-items-center">
-                                <img
-                                  src={forBuyers}
-                                  alt="House Icon"
-                                  width="40"
-                                  height="auto"
-                                  style={{ marginRight: "8px" }}
-                                />
-                                For Buyers
-                              </span>
-                            </Nav.Link>
-                          </ul>
-                        </li>
-                      )}
-                    </div>
-
-                    <div
-                      className="w-90 mx-4 my-2 pb-2 drop border-bottom border-white"
-                      onClick={handleCommercialToggle}
-                    >
-                      <div
-                        className="d-flex justify-content-between align-items-center w-100"
-                        style={{ cursor: "pointer" }}
-                      >
-                        <b> Commercial Plans</b>
-                        {showSmallCommercialPlans ? (
-                          <FaChevronUp className="ms-auto" />
-                        ) : (
-                          <FaChevronDown className="ms-auto" />
-                        )}
-                      </div>
-                      {showSmallCommercialPlans && (
-                        <li>
-                          <ul className="custom-dropdown-ul">
-                            <Nav.Link>
-                              {" "}
-                              <span className="d-flex align-items-center">
-                                <img
-                                  src={forOwnerc}
-                                  alt="House Icon"
-                                  width="40"
-                                  height="auto"
-                                  style={{ marginRight: "8px" }}
-                                />
-                                For Owner
-                              </span>
-                            </Nav.Link>
-                            <Nav.Link>
-                              {" "}
-                              <span className="d-flex align-items-center">
-                                <img
-                                  src={forSellersc}
-                                  alt="House Icon"
-                                  width="40"
-                                  height="auto"
-                                  style={{ marginRight: "8px" }}
-                                />
-                                For Sellers
-                              </span>
-                            </Nav.Link>
-                            <Nav.Link>
-                              {" "}
-                              <span className="d-flex align-items-center">
-                                <img
-                                  src={forTenantsc}
-                                  alt="House Icon"
-                                  width="40"
-                                  height="auto"
-                                  style={{ marginRight: "8px" }}
-                                />
-                                For Tenants
-                              </span>
-                            </Nav.Link>
-                            <Nav.Link>
-                              {" "}
-                              <span className="d-flex align-items-center">
-                                <img
-                                  src={forBuyersc}
-                                  alt="House Icon"
-                                  width="40"
-                                  height="auto"
-                                  style={{ marginRight: "8px" }}
-                                />
-                                For Buyers
-                              </span>
-                            </Nav.Link>
-                          </ul>
-                        </li>
-                      )}
-                    </div>
-
-                    <div
-                      className="w-90 mx-4 my-2 pb-2 drop border-bottom border-white"
-                      onClick={handleHomeToggle}
-                    >
-                      <div
-                        className="d-flex justify-content-between align-items-center w-100"
-                        style={{ cursor: "pointer" }}
-                      >
-                        <b> Home Services</b>
-                        {showHomeServices ? (
-                          <FaChevronUp className="ms-auto" />
-                        ) : (
-                          <FaChevronDown className="ms-auto" />
-                        )}
-                      </div>
-                      {showHomeServices && (
-                        <li>
-                          <ul className="custom-dropdown-ul">
-                            <Nav.Link>
-                              {" "}
-                              <span className="d-flex align-items-center">
-                                <img
-                                  src={packers1}
-                                  alt="packers Icon"
-                                  width="40"
-                                  height="auto"
-                                  style={{ marginRight: "8px" }}
-                                />
-                                Packers and Movers
-                              </span>
-                            </Nav.Link>
-                            <Nav.Link>
-                              {" "}
-                              <span className="d-flex align-items-center">
-                                <img
-                                  src={painting1}
-                                  alt="painting Icon"
-                                  width="40"
-                                  height="auto"
-                                  style={{ marginRight: "8px" }}
-                                />
-                                Painting
-                              </span>
-                            </Nav.Link>
-                            <Nav.Link>
-                              {" "}
-                              <span className="d-flex align-items-center">
-                                <img
-                                  src={cleaning}
-                                  alt="Cleaning Icon"
-                                  width="40"
-                                  height="auto"
-                                  style={{ marginRight: "8px" }}
-                                />
-                                Cleaning
-                              </span>
-                            </Nav.Link>
-                            <Nav.Link>
-                              {" "}
-                              <span className="d-flex align-items-center">
-                                <img
-                                  src={interiors}
-                                  alt="Interior Icon"
-                                  width="40"
-                                  height="auto"
-                                  style={{ marginRight: "8px" }}
-                                />
-                                Interiors
-                              </span>
-                            </Nav.Link>
-                            <Nav.Link>
-                              {" "}
-                              <span className="d-flex align-items-center">
-                                <img
-                                  src={furniture}
-                                  alt="Furniture Icon"
-                                  width="40"
-                                  height="auto"
-                                  style={{ marginRight: "8px" }}
-                                />
-                                Furniture
-                              </span>
-                            </Nav.Link>
-                          </ul>
-                        </li>
-                      )}
-                    </div>
-
-                    <div
-                      className="w-90 mx-4 my-2 pb-2 drop border-bottom border-white"
-                      onClick={handleNoBrokerToggle}
-                    >
-                      <div
-                        className="d-flex justify-content-between align-items-center w-100"
-                        style={{ cursor: "pointer" }}
-                      >
-                        <b> NoBroker Pay</b>
-                        {showNoBrokerPay ? (
-                          <FaChevronUp className="ms-auto" />
-                        ) : (
-                          <FaChevronDown className="ms-auto" />
+                          <b> NBcash Wallet</b>
+                          {showWallet ? (
+                            <FaChevronUp className="ms-auto" />
+                          ) : (
+                            <FaChevronDown className="ms-auto" />
+                          )}
+                        </div>
+                        {showWallet && (
+                          <li>
+                            <ul className="custom-dropdown-ul">
+                              <Nav.Link>
+                                <span className="d-flex align-items-center">
+                                  <img
+                                    src={walletSummary}
+                                    alt="wallet icon"
+                                    width="40"
+                                    height="auto"
+                                    style={{ marginRight: "8px" }}
+                                  />
+                                  Wallet Summary
+                                </span>
+                              </Nav.Link>
+                              <Nav.Link>
+                                <span className="d-flex align-items-center">
+                                  <img
+                                    src={rewards}
+                                    alt="rewards Icon"
+                                    width="40"
+                                    height="auto"
+                                    style={{ marginRight: "8px" }}
+                                  />
+                                  Rewards
+                                </span>
+                              </Nav.Link>
+                            </ul>
+                          </li>
                         )}
                       </div>
 
-                      {showNoBrokerPay && (
-                        <li>
-                          <ul className="custom-dropdown-ul">
-                            <Nav.Link>
-                              {" "}
-                              <span className="d-flex align-items-center">
-                                <img
-                                  src={payYourRent}
-                                  alt="Pay Icon"
-                                  width="40"
-                                  height="auto"
-                                  style={{ marginRight: "8px" }}
-                                />
-                                Pay Your Rent
-                              </span>
-                            </Nav.Link>
-                            <Nav.Link>
-                              {" "}
-                              <span className="d-flex align-items-center">
-                                <img
-                                  src={depositPayment}
-                                  alt="deposit Icon"
-                                  width="40"
-                                  height="auto"
-                                  style={{ marginRight: "8px" }}
-                                />
-                                Deposit Payment
-                              </span>
-                            </Nav.Link>
-                            <Nav.Link>
-                              {" "}
-                              <span className="d-flex align-items-center">
-                                <img
-                                  src={maintenancePayment}
-                                  alt="Bill Icon"
-                                  width="40"
-                                  height="auto"
-                                  style={{ marginRight: "8px" }}
-                                />
-                                Maintenance Payments
-                              </span>
-                            </Nav.Link>
-                            <Nav.Link>
-                              {" "}
-                              <span className="d-flex align-items-center">
-                                <img
-                                  src={billPayments}
-                                  alt="Bill Icon"
-                                  width="40"
-                                  height="auto"
-                                  style={{ marginRight: "8px" }}
-                                />
-                                Bill Payments
-                              </span>
-                            </Nav.Link>
-                          </ul>
-                        </li>
-                      )}
-                    </div>
-
-                    <div
-                      className="w-90 mx-4 my-2 pb-2 drop border-bottom border-white"
-                      onClick={handleLegalToggle}
-                    >
                       <div
-                        className="d-flex justify-content-between align-items-center w-100"
-                        style={{ cursor: "pointer" }}
+                        className="w-90 mx-4 my-2 pb-2 drop border-bottom border-white"
+                        onClick={handleResidentialToggle}
                       >
-                        <b> Legal Assistance & Loan</b>
-                        {showLegal ? <FaChevronUp /> : <FaChevronDown />}
+                        <div
+                          className="d-flex justify-content-between align-items-center w-100"
+                          style={{ cursor: "pointer" }}
+                        >
+                          <b> Residential Plans</b>
+                          {showSmallResidentialPlans ? (
+                            <FaChevronUp className="ms-auto" />
+                          ) : (
+                            <FaChevronDown className="ms-auto" />
+                          )}
+                        </div>
+                        {showSmallResidentialPlans && (
+                          <li>
+                            <ul className="custom-dropdown-ul">
+                              <Nav.Link>
+                                <span className="d-flex align-items-center">
+                                  <img
+                                    src={forOwner}
+                                    alt="House Icon"
+                                    width="40"
+                                    height="auto"
+                                    style={{ marginRight: "8px" }}
+                                  />
+                                  For Owner
+                                </span>
+                              </Nav.Link>
+                              <Nav.Link>
+                                <span className="d-flex align-items-center">
+                                  <img
+                                    src={forSellers}
+                                    alt="House Icon"
+                                    width="40"
+                                    height="auto"
+                                    style={{ marginRight: "8px" }}
+                                  />
+                                  For Sellers
+                                </span>
+                              </Nav.Link>
+                              <Nav.Link>
+                                {" "}
+                                <span className="d-flex align-items-center">
+                                  <img
+                                    src={forTenants}
+                                    alt="key Icon"
+                                    width="40"
+                                    height="auto"
+                                    style={{ marginRight: "8px" }}
+                                  />
+                                  For Tenants
+                                </span>
+                              </Nav.Link>
+                              <Nav.Link>
+                                {" "}
+                                <span className="d-flex align-items-center">
+                                  <img
+                                    src={forBuyers}
+                                    alt="House Icon"
+                                    width="40"
+                                    height="auto"
+                                    style={{ marginRight: "8px" }}
+                                  />
+                                  For Buyers
+                                </span>
+                              </Nav.Link>
+                            </ul>
+                          </li>
+                        )}
                       </div>
 
-                      {showLegal && (
-                        <li>
-                          <ul className="custom-dropdown-ul">
-                            <Nav.Link>
-                              {" "}
-                              <span className="d-flex align-items-center">
-                                <img
-                                  src={rentalAgreement}
-                                  alt="Agreement Icon"
-                                  width="40"
-                                  height="auto"
-                                  style={{ marginRight: "8px" }}
-                                />
-                                Rental Agreement
-                              </span>
-                            </Nav.Link>
-                            <Nav.Link>
-                              {" "}
-                              <span className="d-flex align-items-center">
-                                <img
-                                  src={policeIntimation}
-                                  alt="police Intimation Icon"
-                                  width="40"
-                                  height="auto"
-                                  style={{ marginRight: "8px" }}
-                                />
-                                Police Intimation
-                              </span>
-                            </Nav.Link>
-                            <Nav.Link>
-                              {" "}
-                              <span className="d-flex align-items-center">
-                                <img
-                                  src={tenantVerification}
-                                  alt="House Icon"
-                                  width="40"
-                                  height="auto"
-                                  style={{ marginRight: "8px" }}
-                                />
-                                Tenant Verification
-                              </span>
-                            </Nav.Link>
-                            <Nav.Link>
-                              {" "}
-                              <span className="d-flex align-items-center">
-                                <img
-                                  src={propertyLegalAssistance}
-                                  alt="LegalAssistance Icon"
-                                  width="40"
-                                  height="auto"
-                                  style={{ marginRight: "8px" }}
-                                />
-                                Property Legal Assistance
-                              </span>
-                            </Nav.Link>
-                            <Nav.Link>
-                              {" "}
-                              <span className="d-flex align-items-center">
-                                <img
-                                  src={homeLoan}
-                                  alt="House Icon"
-                                  width="40"
-                                  height="auto"
-                                  style={{ marginRight: "8px" }}
-                                />
-                                Home Loan
-                              </span>
-                            </Nav.Link>
-                            <Nav.Link>
-                              {" "}
-                              <span className="d-flex align-items-center">
-                                <img
-                                  src={homeDepositLoan}
-                                  alt="House Icon"
-                                  width="40"
-                                  height="auto"
-                                  style={{ marginRight: "8px" }}
-                                />
-                                Home Deposit Loan
-                              </span>
-                            </Nav.Link>
-                          </ul>
-                        </li>
-                      )}
-                    </div>
-
-                    <div
-                      className="w-90 mx-4 my-2 pb-2 drop border-bottom border-white"
-                      onClick={handleUtilitiesToggle}
-                    >
                       <div
-                        className="d-flex justify-content-between align-items-center w-100"
-                        style={{ cursor: "pointer" }}
+                        className="w-90 mx-4 my-2 pb-2 drop border-bottom border-white"
+                        onClick={handleCommercialToggle}
                       >
-                        <b> Utilities</b>
-                        {showUtilities ? <FaChevronUp /> : <FaChevronDown />}
+                        <div
+                          className="d-flex justify-content-between align-items-center w-100"
+                          style={{ cursor: "pointer" }}
+                        >
+                          <b> Commercial Plans</b>
+                          {showSmallCommercialPlans ? (
+                            <FaChevronUp className="ms-auto" />
+                          ) : (
+                            <FaChevronDown className="ms-auto" />
+                          )}
+                        </div>
+                        {showSmallCommercialPlans && (
+                          <li>
+                            <ul className="custom-dropdown-ul">
+                              <Nav.Link>
+                                {" "}
+                                <span className="d-flex align-items-center">
+                                  <img
+                                    src={forOwnerc}
+                                    alt="House Icon"
+                                    width="40"
+                                    height="auto"
+                                    style={{ marginRight: "8px" }}
+                                  />
+                                  For Owner
+                                </span>
+                              </Nav.Link>
+                              <Nav.Link>
+                                {" "}
+                                <span className="d-flex align-items-center">
+                                  <img
+                                    src={forSellersc}
+                                    alt="House Icon"
+                                    width="40"
+                                    height="auto"
+                                    style={{ marginRight: "8px" }}
+                                  />
+                                  For Sellers
+                                </span>
+                              </Nav.Link>
+                              <Nav.Link>
+                                {" "}
+                                <span className="d-flex align-items-center">
+                                  <img
+                                    src={forTenantsc}
+                                    alt="House Icon"
+                                    width="40"
+                                    height="auto"
+                                    style={{ marginRight: "8px" }}
+                                  />
+                                  For Tenants
+                                </span>
+                              </Nav.Link>
+                              <Nav.Link>
+                                {" "}
+                                <span className="d-flex align-items-center">
+                                  <img
+                                    src={forBuyersc}
+                                    alt="House Icon"
+                                    width="40"
+                                    height="auto"
+                                    style={{ marginRight: "8px" }}
+                                  />
+                                  For Buyers
+                                </span>
+                              </Nav.Link>
+                            </ul>
+                          </li>
+                        )}
                       </div>
-                      {showUtilities && (
-                        <li>
-                          <ul className="custom-dropdown-ul">
-                            <Nav.Link>
-                              {" "}
-                              <span className="d-flex align-items-center">
-                                <img
-                                  src={knowYourRent}
-                                  alt="KnowYourRent Icon"
-                                  width="40"
-                                  height="auto"
-                                  style={{ marginRight: "8px" }}
-                                />
-                                Know Your Rent
-                              </span>
-                            </Nav.Link>
-                            <Nav.Link>
-                              {" "}
-                              <span className="d-flex align-items-center">
-                                <img
-                                  src={createRentReceipts}
-                                  alt="createRentReceipts Icon"
-                                  width="40"
-                                  height="auto"
-                                  style={{ marginRight: "8px" }}
-                                />
-                                Create Rent Receipts
-                              </span>
-                            </Nav.Link>
-                            <Nav.Link>
-                              {" "}
-                              <span className="d-flex align-items-center">
-                                <img
-                                  src={clickEarn}
-                                  alt="Click & Earn Icon"
-                                  width="40"
-                                  height="auto"
-                                  style={{ marginRight: "8px" }}
-                                />
-                                Click & Earn
-                              </span>
-                            </Nav.Link>
-                          </ul>
-                        </li>
-                      )}
-                    </div>
 
-                    <div
-                      className="w-90 mx-4 my-2 pb-2 drop border-bottom border-white"
-                      onClick={handleHelpToggle}
-                    >
                       <div
-                        className="d-flex justify-content-between align-items-center w-100"
-                        style={{ cursor: "pointer" }}
+                        className="w-90 mx-4 my-2 pb-2 drop border-bottom border-white"
+                        onClick={handleHomeToggle}
                       >
-                        <b>Help & Support</b>
-                        {showHelp ? <FaChevronUp /> : <FaChevronDown />}
+                        <div
+                          className="d-flex justify-content-between align-items-center w-100"
+                          style={{ cursor: "pointer" }}
+                        >
+                          <b> Home Services</b>
+                          {showHomeServices ? (
+                            <FaChevronUp className="ms-auto" />
+                          ) : (
+                            <FaChevronDown className="ms-auto" />
+                          )}
+                        </div>
+                        {showHomeServices && (
+                          <li>
+                            <ul className="custom-dropdown-ul">
+                              <Nav.Link>
+                                {" "}
+                                <span className="d-flex align-items-center">
+                                  <img
+                                    src={packers1}
+                                    alt="packers Icon"
+                                    width="40"
+                                    height="auto"
+                                    style={{ marginRight: "8px" }}
+                                  />
+                                  Packers and Movers
+                                </span>
+                              </Nav.Link>
+                              <Nav.Link>
+                                {" "}
+                                <span className="d-flex align-items-center">
+                                  <img
+                                    src={painting1}
+                                    alt="painting Icon"
+                                    width="40"
+                                    height="auto"
+                                    style={{ marginRight: "8px" }}
+                                  />
+                                  Painting
+                                </span>
+                              </Nav.Link>
+                              <Nav.Link>
+                                {" "}
+                                <span className="d-flex align-items-center">
+                                  <img
+                                    src={cleaning}
+                                    alt="Cleaning Icon"
+                                    width="40"
+                                    height="auto"
+                                    style={{ marginRight: "8px" }}
+                                  />
+                                  Cleaning
+                                </span>
+                              </Nav.Link>
+                              <Nav.Link>
+                                {" "}
+                                <span className="d-flex align-items-center">
+                                  <img
+                                    src={interiors}
+                                    alt="Interior Icon"
+                                    width="40"
+                                    height="auto"
+                                    style={{ marginRight: "8px" }}
+                                  />
+                                  Interiors
+                                </span>
+                              </Nav.Link>
+                              <Nav.Link>
+                                {" "}
+                                <span className="d-flex align-items-center">
+                                  <img
+                                    src={furniture}
+                                    alt="Furniture Icon"
+                                    width="40"
+                                    height="auto"
+                                    style={{ marginRight: "8px" }}
+                                  />
+                                  Furniture
+                                </span>
+                              </Nav.Link>
+                            </ul>
+                          </li>
+                        )}
                       </div>
-                      {showHelp && (
-                        <li>
-                          <ul className="custom-dropdown-ul">
-                            <Nav.Link>
-                              {" "}
-                              <span className="d-flex align-items-center">
-                                <img
-                                  src={supportTopics}
-                                  alt="support Topics Icon"
-                                  width="40"
-                                  height="auto"
-                                  style={{ marginRight: "8px" }}
-                                />
-                                Support Topics
-                              </span>
-                            </Nav.Link>
-                            <Nav.Link>
-                              {" "}
-                              <span className="d-flex align-items-center">
-                                <img
-                                  src={blog}
-                                  alt="Blog Icon"
-                                  width="40"
-                                  height="auto"
-                                  style={{ marginRight: "8px" }}
-                                />
-                                Blog
-                              </span>
-                            </Nav.Link>
-                            <Nav.Link>
-                              {" "}
-                              <span className="d-flex align-items-center">
-                                <img
-                                  src={feedback}
-                                  alt="Feedback Icon"
-                                  width="40"
-                                  height="auto"
-                                  style={{ marginRight: "8px" }}
-                                />
-                                Feedback
-                              </span>
-                            </Nav.Link>
-                            <Nav.Link>
-                              {" "}
-                              <span className="d-flex align-items-center">
-                                <img
-                                  src={aboutUs}
-                                  alt="About Us Icon"
-                                  width="40"
-                                  height="auto"
-                                  style={{ marginRight: "8px" }}
-                                />
-                                About Us
-                              </span>
-                            </Nav.Link>
-                            <Nav.Link>
-                              {" "}
-                              <span className="d-flex align-items-center">
-                                <img
-                                  src={chatWithUs}
-                                  alt="Chat Icon"
-                                  width="40"
-                                  height="auto"
-                                  style={{ marginRight: "8px" }}
-                                />
-                                Chat With Us
-                              </span>
-                            </Nav.Link>
-                          </ul>
-                        </li>
-                      )}
-                    </div>
-                  </Nav>
-                </div>
-              </div>
-            </>
-          ) : (
-            <>
-              <Nav>
-                <div
-                  ref={navRef}
-                  className={`transform transition-transform duration-300 ease-in-out ${
-                    showNav
-                      ? "translate-y-0 opacity-100"
-                      : "-translate-y-4 opacity-0"
-                  } 
-    absolute top-full left-0 w-full pl-4 bg-white z-50 shadow-lg rounded-md lg:hidden`}
-                >
-                  <div id="navContainer" className="nav-container">
-                    <Nav.Link href="/">NoBroker Home</Nav.Link>
-                    <Nav.Link href="/LoginSignup">Login</Nav.Link>
-                    <Nav.Link href="/LoginSignup">SignUp</Nav.Link>
+
+                      <div
+                        className="w-90 mx-4 my-2 pb-2 drop border-bottom border-white"
+                        onClick={handleNoBrokerToggle}
+                      >
+                        <div
+                          className="d-flex justify-content-between align-items-center w-100"
+                          style={{ cursor: "pointer" }}
+                        >
+                          <b> NoBroker Pay</b>
+                          {showNoBrokerPay ? (
+                            <FaChevronUp className="ms-auto" />
+                          ) : (
+                            <FaChevronDown className="ms-auto" />
+                          )}
+                        </div>
+
+                        {showNoBrokerPay && (
+                          <li>
+                            <ul className="custom-dropdown-ul">
+                              <Nav.Link>
+                                {" "}
+                                <span className="d-flex align-items-center">
+                                  <img
+                                    src={payYourRent}
+                                    alt="Pay Icon"
+                                    width="40"
+                                    height="auto"
+                                    style={{ marginRight: "8px" }}
+                                  />
+                                  Pay Your Rent
+                                </span>
+                              </Nav.Link>
+                              <Nav.Link>
+                                {" "}
+                                <span className="d-flex align-items-center">
+                                  <img
+                                    src={depositPayment}
+                                    alt="deposit Icon"
+                                    width="40"
+                                    height="auto"
+                                    style={{ marginRight: "8px" }}
+                                  />
+                                  Deposit Payment
+                                </span>
+                              </Nav.Link>
+                              <Nav.Link>
+                                {" "}
+                                <span className="d-flex align-items-center">
+                                  <img
+                                    src={maintenancePayment}
+                                    alt="Bill Icon"
+                                    width="40"
+                                    height="auto"
+                                    style={{ marginRight: "8px" }}
+                                  />
+                                  Maintenance Payments
+                                </span>
+                              </Nav.Link>
+                              <Nav.Link>
+                                {" "}
+                                <span className="d-flex align-items-center">
+                                  <img
+                                    src={billPayments}
+                                    alt="Bill Icon"
+                                    width="40"
+                                    height="auto"
+                                    style={{ marginRight: "8px" }}
+                                  />
+                                  Bill Payments
+                                </span>
+                              </Nav.Link>
+                            </ul>
+                          </li>
+                        )}
+                      </div>
+
+                      <div
+                        className="w-90 mx-4 my-2 pb-2 drop border-bottom border-white"
+                        onClick={handleLegalToggle}
+                      >
+                        <div
+                          className="d-flex justify-content-between align-items-center w-100"
+                          style={{ cursor: "pointer" }}
+                        >
+                          <b> Legal Assistance & Loan</b>
+                          {showLegal ? <FaChevronUp /> : <FaChevronDown />}
+                        </div>
+
+                        {showLegal && (
+                          <li>
+                            <ul className="custom-dropdown-ul">
+                              <Nav.Link>
+                                {" "}
+                                <span className="d-flex align-items-center">
+                                  <img
+                                    src={rentalAgreement}
+                                    alt="Agreement Icon"
+                                    width="40"
+                                    height="auto"
+                                    style={{ marginRight: "8px" }}
+                                  />
+                                  Rental Agreement
+                                </span>
+                              </Nav.Link>
+                              <Nav.Link>
+                                {" "}
+                                <span className="d-flex align-items-center">
+                                  <img
+                                    src={policeIntimation}
+                                    alt="police Intimation Icon"
+                                    width="40"
+                                    height="auto"
+                                    style={{ marginRight: "8px" }}
+                                  />
+                                  Police Intimation
+                                </span>
+                              </Nav.Link>
+                              <Nav.Link>
+                                {" "}
+                                <span className="d-flex align-items-center">
+                                  <img
+                                    src={tenantVerification}
+                                    alt="House Icon"
+                                    width="40"
+                                    height="auto"
+                                    style={{ marginRight: "8px" }}
+                                  />
+                                  Tenant Verification
+                                </span>
+                              </Nav.Link>
+                              <Nav.Link>
+                                {" "}
+                                <span className="d-flex align-items-center">
+                                  <img
+                                    src={propertyLegalAssistance}
+                                    alt="LegalAssistance Icon"
+                                    width="40"
+                                    height="auto"
+                                    style={{ marginRight: "8px" }}
+                                  />
+                                  Property Legal Assistance
+                                </span>
+                              </Nav.Link>
+                              <Nav.Link>
+                                {" "}
+                                <span className="d-flex align-items-center">
+                                  <img
+                                    src={homeLoan}
+                                    alt="House Icon"
+                                    width="40"
+                                    height="auto"
+                                    style={{ marginRight: "8px" }}
+                                  />
+                                  Home Loan
+                                </span>
+                              </Nav.Link>
+                              <Nav.Link>
+                                {" "}
+                                <span className="d-flex align-items-center">
+                                  <img
+                                    src={homeDepositLoan}
+                                    alt="House Icon"
+                                    width="40"
+                                    height="auto"
+                                    style={{ marginRight: "8px" }}
+                                  />
+                                  Home Deposit Loan
+                                </span>
+                              </Nav.Link>
+                            </ul>
+                          </li>
+                        )}
+                      </div>
+
+                      <div
+                        className="w-90 mx-4 my-2 pb-2 drop border-bottom border-white"
+                        onClick={handleUtilitiesToggle}
+                      >
+                        <div
+                          className="d-flex justify-content-between align-items-center w-100"
+                          style={{ cursor: "pointer" }}
+                        >
+                          <b> Utilities</b>
+                          {showUtilities ? <FaChevronUp /> : <FaChevronDown />}
+                        </div>
+                        {showUtilities && (
+                          <li>
+                            <ul className="custom-dropdown-ul">
+                              <Nav.Link>
+                                {" "}
+                                <span className="d-flex align-items-center">
+                                  <img
+                                    src={knowYourRent}
+                                    alt="KnowYourRent Icon"
+                                    width="40"
+                                    height="auto"
+                                    style={{ marginRight: "8px" }}
+                                  />
+                                  Know Your Rent
+                                </span>
+                              </Nav.Link>
+                              <Nav.Link>
+                                {" "}
+                                <span className="d-flex align-items-center">
+                                  <img
+                                    src={createRentReceipts}
+                                    alt="createRentReceipts Icon"
+                                    width="40"
+                                    height="auto"
+                                    style={{ marginRight: "8px" }}
+                                  />
+                                  Create Rent Receipts
+                                </span>
+                              </Nav.Link>
+                              <Nav.Link>
+                                {" "}
+                                <span className="d-flex align-items-center">
+                                  <img
+                                    src={clickEarn}
+                                    alt="Click & Earn Icon"
+                                    width="40"
+                                    height="auto"
+                                    style={{ marginRight: "8px" }}
+                                  />
+                                  Click & Earn
+                                </span>
+                              </Nav.Link>
+                            </ul>
+                          </li>
+                        )}
+                      </div>
+
+                      <div
+                        className="w-90 mx-4 my-2 pb-2 drop border-bottom border-white"
+                        onClick={handleHelpToggle}
+                      >
+                        <div
+                          className="d-flex justify-content-between align-items-center w-100"
+                          style={{ cursor: "pointer" }}
+                        >
+                          <b>Help & Support</b>
+                          {showHelp ? <FaChevronUp /> : <FaChevronDown />}
+                        </div>
+                        {showHelp && (
+                          <li>
+                            <ul className="custom-dropdown-ul">
+                              <Nav.Link>
+                                {" "}
+                                <span className="d-flex align-items-center">
+                                  <img
+                                    src={supportTopics}
+                                    alt="support Topics Icon"
+                                    width="40"
+                                    height="auto"
+                                    style={{ marginRight: "8px" }}
+                                  />
+                                  Support Topics
+                                </span>
+                              </Nav.Link>
+                              <Nav.Link>
+                                {" "}
+                                <span className="d-flex align-items-center">
+                                  <img
+                                    src={blog}
+                                    alt="Blog Icon"
+                                    width="40"
+                                    height="auto"
+                                    style={{ marginRight: "8px" }}
+                                  />
+                                  Blog
+                                </span>
+                              </Nav.Link>
+                              <Nav.Link>
+                                {" "}
+                                <span className="d-flex align-items-center">
+                                  <img
+                                    src={feedback}
+                                    alt="Feedback Icon"
+                                    width="40"
+                                    height="auto"
+                                    style={{ marginRight: "8px" }}
+                                  />
+                                  Feedback
+                                </span>
+                              </Nav.Link>
+                              <Nav.Link>
+                                {" "}
+                                <span className="d-flex align-items-center">
+                                  <img
+                                    src={aboutUs}
+                                    alt="About Us Icon"
+                                    width="40"
+                                    height="auto"
+                                    style={{ marginRight: "8px" }}
+                                  />
+                                  About Us
+                                </span>
+                              </Nav.Link>
+                              <Nav.Link>
+                                {" "}
+                                <span className="d-flex align-items-center">
+                                  <img
+                                    src={chatWithUs}
+                                    alt="Chat Icon"
+                                    width="40"
+                                    height="auto"
+                                    style={{ marginRight: "8px" }}
+                                  />
+                                  Chat With Us
+                                </span>
+                              </Nav.Link>
+                            </ul>
+                          </li>
+                        )}
+                      </div>
+                    </Nav>
                   </div>
                 </div>
-              </Nav>
-            </>
-          )}
-        </Container>
-      </Navbar>
+              </>
+            ) : (
+              <>
+                <Nav>
+                  <div
+                    ref={navRef}
+                    className={`transform transition-transform duration-300 ease-in-out ${
+                      showNav
+                        ? "translate-y-0 opacity-100"
+                        : "-translate-y-4 opacity-0"
+                    } 
+                    absolute top-full left-0 w-full pl-4 bg-white z-50 shadow-lg rounded-md lg:hidden`}
+                  >
+                    <div id="navContainer" className="nav-container">
+                      <Nav.Link href="/">NoBroker Home</Nav.Link>
+                      <Nav.Link href="/LoginSignup">Login</Nav.Link>
+                      <Nav.Link href="/LoginSignup">SignUp</Nav.Link>
+                    </div>
+                  </div>
+                </Nav>
+              </>
+            )}
+          </Container>
+        </Navbar>
+      </div>
     </>
   );
 }
