@@ -470,7 +470,7 @@ function Navb() {
                   </Dropdown.Item>
 
                   <Dropdown.Item
-                    href="#action5"
+                    href="refer-and-earn"
                     className="text-dark text-decoration-none"
                     style={{ fontSize: "normal" }} // Ensures normal font size
                   >
@@ -478,7 +478,7 @@ function Navb() {
                   </Dropdown.Item>
 
                   <Dropdown.Item
-                    href="#action5"
+                    href="rent-receipt"
                     className="text-dark text-decoration-none"
                     style={{ fontSize: "normal" }} // Ensures normal font size
                   >
