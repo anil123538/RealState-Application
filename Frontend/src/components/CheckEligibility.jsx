@@ -149,7 +149,7 @@ const CheckEligibility = ({ selectedOption }) => {
             to={`/${item.text.toLowerCase().replaceAll(" ", "-")}`}
             key={item.id}
           >
-            <div className="flex flex-col md:justify-center items-center text-center p-2 cursor-pointer border-0 md:border-0 rounded-tl-2xl rounded-br-2xl">
+            <div className="flex flex-col md:justify-center items-center text-center p-2 cursor-pointer !border md:!border-0 rounded-tl-2xl rounded-br-2xl">
               {item.condition && (
                 <span className="text-[11px] bg-orange-200/50 px-2 py-1 rounded-2xl mb-1 w-fit">
                   {item.condition}
