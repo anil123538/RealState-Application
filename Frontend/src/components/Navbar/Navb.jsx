@@ -216,19 +216,21 @@ function Navb() {
               <Nav.Link href="pay-rent">
                 <span className="d-flex gap-2 align-items-center border p-1 nav-box">
                   <div>
-                  <img
-                    src={rent} // Use your imported image here
-                    alt="Brand Logo"
-                    width="20" // Adjust width as needed
-                    className="image-rent"
-                  />
+                    <img
+                      src={rent} // Use your imported image here
+                      alt="Brand Logo"
+                      width="20" // Adjust width as needed
+                      className="image-rent"
+                    />
                   </div>
-                  <div style={{ color: '#A1A1A1' }}>|</div>
-                  <div style={{ color: '#A1A1A1' }}>Pay Rent</div>
+                  <div style={{ color: "#A1A1A1" }}>|</div>
+                  <div style={{ color: "#A1A1A1" }}>Pay Rent</div>
                 </span>
               </Nav.Link>
               <Nav.Link href="post-property">
-                <button className="nav-property nav-box">For Property Owners</button>
+                <button className="nav-property nav-box">
+                  For Property Owners
+                </button>
               </Nav.Link>
 
               {user ? (
@@ -403,13 +405,19 @@ function Navb() {
                 </>
               ) : (
                 <>
-                  <Nav.Link className="nav-menu" onClick={() => setLoginSignupModelOpen(true)}>
+                  <Nav.Link
+                    className="nav-menu"
+                    onClick={() => setLoginSignupModelOpen(true)}
+                  >
                     Sign Up
                   </Nav.Link>
                   <Nav.Link className="nav-menu" href="#" disabled>
                     |
                   </Nav.Link>
-                  <Nav.Link className="nav-menu" onClick={() => setLoginSignupModelOpen(true)}>
+                  <Nav.Link
+                    className="nav-menu"
+                    onClick={() => setLoginSignupModelOpen(true)}
+                  >
                     Log In
                   </Nav.Link>
                   <Nav.Link className="nav-menu" href="#" disabled>
@@ -440,11 +448,13 @@ function Navb() {
 
                 {/* Dropdown menu items */}
                 <Dropdown.Menu className="dropdown-menu custom-scroll">
-                  <Dropdown.Item
-                  >
-                    <Link to="/post-property" className="menu-dropdown text-decoration-none"
-                     >Post Your Property</Link>
-                    
+                  <Dropdown.Item>
+                    <Link
+                      to="/post-property"
+                      className="menu-dropdown text-decoration-none"
+                    >
+                      Post Your Property
+                    </Link>
                   </Dropdown.Item>
 
                   <Dropdown.Item
@@ -452,14 +462,13 @@ function Navb() {
                     style={{ fontSize: "normal" }} // Ensures normal font size
                   >
                     <Link
-                    to="/rental-agreement"
-                    className="menu-dropdown text-decoration-none"
-                    style={{ fontSize: "normal" }} // Ensures normal font size
-                  >
-                    Rental Agreement
-                  </Link>
+                      to="/rental-agreement"
+                      className="menu-dropdown text-decoration-none"
+                      style={{ fontSize: "normal" }} // Ensures normal font size
+                    >
+                      Rental Agreement
+                    </Link>
                   </Dropdown.Item>
-                  
 
                   <Dropdown.Item
                     href="#action5"
@@ -477,17 +486,24 @@ function Navb() {
                     Packers and Movers
                   </Dropdown.Item>
 
-                  <Dropdown.Item
-                  >
-                    <Link to="/refer-and-earn" className="menu-dropdown text-decoration-none"
-                    style={{ fontSize: "normal" }}>Refer & Earn</Link>
-                    
+                  <Dropdown.Item>
+                    <Link
+                      to="/refer-and-earn"
+                      className="menu-dropdown text-decoration-none"
+                      style={{ fontSize: "normal" }}
+                    >
+                      Refer & Earn
+                    </Link>
                   </Dropdown.Item>
 
                   <Dropdown.Item>
-                    <Link to="/rent-receipt" className="menu-dropdown text-decoration-none"
-                    style={{ fontSize: "normal" }}>Rent Receipts</Link>
-                    
+                    <Link
+                      to="/rent-receipt"
+                      className="menu-dropdown text-decoration-none"
+                      style={{ fontSize: "normal" }}
+                    >
+                      Rent Receipts
+                    </Link>
                   </Dropdown.Item>
 
                   <Dropdown.Item
@@ -498,12 +514,14 @@ function Navb() {
                     Tenant Plans
                   </Dropdown.Item>
 
-                  <Dropdown.Item
-                    
-                  >
-                    <Link to="/owner-plan" className="menu-dropdown text-decoration-none"
-                    style={{ fontSize: "normal" }}>Owner Plans</Link>
-                    
+                  <Dropdown.Item>
+                    <Link
+                      to="/owner-plan"
+                      className="menu-dropdown text-decoration-none"
+                      style={{ fontSize: "normal" }}
+                    >
+                      Owner Plans
+                    </Link>
                   </Dropdown.Item>
 
                   <Dropdown.Item
@@ -525,7 +543,7 @@ function Navb() {
                   <Dropdown.Item
                     className="menu-dropdown text-decoration-none"
                     onClick={toggleCommercialPlans}
-                    style={{ cursor: "pointer", fontSize: "normal" }} // Ensures normal font size
+                    style={{ cursor: "pointer", fontSize: "normal" }}
                   >
                     <span className="d-flex align-items-center">
                       Commercial Plans
@@ -535,18 +553,24 @@ function Navb() {
                         <FaChevronDown className="ms-5" />
                       )}
                     </span>
-
-                    {showCommercialPlans && (
-                      <li>
-                        <ul className="custom-dropdown-ul">
-                          <Nav.Link>Tenant Plan</Nav.Link>
-                          <Nav.Link>Owner Plan</Nav.Link>
-                          <Nav.Link>Buyer Plan</Nav.Link>
-                          <Nav.Link>Seller Plans</Nav.Link>
-                        </ul>
-                      </li>
-                    )}
                   </Dropdown.Item>
+
+                  {showCommercialPlans && (
+                    <ul className="custom-dropdown-ul">
+                      <li>
+                        <Nav.Link href="/tenant-plan">Tenant Plan</Nav.Link>
+                      </li>
+                      <li>
+                        <Nav.Link href="/owner-plan">Owner Plan</Nav.Link>
+                      </li>
+                      <li>
+                        <Nav.Link href="/buyer-plan">Buyer Plan</Nav.Link>
+                      </li>
+                      <li>
+                        <Nav.Link href="/seller-plans">Seller Plans</Nav.Link>
+                      </li>
+                    </ul>
+                  )}
 
                   <Dropdown.Item
                     href="#action5"
@@ -599,11 +623,11 @@ function Navb() {
                       <>
                         <li>
                           <ul className="custom-dropdown-ul">
-                            <div className="contact"> 
-                            Email <br />
-                            hello@noroker.in
+                            <div className="contact">
+                              Email <br />
+                              hello@noroker.in
                             </div>
-                            
+
                             <div className="d-flex justify-content-center">
                               <Nav.Link>
                                 <img
