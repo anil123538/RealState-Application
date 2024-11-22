@@ -471,32 +471,40 @@ function Navb() {
                   </Dropdown.Item>
 
                   <Dropdown.Item
-                    href="#action5"
                     className="menu-dropdown text-decoration-none"
                     style={{ fontSize: "normal" }} // Ensures normal font size
                   >
-                    Painting & Cleaning
-                  </Dropdown.Item>
-
-                  <Dropdown.Item
-                    href="#action5"
-                    className="menu-dropdown text-decoration-none"
-                    style={{ fontSize: "normal" }} // Ensures normal font size
-                  >
-                    Packers and Movers
+                     <Link
+                      to="/"
+                      className="menu-dropdown text-decoration-none"
+                      style={{ fontSize: "normal" }} // Ensures normal font size
+                    >
+                      Painting & Cleaning
+                    </Link>
+                    
                   </Dropdown.Item>
 
                   <Dropdown.Item>
-                    <Link
-                      to="/refer-and-earn"
+                     <Link
+                      to="/"
                       className="menu-dropdown text-decoration-none"
-                      style={{ fontSize: "normal" }}
+                      style={{ fontSize: "normal" }} // Ensures normal font size
                     >
-                      Refer & Earn
+                      Packers and Movers
                     </Link>
                   </Dropdown.Item>
 
                   <Dropdown.Item>
+                     <Link
+                      to="/"
+                      className="menu-dropdown text-decoration-none"
+                      style={{ fontSize: "normal" }} // Ensures normal font size
+                    >
+                      Packers and Movers
+                    </Link>
+                  </Dropdown.Item>
+
+                  <Dropdown.Item >
                     <Link
                       to="/rent-receipt"
                       className="menu-dropdown text-decoration-none"
@@ -506,12 +514,14 @@ function Navb() {
                     </Link>
                   </Dropdown.Item>
 
-                  <Dropdown.Item
-                    href="#action5"
-                    className="menu-dropdown text-decoration-none"
-                    style={{ fontSize: "normal" }} // Ensures normal font size
-                  >
-                    Tenant Plans
+                  <Dropdown.Item>
+                    <Link
+                      to="/"
+                      className="menu-dropdown text-decoration-none"
+                      style={{ fontSize: "normal" }}
+                    >
+                      Tenant Plans
+                    </Link>
                   </Dropdown.Item>
 
                   <Dropdown.Item>
@@ -524,20 +534,25 @@ function Navb() {
                     </Link>
                   </Dropdown.Item>
 
-                  <Dropdown.Item
-                    href="#action5"
-                    className="menu-dropdown text-decoration-none"
-                    style={{ fontSize: "normal" }} // Ensures normal font size
-                  >
-                    Buyer Plans
+                  <Dropdown.Item>
+                    <Link
+                      to="/"
+                      className="menu-dropdown text-decoration-none"
+                      style={{ fontSize: "normal" }}
+                    >
+                      Buyer Plans
+                    </Link>
                   </Dropdown.Item>
 
-                  <Dropdown.Item
-                    href="#action5"
-                    className="menu-dropdown text-decoration-none"
-                    style={{ fontSize: "normal" }} // Ensures normal font size
-                  >
-                    Seller Plans
+                  <Dropdown.Item>
+                  <Link
+                      to="/"
+                      className="menu-dropdown text-decoration-none"
+                      style={{ fontSize: "normal" }}
+                    >
+                     Seller Plans
+                    </Link>
+                    
                   </Dropdown.Item>
 
                   <Dropdown.Item
@@ -572,36 +587,48 @@ function Navb() {
                     </ul>
                   )}
 
-                  <Dropdown.Item
-                    href="#action5"
-                    className="menu-dropdown text-decoration-none"
-                    style={{ fontSize: "normal" }} // Ensures normal font size
-                  >
-                    Careers
+                  <Dropdown.Item>
+                  <Link
+                      to="/"
+                      className="menu-dropdown text-decoration-none"
+                      style={{ fontSize: "normal" }}
+                    >
+                      Careers
+                    </Link>
+                   
                   </Dropdown.Item>
 
-                  <Dropdown.Item
-                    href="#action5"
-                    className="menu-dropdown text-decoration-none"
-                    style={{ fontSize: "normal" }} // Ensures normal font size
-                  >
-                    Corporate Enquiry
+                  <Dropdown.Item>
+                  <Link
+                      to="/"
+                      className="menu-dropdown text-decoration-none"
+                      style={{ fontSize: "normal" }}
+                    >
+                      Corporate Enquiry
+                    </Link>
+                    
                   </Dropdown.Item>
 
-                  <Dropdown.Item
-                    href="#action5"
-                    className="menu-dropdown text-decoration-none"
-                    style={{ fontSize: "normal" }} // Ensures normal font size
-                  >
-                    Blog
+                  <Dropdown.Item>
+                  <Link
+                      to="/"
+                      className="menu-dropdown text-decoration-none"
+                      style={{ fontSize: "normal" }}
+                    >
+                      Blog
+                    </Link>
+                    
                   </Dropdown.Item>
 
-                  <Dropdown.Item
-                    href="#action5"
-                    className="menu-dropdown text-decoration-none"
-                    style={{ fontSize: "normal" }} // Ensures normal font size
-                  >
-                    No Broker Support
+                  <Dropdown.Item>
+                  <Link
+                      to="/"
+                      className="menu-dropdown text-decoration-none"
+                      style={{ fontSize: "normal" }}
+                    >
+                      No Broker Support
+                    </Link>
+                    
                   </Dropdown.Item>
 
                   <Dropdown.Item
@@ -618,52 +645,50 @@ function Navb() {
                         <FaChevronDown className="ms-5" />
                       )}
                     </span>
+                    </Dropdown.Item>
 
                     {showContactUs && (
                       <>
-                        <li>
                           <ul className="custom-dropdown-ul">
                             <div className="contact-menu"> 
-                            Email <br />
-                            hello@noroker.in
+                            <li>Email <br />
+                            <a href="">hello@noroker.in</a></li>
                             </div>
 
-                            <div className="d-flex justify-content-center">
-                              <Nav.Link>
+                            <div className="d-flex justify-content-center mx-4">
+                              <Nav.Link href="#">
                                 <img
                                   src={flogo} // Use your imported image here
                                   alt="Rent Icon"
-                                  width="50" // Adjust width as needed
+                                  width="40" // Adjust width as needed
                                   height="auto" // Maintain aspect ratio
                                   padding="0"
                                 />
                               </Nav.Link>
 
-                              <Nav.Link>
+                              <Nav.Link href="#">
                                 <img
                                   src={tlogo} // Use your imported image here
                                   alt="Rent Icon"
-                                  width="50" // Adjust width as needed
+                                  width="40" // Adjust width as needed
                                   height="auto" // Maintain aspect ratio
                                   padding="0"
                                 />
                               </Nav.Link>
 
-                              <Nav.Link>
+                              <Nav.Link href="#">
                                 <img
                                   src={glogo} // Use your imported image here
                                   alt="Rent Icon"
-                                  width="50" // Adjust width as needed
+                                  width="40" // Adjust width as needed
                                   height="auto" // Maintain aspect ratio
                                   padding="0"
                                 />
                               </Nav.Link>
                             </div>
                           </ul>
-                        </li>
                       </>
                     )}
-                  </Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
             </Nav>
