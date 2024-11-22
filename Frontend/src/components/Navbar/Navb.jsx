@@ -441,11 +441,10 @@ function Navb() {
                 {/* Dropdown menu items */}
                 <Dropdown.Menu className="dropdown-menu custom-scroll">
                   <Dropdown.Item
-                    href="post-property"
-                    className="menu-dropdown text-decoration-none"
-                    style={{ fontSize: "normal" }} // Ensures normal font size
                   >
-                    Post Your Property
+                    <Link to="/post-property" className="menu-dropdown text-decoration-none"
+                     >Post Your Property</Link>
+                    
                   </Dropdown.Item>
 
                   <Dropdown.Item
@@ -479,19 +478,16 @@ function Navb() {
                   </Dropdown.Item>
 
                   <Dropdown.Item
-                    href="#action5"
-                    className="menu-dropdown text-decoration-none"
-                    style={{ fontSize: "normal" }} // Ensures normal font size
                   >
-                    Refer & Earn
+                    <Link to="/refer-and-earn" className="menu-dropdown text-decoration-none"
+                    style={{ fontSize: "normal" }}>Refer & Earn</Link>
+                    
                   </Dropdown.Item>
 
-                  <Dropdown.Item
-                    href="#action5"
-                    className="menu-dropdown text-decoration-none"
-                    style={{ fontSize: "normal" }} // Ensures normal font size
-                  >
-                    Rent Receipts
+                  <Dropdown.Item>
+                    <Link to="/rent-receipt" className="menu-dropdown text-decoration-none"
+                    style={{ fontSize: "normal" }}>Rent Receipts</Link>
+                    
                   </Dropdown.Item>
 
                   <Dropdown.Item
@@ -503,11 +499,11 @@ function Navb() {
                   </Dropdown.Item>
 
                   <Dropdown.Item
-                    href="#action5"
-                    className="menu-dropdown text-decoration-none"
-                    style={{ fontSize: "normal" }} // Ensures normal font size
+                    
                   >
-                    Owner Plans
+                    <Link to="/owner-plan" className="menu-dropdown text-decoration-none"
+                    style={{ fontSize: "normal" }}>Owner Plans</Link>
+                    
                   </Dropdown.Item>
 
                   <Dropdown.Item
@@ -603,8 +599,11 @@ function Navb() {
                       <>
                         <li>
                           <ul className="custom-dropdown-ul">
+                            <div className="contact"> 
                             Email <br />
                             hello@noroker.in
+                            </div>
+                            
                             <div className="d-flex justify-content-center">
                               <Nav.Link>
                                 <img

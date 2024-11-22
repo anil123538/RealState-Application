@@ -27,7 +27,7 @@ const router = createBrowserRouter(
       <Route path="/rent-receipt" element={<Rentreceipt />} />
       <Route path="/testimonials" element={<Testimonials />} />
       <Route path="rental-agreement" element={<RentalAgreement />} />
-      <Route path="refer-and-earn" element={<ReferAndEarn />} />
+      <Route path="/refer-and-earn" element={<ReferAndEarn />} />
       <Route path="/owner-plan" element={<Ownerplan />} />
       <Route path="*" element={<PageNotFound />} />
     </Route>
