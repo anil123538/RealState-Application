@@ -214,18 +214,21 @@ function Navb() {
               style={{ fontSize: "0.8rem" }}
             >
               <Nav.Link href="pay-rent">
-                <span className="d-flex align-items-center border p-1">
-                  {" "}
+                <span className="d-flex gap-2 align-items-center border p-1 nav-box">
+                  <div>
                   <img
                     src={rent} // Use your imported image here
                     alt="Brand Logo"
-                    width="30" // Adjust width as needed
-                  />{" "}
-                  | Pay Rent
+                    width="20" // Adjust width as needed
+                    className="image-rent"
+                  />
+                  </div>
+                  <div style={{ color: '#A1A1A1' }}>|</div>
+                  <div style={{ color: '#A1A1A1' }}>Pay Rent</div>
                 </span>
               </Nav.Link>
               <Nav.Link href="post-property">
-                <button className="nav-property">For Property Owners</button>
+                <button className="nav-property nav-box">For Property Owners</button>
               </Nav.Link>
 
               {user ? (
@@ -400,16 +403,16 @@ function Navb() {
                 </>
               ) : (
                 <>
-                  <Nav.Link onClick={() => setLoginSignupModelOpen(true)}>
+                  <Nav.Link className="nav-menu" onClick={() => setLoginSignupModelOpen(true)}>
                     Sign Up
                   </Nav.Link>
-                  <Nav.Link href="#" disabled>
+                  <Nav.Link className="nav-menu" href="#" disabled>
                     |
                   </Nav.Link>
-                  <Nav.Link onClick={() => setLoginSignupModelOpen(true)}>
+                  <Nav.Link className="nav-menu" onClick={() => setLoginSignupModelOpen(true)}>
                     Log In
                   </Nav.Link>
-                  <Nav.Link href="#" disabled>
+                  <Nav.Link className="nav-menu" href="#" disabled>
                     |
                   </Nav.Link>
                   <Modal
@@ -430,32 +433,38 @@ function Navb() {
                   className="p-0 text-black no-arrow" // Text color black and no padding
                   style={{ fontSize: "15px", textDecoration: "None" }} // Ensures normal font size
                 >
-                  <span className="d-flex align-items-center font-light">
+                  <span className="d-flex align-items-center font-light nav-menu">
                     <FaBars /> Menu{" "}
                   </span>
                 </Dropdown.Toggle>
 
                 {/* Dropdown menu items */}
-                <Dropdown.Menu className="dropdown-menu border-1 custom-scroll">
+                <Dropdown.Menu className="dropdown-menu custom-scroll">
                   <Dropdown.Item
                     href="post-property"
-                    className="text-dark text-decoration-none"
+                    className="menu-dropdown text-decoration-none"
                     style={{ fontSize: "normal" }} // Ensures normal font size
                   >
                     Post Your Property
                   </Dropdown.Item>
 
-                  <Link
+                  <Dropdown.Item
+                    className="menu-dropdown text-decoration-none"
+                    style={{ fontSize: "normal" }} // Ensures normal font size
+                  >
+                    <Link
                     to="/rental-agreement"
-                    className="text-dark text-decoration-none"
+                    className="menu-dropdown text-decoration-none"
                     style={{ fontSize: "normal" }} // Ensures normal font size
                   >
                     Rental Agreement
                   </Link>
+                  </Dropdown.Item>
+                  
 
                   <Dropdown.Item
                     href="#action5"
-                    className="text-dark text-decoration-none"
+                    className="menu-dropdown text-decoration-none"
                     style={{ fontSize: "normal" }} // Ensures normal font size
                   >
                     Painting & Cleaning
@@ -463,7 +472,7 @@ function Navb() {
 
                   <Dropdown.Item
                     href="#action5"
-                    className="text-dark text-decoration-none"
+                    className="menu-dropdown text-decoration-none"
                     style={{ fontSize: "normal" }} // Ensures normal font size
                   >
                     Packers and Movers
@@ -471,7 +480,7 @@ function Navb() {
 
                   <Dropdown.Item
                     href="#action5"
-                    className="text-dark text-decoration-none"
+                    className="menu-dropdown text-decoration-none"
                     style={{ fontSize: "normal" }} // Ensures normal font size
                   >
                     Refer & Earn
@@ -479,7 +488,7 @@ function Navb() {
 
                   <Dropdown.Item
                     href="#action5"
-                    className="text-dark text-decoration-none"
+                    className="menu-dropdown text-decoration-none"
                     style={{ fontSize: "normal" }} // Ensures normal font size
                   >
                     Rent Receipts
@@ -487,7 +496,7 @@ function Navb() {
 
                   <Dropdown.Item
                     href="#action5"
-                    className="text-dark text-decoration-none"
+                    className="menu-dropdown text-decoration-none"
                     style={{ fontSize: "normal" }} // Ensures normal font size
                   >
                     Tenant Plans
@@ -495,7 +504,7 @@ function Navb() {
 
                   <Dropdown.Item
                     href="#action5"
-                    className="text-dark text-decoration-none"
+                    className="menu-dropdown text-decoration-none"
                     style={{ fontSize: "normal" }} // Ensures normal font size
                   >
                     Owner Plans
@@ -503,7 +512,7 @@ function Navb() {
 
                   <Dropdown.Item
                     href="#action5"
-                    className="text-dark text-decoration-none"
+                    className="menu-dropdown text-decoration-none"
                     style={{ fontSize: "normal" }} // Ensures normal font size
                   >
                     Buyer Plans
@@ -511,14 +520,14 @@ function Navb() {
 
                   <Dropdown.Item
                     href="#action5"
-                    className="text-dark text-decoration-none"
+                    className="menu-dropdown text-decoration-none"
                     style={{ fontSize: "normal" }} // Ensures normal font size
                   >
                     Seller Plans
                   </Dropdown.Item>
 
                   <Dropdown.Item
-                    className="text-dark text-decoration-none"
+                    className="menu-dropdown text-decoration-none"
                     onClick={toggleCommercialPlans}
                     style={{ cursor: "pointer", fontSize: "normal" }} // Ensures normal font size
                   >
@@ -545,7 +554,7 @@ function Navb() {
 
                   <Dropdown.Item
                     href="#action5"
-                    className="text-dark text-decoration-none"
+                    className="menu-dropdown text-decoration-none"
                     style={{ fontSize: "normal" }} // Ensures normal font size
                   >
                     Careers
@@ -553,7 +562,7 @@ function Navb() {
 
                   <Dropdown.Item
                     href="#action5"
-                    className="text-dark text-decoration-none"
+                    className="menu-dropdown text-decoration-none"
                     style={{ fontSize: "normal" }} // Ensures normal font size
                   >
                     Corporate Enquiry
@@ -561,7 +570,7 @@ function Navb() {
 
                   <Dropdown.Item
                     href="#action5"
-                    className="text-dark text-decoration-none"
+                    className="menu-dropdown text-decoration-none"
                     style={{ fontSize: "normal" }} // Ensures normal font size
                   >
                     Blog
@@ -569,7 +578,7 @@ function Navb() {
 
                   <Dropdown.Item
                     href="#action5"
-                    className="text-dark text-decoration-none"
+                    className="menu-dropdown text-decoration-none"
                     style={{ fontSize: "normal" }} // Ensures normal font size
                   >
                     No Broker Support
@@ -577,7 +586,7 @@ function Navb() {
 
                   <Dropdown.Item
                     href="#action3"
-                    className="text-dark text-decoration-none"
+                    className="menu-dropdown text-decoration-none"
                     onClick={toggleContactUs}
                     style={{ fontSize: "normal" }} // Ensures normal font size
                   >

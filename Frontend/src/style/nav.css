@@ -19,11 +19,22 @@
   min-width: 230px;
   font-size: small;
   padding: 20px;
+  font-size: 14px !important;
+  padding: 0 !important;
 }
 
 /* Add a border line between each dropdown item */
 .dropdown-menu .dropdown-item:not(:last-child) {
-  border-bottom: 1px solid #8d0c0c;
+  position: relative;
+}
+
+.dropdown-menu .dropdown-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 5%; /* Adjust percentage for desired width */
+  width: 90%; /* Border takes up 90% of the item's width */
+  border-bottom: 1px solid #A1A1A1;
 }
 
 /* to increase the padding between menu items  */
@@ -45,6 +56,24 @@ body.noScroll {
   background-color: cadetblue;
   color: white;
   padding: 5px;
+}
+
+.nav-box{
+  height: 30px !important;
+  width: auto !important;
+}
+
+.menu-dropdown{
+  color: #A1A1A1 !important;
+}
+
+.image-rent{
+  margin-right: 0 !important;
+}
+
+.nav-menu{
+  color: rgba(0, 0, 0, 0.729) !important;
+  font-size: 13px !important;
 }
 
 .drop {
