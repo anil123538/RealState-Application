@@ -599,7 +599,7 @@ function Navb() {
                       <>
                         <li>
                           <ul className="custom-dropdown-ul">
-                            <div className="contact"> 
+                            <div className="contact-menu"> 
                             Email <br />
                             hello@noroker.in
                             </div>
