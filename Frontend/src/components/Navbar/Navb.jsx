@@ -805,7 +805,7 @@ function Navb() {
                                 height="auto"
                               />
                               <div
-                                className="text-right text-end"
+                                className="text-right"
                                 style={{ fontSize: "0.6rem" }}
                               >
                                 <b>3Lacs+</b> Services <br />

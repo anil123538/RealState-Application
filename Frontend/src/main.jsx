@@ -1,7 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import "./index.css";
 import App from "./App.jsx";
+import "./index.css";
 import Home from "./pages/Home.jsx";
 import PayRent from "./pages/PayRent.jsx";
 import PostProperty from "./pages/PostProperty.jsx";

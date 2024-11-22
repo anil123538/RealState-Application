@@ -210,6 +210,7 @@ const RentalAgreement = () => {
       ans: "Yes, Aadhaar eSign based digital signatures are a legally accepted and secure manner of electronically signing documents, under effect of Gazette Notification No. 2015 Jan -GSR 61(E) Electronic Signature or Electronic Authentication Technique and Procedure Rules, 2015.",
     },
   ];
+
   const [selected, setSelected] = useState(2);
   const [multipleFaqExpanded, setMultipleFaqExpanded] = useState([]);
   const [clickAddOns, setClickAddOns] = useState(null);
@@ -237,10 +238,10 @@ const RentalAgreement = () => {
 
   return (
     <>
-      <div className="bg-gradient-to-b from-[#1f235b] from-[450px] to-[#f0f0f0] to-[400px] py-10">
+      <div className="bg-gradient-to-b from-[#1f235b] from-[410px] md:from-[450px] to-[#f0f0f0] to-[380px] md:py-10">
         <div className="w-[98%] xl:w-9/12 mx-auto">
           {/* online rent Agreement */}
-          <div className=" h-[450px] text-white">
+          <div className="text-white">
             <div className="w-[92%] mx-auto py-10">
               <div>
                 <div className="text-3xl mb-2">
@@ -250,15 +251,45 @@ const RentalAgreement = () => {
                   Now available in 150+ cities in india
                 </span>
 
+                <div className="flex md:hidden flex-col gap-2 text-sm mt-10">
+                  <div className="flex gap-3 items-center">
+                    <img
+                      src="rentalAgreement/delivery-fast-svgrepo-com.svg"
+                      alt=""
+                      className="w-8 m-0 text-[brown]"
+                    />
+                    <div>Same day delivery</div>
+                  </div>
+                  <div className="flex gap-3 items-center">
+                    <img
+                      src="rentalAgreement/shield-check-svgrepo-com.svg"
+                      alt=""
+                      class="w-8 m-0"
+                    />
+                    <div>Legally Valid Notary Agreement</div>
+                  </div>
+                  <div className="flex gap-3 items-center">
+                    <img
+                      src="rentalAgreement/hand-money-cash-hold-svgrepo-com.svg"
+                      alt=""
+                      className="w-8 m-0 text-[brown]"
+                    />
+                    <div>Guaranteed Lowest Price</div>
+                  </div>
+                </div>
+
                 <div className="bg-white/10 w-fit p-2 rounded-md flex  gap-32 mt-4">
                   <div className="flex">
                     <img
                       src="https://assets.nobroker.in/hs-new/public/LegalServiceNew/renew.svg"
                       alt=""
+                      className="w-10"
                     />
-                    <div className="flex flex-col">
+                    <div className="flex flex-col min-w-full">
                       <div className="flex items-center">
-                        <div>Renew Your Agreement</div>
+                        <div className="text-sm md:text-base">
+                          Renew Your Agreement
+                        </div>
                         <div className="w-2 h-2 bg-red-500 rounded-full ml-1"></div>
                       </div>
                       <div className="text-xs opacity-60">
@@ -273,15 +304,17 @@ const RentalAgreement = () => {
                   />
                 </div>
               </div>
-              <div className="pt-10">
+              <div className="md:pt-10 pt-14">
                 <div className="flex whitespace-nowrap items-center">
-                  <div className="uppercase w-fit">select a rent agreement</div>
-                  <hr className="border w-full ml-2" />
+                  <div className="uppercase w-fit md:text-white text-black/70 font-medium">
+                    select a rent agreement
+                  </div>
+                  <hr className="border border-black opacity-20 w-full ml-2" />
                 </div>
-                <div className="flex gap-3 mt-2">
+                <div className="flex gap-3 mt-2 flex-wrap">
                   {selectARentAgreement.map((item) => (
                     <div
-                      className={`rounded-3xl bg-white text-black w-1/3 h-80 flex flex-col justify-between py-4`}
+                      className={`rounded-3xl bg-white text-black md:w-60 w-40 flex-grow md:h-80 h-60 flex flex-col justify-between py-4`}
                       style={{
                         backgroundImage: `url(${item.bgImage})`,
                         backgroundRepeat: "no-repeat",
@@ -289,7 +322,7 @@ const RentalAgreement = () => {
                         backgroundSize: "120px",
                       }}
                     >
-                      <div className="text-2xl font-medium w-2/3 px-3">
+                      <div className="md:text-2xl text-sm font-medium w-2/3 px-3">
                         {item.text}
                       </div>
                       <div className="flex bg-gradient-to-r from-green-200/40 p-2 justify-between">
@@ -299,7 +332,7 @@ const RentalAgreement = () => {
                             alt=""
                             className="mx-2 w-6"
                           />
-                          <div className="text-green-700 font-medium text-xl">
+                          <div className="text-green-700 font-medium md:text-xl text-sm">
                             {item.offer}
                           </div>
                         </div>
@@ -317,7 +350,7 @@ const RentalAgreement = () => {
           </div>
 
           {/* SELECT A RENT AGREEMENT */}
-          <div className="flex justify-center gap-2 mt-44 text-xs">
+          <div className="md:flex hidden justify-center gap-2 text-xs">
             <div className="flex items-center gap-2">
               <PiStamp className="text-3xl text-orange-800" />
               <div className="opacity-80">Mahrashtra Govt. Registered</div>
@@ -335,7 +368,7 @@ const RentalAgreement = () => {
           </div>
 
           {/* Available Add ons */}
-          <div className="p-8 bg-white rounded-2xl w-11/12 mx-auto my-10">
+          <div className="p-8 bg-white md:rounded-2xl md:w-11/12 mx-auto md:my-10 mb-10">
             <div className="font-semibold text-2xl mb-8">Available Add ons</div>
             <div className="grid grid-cols-3 gap-4 flex-wrap">
               {availableAddOns.map((item) => (
@@ -399,7 +432,7 @@ const RentalAgreement = () => {
           </div>
 
           {/* How it works */}
-          <div className="p-8 bg-white rounded-2xl w-11/12 mx-auto">
+          <div className="p-8 bg-white md:rounded-2xl md:w-11/12 mx-auto">
             <div className="font-semibold text-3xl mb-8">How it works</div>
             <div className="grid grid-cols-3 gap-4 flex-wrap">
               {howItWorks.map((item) => (
@@ -423,7 +456,7 @@ const RentalAgreement = () => {
       {/* Select to Compare Agreement */}
       <div className="text-white text-center py-10 bg-[#121a45]">
         <div className="w-[90%] mx-auto">
-          <div className="font-medium text-2xl">
+          <div className="font-medium md:text-2xl text-lg text-left md:text-center">
             Select to Compare Agreement
           </div>
           <div
@@ -432,7 +465,7 @@ const RentalAgreement = () => {
             {compareAgreement.map((item) => (
               <div
                 key={item.id}
-                className={`cursor-pointer focus:bg-white p-3 rounded-xl text-lg ${
+                className={`cursor-pointer focus:bg-white p-3 rounded-xl md:text-lg text-sm ${
                   selected === item.id ? "bg-white/30" : null
                 }`}
                 onClick={() => setSelected(item.id)}
@@ -448,10 +481,10 @@ const RentalAgreement = () => {
             ))}
           </div>
           <div className="flex justify-center gap-6 mt-12">
-            <button className="px-20 py-3 border border-white border-opacity-80 rounded-md">
+            <button className="md:px-20 px-10 py-3 border border-white border-opacity-80 rounded-md">
               Preview
             </button>
-            <button className="px-20 py-3 bg-white font-medium text-lg rounded-md text-black flex items-center gap-2">
+            <button className="md:px-20 px-10 py-3 bg-white font-medium text-lg rounded-md text-black flex items-center gap-2">
               Proceed <FaChevronRight />
             </button>
           </div>
@@ -459,23 +492,27 @@ const RentalAgreement = () => {
       </div>
 
       <div className="bg-[#f0f0f0] pb-10">
-        <div className=" xl:w-9/12 mx-auto w-[98%] flex flex-col gap-8">
+        <div className=" xl:w-9/12 mx-auto md:w-[98%] w-full flex flex-col gap-8">
           {/* Discount Coupons */}
-          <div className="bg-white rounded-xl p-8 w-[90%] mt-10 mx-auto opacity-80">
-            <div className="text-3xl font-semibold">Discount Coupons</div>
-            <div className="text-sm">Apply Coupon at the summary Screen</div>
-            <div className="flex justify-between gap-4 mt-10">
+          <div className="bg-white rounded-xl md:p-8 md:w-[90%] mt-10 mx-auto opacity-80 w-full py-8">
+            <div className="md:text-3xl text-lg font-semibold px-4">
+              Discount Coupons
+            </div>
+            <div className="text-sm px-4">
+              Apply Coupon at the summary Screen
+            </div>
+            <div className="flex justify-between gap-4 mt-10 flex-nowrap overflow overflow-x-scroll">
               {discountCoupons.map((item) => (
-                <div className="border border-zinc-300 shadow-md p-4 w-full rounded-xl">
-                  <div className="bg-zinc-200 w-fit p-1 rounded-md">
-                    <img src={item.image} alt="" className="m-0" />
+                <div className="border border-zinc-300 shadow-md p-4 rounded-xl flex min-w-60 items-center h-20 md:h-auto gap-4">
+                  <div className="bg-zinc-200 p-2 md:m-auto w-16 flex items-center justify-center rounded-md">
+                    <img src={item.image} alt="" className="m-0 w-10" />
                   </div>
-                  <hr className="m-2 text-zinc-300" />
+                  <hr className="m-2 opacity-80 hidden md:block text-zinc-300" />
                   <div>
-                    <div className="font-semibold text-lg">
+                    <div className="font-semibold md:text-lg text-sm">
                       {item.disPercent}
                     </div>
-                    <div className="opacity-70">{item.upto}</div>
+                    <div className="opacity-70 text-xs">{item.upto}</div>
                   </div>
                 </div>
               ))}
@@ -483,11 +520,11 @@ const RentalAgreement = () => {
           </div>
 
           {/* NoBroker Promise */}
-          <div className="bg-white rounded-xl p-8 w-[90%] mx-auto">
-            <div className="text-3xl font-medium opacity-80">
+          <div className="bg-white rounded-xl p-8 md:w-[90%] mx-auto">
+            <div className="md:text-3xl text-xl font-medium opacity-80">
               NoBroker Promise
             </div>
-            <div className="flex justify-between mt-10">
+            <div className="flex flex-col-reverse md:flex-row justify-between mt-10">
               <div className="flex flex-col gap-10">
                 <div className="flex gap-2">
                   <div>
@@ -498,10 +535,10 @@ const RentalAgreement = () => {
                     />
                   </div>
                   <div>
-                    <div className="text-lg text-blue font-semibold">
+                    <div className="md:text-lg text-sm text-blue font-semibold">
                       Guaranteed Lowest Prices
                     </div>
-                    <div>
+                    <div className="text-xs">
                       Best-in-class legal documentation at lowest prices.
                     </div>
                   </div>
@@ -515,10 +552,10 @@ const RentalAgreement = () => {
                     />
                   </div>
                   <div>
-                    <div className="text-lg text-blue font-semibold">
+                    <div className="md:text-lg text-sm text-blue font-semibold">
                       Legally Valid
                     </div>
-                    <div>
+                    <div className="text-xs">
                       Make genuine documents which are legally valid in court of
                       law.
                     </div>
@@ -533,10 +570,10 @@ const RentalAgreement = () => {
                     />
                   </div>
                   <div>
-                    <div className="text-lg text-blue font-semibold">
+                    <div className="md:text-lg text-sm text-blue font-semibold">
                       100% Convenience. 0% Stress.
                     </div>
-                    <div>
+                    <div className="text-xs">
                       Get delighted with super fast documentation at the
                       convenience of your home.
                     </div>
@@ -547,15 +584,15 @@ const RentalAgreement = () => {
                 <img
                   src="rentalAgreement/nBPromise.webp"
                   alt=""
-                  className="m-0 w-80"
+                  className="md:m-0 md:w-80 w-60 mx-auto pb-10 md:pb-0"
                 />
               </div>
             </div>
           </div>
 
           {/* Other legal services that we offer */}
-          <div className="bg-white rounded-xl px-8 py-12 w-[90%] mx-auto">
-            <div className="font-medium opacity-80 text-2xl">
+          <div className="bg-white rounded-xl px-8 py-12 md:w-[90%] mx-auto w-full">
+            <div className="font-medium opacity-80 md:text-2xl text-lg">
               Other legal services that we offer
             </div>
             <div className="flex gap-8 overflow-x-scroll flex-nowrap mt-10">
@@ -567,7 +604,7 @@ const RentalAgreement = () => {
                       key={index}
                     >
                       <div
-                        className="border border-black flex items-center justify-center w-40 h-40 rounded-full"
+                        className="border border-black flex items-center justify-center md:w-40 md:h-40 w-32 h-32 rounded-full"
                         onMouseEnter={() => toggleLegalServiceMouseEnter(index)}
                         onMouseLeave={() => toggleLegalServiceMouseEnter(index)}
                       >
@@ -575,7 +612,7 @@ const RentalAgreement = () => {
                           <img
                             src={item.image}
                             alt=""
-                            className="m-0 w-32 h-32 mt-1 items-center rounded-full"
+                            className="m-0 md:w-32 md:h-32 w-24 h-24 mt-1 items-center rounded-full"
                           />
                           {legalServiceMouseEnter === index && (
                             <div className="absolute top-1/3 right-1/3">
@@ -593,8 +630,10 @@ const RentalAgreement = () => {
           </div>
 
           {/* Customer Reviews */}
-          <div className="bg-white rounded-xl px-8 py-12 w-[90%] mx-auto">
-            <div className="text-3xl font-medium">Customer Reviews</div>
+          <div className="bg-white rounded-xl px-8 py-12 md:w-[90%] mx-auto w-full">
+            <div className="md:text-3xl text-lg font-medium">
+              Customer Reviews
+            </div>
             <div className="flex gap-2 items-center">
               <div className="flex text-2xl">
                 <BiStar />
@@ -634,8 +673,8 @@ const RentalAgreement = () => {
           </div>
 
           {/* Frequently Asked Questions */}
-          <div className="bg-white rounded-xl px-8 py-12 w-[90%] mx-auto">
-            <div className="font-semibold text-3xl mb-4">
+          <div className="bg-white rounded-xl px-8 py-12 md:w-[90%] mx-auto">
+            <div className="font-medium md:text-3xl text-lg mb-4">
               Frequently Asked Questions
             </div>
             {faq.map((item, i) => (
@@ -650,7 +689,9 @@ const RentalAgreement = () => {
                         multipleFaqExpanded.includes(i) ? "text-blue" : ""
                       }`}
                     >
-                      <div className="py-2">{item.que}</div>
+                      <div className="py-2 text-sm md:text-base">
+                        {item.que}
+                      </div>
                       <div>
                         <FaPlus
                           className={`${
@@ -662,18 +703,18 @@ const RentalAgreement = () => {
                       </div>
                     </div>
                     {multipleFaqExpanded.includes(i) && (
-                      <div className="text-sm">{item.ans}</div>
+                      <div className="text-xs md:text-sm">{item.ans}</div>
                     )}
                   </div>
                 </div>
-                <hr className="text-zinc-300 m-2" />
+                <hr className="text-zinc-300 opacity-60 m-2" />
               </div>
             ))}
           </div>
 
           {/* final text */}
-          <div className="bg-white rounded-xl px-8 py-12 w-[90%] mx-auto text-sm">
-            <h2 className="text-2xl font-normal">
+          <div className="bg-white rounded-xl px-8 py-12 md:w-[90%] mx-auto text-sm">
+            <h2 className="md:text-2xl text-lg font-semibold md:font-normal">
               Creation of Rental Agreements in Bangalore
             </h2>
             <p>
@@ -693,7 +734,7 @@ const RentalAgreement = () => {
               of the frequently asked questions that will make it easier for you
               to get through the process.
             </p>
-            <h2 className="text-2xl font-normal">
+            <h2 className="md:text-2xl text-lg font-semibold md:font-normal">
               What are the Different Types of Rental Agreements in Bangalore?
             </h2>
             <p>
@@ -741,7 +782,7 @@ const RentalAgreement = () => {
               Till the new lease agreement is made, the tenant has to pay the
               rent on a daily or weekly basis.
             </p>
-            <h2 className="text-2xl font-normal">
+            <h2 className="md:text-2xl text-lg font-semibold md:font-normal">
               How Much Security Deposit Can be Charged by a Landlord?
             </h2>
             <p>
@@ -763,7 +804,7 @@ const RentalAgreement = () => {
               owners require tenants to look for their replacement, and only
               then they release the deposit.
             </p>
-            <h2 className="text-2xl font-normal">
+            <h2 className="md:text-2xl text-lg font-semibold md:font-normal">
               What are some of the Pointers to Discuss with your Landlord before
               the Creation of a Rental Agreement in Bangalore?
             </h2>
@@ -772,7 +813,9 @@ const RentalAgreement = () => {
               the same in writing helps keep away potential conflicts in the
               future. Below are some of the aspects you need to iron out:
             </p>
-            <h2 className="text-2xl font-normal">Length of the Tenancy:</h2>
+            <h2 className="md:text-2xl text-lg font-semibold md:font-normal">
+              Length of the Tenancy:
+            </h2>
             <p>
               You might have a bond signed at your office for 2 years and you
               are required to stay at this place for the same period. In such a
@@ -781,7 +824,7 @@ const RentalAgreement = () => {
               period, he will mention it to you. This way, you can come to a
               mutual ground and decide the length of the tenancy.
             </p>
-            <h2 className="text-2xl font-normal">
+            <h2 className="md:text-2xl text-lg font-semibold md:font-normal">
               Rent Amount and Security Deposit:
             </h2>
             <p>
@@ -795,7 +838,9 @@ const RentalAgreement = () => {
               rental agreement Bangalore expires and the tenant continues to
               stay till he finds a new place.
             </p>
-            <h2 className="text-2xl font-normal">Number of People:</h2>
+            <h2 className="md:text-2xl text-lg font-semibold md:font-normal">
+              Number of People:
+            </h2>
             <p>
               Usually, there is no limit on the number of people, when the
               tenant brings his family to the property. However, in case you are
@@ -803,7 +848,7 @@ const RentalAgreement = () => {
               cases, he may even levy restrictions on the opposite gender to
               enter the property.
             </p>
-            <h2 className="text-2xl font-normal">
+            <h2 className="md:text-2xl text-lg font-semibold md:font-normal">
               Access of the Landlord to the Property:
             </h2>
             <p>
@@ -815,7 +860,7 @@ const RentalAgreement = () => {
               a case, the tenant should ask and understand the access of the
               landlord to the property.
             </p>
-            <h2 className="text-2xl font-normal">
+            <h2 className="md:text-2xl text-lg font-semibold md:font-normal">
               Repair. Maintenance or Damage Cost:
             </h2>
             <p>
@@ -832,7 +877,7 @@ const RentalAgreement = () => {
               coming, drinking, smoking, pet ownership, etc., which you can
               discuss if at all it apply to you.
             </p>
-            <h2 className="text-2xl font-normal">
+            <h2 className="md:text-2xl text-lg font-semibold md:font-normal">
               What are the Stamp Duty and Registration Charges in Bangalore for
               Tenancy Agreement?
             </h2>
@@ -859,7 +904,7 @@ const RentalAgreement = () => {
               fraud from the other party.
             </p>
 
-            <h2 className="text-2xl font-normal">
+            <h2 className="md:text-2xl text-lg font-semibold md:font-normal">
               What are the Legal Requirements for the Creation of a Rental
               Agreement?
             </h2>
