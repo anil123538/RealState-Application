@@ -480,7 +480,7 @@ function Navb() {
 
                   <Dropdown.Item
                     href="#action5"
-                    className="text-dark text-decoration-none"
+                    className="menu-dropdown text-decoration-none"
                     style={{ fontSize: "normal" }} // Ensures normal font size
                   >
                     Refer & Earn
@@ -488,7 +488,7 @@ function Navb() {
 
                   <Dropdown.Item
                     href="#action5"
-                    className="text-dark text-decoration-none"
+                    className="menu-dropdown text-decoration-none"
                     style={{ fontSize: "normal" }} // Ensures normal font size
                   >
                     Rent Receipts
@@ -504,7 +504,7 @@ function Navb() {
 
                   <Dropdown.Item
                     href="#action5"
-                    className="text-dark text-decoration-none"
+                    className="menu-dropdown text-decoration-none"
                     style={{ fontSize: "normal" }} // Ensures normal font size
                   >
                     Owner Plans
@@ -512,7 +512,7 @@ function Navb() {
 
                   <Dropdown.Item
                     href="#action5"
-                    className="text-dark text-decoration-none"
+                    className="menu-dropdown text-decoration-none"
                     style={{ fontSize: "normal" }} // Ensures normal font size
                   >
                     Buyer Plans
@@ -520,7 +520,7 @@ function Navb() {
 
                   <Dropdown.Item
                     href="#action5"
-                    className="text-dark text-decoration-none"
+                    className="menu-dropdown text-decoration-none"
                     style={{ fontSize: "normal" }} // Ensures normal font size
                   >
                     Seller Plans
