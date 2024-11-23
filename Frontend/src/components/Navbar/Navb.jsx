@@ -503,7 +503,7 @@ function Navb() {
                       className="menu-dropdown text-decoration-none"
                       style={{ fontSize: "normal" }} // Ensures normal font size
                     >
-                      Packers and Movers
+                      Refer & Earn
                     </Link>
                   </Dropdown.Item>
 
