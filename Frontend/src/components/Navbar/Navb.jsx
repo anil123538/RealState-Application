@@ -396,7 +396,7 @@ function Navb() {
                     |
                   </Nav.Link>
                   <Nav.Link href="#">
-                    <i class="fa-solid fa-bell"></i>
+                    <i className="fa-solid fa-bell"></i>
                   </Nav.Link>
 
                   <Nav.Link href="#" disabled>
@@ -441,14 +441,15 @@ function Navb() {
                   className="p-0 text-black no-arrow" // Text color black and no padding
                   style={{ fontSize: "15px", textDecoration: "None" }} // Ensures normal font size
                 >
-                  <span className="d-flex align-items-center font-light nav-menu">
+                  <span className="d-flex align-items-center font-light nav-menu gap-1">
                     <FaBars /> Menu{" "}
                   </span>
                 </Dropdown.Toggle>
 
                 {/* Dropdown menu items */}
                 <Dropdown.Menu className="dropdown-menu custom-scroll">
-                  <Dropdown.Item>
+                  <Dropdown.Item
+                  className="text-decoration-none menu-dropdown">
                     <Link
                       to="/post-property"
                       className="menu-dropdown text-decoration-none"
@@ -484,7 +485,8 @@ function Navb() {
                     
                   </Dropdown.Item>
 
-                  <Dropdown.Item>
+                  <Dropdown.Item
+                  className="menu-dropdown text-decoration-none">
                      <Link
                       to="/"
                       className="menu-dropdown text-decoration-none"
@@ -494,7 +496,8 @@ function Navb() {
                     </Link>
                   </Dropdown.Item>
 
-                  <Dropdown.Item>
+                  <Dropdown.Item
+                  className="menu-dropdown text-decoration-none">
                      <Link
                       to="/"
                       className="menu-dropdown text-decoration-none"
@@ -504,7 +507,8 @@ function Navb() {
                     </Link>
                   </Dropdown.Item>
 
-                  <Dropdown.Item >
+                  <Dropdown.Item 
+                  className="menu-dropdown text-decoration-none">
                     <Link
                       to="/rent-receipt"
                       className="menu-dropdown text-decoration-none"
@@ -514,7 +518,8 @@ function Navb() {
                     </Link>
                   </Dropdown.Item>
 
-                  <Dropdown.Item>
+                  <Dropdown.Item
+                  className="menu-dropdown text-decoration-none">
                     <Link
                       to="/"
                       className="menu-dropdown text-decoration-none"
@@ -524,7 +529,8 @@ function Navb() {
                     </Link>
                   </Dropdown.Item>
 
-                  <Dropdown.Item>
+                  <Dropdown.Item
+                  className="menu-dropdown text-decoration-none">
                     <Link
                       to="/owner-plan"
                       className="menu-dropdown text-decoration-none"
@@ -534,7 +540,8 @@ function Navb() {
                     </Link>
                   </Dropdown.Item>
 
-                  <Dropdown.Item>
+                  <Dropdown.Item
+                  className="menu-dropdown text-decoration-none">
                     <Link
                       to="/"
                       className="menu-dropdown text-decoration-none"
@@ -544,7 +551,8 @@ function Navb() {
                     </Link>
                   </Dropdown.Item>
 
-                  <Dropdown.Item>
+                  <Dropdown.Item
+                  className="menu-dropdown text-decoration-none">
                   <Link
                       to="/"
                       className="menu-dropdown text-decoration-none"
@@ -587,7 +595,8 @@ function Navb() {
                     </ul>
                   )}
 
-                  <Dropdown.Item>
+                  <Dropdown.Item
+                  className="menu-dropdown text-decoration-none">
                   <Link
                       to="/"
                       className="menu-dropdown text-decoration-none"
@@ -598,7 +607,8 @@ function Navb() {
                    
                   </Dropdown.Item>
 
-                  <Dropdown.Item>
+                  <Dropdown.Item
+                  className="menu-dropdown text-decoration-none">
                   <Link
                       to="/"
                       className="menu-dropdown text-decoration-none"
@@ -609,7 +619,8 @@ function Navb() {
                     
                   </Dropdown.Item>
 
-                  <Dropdown.Item>
+                  <Dropdown.Item
+                  className="menu-dropdown text-decoration-none">
                   <Link
                       to="/"
                       className="menu-dropdown text-decoration-none"
@@ -620,7 +631,8 @@ function Navb() {
                     
                   </Dropdown.Item>
 
-                  <Dropdown.Item>
+                  <Dropdown.Item
+                  className="menu-dropdown text-decoration-none">
                   <Link
                       to="/"
                       className="menu-dropdown text-decoration-none"
