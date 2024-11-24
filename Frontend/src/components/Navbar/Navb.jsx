@@ -191,7 +191,7 @@ function Navb() {
 
   return (
     <>
-      <div className="d-flex ">
+      <div className="d-flex font">
         <Navbar
           user={user}
           expand="lg"

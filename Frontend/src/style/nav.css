@@ -1,4 +1,9 @@
 /* Remove arrow beside "Menu" dropdown */
+.font *{
+  font-family: "Source Sans Pro", sans-serif !important;
+  font-size: 14px !important;
+}
+
 .no-arrow::after {
   display: none !important;
 }
