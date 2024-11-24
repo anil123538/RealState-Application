@@ -43,11 +43,11 @@
 }
 
 .dropdown-menu .dropdown-item :hover{
-  color:#28A745 !important;
+  color: #009587 !important;
 }
 
 .custom-dropdown-ul li:hover{
-  color:#28A745 !important;
+  color:#009587 !important;
 }
 
 .menu-dropdown:focus,
@@ -97,6 +97,8 @@ body.noScroll {
 .nav-menu{
   color: rgba(0, 0, 0, 0.729) !important;
   font-size: 13px !important;
+  padding: 0 !important;
+  margin-right: 10px;
 }
 
 .drop {
