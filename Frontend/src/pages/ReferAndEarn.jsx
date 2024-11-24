@@ -62,25 +62,25 @@ const ReferAndEarn = () => {
   ];
   return (
     <div>
-      <div className="bg-[url(referAndEarn/clickAndEarnbanner.svg)] h-72 w-full bg-no-repeat"></div>
-      <div className="text-center text-3xl opacity-90 font-extralight py-8">
-        <p>
+      <div className="bg-[url(referAndEarn/clickAndEarnbanner.svg)] md:h-72 h-20 w-full bg-no-repeat bg-contain"></div>
+      <div className="text-center md:text-3xl opacity-90 font-extralight md:py-8 py-4">
+        <p className="text-sm md:text-3xl">
           Click a Pic or Refer owner details to <b>earn upto ₹120 </b>for
         </p>
         <p>every property listing we publish.</p>
       </div>
-      <div className="text-3xl text-teal-600 py-8 font-extralight text-center">
+      <div className="md:text-3xl text-lg font-semibold text-teal-600 md:py-8 py-4 mdfont-extralight text-center">
         Cool! How do I do it ?
       </div>
 
-      <div className="flex justify-around mb-10">
+      <div className="flex flex-col md:flex-row md:justify-around mb-10 items-center">
         <img
           src="referAndEarn\enter-owner-details.png"
           alt=""
-          className="m-0"
+          className="m-0 w-28 md:w-fit"
         />
-        <div className="text-right">
-          <div className="text-xl font-extralight mb-24">
+        <div className="md:text-right text-center mt-4">
+          <div className="md:text-xl text-sm md:font-extralight font-medium w-4/6 md:w-full mx-auto my-5 md:mb-24">
             Share contact details of the property owner and get rewarded
           </div>
           <button className="p-3 bg-teal-600 text-white">
@@ -89,10 +89,10 @@ const ReferAndEarn = () => {
         </div>
       </div>
 
-      <div className="flex py-8 justify-around text-[22px] bg-[#f9f9f9]">
+      <div className="flex md:flex-row flex-col-reverse md:py-8 py-4 justify-around  text-sm md:text-2xl bg-[#f9f9f9] items-center text- md:text-left">
         <div>
-          <div className="mb-12">
-            <p className="font-extralight">
+          <div className="md:mb-12 my-6">
+            <p className="md:font-extralight font-light">
               Alternatively, click and upload a picture of <br /> the 'TO
               LET',or 'FOR SALE' board outside any house, plot or commercial
               property in
@@ -102,44 +102,67 @@ const ReferAndEarn = () => {
               Delhi, Noida, Greater Noida, Ghaziabad, <br /> Faridabad
             </p>
           </div>
-          <button className="bg-teal-600 text-white font-bold text-sm px-4 py-3 rounded-sm hover:bg-teal-700">
-            Upload Photo
-          </button>
+          <div className="flex md:block justify-center gap-4">
+            <button className="bg-teal-600 text-white font-bold text-sm px-4 py-3 rounded-sm hover:bg-teal-700">
+              Upload Photo
+            </button>
+            <button className="bg-teal-600 text-white font-bold text-sm px-4 py-3 rounded-sm hover:bg-teal-700 md:hidden">
+              Take Photo
+            </button>
+          </div>
         </div>
         <div>
-          <img src="/referAndEarn\Camera.png" alt="" className="m-0" />
+          <img
+            src="/referAndEarn\Camera.png"
+            alt=""
+            className="m-0 w-40 md:w-fit"
+          />
         </div>
       </div>
 
-      <div className="py-9">
-        <div className="text-3xl  text-teal-600 text-center font-extralight">
+      <div className="md:py-9 py-4 px-4">
+        <div className="md:text-3xl text-lg text-teal-600 text-center md:font-extralight font-medium">
           A little extra dough is always welcome
         </div>
-        <div className="flex justify-around py-9">
-          <div>
-            <img src="/referAndEarn/tiltWallet.png" alt="" className="m-0" />
-          </div>
+        <div className="flex justify-around md:py-9 py-4">
+          <img
+            src="/referAndEarn/tiltWallet.png"
+            alt=""
+            className="m-0 w-24 h-20 md:w-fit md:h-fit"
+          />
+
           <div className="text-right">
-            <div className="text-xl text-left font-extralight">
+            <div className="md:text-xl text-left md:font-extralight font-semibold text-sm">
               <p>Our partners are earning additional 25-30K through our</p>
               <p className="mb-5">
                 <span className="font-semibold">Refer & Earn </span>
                 platform.
               </p>
-              <p>
-                What will <span className="font-semibold">You </span>do with all
-                that extra money ?
-              </p>
+              <div className="text-right md:block hidden">
+                <p className="text-left mb-28">
+                  What will <span className="font-semibold">You </span>do with
+                  all that extra money ?
+                </p>
+                <button className="bg-teal-600 text-white md:font-bold text-sm px-4 py-3 rounded-sm hover:bg-teal-700 min-w-fit">
+                  I'm In
+                </button>
+              </div>
             </div>
-            <button className="bg-teal-600 text-white font-bold text-sm px-4 py-3 rounded-sm hover:bg-teal-700">
-              I'm In
-            </button>
           </div>
+        </div>
+        <div className="flex md:hidden items-center justify-between">
+          <p className="text-sm">
+            What will <span className="font-semibold">You </span>do with all
+            that extra money ?
+          </p>
+          <button className="bg-teal-600 text-white md:font-bold text-sm px-4 py-3 rounded-sm hover:bg-teal-700 min-w-fit">
+            I'm In
+          </button>
         </div>
       </div>
 
       {/* customer stories */}
-      <div className="w-10/12 p-5 mx-auto">
+      <div className="md:w-10/12 p-5 mx-auto">
         <div className="text-lg font-semibold">Customer stories</div>
         <div className="flex gap-14 xl:gap-12 flex-nowrap overflow-x-auto mt-10">
           {review.map((item, index) => (
@@ -176,14 +199,15 @@ const ReferAndEarn = () => {
         </div>
         <hr className="my-3" />
       </div>
-
-      <div className="w-10/12 mx-auto p-5">
+      {/* Common questions */}
+      <div className="md:w-10/12 mx-auto p-4">
         <div className="font-semibold text-lg py-6">Common questions</div>
-        <div className="bg-white rounded-xl py-5">
+        <div className="bg-white rounded-xl py-4">
           {faq.map((item, i) => (
             <div key={i}>
+              <hr className="text-black/80 m-2 md:hidden" />
               <div
-                className="flex justify-between cursor-pointer py-2"
+                className="flex justify-between cursor-pointer md:px-0 p-2"
                 onClick={() => toggleFaq(i)}
               >
                 <div className="flex flex-col w-full">
@@ -208,7 +232,7 @@ const ReferAndEarn = () => {
                   )}
                 </div>
               </div>
-              <hr className="text-zinc-300 opacity-60 m-2" />
+              <hr className="text-black/80 m-2 hidden md:block" />
             </div>
           ))}
         </div>

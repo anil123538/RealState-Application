@@ -22,7 +22,7 @@ function PostPropertyFeature() {
 
   return (
     <>
-      <div className="help-call d-flex align-items-center justify-content-center mt-4">
+      <div className="help-call d-flex align-items-center justify-content-center mt-5">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             style={{ height: "15px", width: "13px", marginRight: "8px" }}
@@ -36,7 +36,7 @@ function PostPropertyFeature() {
           </span>
         </div>
 
-        <div className="row mt-5">
+        <div className="row mt-14">
           {brokerFeature.map((item, index) => (
             <div
               key={index}

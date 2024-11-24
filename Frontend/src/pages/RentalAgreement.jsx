@@ -216,10 +216,15 @@ const RentalAgreement = () => {
   const [clickAddOns, setClickAddOns] = useState(null);
   const [addOnsModelOpen, setAddOnsModelOpen] = useState(null);
   const [legalServiceMouseEnter, setLegalServiceMouseEnter] = useState(null);
+  const [isExpanded, setIsExpanded] = useState(false);
 
   const toggleClickAddOn = (id) => {
     setClickAddOns(clickAddOns === id ? null : id);
     setAddOnsModelOpen(!addOnsModelOpen);
+  };
+
+  const toggleReview = () => {
+    setIsExpanded(!isExpanded);
   };
 
   const toggleFaq = (index) => {
@@ -243,108 +248,108 @@ const RentalAgreement = () => {
           {/* online rent Agreement */}
           <div className="text-white">
             <div className="w-[92%] mx-auto py-10">
-              <div>
-                <div className="text-3xl mb-2">
-                  Online Rent Agreement in Mumbai
-                </div>
-                <span className="opacity-70 text-xs">
-                  Now available in 150+ cities in india
-                </span>
+              <div className="text-3xl mb-2">
+                Online Rent Agreement in Mumbai
+              </div>
+              <span className="opacity-70 text-xs">
+                Now available in 150+ cities in india
+              </span>
 
-                <div className="flex md:hidden flex-col gap-2 text-sm mt-10">
-                  <div className="flex gap-3 items-center">
-                    <img
-                      src="rentalAgreement/delivery-fast-svgrepo-com.svg"
-                      alt=""
-                      className="w-8 m-0 text-[brown]"
-                    />
-                    <div>Same day delivery</div>
-                  </div>
-                  <div className="flex gap-3 items-center">
-                    <img
-                      src="rentalAgreement/shield-check-svgrepo-com.svg"
-                      alt=""
-                      class="w-8 m-0"
-                    />
-                    <div>Legally Valid Notary Agreement</div>
-                  </div>
-                  <div className="flex gap-3 items-center">
-                    <img
-                      src="rentalAgreement/hand-money-cash-hold-svgrepo-com.svg"
-                      alt=""
-                      className="w-8 m-0 text-[brown]"
-                    />
-                    <div>Guaranteed Lowest Price</div>
-                  </div>
-                </div>
-
-                <div className="bg-white/10 w-fit p-2 rounded-md flex  gap-32 mt-4">
-                  <div className="flex">
-                    <img
-                      src="https://assets.nobroker.in/hs-new/public/LegalServiceNew/renew.svg"
-                      alt=""
-                      className="w-10"
-                    />
-                    <div className="flex flex-col min-w-full">
-                      <div className="flex items-center">
-                        <div className="text-sm md:text-base">
-                          Renew Your Agreement
-                        </div>
-                        <div className="w-2 h-2 bg-red-500 rounded-full ml-1"></div>
-                      </div>
-                      <div className="text-xs opacity-60">
-                        Renew your existing agreement
-                      </div>
-                    </div>
-                  </div>
+              <div className="flex md:hidden flex-col gap-2 text-sm mt-10">
+                <div className="flex gap-3 items-center">
                   <img
-                    src="https://assets.nobroker.in/hs-new/public/LegalServiceNew/leftAero.svg"
+                    src="rentalAgreement/delivery-fast-svgrepo-com.svg"
                     alt=""
-                    className="m-0"
+                    className="w-8 m-0 text-[brown]"
                   />
+                  <div>Same day delivery</div>
+                </div>
+                <div className="flex gap-3 items-center">
+                  <img
+                    src="rentalAgreement/shield-check-svgrepo-com.svg"
+                    alt=""
+                    className="w-8 m-0"
+                  />
+                  <div>Legally Valid Notary Agreement</div>
+                </div>
+                <div className="flex gap-3 items-center">
+                  <img
+                    src="rentalAgreement/hand-money-cash-hold-svgrepo-com.svg"
+                    alt=""
+                    className="w-8 m-0 text-[brown]"
+                  />
+                  <div>Guaranteed Lowest Price</div>
                 </div>
               </div>
-              <div className="md:pt-10 pt-14">
-                <div className="flex whitespace-nowrap items-center">
-                  <div className="uppercase w-fit md:text-white text-black/70 font-medium">
-                    select a rent agreement
-                  </div>
-                  <hr className="border border-black opacity-20 w-full ml-2" />
-                </div>
-                <div className="flex gap-3 mt-2 flex-wrap">
-                  {selectARentAgreement.map((item) => (
-                    <div
-                      className={`rounded-3xl bg-white text-black md:w-60 w-40 flex-grow md:h-80 h-60 flex flex-col justify-between py-4`}
-                      style={{
-                        backgroundImage: `url(${item.bgImage})`,
-                        backgroundRepeat: "no-repeat",
-                        backgroundPosition: "top right",
-                        backgroundSize: "120px",
-                      }}
-                    >
-                      <div className="md:text-2xl text-sm font-medium w-2/3 px-3">
-                        {item.text}
+
+              <div className="bg-white/10 w-fit p-2 rounded-md flex  gap-32 mt-4">
+                <div className="flex">
+                  <img
+                    src="https://assets.nobroker.in/hs-new/public/LegalServiceNew/renew.svg"
+                    alt=""
+                    className="w-10"
+                  />
+                  <div className="flex flex-col min-w-full">
+                    <div className="flex items-center">
+                      <div className="text-sm md:text-base">
+                        Renew Your Agreement
                       </div>
-                      <div className="flex bg-gradient-to-r from-green-200/40 p-2 justify-between">
-                        <div className="flex w-full items-center">
-                          <img
-                            src="https://assets.nobroker.in/hs-new/public/LegalServiceNew/offuptoIcon.svg"
-                            alt=""
-                            className="mx-2 w-6"
-                          />
-                          <div className="text-green-700 font-medium md:text-xl text-sm">
-                            {item.offer}
-                          </div>
-                        </div>
-                        <img
-                          src="https://assets.nobroker.in/hs-new/public/LegalServiceNew/leftAeroPkg.svg"
-                          alt=""
-                          className="m-0 w-6"
-                        />
-                      </div>
+                      <div className="w-2 h-2 bg-red-500 rounded-full ml-1"></div>
                     </div>
-                  ))}
+                    <div className="text-xs opacity-60">
+                      Renew your existing agreement
+                    </div>
+                  </div>
                 </div>
+                <img
+                  src="https://assets.nobroker.in/hs-new/public/LegalServiceNew/leftAero.svg"
+                  alt=""
+                  className="m-0"
+                />
+              </div>
+            </div>
+
+            <div className="md:w-[92%] mx-auto w-full md:pt-10 py-4">
+              <div className="flex whitespace-nowrap items-center">
+                <div className="uppercase w-fit md:text-white text-black/70 font-medium">
+                  select a rent agreement
+                </div>
+                <hr className="border border-black opacity-20 w-full ml-2" />
+              </div>
+              <div className="flex gap-3 mt-2 flex-wrap">
+                {selectARentAgreement.map((item, index) => (
+                  <div
+                    key={index}
+                    className={`rounded-3xl bg-white text-black md:w-60 w-40 flex-grow md:h-80 h-60 flex flex-col justify-between py-4 shadow-lg`}
+                    style={{
+                      backgroundImage: `url(${item.bgImage})`,
+                      backgroundRepeat: "no-repeat",
+                      backgroundPosition: "top right",
+                      backgroundSize: "120px",
+                    }}
+                  >
+                    <div className="md:text-2xl text-sm font-medium w-2/3 px-3">
+                      {item.text}
+                    </div>
+                    <div className="flex bg-gradient-to-r from-green-200/40 p-2 justify-between">
+                      <div className="flex w-full items-center">
+                        <img
+                          src="https://assets.nobroker.in/hs-new/public/LegalServiceNew/offuptoIcon.svg"
+                          alt=""
+                          className="mx-2 w-6"
+                        />
+                        <div className="text-green-700 font-medium md:text-xl text-sm">
+                          {item.offer}
+                        </div>
+                      </div>
+                      <img
+                        src="https://assets.nobroker.in/hs-new/public/LegalServiceNew/leftAeroPkg.svg"
+                        alt=""
+                        className="m-0 w-6"
+                      />
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
@@ -368,8 +373,10 @@ const RentalAgreement = () => {
           </div>
 
           {/* Available Add ons */}
-          <div className="p-8 bg-white md:rounded-2xl md:w-11/12 mx-auto md:my-10 mb-10">
-            <div className="font-semibold text-2xl mb-8">Available Add ons</div>
+          <div className="md:p-8 p-4 bg-white md:rounded-2xl md:w-11/12 mx-auto md:my-10 mb-10">
+            <div className="font-semibold md:text-2xl text-lg mb-8">
+              Available Add ons
+            </div>
             <div className="grid grid-cols-3 gap-4 flex-wrap">
               {availableAddOns.map((item) => (
                 <div
@@ -387,8 +394,12 @@ const RentalAgreement = () => {
                       className="h-[80%] w-[80%] m-0"
                     />
                   </div>
-                  <div className="font-medium text-lg mt-2">{item.heading}</div>
-                  <div className="opacity-80 text-sm">{item.desc}</div>
+                  <div className="font-medium text-sm md:text-lg mt-2">
+                    {item.heading}
+                  </div>
+                  <div className="opacity-80 text-xs md:text-sm">
+                    {item.desc}
+                  </div>
 
                   {clickAddOns === item.id ? (
                     <Modal
@@ -432,11 +443,13 @@ const RentalAgreement = () => {
           </div>
 
           {/* How it works */}
-          <div className="p-8 bg-white md:rounded-2xl md:w-11/12 mx-auto">
-            <div className="font-semibold text-3xl mb-8">How it works</div>
-            <div className="grid grid-cols-3 gap-4 flex-wrap">
+          <div className="p-8 bg-white md:rounded-2xl md:w-11/12 mx-auto w-full">
+            <div className="font-semibold text-lg md:text-3xl mb-8">
+              How it works
+            </div>
+            <div className="md:grid flex grid-cols-2 overflow-x-scroll md:grid-cols-3 gap-4 flex-nowrap">
               {howItWorks.map((item) => (
-                <div key={item.id}>
+                <div key={item.id} className="min-w-44">
                   <div className="rounded-xl items-center flex justify-center">
                     <img
                       src={item.image}
@@ -444,8 +457,10 @@ const RentalAgreement = () => {
                       className="h-[80%] w-[80%] m-0"
                     />
                   </div>
-                  <div className="font-medium mt-2">{item.heading}</div>
-                  <div className="opacity-80 text-sm">{item.desc}</div>
+                  <div className="font-medium  mt-2">{item.heading}</div>
+                  <div className="opacity-80 text-xs md:text-sm">
+                    {item.desc}
+                  </div>
                 </div>
               ))}
             </div>
@@ -455,31 +470,54 @@ const RentalAgreement = () => {
 
       {/* Select to Compare Agreement */}
       <div className="text-white text-center py-10 bg-[#121a45]">
-        <div className="w-[90%] mx-auto">
+        <div className="xl:w-[90%] w-[96%] mx-auto">
           <div className="font-medium md:text-2xl text-lg text-left md:text-center">
             Select to Compare Agreement
           </div>
           <div
-            className={`grid grid-cols-3 xl:w-9/12 mx-auto text-left opacity-80 text-xl mt-10`}
+            className={`grid grid-cols-3 xl:w-9/12 mx-auto text-left text-xl gap-4 mt-10`}
           >
             {compareAgreement.map((item) => (
               <div
                 key={item.id}
-                className={`cursor-pointer focus:bg-white p-3 rounded-xl md:text-lg text-sm ${
-                  selected === item.id ? "bg-white/30" : null
+                className={`cursor-pointer focus:bg-white p-3 rounded-xl md:text-lg text-sm flex items-center md:block font-medium ${
+                  selected === item.id
+                    ? "md:bg-white/15 bg-white text-black md:text-white"
+                    : "md:bg-white/0 bg-white/15"
                 }`}
                 onClick={() => setSelected(item.id)}
               >
-                <div className="mb-2">{item.heading}</div>
+                <div className="mb-2 opacity-80">{item.heading}</div>
                 {Object.values(item.details).map((itemDetail, index) => (
-                  <div className="flex align-middle gap-2" key={index}>
-                    <FaCheck className="mt-1" />
+                  <div
+                    className="md:flex hidden align-middle gap-2 text-base font-light"
+                    key={index}
+                  >
+                    <FaCheck className="mt-1  text-teal-600" />
                     {itemDetail}
                   </div>
                 ))}
               </div>
             ))}
           </div>
+
+          {compareAgreement.map((item) => (
+            <div className="bg-white md:hidden text-black mt-4 rounded-md">
+              {selected === item.id ? (
+                <div className="p-4">
+                  {Object.values(item.details).map((itemDetail, index) => (
+                    <div
+                      className="flex text-left gap-2 w-full text-sm font-light"
+                      key={index}
+                    >
+                      <FaCheck className="mt-1 text-teal-600" />
+                      {itemDetail} {/* Display the itemDetail */}
+                    </div>
+                  ))}
+                </div>
+              ) : null}
+            </div>
+          ))}
           <div className="flex justify-center gap-6 mt-12">
             <button className="md:px-20 px-10 py-3 border border-white border-opacity-80 rounded-md">
               Preview
@@ -498,12 +536,15 @@ const RentalAgreement = () => {
             <div className="md:text-3xl text-lg font-semibold px-4">
               Discount Coupons
             </div>
-            <div className="text-sm px-4">
+            <div className="text-xs px-4">
               Apply Coupon at the summary Screen
             </div>
             <div className="flex justify-between gap-4 mt-10 flex-nowrap overflow overflow-x-scroll">
-              {discountCoupons.map((item) => (
-                <div className="border border-zinc-300 shadow-md p-4 rounded-xl flex min-w-60 items-center h-20 md:h-auto gap-4">
+              {discountCoupons.map((item, index) => (
+                <div
+                  key={index}
+                  className="border border-zinc-300 shadow-md p-4 rounded-xl flex min-w-60 items-center h-20 md:h-auto gap-4"
+                >
                   <div className="bg-zinc-200 p-2 md:m-auto w-16 flex items-center justify-center rounded-md">
                     <img src={item.image} alt="" className="m-0 w-10" />
                   </div>
@@ -595,16 +636,13 @@ const RentalAgreement = () => {
             <div className="font-medium opacity-80 md:text-2xl text-lg">
               Other legal services that we offer
             </div>
-            <div className="flex gap-8 overflow-x-scroll flex-nowrap mt-10">
+            <div className="flex md:gap-8 gap-4 overflow-x-scroll flex-nowrap mt-10">
               {[...otherLegalServices, ...otherLegalServices].map(
                 (item, index) => (
-                  <Link>
-                    <div
-                      className="text-center flex flex-col gap-2 items-center"
-                      key={index}
-                    >
+                  <Link key={index}>
+                    <div className="text-center flex flex-col gap-2 items-center">
                       <div
-                        className="border border-black flex items-center justify-center md:w-40 md:h-40 w-32 h-32 rounded-full"
+                        className="border border-black flex items-center justify-center md:w-40 md:h-40 w-28 h-28 rounded-full"
                         onMouseEnter={() => toggleLegalServiceMouseEnter(index)}
                         onMouseLeave={() => toggleLegalServiceMouseEnter(index)}
                       >
@@ -621,7 +659,9 @@ const RentalAgreement = () => {
                           )}
                         </div>
                       </div>
-                      <div>{item.text}</div>
+                      <div className="md:text-base text-xs font-medium">
+                        {item.text}
+                      </div>
                     </div>
                   </Link>
                 )
@@ -657,13 +697,20 @@ const RentalAgreement = () => {
                       <div className="px-3 py-2.5 bg-green-300 rounded-full">
                         {item.profile}
                       </div>
-                      <div>{item.name}</div>
+                      <div className="font-medium">{item.name}</div>
                       <img
                         src="https://assets.nobroker.in/hs-new/public/Common/verifiedImg.svg"
                         alt=""
                       />
                     </div>
-                    <div className="text-sm">{item.review}</div>
+                    <div className="text-sm">
+                      {isExpanded
+                        ? item.review
+                        : item.review.slice(0, 150) + " ... "}
+                      <span onClick={toggleReview} className="text-teal-500">
+                        {isExpanded ? "see less" : "see more"}
+                      </span>
+                    </div>
                   </div>
                 )
               )}
@@ -713,7 +760,7 @@ const RentalAgreement = () => {
           </div>
 
           {/* final text */}
-          <div className="bg-white rounded-xl px-8 py-12 md:w-[90%] mx-auto text-sm">
+          <div className="bg-white rounded-xl px-8 py-12 md:w-[90%] mx-auto text-[12.5px]">
             <h2 className="md:text-2xl text-lg font-semibold md:font-normal">
               Creation of Rental Agreements in Bangalore
             </h2>

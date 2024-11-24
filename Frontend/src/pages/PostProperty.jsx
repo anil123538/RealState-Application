@@ -11,7 +11,7 @@ import PostPropertyText from "../components/postPropertyText";
 
 function PostProperty() {
   const [selectedType, setSelectedType] = useState("Residential");
-  const [selectedAdType, setSelectedAdType] = useState(null);
+  const [selectedAdType, setSelectedAdType] = useState("Rent");
   const adTypes = {
     Residential: ["Rent", "Resale", "PG/Hostel", "Flatmates"],
     Commercial: ["Rent", "Sale"],
@@ -21,20 +21,20 @@ function PostProperty() {
   return (
     <>
       <QuickChart />
-      <div className="container" style={{ marginTop: "100px" }}>
+      <div className="container" style={{ marginTop: "106px", width: "90%" }}>
         <div className="top d-flex align-items-center justify-content-between">
-          <h1 className="fw-semibold fs-4" style={{ color: "#424949" }}>
+          <h1 className="fw-semibold fs-4 mb-5" style={{ color: "#424949" }}>
             Sell or Rent your property for free
           </h1>
-          <p className="link" style={{ color: "#424949" }}>
-            Looking for a property?{" "}
+          <p className="link mb-5" style={{ color: "#424949" }}>
+            Looking for a property?
             <a href="" style={{ color: "#097969" }}>
               Click here
             </a>
           </p>
         </div>
         <div className="row main">
-          <div className="col-lg-5 left">
+          <div className="col-lg-4 left" style={{ width: "30%" }}>
             <h4
               className=""
               style={{ color: "#424949", fontSize: "18px", fontWeight: "600" }}
@@ -212,19 +212,19 @@ function PostProperty() {
             </Carousel>
           </div>
 
-          <div className="col-lg-7 right mt-4 py-1">
+          <div className="col-lg-8 right mt-4 py-1 ms-6">
             <div className="row mb-3">
               <div className="col">
                 <input
                   type="text"
-                  className="form-control"
+                  className="form-control uniform-input"
                   placeholder="Name"
                 />
               </div>
               <div className="col">
                 <input
                   type="email"
-                  className="form-control"
+                  className="form-control uniform-input"
                   placeholder="Email"
                 />
               </div>
@@ -234,13 +234,19 @@ function PostProperty() {
                 <PhoneInput
                   country={"np"}
                   value=""
-                  inputClass="form-control"
-                  containerClass="w-100"
+                  inputClass="form-control uniform-input"
+                  inputStyle={{
+                    width: "100%",
+                    height: "45px",
+                    fontSize: "14px",
+                    padding: "10px 45px",
+                  }}
                 />
               </div>
+
               <div className="col">
                 <select
-                  className="form-select"
+                  className="form-select uniform-input"
                   aria-label="Default select example"
                 >
                   <option>Select City</option>
@@ -299,7 +305,7 @@ function PostProperty() {
                     }`}
                     onClick={() => {
                       setSelectedType(type);
-                      setSelectedAdType(null);
+                      setSelectedAdType(adTypes[type][0]);
                     }}
                   >
                     {type}
