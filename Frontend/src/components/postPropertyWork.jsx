@@ -4,11 +4,11 @@ function PostPropertyWork() {
   return (
     <>
        <div
-          className="work mt-4 py-4 px-40"
+          className="work mt-14 pt-5 pb-12 px-40"
           style={{ backgroundColor: "#f5f5f5" }}
         >
           <h4
-            className="text-center fw-semibold fs-5 pb-4"
+            className="text-center fw-semibold fs-5 pb-9"
             style={{ color: "#424949" }}
           >
             How it Works{" "}
