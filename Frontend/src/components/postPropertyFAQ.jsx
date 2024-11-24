@@ -37,11 +37,11 @@ function PostPropertyFAQ() {
     return (
         <>
 
-            <div className="postPropertyfaq ms-4 pt-3 pb-2">
-                <h3 className="fs-5 pb-2" style={{ color: "#464949" }}><strong>Frequenty asked questions</strong></h3>
-                <p style={{ color: "#464949", fontSize: "14px" }}>If you are looking to rent or sell your individual house, flat, or commercial property the first thing you need to do is decide how to find a buyer or tenant. Now, you can’t always depend on your immediate contacts to help you get the job done, you need to cast a wider net, to get more options and to get better offers.</p>
+            <div className="postPropertyfaq ms-4 pt-9 pb-2">
+                <h3 className="fs-5 pb-7" style={{ color: "#464949" }}><strong>Frequenty asked questions</strong></h3>
+                <p className='pb-5' style={{ color: "#464949", fontSize: "14px" }}>If you are looking to rent or sell your individual house, flat, or commercial property the first thing you need to do is decide how to find a buyer or tenant. Now, you can’t always depend on your immediate contacts to help you get the job done, you need to cast a wider net, to get more options and to get better offers.</p>
 
-                <p className="" style={{ color: "#464949", fontSize: "14px" }}>Here are a few frequently asked questions and answers about house rent, house selling, commercial property rent and commercial property selling. This should give you an idea as to how simple the process is, and what you need to be aware of.</p>
+                <p className="pb-5" style={{ color: "#464949", fontSize: "14px" }}>Here are a few frequently asked questions and answers about house rent, house selling, commercial property rent and commercial property selling. This should give you an idea as to how simple the process is, and what you need to be aware of.</p>
 
 
             </div>
