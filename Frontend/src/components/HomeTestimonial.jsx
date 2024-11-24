@@ -98,10 +98,10 @@ const HomeTestimonial = () => {
           height="320"
           src="https://www.youtube.com/embed/0ChlgxhXVws"
           title="NoBroker Reviews - Why our customers love us?"
-          frameborder="0"
+          style={{ border: "none" }}
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
           className="my-10"
         ></iframe>
         <div
