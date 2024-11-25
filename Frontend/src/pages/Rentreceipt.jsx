@@ -334,8 +334,8 @@ function Rentreceipt() {
           </form>
         </div>
 
-        <div className="row gap-2 d-flex justify-content-center align-items-center">
-          <div className="col-lg-5 text-left border p-4">
+        <div className="row gap-2  pt-2 pb-1 d-flex justify-content-center align-items-center">
+          <div className="col-lg-5 text-left border p-4" style={{width: "32%"}}>
             <div className="d-flex justify-content-between align-items-center gap-2">
               <div>
                 <div className="fs-5.5 font-semibold">
@@ -387,7 +387,7 @@ function Rentreceipt() {
               Explore Now
             </button>
           </div>
-          <div className="col-lg-5 text-left border p-4">
+          <div className="col-lg-5 text-left border p-4" style={{width: "32%"}}>
             <div className="flex justify-content-between align-items-center gap-2">
               <div>
                 <div className="fs-5.5 font-semibold">
@@ -437,7 +437,7 @@ function Rentreceipt() {
 
         <ReceiptrentCcard />
 
-        <div class="ms-20 me-20 rentReceipt-text mt-5" style={{ color: "#464646" }}>
+        <div class="ms-44 me-44 rentReceipt-text mt-5" style={{ color: "#464646" }}>
           <h2 className="mb-4">
             <b>What is Rent Receipt?</b>
           </h2>

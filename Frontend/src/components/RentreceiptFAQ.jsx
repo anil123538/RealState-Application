@@ -64,7 +64,7 @@ function RentreceiptFAQ() {
 
     return (
         <>
-<div className='ms-8 me-8 Rentreceiptfaq'>
+<div className='ms-28 me-28 Rentreceiptfaq'>
             <div className=" ms-4 pt-3 pb-2 mt-5">
                 <h3 className="fs-5 pb-2 text-center" style={{ color: "#464949" }}><strong>Frequenty asked questions</strong></h3>
 

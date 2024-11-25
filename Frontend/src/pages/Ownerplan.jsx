@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "../style/Ownerplan.css";
 import { Carousel } from "react-bootstrap";
 import OwnerplanFAQ from '../components/OwnerplanFAQ'
+import Pic1 from '../assets/images/pic1.jpg'
+import Pic2 from '../assets/images/pic2.jpg'
 
 function Ownerplan() {
   const [activeCard, setActiveCard] = useState(1);
@@ -40,21 +42,21 @@ function Ownerplan() {
   const boxes = [
     {
       id: 1,
-      imgSrc: "https://via.placeholder.com/150", 
-      title: "Box 1",
-      text: "This is the first box with some text.",
+      imgSrc: Pic1, 
+      title: "NoBroker's customer service was impressively prompt and friendly. Listing my flat on rent was a memorable experience overall.",
+      text: "#ZeroBrokerage",
     },
     {
       id: 2,
-      imgSrc: "https://via.placeholder.com/150", 
-      title: "Box 2",
-      text: "This is the second box with some text.",
+      imgSrc: Pic2, 
+      title: "NoBroker premium plan Helped me get the best deal For a PG that too in a very short time!",
+      text: "#ZeroBrokerage",
     },
     {
       id: 3,
-      imgSrc: "https://via.placeholder.com/150", 
-      title: "Box 3",
-      text: "This is the third box with some text.",
+      imgSrc: Pic1, 
+      title: "NoBroker's customer service was impressively prompt and friendly. Listing my flat on rent was a memorable experience overall.",
+      text: "#ZeroBrokerage",
     },
   ];
 
@@ -136,7 +138,7 @@ function Ownerplan() {
             </div>
           </div>
 
-          <div className="row mt-14 gap-7">
+          <div className="row ownerplan mt-14 gap-7">
             {cards.map((card) => (
               <div
                 key={card.id}
@@ -217,7 +219,19 @@ function Ownerplan() {
                         >
                           {card.gst}
                           <div className="tooltip-box">
-                            This is the GST information.
+                            <div className="1strow pb-2 d-flex justify-content-between">
+                              <span>Plan Price</span>
+                              <span>Rs. 2999</span>
+                            </div>
+                            <div className="2ndrow pb-2 d-flex justify-content-between">
+                              <span>GST @ 18%</span>
+                              <span>Rs. 299</span>
+                            </div>
+                            <hr className="pb-2"/>
+                            <div className="3rdrow d-flex justify-content-between">
+                              <span>Amount Payable</span>
+                              <span>Rs. 3424</span>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -245,23 +259,141 @@ function Ownerplan() {
               </div>
             ))}
 
-            {activeCard && (
-              <div
-                className="mt-4"
-                style={{
-                  backgroundColor: "#f9f9f9",
-                  padding: "1rem",
-                  borderRadius: "10px",
-                  textAlign: "center",
-                  width: "100%",
-                }}
-              >
-                <h4>
-                  You clicked on card:{" "}
-                  {cards.find((card) => card.id === activeCard)?.title}
-                </h4>
-              </div>
-            )}
+{activeCard && (
+  <div
+    className="mt-4 relative"
+    style={{
+      backgroundColor: "#f9f9f9",
+      padding: "1rem",
+      borderRadius: "10px",
+      textAlign: "center",
+      width: "100%",
+      position: "relative", // Required for the triangle positioning.
+    }}
+  >
+    {/* Triangle */}
+    {/* <div
+      className="absolute"
+      style={{
+        top: "-10px", 
+        left: "50%",
+        transform: "translateX(-50%)", 
+        width: "200px",
+        height: "200px",
+        backgroundColor: "#000", 
+        clipPath: "polygon(50% 0%, 0% 100%, 100% 100%)", 
+        zIndex: 1,
+      }}
+    ></div> */}
+
+    <div className="row">
+    <div className="col">
+  <div className="text-muted">
+    <div className="d-flex flex-row text-muted" style={{ fontSize: "13px" }}>
+      <div className="me-1 position-relative mt-1">
+        <div style={{ width: "24px", height: "24px" }}>
+          <div
+            className="cursor-pointer"
+            style={{
+              width: "24px",
+              height: "24px",
+              backgroundImage: "url('https://assets.nobroker.in/nb-new/public/icons_plans_page_benifits_outlined.svg')",
+              backgroundPosition: "-216px -23px",
+              backgroundRepeat: "no-repeat",
+            }}
+            itemProp="image"
+          ></div>
+        </div>
+      </div>
+      <div
+        className="px-1 text-capitalize"
+        style={{ fontSize: "16px", marginBottom: "2vh" }}
+      >
+        <span className="fw-semibold">50 </span> Days <br /> Plan Validity
+      </div>
+    </div>
+  </div>
+  <div className="text-muted">
+    <div className="d-flex flex-row text-muted" style={{ fontSize: "13px" }}>
+      <div className="me-1 position-relative mt-1">
+        <div style={{ width: "24px", height: "24px" }}>
+          <div
+            className="cursor-pointer"
+            style={{
+              width: "24px",
+              height: "24px",
+              backgroundImage: "url('https://assets.nobroker.in/nb-new/public/icons_plans_page_benifits_outlined.svg')",
+              backgroundPosition: "-216px -23px",
+              backgroundRepeat: "no-repeat",
+            }}
+            itemProp="image"
+          ></div>
+        </div>
+      </div>
+      <div
+        className="px-1 text-capitalize"
+        style={{ fontSize: "16px", marginBottom: "2vh" }}
+      >
+        Top Slot Listing for <br /> 5x more visibility
+      </div>
+    </div>
+  </div>
+  <div className="text-muted">
+    <div className="d-flex flex-row text-muted" style={{ fontSize: "13px" }}>
+      <div className="me-1 position-relative mt-1">
+        <div style={{ width: "24px", height: "24px" }}>
+          <div
+            className="cursor-pointer"
+            style={{
+              width: "24px",
+              height: "24px",
+              backgroundImage: "url('https://assets.nobroker.in/nb-new/public/icons_plans_page_benifits_outlined.svg&quot')",
+              backgroundPosition: "-216px -23px",
+              backgroundRepeat: "no-repeat",
+            }}
+            itemProp="image"
+          ></div>
+        </div>
+      </div>
+      <div
+        className="px-1 text-capitalize"
+        style={{ fontSize: "16px", marginBottom: "2vh" }}
+      >
+        Relationship Manager (RM)- <br />Super fast closure
+      </div>
+    </div>
+  </div>
+  <div className="text-muted">
+    <div className="d-flex flex-row text-muted" style={{ fontSize: "13px" }}>
+      <div className="me-1 position-relative mt-1">
+        <div style={{ width: "24px", height: "24px" }}>
+          <div
+            className="cursor-pointer"
+            style={{
+              width: "24px",
+              height: "24px",
+              backgroundImage: "url('https://assets.nobroker.in/nb-new/public/icons_plans_page_benifits_outlined.svg')",
+              backgroundPosition: "-216px -23px",
+              backgroundRepeat: "no-repeat",
+            }}
+            itemProp="image"
+          ></div>
+        </div>
+      </div>
+      <div
+        className="px-1 text-capitalize"
+        style={{ fontSize: "16px", marginBottom: "2vh" }}
+      >
+        Rental agreement <br /> home delivered
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+)}
+
           </div>
 
           <div className="carousel-container mt-20">
@@ -269,7 +401,7 @@ function Ownerplan() {
               {boxes.map((box) => (
                 <Carousel.Item key={box.id}>
                   <div className="d-flex justify-content-center">
-                    <div className="card" style={{ width: "18rem" }}>
+                    <div className="card" style={{ width: "18rem", position: "relative" }}>
                       <img
                         src={box.imgSrc}
                         className="card-img-top rounded-circle"
@@ -278,7 +410,10 @@ function Ownerplan() {
                           width: "100px",
                           height: "100px",
                           margin: "0 auto",
+                          objectFit: "cover",
                           marginTop: "-20%",
+                          left: "34%",
+                          position: "absolute"
                         }}
                       />
                       <div className="card-body">
