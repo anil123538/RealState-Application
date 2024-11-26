@@ -96,13 +96,13 @@ const Search = ({ selectedOption, setSelectedOption }) => {
 
   return (
     <>
-      <div className="flex flex-col justify-center items-center md:px-10 pt-10">
-        <div className="flex flex-col gap-4 mt-2 mx-4 md:mx-0">
-          <div className="text-3xl font-normal text-[#787676]">
+      <div className="flex flex-col justify-center items-center md:px-10">
+        <div className="flex flex-col gap-4 mt-2 md:mx-0 w-full p-4">
+          <div className="text-3xl font-normal text-[#787676] hidden md:block">
             World's Largest NoBrokerage Property Site
           </div>
 
-          <div className="flex bg-[rgba(252,178,68,0.2)] h-14 gap-2 md:w-fit w-full mx-auto md:p-4 p-2 py-3 text-xs justify-center text-[#464646]">
+          <div className="md:flex hidden bg-[rgba(252,178,68,0.2)] h-14 gap-2 md:w-fit w-full mx-auto md:p-4 p-2 py-3 text-xs justify-center text-[#464646]">
             <div className="flex items-center">
               {selectedOption === "Buy" ? (
                 <>
@@ -148,11 +148,17 @@ const Search = ({ selectedOption, setSelectedOption }) => {
             </div>
           </div>
 
-          <div className="grid grid-cols-3 items-center md:border border-zinc-200 md:w-7/12 mx-auto text-center text-[15px]">
+          <div className="md:hidden flex items-center opacity-40 font-semibold text-sm justify-center">
+            <div>100% Owner properties</div>
+            <div className="mx-2 border border-black h-4"></div>
+            <div>Zero Brokerage</div>
+          </div>
+
+          <div className="grid grid-cols-3 items-center md:border border-zinc-200 md:w-7/12 w-full mx-auto text-center text-[15px]">
             <div
               className={`p-2 cursor-pointer ${
                 selectedOption === "Buy"
-                  ? "border-b-4 border-red-500"
+                  ? "border-b-4 border-red-400 font-semibold"
                   : "md:border-r border-zinc-200"
               } `}
               onClick={() => handleSelectedOption("Buy")}
@@ -160,7 +166,7 @@ const Search = ({ selectedOption, setSelectedOption }) => {
               <Link
                 className={`no-underline ${
                   selectedOption === "Buy"
-                    ? " text-red-500 no-underline"
+                    ? " text-red-400 font-semibold"
                     : "text-zinc-400"
                 }`}
               >
@@ -170,7 +176,7 @@ const Search = ({ selectedOption, setSelectedOption }) => {
             <div
               className={` p-2 cursor-pointer ${
                 selectedOption === "Rent"
-                  ? "border-b-4 border-red-500"
+                  ? "border-b-4 border-red-400 font-semibold"
                   : "md:border-x border-zinc-200"
               } `}
               onClick={() => handleSelectedOption("Rent")}
@@ -178,7 +184,7 @@ const Search = ({ selectedOption, setSelectedOption }) => {
               <Link
                 className={`no-underline ${
                   selectedOption === "Rent"
-                    ? " text-red-500 no-underline"
+                    ? " text-red-400 font-semibold"
                     : "text-zinc-400"
                 }`}
               >
@@ -188,7 +194,7 @@ const Search = ({ selectedOption, setSelectedOption }) => {
             <div
               className={` p-2 cursor-pointer ${
                 selectedOption === "Commercial"
-                  ? "border-b-4 border-red-500"
+                  ? "border-b-4 border-red-400 font-semibold"
                   : "md:border-l border-zinc-200"
               } `}
               onClick={() => handleSelectedOption("Commercial")}
@@ -196,7 +202,7 @@ const Search = ({ selectedOption, setSelectedOption }) => {
               <Link
                 className={`no-underline ${
                   selectedOption === "Commercial"
-                    ? " text-red-500 no-underline"
+                    ? " text-red-400 font-semibold"
                     : "text-zinc-400"
                 }`}
               >
@@ -204,9 +210,43 @@ const Search = ({ selectedOption, setSelectedOption }) => {
               </Link>
             </div>
           </div>
+
+          <div className="relative">
+            <div className="p-4 border border-black rounded-xl opacity-40 ">
+              Search by locality or landmark
+            </div>
+            <div className="w-fit absolute top-2 right-2 bg-[#fd3752] text-white flex items-center text-lg px-3 py-2 cursor-pointer rounded-xl hover:bg-[#d03c3c]">
+              <BiSearch className="text-2xl" />
+            </div>
+          </div>
+
+          <div className="flex items-center justify-between gap-2 bg-gradient-to-br from-[#452f22] to-[#574435] p-4 rounded-xl text-white text-sm">
+            <div className="flex flex-col gap-1 min-w-fit">
+              <div className="opacity-90">Looking for Tenants / Buyers ?</div>
+              <div>
+                <div></div>
+                <div className="text-xs opacity-70">
+                  Faster & Verified Tenants/Buyers
+                </div>
+              </div>
+              <div>
+                <div></div>
+                <div className="text-xs opacity-70">Pay ZERO brokerage</div>
+              </div>
+              <button className="p-3 w-fit mt-4 rounded-md bg-red-500 font-semibold">
+                Posst FREE Property Ad
+              </button>
+            </div>
+
+            <img
+              src="/home/homePage.png"
+              alt=""
+              className="bg-no-repeat bg-contain m-0 min-w-24 w-32"
+            />
+          </div>
         </div>
 
-        <div className="w-full lg:w-10/12 xl:w-9/12 flex flex-col">
+        <div className="w-full lg:w-10/12 xl:w-9/12 md:flex hidden flex-col">
           <div className="flex md:flex-row flex-col">
             <Select
               defaultValue={selectedCityOption}
@@ -441,7 +481,7 @@ const Search = ({ selectedOption, setSelectedOption }) => {
           ) : null}
         </div>
 
-        <div className="flex flex-col gap-4 items-center">
+        <div className="md:flex hidden flex-col gap-4 items-center">
           <div className="flex flex-nowrap items-center gap-2 mt-10">
             <hr className="border opacity-20 w-20" />
             <span className="text-sm opacity-80">
