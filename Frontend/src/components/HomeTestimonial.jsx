@@ -91,7 +91,7 @@ const HomeTestimonial = () => {
 
   return (
     <>
-      <div className="bg-slate-600 py-10 items-center flex flex-col relative">
+      <div className="bg-slate-600 py-10 items-center md:flex hidden flex-col relative">
         <h1 className="text-white text-2xl">Our Customers Loves us</h1>
         <iframe
           width="560"
@@ -162,7 +162,7 @@ const HomeTestimonial = () => {
         </div>
       </div>
 
-      <div className="flex items-center justify-around p-10">
+      <div className="md:flex hidden items-center justify-around p-10">
         <div>
           <img
             src="https://assets.nobroker.in/nb-new/public/Home/homeAppPromotion.png"
