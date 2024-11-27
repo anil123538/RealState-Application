@@ -9,7 +9,7 @@ function App() {
   const location = useLocation();
 
   // route to hide footer
-  const hideFooterRoutes = ["/rent-receipt", "/refer-and-earn"];
+  const hideFooterRoutes = ["/rent-receipt", "/refer-and-earn", "/careers"];
 
   return (
     <>
