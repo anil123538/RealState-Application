@@ -4,6 +4,7 @@ import { Carousel } from "react-bootstrap";
 import OwnerplanFAQ from "../components/OwnerplanFAQ";
 import Pic1 from "../assets/images/pic1.jpg";
 import Pic2 from "../assets/images/pic2.jpg";
+import Icon from "../assets/images/icons_plans_page_benifits_outlined.svg";
 
 function Ownerplan() {
   const [activeCard, setActiveCard] = useState(1);
@@ -51,7 +52,7 @@ function Ownerplan() {
       id: 2,
       imgSrc: Pic2,
       title:
-        "NoBroker premium plan Helped me get the best deal For a PG that too in a very short time!",
+        "NoBroker's customer service was impressively prompt and friendly. Listing my flat on rent was a memorable experience overall.",
       text: "#ZeroBrokerage",
     },
     {
@@ -293,10 +294,10 @@ function Ownerplan() {
     ></div> */}
 
                 <div className="row">
-                  <div className="col">
+                  <div className="col" >
                     <div className="text-muted">
                       <div
-                        className="d-flex flex-row text-muted"
+                        className="d-flex flex-row"
                         style={{ fontSize: "13px" }}
                       >
                         <div className="me-1 position-relative mt-1">
@@ -306,8 +307,7 @@ function Ownerplan() {
                               style={{
                                 width: "24px",
                                 height: "24px",
-                                backgroundImage:
-                                  "url('https://assets.nobroker.in/nb-new/public/icons_plans_page_benifits_outlined.svg')",
+                                backgroundImage: `url(${Icon})`,
                                 backgroundPosition: "-216px -23px",
                                 backgroundRepeat: "no-repeat",
                               }}
@@ -316,14 +316,17 @@ function Ownerplan() {
                           </div>
                         </div>
                         <div
-                          className="px-1 text-capitalize"
-                          style={{ fontSize: "16px", marginBottom: "2vh" }}
+                          className="px-1 d-flex flex-column justify-content-start align-items-start ms-2"
+                          style={{ fontSize: "14px", marginBottom: "2vh" }}
                         >
-                          <span className="fw-semibold">50 </span> Days <br />{" "}
-                          Plan Validity
+                          <div>
+                            <span className="fw-semibold">50 </span> Days
+                          </div>
+                          <div>Plan Validity</div>
                         </div>
                       </div>
                     </div>
+
                     <div className="text-muted">
                       <div
                         className="d-flex flex-row text-muted"
@@ -337,8 +340,8 @@ function Ownerplan() {
                                 width: "24px",
                                 height: "24px",
                                 backgroundImage:
-                                  "url('https://assets.nobroker.in/nb-new/public/icons_plans_page_benifits_outlined.svg')",
-                                backgroundPosition: "-216px -23px",
+                                  `url(${Icon})`,
+                                backgroundPosition: "-214px -70px",
                                 backgroundRepeat: "no-repeat",
                               }}
                               itemProp="image"
@@ -346,13 +349,15 @@ function Ownerplan() {
                           </div>
                         </div>
                         <div
-                          className="px-1 text-capitalize"
-                          style={{ fontSize: "16px", marginBottom: "2vh" }}
+                          className="px-1 d-flex flex-column justify-content-start align-items-start ms-2"
+                          style={{ fontSize: "14px", marginBottom: "2vh" }}
                         >
-                          Top Slot Listing for <br /> 5x more visibility
+                          <div>Top Slot Listing for</div>
+                          <div> 5x more visibility</div>
                         </div>
                       </div>
                     </div>
+
                     <div className="text-muted">
                       <div
                         className="d-flex flex-row text-muted"
@@ -366,8 +371,8 @@ function Ownerplan() {
                                 width: "24px",
                                 height: "24px",
                                 backgroundImage:
-                                  "url('https://assets.nobroker.in/nb-new/public/icons_plans_page_benifits_outlined.svg&quot')",
-                                backgroundPosition: "-216px -23px",
+                                  `url(${Icon})`,
+                                backgroundPosition: "-215px -165px",
                                 backgroundRepeat: "no-repeat",
                               }}
                               itemProp="image"
@@ -375,14 +380,15 @@ function Ownerplan() {
                           </div>
                         </div>
                         <div
-                          className="px-1 text-capitalize"
-                          style={{ fontSize: "16px", marginBottom: "2vh" }}
+                          className="px-1 d-flex flex-column justify-content-start align-items-start ms-2"
+                          style={{ fontSize: "14px", marginBottom: "2vh" }}
                         >
-                          Relationship Manager (RM)- <br />
-                          Super fast closure
+                          <div>Relationship Manager (RM)-</div>
+                          <div>Super fast closure</div>
                         </div>
                       </div>
                     </div>
+
                     <div className="text-muted">
                       <div
                         className="d-flex flex-row text-muted"
@@ -396,8 +402,8 @@ function Ownerplan() {
                                 width: "24px",
                                 height: "24px",
                                 backgroundImage:
-                                  "url('https://assets.nobroker.in/nb-new/public/icons_plans_page_benifits_outlined.svg')",
-                                backgroundPosition: "-216px -23px",
+                                  `url(${Icon})`,
+                                backgroundPosition: "-215px -209px",
                                 backgroundRepeat: "no-repeat",
                               }}
                               itemProp="image"
@@ -405,10 +411,11 @@ function Ownerplan() {
                           </div>
                         </div>
                         <div
-                          className="px-1 text-capitalize"
-                          style={{ fontSize: "16px", marginBottom: "2vh" }}
+                          className="px-1 d-flex flex-column justify-content-start align-items-start ms-2"
+                          style={{ fontSize: "14px", marginBottom: "2vh" }}
                         >
-                          Rental agreement <br /> home delivered
+                          <div>Rental agreement </div>
+                          <div>home delivered</div>
                         </div>
                       </div>
                     </div>
@@ -428,8 +435,8 @@ function Ownerplan() {
                                 width: "24px",
                                 height: "24px",
                                 backgroundImage:
-                                  "url('https://assets.nobroker.in/nb-new/public/icons_plans_page_benifits_outlined.svg')",
-                                backgroundPosition: "-216px -23px",
+                                  `url(${Icon})`,
+                                backgroundPosition: "-285px -212px",
                                 backgroundRepeat: "no-repeat",
                               }}
                               itemProp="image"
@@ -437,11 +444,11 @@ function Ownerplan() {
                           </div>
                         </div>
                         <div
-                          className="px-1 text-capitalize"
-                          style={{ fontSize: "16px", marginBottom: "2vh" }}
+                          className="px-1 d-flex flex-column align-items-start justify-content-start ms-2"
+                          style={{ fontSize: "14px", marginBottom: "2vh" }}
                         >
-                          <span className="">Guaranteed tenants</span> <br />
-                          or 100% Moneyback
+                          <div>Guaranteed tenants</div>
+                          <div>or 100% Moneyback</div>
                         </div>
                       </div>
                     </div>
@@ -459,8 +466,8 @@ function Ownerplan() {
                                 width: "24px",
                                 height: "24px",
                                 backgroundImage:
-                                  "url('https://assets.nobroker.in/nb-new/public/icons_plans_page_benifits_outlined.svg')",
-                                backgroundPosition: "-216px -23px",
+                                  `url(${Icon})`,
+                                backgroundPosition: "-216px -118px",
                                 backgroundRepeat: "no-repeat",
                               }}
                               itemProp="image"
@@ -468,12 +475,11 @@ function Ownerplan() {
                           </div>
                         </div>
                         <div
-                          className="px-1 text-capitalize"
-                          style={{ fontSize: "16px", marginBottom: "2vh" }}
+                          className="px-1 d-flex flex-column align-items-start justify-content-start ms-2"
+                          style={{ fontSize: "14px", marginBottom: "2vh" }}
                         >
-                          Property promotion on
-                          <br />
-                          website
+                          <div>Property promotion on</div>
+                          <div>website</div>
                         </div>
                       </div>
                     </div>
@@ -491,8 +497,8 @@ function Ownerplan() {
                                 width: "24px",
                                 height: "24px",
                                 backgroundImage:
-                                  "url('https://assets.nobroker.in/nb-new/public/icons_plans_page_benifits_outlined.svg&quot')",
-                                backgroundPosition: "-216px -23px",
+                                  `url(${Icon})`,
+                                backgroundPosition: "-282px -156px",
                                 backgroundRepeat: "no-repeat",
                               }}
                               itemProp="image"
@@ -500,12 +506,11 @@ function Ownerplan() {
                           </div>
                         </div>
                         <div
-                          className="px-1 text-capitalize"
-                          style={{ fontSize: "16px", marginBottom: "2vh" }}
+                          className="px-1 d-flex flex-column align-items-start justify-content-start ms-2"
+                          style={{ fontSize: "14px", marginBottom: "2vh" }}
                         >
-                          Photoshoot of
-                          <br />
-                          your property
+                          <div>Photoshoot of</div>
+                          <div>your property</div>
                         </div>
                       </div>
                     </div>
@@ -523,8 +528,8 @@ function Ownerplan() {
                                 width: "24px",
                                 height: "24px",
                                 backgroundImage:
-                                  "url('https://assets.nobroker.in/nb-new/public/icons_plans_page_benifits_outlined.svg')",
-                                backgroundPosition: "-216px -23px",
+                                  `url(${Icon})`,
+                                backgroundPosition: "-275px -65px",
                                 backgroundRepeat: "no-repeat",
                               }}
                               itemProp="image"
@@ -532,11 +537,11 @@ function Ownerplan() {
                           </div>
                         </div>
                         <div
-                          className="px-1 text-capitalize"
-                          style={{ fontSize: "16px", marginBottom: "2vh" }}
+                          className="px-1 d-flex flex-column align-items-start justify-content-start ms-2"
+                          style={{ fontSize: "14px", marginBottom: "2vh" }}
                         >
-                          Privacy of your phone
-                          <br /> number
+                          <div>Privacy of your phone</div>
+                          <div>number</div>
                         </div>
                       </div>
                     </div>
@@ -559,24 +564,19 @@ function Ownerplan() {
                               width: "24px",
                               height: "24px",
                               backgroundImage:
-                                "url('https://assets.nobroker.in/nb-new/public/icons_plans_page_benifits_outlined.svg')",
-                              backgroundPosition: "-216px -23px",
+                                `url(${Icon})`,
+                              backgroundPosition: "-281px -114px",
                               backgroundRepeat: "no-repeat",
                             }}
                             itemProp="image"
                           ></div>
                         </div>
-                        {/* </div> */}
                         <div
-                          className="d-flex flex-column align-items-left px-1 text-capitalize"
-                          style={{ fontSize: "16px", marginBottom: "2vh" }}
+                          className="px-1 d-flex flex-column align-items-start justify-content-start ms-2"
+                          style={{ fontSize: "14px", marginBottom: "2vh" }}
                         >
-                          <div>
-                            <span className="">Personal</span>
-                          </div>
-                          <div>
-                            <span>Field Assistant</span>
-                          </div>
+                          <div>Personal</div>
+                          <div>Field Assistant</div>
                         </div>
                       </div>
                     </div>
@@ -594,8 +594,8 @@ function Ownerplan() {
                                 width: "24px",
                                 height: "24px",
                                 backgroundImage:
-                                  "url('https://assets.nobroker.in/nb-new/public/icons_plans_page_benifits_outlined.svg')",
-                                backgroundPosition: "-216px -23px",
+                                  `url(${Icon})`,
+                                backgroundPosition: "-339px -23px",
                                 backgroundRepeat: "no-repeat",
                               }}
                               itemProp="image"
@@ -603,11 +603,11 @@ function Ownerplan() {
                           </div>
                         </div>
                         <div
-                          className="px-1 text-capitalize"
-                          style={{ fontSize: "16px", marginBottom: "2vh" }}
+                          className="px-1 d-flex flex-column align-items-start justify-content-start ms-2"
+                          style={{ fontSize: "14px", marginBottom: "2vh" }}
                         >
-                          Showing property
-                          <br /> on your behalf
+                          <div>Showing property</div>
+                          <div>on your behalf</div>
                         </div>
                       </div>
                     </div>
@@ -625,8 +625,8 @@ function Ownerplan() {
                                 width: "24px",
                                 height: "24px",
                                 backgroundImage:
-                                  "url('https://assets.nobroker.in/nb-new/public/icons_plans_page_benifits_outlined.svg&quot')",
-                                backgroundPosition: "-216px -23px",
+                                  `url(${Icon})`,
+                                backgroundPosition: "-275px -24px",
                                 backgroundRepeat: "no-repeat",
                               }}
                               itemProp="image"
@@ -634,12 +634,15 @@ function Ownerplan() {
                           </div>
                         </div>
                         <div
-                          className="px-1 text-capitalize"
-                          style={{ fontSize: "16px", marginBottom: "2vh" }}
+                          className="px-1 d-flex flex-column justify-content-start align-items-start ms-2"
+                          style={{
+                            fontSize: "14px",
+                            fontWeight: "400",
+                            marginBottom: "2vh",
+                          }}
                         >
-                          Facebook Marketing of
-                          <br />
-                          Your property
+                          <div>Facebook Marketing of</div>
+                          <div>Your property</div>
                         </div>
                       </div>
                     </div>
@@ -686,14 +689,24 @@ function Ownerplan() {
             )}
           </div>
 
-          <div className="carousel-container mt-20">
+          <div
+            className="carousel-container mt-20"
+            style={{
+              overflow: "visible",
+            }}
+          >
             <Carousel interval={3000} controls={false} indicators={true}>
               {boxes.map((box) => (
                 <Carousel.Item key={box.id}>
                   <div className="d-flex justify-content-center">
                     <div
                       className="card"
-                      style={{ width: "18rem", position: "relative" }}
+                      style={{
+                        width: "18rem",
+                        position: "relative",
+                        paddingTop: "4rem",
+                        overflow: "visible",
+                      }}
                     >
                       <img
                         src={box.imgSrc}
@@ -702,14 +715,16 @@ function Ownerplan() {
                         style={{
                           width: "100px",
                           height: "100px",
-                          margin: "0 auto",
                           objectFit: "cover",
-                          marginTop: "-20%",
-                          left: "34%",
                           position: "absolute",
+                          top: "-50px",
+                          left: "50%",
+                          transform: "translateX(-50%)",
+                          border: "3px solid white",
+                          boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
                         }}
                       />
-                      <div className="card-body">
+                      <div className="card-body text-center">
                         <h5 className="card-title">{box.title}</h5>
                         <p className="card-text">{box.text}</p>
                       </div>
@@ -719,7 +734,16 @@ function Ownerplan() {
               ))}
             </Carousel>
           </div>
-          <div className="mt-52">
+
+          <div className="mt-32">
+            <hr
+              style={{
+                border: "none",
+                height: "2px",
+                width: "100%",
+                backgroundColor: "#555",
+              }}
+            />
             <OwnerplanFAQ />
           </div>
         </div>
@@ -729,3 +753,5 @@ function Ownerplan() {
 }
 
 export default Ownerplan;
+
+{/* <div class="leading-1.2 text-bluish-grey"><div class="flex flex-row text-13"><div class="mr-1p relative mt-0.5p"><div class="w-2.4p h-2.4p"><div class="h-2.4p w-2.4p cursor-pointer bg-no-repeat" itemprop="image" style="background-image: url(&quot;https://assets.nobroker.in/nb-new/public/icons_plans_page_benifits_outlined.svg&quot;); background-position: -215px -165px;"></div></div></div><div class="px-0.5p text-16 capitalize" style="margin-bottom: 2vh;">Relationship Manager (RM)- <br> Super fast closure</div></div></div> */}
