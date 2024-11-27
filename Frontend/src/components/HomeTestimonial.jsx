@@ -57,7 +57,7 @@ const HomeTestimonial = () => {
   const scrollRight = () => {
     if (testimonialContainerRef.current) {
       testimonialContainerRef.current.scrollBy({
-        left: 400,
+        left: 800,
       });
     }
   };
@@ -65,7 +65,7 @@ const HomeTestimonial = () => {
   const scrollLeft = () => {
     if (testimonialContainerRef.current) {
       testimonialContainerRef.current.scrollBy({
-        left: -400,
+        left: -800,
       });
     }
   };

@@ -98,7 +98,7 @@ const Search = ({ selectedOption, setSelectedOption }) => {
     <>
       <div className="flex flex-col justify-center items-center md:px-10">
         <div className="flex flex-col gap-4 mt-2 md:mx-0 w-full p-4">
-          <div className="text-3xl font-normal text-[#787676] hidden md:block">
+          <div className="text-3xl font-normal text-center text-[#787676] hidden md:block">
             World's Largest NoBrokerage Property Site
           </div>
 
@@ -211,7 +211,7 @@ const Search = ({ selectedOption, setSelectedOption }) => {
             </div>
           </div>
 
-          <div className="relative">
+          <div className="relative md:hidden">
             <div className="p-4 border border-black rounded-xl opacity-40 ">
               Search by locality or landmark
             </div>
@@ -220,7 +220,7 @@ const Search = ({ selectedOption, setSelectedOption }) => {
             </div>
           </div>
 
-          <div className="flex items-center justify-between gap-2 bg-gradient-to-br from-[#452f22] to-[#574435] p-4 rounded-xl text-white text-sm">
+          <div className="flex md:hidden items-center justify-between gap-2 bg-gradient-to-br from-[#452f22] to-[#574435] p-4 rounded-xl text-white text-sm">
             <div className="flex flex-col gap-1 min-w-fit">
               <div className="opacity-90">Looking for Tenants / Buyers ?</div>
               <div>
