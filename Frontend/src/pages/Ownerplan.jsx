@@ -18,7 +18,7 @@ function Ownerplan() {
       if (cardElement) {
         const cardRect = cardElement.getBoundingClientRect();
         setTrianglePosition({
-          top: cardRect.top - 75, 
+          // top: cardRect.top - 75, 
           left: cardRect.left + cardRect.width / 2 - 145, 
         });
       }
@@ -299,9 +299,10 @@ function Ownerplan() {
           <div
             className="absolute"
             style={{
-              top: `${trianglePosition.top}px`, 
+              top: "-60px", 
               left: `${trianglePosition.left}px`, 
               transform: "translateX(-50%)", 
+              boxShadow: "rgba(0, 0, 0, 0.1) 0px 0px 6px 2px",
               width: "90px",
               height: "80px",
               backgroundColor: "#fff",
