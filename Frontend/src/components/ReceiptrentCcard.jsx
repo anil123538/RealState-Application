@@ -32,7 +32,7 @@ function ReceiptrentCcard() {
   ];
 
   return (
-    <div className="container mt-5">
+    <div className="container mt-5" style={{width: "85%"}}>
       <div className="rent-receipt">
         <h1 className="ms-2">Pay Rent With Credit Card Online</h1>
         <h4 className="ms-2">Earn money just by paying your rent!</h4>

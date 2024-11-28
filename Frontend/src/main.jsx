@@ -17,7 +17,6 @@ import Rentreceipt from "./pages/Rentreceipt.jsx";
 import RentalAgreement from "./pages/RentalAgreement.jsx";
 import ReferAndEarn from "./pages/ReferAndEarn.jsx";
 import Ownerplan from "./pages/Ownerplan.jsx";
-import BuyersPlan from "./pages/BuyersPlan.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -31,6 +30,7 @@ const router = createBrowserRouter(
       <Route path="/refer-and-earn" element={<ReferAndEarn />} />
       <Route path="/buyers-plan" element={<BuyersPlan />} />
       <Route path="/owner-plan" element={<Ownerplan />} />
+      <Route path="/careers" element={<Careers />} />
       <Route path="*" element={<PageNotFound />} />
     </Route>
   )
