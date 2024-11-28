@@ -17,6 +17,8 @@ import Rentreceipt from "./pages/Rentreceipt.jsx";
 import RentalAgreement from "./pages/RentalAgreement.jsx";
 import ReferAndEarn from "./pages/ReferAndEarn.jsx";
 import Ownerplan from "./pages/Ownerplan.jsx";
+import BuyersPlan from "./pages/BuyersPlan.jsx";
+import Careers from "./pages/Careers.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
