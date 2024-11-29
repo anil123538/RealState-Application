@@ -18,8 +18,7 @@ function Ownerplan() {
       if (cardElement) {
         const cardRect = cardElement.getBoundingClientRect();
         setTrianglePosition({
-          // top: cardRect.top - 75, 
-          left: cardRect.left + cardRect.width / 2 - 145, 
+          left: cardRect.left + cardRect.width / 2 - 135, 
         });
       }
     }

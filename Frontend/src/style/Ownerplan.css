@@ -105,7 +105,7 @@
   font-size: 14px;
 }
 
-.carousel-inner {
+.carousel-container .carousel-inner {
   position: relative;
   width: 100%;
   overflow: visible;
