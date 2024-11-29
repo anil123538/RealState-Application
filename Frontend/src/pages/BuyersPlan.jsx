@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { IoMdCheckmark } from "react-icons/io";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../style/BuyersPlan.css";
-import "react-international-phone/style.css";
-import PhoneInput from "react-phone-number-input";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
 
 function BuyersPlan() {
   const [phone, setPhone] = useState("");
@@ -270,13 +270,20 @@ function BuyersPlan() {
                                     <div className="mb-0 text-lg font-medium">
                                       Enter phone to continue
                                     </div>
-                                    <div>
+                                    <div
+                                      className="col"
+                                      style={{ border: "0 solid #e5e7eb" }}
+                                    >
                                       <PhoneInput
-                                        defaultCountry="NP"
-                                        value={phone}
-                                        onChange={setPhone}
-                                        placeholder="Enter Mobile Number"
-                                        className="phone-input"
+                                        country={"np"}
+                                        value=""
+                                        inputClass="form-control uniform-input"
+                                        inputStyle={{
+                                          width: "100%",
+                                          height: "45px",
+                                          fontSize: "14px",
+                                          padding: "10px 45px",
+                                        }}
                                       />
                                     </div>
                                     <button
@@ -320,30 +327,76 @@ function BuyersPlan() {
         </div>
 
         <div className="text-center mt-5">
-          <p>All Plans are valid for 3 months. 
-          <span className="text-danger" data-bs-toggle="modal" data-bs-target="#exampleModal1"> T&C apply.</span></p>
-          <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5 text-decoration-underline" id="exampleModalLabel">Terms and Conditions</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body text-start">
-        <h4 className="fw-semibold">MoneyBack plan:</h4>
-        <ul className="ms-5 mt-2" style={{listStyleType:'circle'}}>
-          <li>The refund will be processed once you shift to your new property which is not available on NoBroker website.</li>
-          <li>100% refund has to be claimed within a week of plan expiry.          </li>
-          <li>For claiming the refund, you just need to submit a valid copy of your sale deed.          </li>
-          <li>The sale deed should match the requirement given to NoBroker. NoBroker will verify the claim, this may include physical visit of the property premises.          </li>
-          <li>The property price in the sale deed should be equal or lower than the one given to NoBroker property advisor at the time of plan subscription.          </li>
-        </ul>
-        <p className="text-center  mt-3 ">Click here for detailed 
-        <span className="text-decoration-underline ms-1">Terms & Conditions</span></p>
-      </div>
-    </div>
-  </div>
-</div>
+          <p>
+            All Plans are valid for 3 months.
+            <span
+              className="text-danger"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal1"
+            >
+              {" "}
+              T&C apply.
+            </span>
+          </p>
+          <div
+            class="modal fade"
+            id="exampleModal1"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1
+                    class="modal-title fs-5 text-decoration-underline"
+                    id="exampleModalLabel"
+                  >
+                    Terms and Conditions
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body text-start">
+                  <h4 className="fw-semibold">MoneyBack plan:</h4>
+                  <ul className="ms-5 mt-2" style={{ listStyleType: "circle" }}>
+                    <li>
+                      The refund will be processed once you shift to your new
+                      property which is not available on NoBroker website.
+                    </li>
+                    <li>
+                      100% refund has to be claimed within a week of plan
+                      expiry.{" "}
+                    </li>
+                    <li>
+                      For claiming the refund, you just need to submit a valid
+                      copy of your sale deed.{" "}
+                    </li>
+                    <li>
+                      The sale deed should match the requirement given to
+                      NoBroker. NoBroker will verify the claim, this may include
+                      physical visit of the property premises.{" "}
+                    </li>
+                    <li>
+                      The property price in the sale deed should be equal or
+                      lower than the one given to NoBroker property advisor at
+                      the time of plan subscription.{" "}
+                    </li>
+                  </ul>
+                  <p className="text-center  mt-3 ">
+                    Click here for detailed
+                    <span className="text-decoration-underline ms-1">
+                      Terms & Conditions
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
           <p>Click here for Seller Plans</p>
         </div>
       </div>
