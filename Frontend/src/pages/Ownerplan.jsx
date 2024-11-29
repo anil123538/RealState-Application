@@ -704,21 +704,16 @@ function Ownerplan() {
 
           <div
             className="carousel-container mt-20"
-            style={{
-              overflow: "visible",
-            }}
           >
-            <Carousel interval={3000} controls={false} indicators={true}>
+            <Carousel interval={2000} controls={false} indicators={true} >
               {boxes.map((box) => (
-                <Carousel.Item key={box.id}>
+                <Carousel.Item key={box.id} >
                   <div className="d-flex justify-content-center">
                     <div
                       className="card"
                       style={{
                         width: "18rem",
-                        position: "relative",
                         paddingTop: "4rem",
-                        overflow: "visible",
                       }}
                     >
                       <img
@@ -738,8 +733,8 @@ function Ownerplan() {
                         }}
                       />
                       <div className="card-body text-center">
-                        <h5 className="card-title">{box.title}</h5>
-                        <p className="card-text">{box.text}</p>
+                        <h5 className="card-title italic">{box.title}</h5>
+                        <p className="card-text" style={{color:"#009587"}}>{box.text}</p>
                       </div>
                     </div>
                   </div>
