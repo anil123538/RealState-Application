@@ -7,6 +7,7 @@ import { RxDotFilled } from "react-icons/rx";
 import { Link } from "react-router-dom";
 import Modal from "../components/Modal";
 import { LiaGreaterThanSolid } from "react-icons/lia";
+import FrequentAskedQuestion from "../components/FrequentAskedQuestion";
 
 const RentalAgreement = () => {
   const selectARentAgreement = [
@@ -212,7 +213,6 @@ const RentalAgreement = () => {
   ];
 
   const [selected, setSelected] = useState(2);
-  const [multipleFaqExpanded, setMultipleFaqExpanded] = useState([]);
   const [clickAddOns, setClickAddOns] = useState(null);
   const [addOnsModelOpen, setAddOnsModelOpen] = useState(null);
   const [legalServiceMouseEnter, setLegalServiceMouseEnter] = useState(null);
@@ -225,16 +225,6 @@ const RentalAgreement = () => {
 
   const toggleReview = () => {
     setIsExpanded(!isExpanded);
-  };
-
-  const toggleFaq = (index) => {
-    if (multipleFaqExpanded.includes(index)) {
-      setMultipleFaqExpanded(
-        multipleFaqExpanded.filter((item) => item != index)
-      );
-    } else {
-      setMultipleFaqExpanded([...multipleFaqExpanded, index]);
-    }
   };
 
   const toggleLegalServiceMouseEnter = (index) => {
@@ -720,44 +710,7 @@ const RentalAgreement = () => {
           </div>
 
           {/* Frequently Asked Questions */}
-          <div className="bg-white rounded-xl px-8 py-12 md:w-[90%] mx-auto">
-            <div className="font-medium md:text-3xl text-lg mb-4">
-              Frequently Asked Questions
-            </div>
-            {faq.map((item, i) => (
-              <div key={i}>
-                <div
-                  className="flex justify-between cursor-pointer py-2"
-                  onClick={() => toggleFaq(i)}
-                >
-                  <div className="flex flex-col w-full">
-                    <div
-                      className={`font-medium flex justify-between ${
-                        multipleFaqExpanded.includes(i) ? "text-blue" : ""
-                      }`}
-                    >
-                      <div className="py-2 text-sm md:text-base">
-                        {item.que}
-                      </div>
-                      <div>
-                        <FaPlus
-                          className={`${
-                            multipleFaqExpanded.includes(i)
-                              ? "rotate-45 duration-200 ease-linear"
-                              : "duration-200 ease-linear"
-                          }`}
-                        />
-                      </div>
-                    </div>
-                    {multipleFaqExpanded.includes(i) && (
-                      <div className="text-xs md:text-sm">{item.ans}</div>
-                    )}
-                  </div>
-                </div>
-                <hr className="text-zinc-300 opacity-60 m-2" />
-              </div>
-            ))}
-          </div>
+          <FrequentAskedQuestion faq={faq} textColor={"text-blue"} />
 
           {/* final text */}
           <div className="bg-white rounded-xl px-8 py-12 md:w-[90%] mx-auto text-[12.5px]">

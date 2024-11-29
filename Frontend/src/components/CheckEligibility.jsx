@@ -71,7 +71,7 @@ const CheckEligibility = ({ selectedOption }) => {
     {
       id: 5,
       image: "home/painting_&_cleaning.png",
-      text: "starPainting & Cleaning",
+      text: "Painting & Cleaning",
       condition: "New",
     },
     {
@@ -442,38 +442,46 @@ const CheckEligibility = ({ selectedOption }) => {
           <div>
             <div className=" flex justify-between gap-4">
               {homeServicesOne.map((item) => (
-                <div
-                  key={item.id}
-                  className={`bg-no-repeat w-48 rounded-br-3xl rounded-tl-3xl rounded-tr-lg rounded-bl-lg mx-auto bg-cover h-24`}
-                  style={{
-                    backgroundImage: `url(${item.bg_image})`,
-                  }}
-                >
-                  <div className="h-full bg-gradient-to-r from-white from-20% to-white/20 to-70% border border-[#562c0c56] rounded-br-3xl rounded-tl-3xl rounded-tr-lg rounded-bl-lg p-2 flex items-center">
-                    <div className="text-sm font-semibold w-7/12">
-                      {item.title}
+                <Link to={item.title.replaceAll(" ", "-").toLowerCase()}>
+                  <div
+                    key={item.id}
+                    className={`bg-no-repeat w-48 rounded-br-3xl rounded-tl-3xl rounded-tr-lg rounded-bl-lg mx-auto bg-cover h-24`}
+                    style={{
+                      backgroundImage: `url(${item.bg_image})`,
+                    }}
+                  >
+                    <div className="h-full bg-gradient-to-r from-white from-20% to-white/20 to-70% border border-[#562c0c56] rounded-br-3xl rounded-tl-3xl rounded-tr-lg rounded-bl-lg p-2 flex items-center">
+                      <div className="text-sm font-semibold w-7/12">
+                        {item.title}
+                      </div>
                     </div>
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
           </div>
 
           <div>
-            <div className=" flex justify-between gap-4 overflow-x-scroll ">
+            <div className=" flex justify-between gap-4 overflow-x-scroll no-scrollbar">
               {[...homeServicesTwo, ...homeServicesTwo].map((item, i) => (
-                <div
+                <Link
+                  to={
+                    item.title === "Rent Payment"
+                      ? "/pay-rent"
+                      : item.title.replaceAll(" ", "-").toLowerCase()
+                  }
                   key={i}
-                  className="flex flex-col items-center gap-2 p-1.5 border border-[#562c0c56] rounded-br-3xl rounded-tl-3xl rounded-tr-lg rounded-bl-lg min-w-[84px]"
                 >
-                  <img
-                    src={item.bg_image}
-                    alt={item.title}
-                    className="mx-auto rounded-br-3xl rounded-tl-3xl rounded-tr-lg rounded-bl-lg"
-                  />
+                  <div className="flex flex-col items-center gap-2 p-1.5 border border-[#562c0c56] rounded-br-3xl rounded-tl-3xl rounded-tr-lg rounded-bl-lg min-w-[84px]">
+                    <img
+                      src={item.bg_image}
+                      alt={item.title}
+                      className="mx-auto rounded-br-3xl rounded-tl-3xl rounded-tr-lg rounded-bl-lg"
+                    />
 
-                  <div className="text-[11px] text-center">{item.title}</div>
-                </div>
+                    <div className="text-[11px] text-center">{item.title}</div>
+                  </div>
+                </Link>
               ))}
             </div>
           </div>
@@ -522,7 +530,7 @@ const CheckEligibility = ({ selectedOption }) => {
 
         <div className="bg-[#EAE9F5] px-4 my-1">
           <div className="pt-5 font-medium">Assisted Plans</div>
-          <div className="flex gap-3 overflow-x-auto pb-5 mt-4">
+          <div className="flex gap-3 overflow-x-auto no-scrollbar pb-5 mt-4">
             {assistedPlans.map((item) => (
               <div className="flex flex-col justify-between rounded-lg p-3 gap-2 min-w-40 bg-white">
                 <img src={item.image} alt="" className="w-10" />
@@ -545,7 +553,7 @@ const CheckEligibility = ({ selectedOption }) => {
         </div>
 
         <div className="bg-white my-1.5">
-          <div className="flex overflow-x-scroll py-4">
+          <div className="flex overflow-x-scroll no-scrollbar py-4">
             <div className="flex flex-col items-center text-center px-6">
               <img
                 src="https://assets.nobroker.in/nb-new/public/Home/nb_dynamic_grid_new_v5_new.svg"
