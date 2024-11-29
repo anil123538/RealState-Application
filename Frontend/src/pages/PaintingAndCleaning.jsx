@@ -1,8 +1,34 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import Testimonial from "./Testimonial";
+import Search from "../components/PaintingAndCleaning/Search";
+import Offer from "../components/PaintingAndCleaning/Offer";
+import Services from "../components/PaintingAndCleaning/Services";
+import FrequentAskedQuestion from "../components/FrequentAskedQuestion";
+import Testimonial from "../components/Testimonial";
 
-const HomeTestimonial = () => {
+const PaintingAndCleaning = () => {
+  const faq = [
+    {
+      id: 1,
+      que: "Do I need to visit any government office?",
+      ans: "Not even once. We will conduct the whole process for you online / at your home.",
+    },
+    {
+      id: 2,
+      que: "How much will it cost?",
+      ans: "Please click here to know the charges. Apart from our convenience fee, the charges typically include stamp duty, registration charges, etc.",
+    },
+    {
+      id: 3,
+      que: "Landlord and tenant are in different locations?",
+      ans: "You can use the Aadhar eSign based digital signature service.",
+    },
+    {
+      id: 4,
+      que: "Is Aadhar e-sign valid?",
+      ans: "Yes, Aadhaar eSign based digital signatures are a legally accepted and secure manner of electronically signing documents, under effect of Gazette Notification No. 2015 Jan -GSR 61(E) Electronic Signature or Electronic Authentication Technique and Procedure Rules, 2015.",
+    },
+  ];
+
   const review = [
     {
       id: 1,
@@ -52,57 +78,35 @@ const HomeTestimonial = () => {
   ];
 
   return (
-    <>
-      <div className="bg-slate-600 py-10 items-center md:flex hidden flex-col relative">
-        <h1 className="text-white text-2xl">Our Customers Loves us</h1>
-        <iframe
-          width="560"
-          height="320"
-          src="https://www.youtube.com/embed/0ChlgxhXVws"
-          title="NoBroker Reviews - Why our customers love us?"
-          style={{ border: "none" }}
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen
-          className="my-10"
-        ></iframe>
-
-        <Testimonial review={review} />
-
-        <hr className="border-2 border-white w-11/12 mt-4 mb-10" />
-        <div className=" underline cursor-pointer text-sm">
-          <Link to="/testimonials" className="text-white underline text-[13px]">
-            More Testimonials
-          </Link>
-        </div>
-      </div>
-
-      <div className="md:flex hidden items-center justify-around p-10">
+    <div>
+      <div>
+        <Search />
+        <Offer />
+        <Services title={"Home Cleaning Services"} />
         <div>
-          <img
-            src="https://assets.nobroker.in/nb-new/public/Home/homeAppPromotion.png"
-            alt=""
-            width="80%"
-          />
-        </div>
-        <div>
-          <h2 className="text-3xl font-normal text-red-500">
-            Find A New Home On The Go
-          </h2>
-          <div className="my-10">
-            <div className="font-normal text-xl">Download our app</div>
-            <span className="font-extralight">
-              Where convenience is at your fingertip
-            </span>
-          </div>
-          <div className="flex my-8">
-            <img src="/home/google_play.png" alt="" width="160px" />
-            <img src="/home/app_store.svg" alt="" width="160px" />
+          <div>Popular Services</div>
+          <div>
+            <div>
+              <img
+                src="https://assets.nobroker.in/hs-new/public/Home-Services/packers-moversOptimized.png"
+                alt=""
+              />
+              <div>Packers & Movers</div>
+            </div>
           </div>
         </div>
+        <Services title={"Home Repair Services"} />
+        <div className="bg-[#E2EAF8] p-4 px-[140px]">
+          <Testimonial review={review} />
+        </div>
+        <FrequentAskedQuestion
+          faq={faq}
+          headingAlign={"text-center"}
+          textColor={"text-teal-600"}
+        />
       </div>
-    </>
+    </div>
   );
 };
 
-export default HomeTestimonial;
+export default PaintingAndCleaning;

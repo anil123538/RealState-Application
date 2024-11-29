@@ -475,7 +475,7 @@ function Navb() {
                     style={{ fontSize: "normal" }} // Ensures normal font size
                   >
                     <Link
-                      to="/"
+                      to="/painting-&-cleaning"
                       className="menu-dropdown text-decoration-none"
                       style={{ fontSize: "normal" }} // Ensures normal font size
                     >
@@ -750,7 +750,7 @@ function Navb() {
                         </Nav.Link>
 
                         <Nav.Link
-                          href="PostProperty"
+                          href="post-property"
                           style={{
                             backgroundColor: "white",
                             fontSize: "0.8rem",

@@ -64,7 +64,10 @@ const PayRent = () => {
                     <article className="flex flex-col gap-1">
                       <h1 className="font-semibold text-sm">{name}</h1>
                       <p className="text-xs font-light">{des}</p>
-                      <a href={link} className="font-norma text-sm underline">
+                      <a
+                        href={link}
+                        className="font-norma text-sm underline text-white"
+                      >
                         {linkName}
                       </a>
                     </article>

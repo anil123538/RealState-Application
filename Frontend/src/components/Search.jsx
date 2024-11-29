@@ -106,21 +106,25 @@ const Search = ({ selectedOption, setSelectedOption }) => {
             <div className="flex items-center">
               {selectedOption === "Buy" ? (
                 <>
-                  <img
-                    src="https://assets.nobroker.in/nob-common/HomeInteriorHome.svg"
-                    alt=""
-                    className="mr-2"
-                  />
-                  Home Interiors
+                  <Link to="/home-interiors" className="flex items-center">
+                    <img
+                      src="https://assets.nobroker.in/nob-common/HomeInteriorHome.svg"
+                      alt=""
+                      className="mr-2"
+                    />
+                    Home Interiors
+                  </Link>
                 </>
               ) : (
                 <>
-                  <img
-                    src="https://assets.nobroker.in/nb-new/public/Home/RAIcon.svg"
-                    alt=""
-                    className="mr-2"
-                  />
-                  Rental Agreement
+                  <Link to="rental-agreement" className="flex items-center">
+                    <img
+                      src="https://assets.nobroker.in/nb-new/public/Home/RAIcon.svg"
+                      alt=""
+                      className="mr-2"
+                    />
+                    Rental Agreement
+                  </Link>
                 </>
               )}
             </div>
@@ -234,7 +238,7 @@ const Search = ({ selectedOption, setSelectedOption }) => {
                 <div className="text-xs opacity-70">Pay ZERO brokerage</div>
               </div>
               <button className="p-3 w-fit mt-4 rounded-md bg-red-500 font-semibold">
-                Posst FREE Property Ad
+                Post FREE Property Ad
               </button>
             </div>
 

@@ -19,6 +19,7 @@ import ReferAndEarn from "./pages/ReferAndEarn.jsx";
 import Ownerplan from "./pages/Ownerplan.jsx";
 import BuyersPlan from "./pages/BuyersPlan.jsx";
 import Careers from "./pages/Careers.jsx";
+import PaintingAndCleaning from "./pages/PaintingAndCleaning.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -33,6 +34,7 @@ const router = createBrowserRouter(
       <Route path="/buyers-plan" element={<BuyersPlan />} />
       <Route path="/owner-plan" element={<Ownerplan />} />
       <Route path="/careers" element={<Careers />} />
+      <Route path="/painting-&-cleaning" element={<PaintingAndCleaning />} />
       <Route path="*" element={<PageNotFound />} />
     </Route>
   )
