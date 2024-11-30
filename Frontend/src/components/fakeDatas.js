@@ -30,13 +30,13 @@ export const services = [
     link: "https://www.nobroker.in/instacash/landing?isHybrid=true&hybridActionBar=false&nbFr=rent_page_desktop",
     linkName: "Withdraw Now",
   },
-  {
-    img: dhamaka,
-    name: "CashBack Dhamaka",
-    des: "It's raining cashback! Every 100th user gets ₹100 or ₹1000 cashback",
-    link: "",
-    linkName: "View winners",
-  },
+  // {
+  //   img: dhamaka,
+  //   name: "CashBack Dhamaka",
+  //   des: "It's raining cashback! Every 100th user gets ₹100 or ₹1000 cashback",
+  //   link: "",
+  //   linkName: "View winners",
+  // },
   {
     img: renter,
     name: "Renter's Club",

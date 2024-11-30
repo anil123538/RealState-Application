@@ -14,7 +14,7 @@ function PostPropertyWork() {
             How it Works{" "}
           </h4>
           <div className="row mb-5">
-            <div className="col d-flex flex-column justify-content-center">
+            <div className="col text d-flex flex-column justify-content-center">
               <h4 className="fw-semibold fs-5" style={{ color: "#424949" }}>
                 Simple Listing Process
               </h4>
@@ -39,7 +39,7 @@ function PostPropertyWork() {
                 alt="Simple Listing Process"
               />
             </div>
-            <div className="col d-flex flex-column justify-content-center">
+            <div className="col text d-flex flex-column justify-content-center">
               <h4 className="fw-semibold fs-5" style={{ color: "#424949" }}>
                 Tenant Selects Property and Schedules an Appointment
               </h4>
@@ -52,7 +52,7 @@ function PostPropertyWork() {
           </div>
 
           <div className="row">
-            <div className="col d-flex flex-column justify-content-center">
+            <div className="col text d-flex flex-column justify-content-center">
               <h4 className="fw-semibold fs-5" style={{ color: "#424949" }}>
                 Deal Closure
               </h4>

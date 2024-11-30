@@ -34,7 +34,7 @@ function PostProperty() {
           </p>
         </div>
         <div className="row main">
-          <div className="col-lg-4 left" style={{ width: "30%" }}>
+          <div className="col-lg-4 col-md-4 col-sm-12 left">
             <h4
               className=""
               style={{ color: "#424949", fontSize: "18px", fontWeight: "600" }}
@@ -212,16 +212,16 @@ function PostProperty() {
             </Carousel>
           </div>
 
-          <div className="col-lg-8 right mt-4 py-1 ms-6">
+          <div className="col-lg-8 col-md-8 col-sm-12 right mt-4 py-1 mx-auto">
             <div className="row mb-3">
-              <div className="col">
+              <div className="col-lg-6 col-md-6 col-sm-12">
                 <input
                   type="text"
                   className="form-control uniform-input"
                   placeholder="Name"
                 />
               </div>
-              <div className="col">
+              <div className="col-lg-6 col-md-6 col-sm-12">
                 <input
                   type="email"
                   className="form-control uniform-input"
@@ -230,7 +230,7 @@ function PostProperty() {
               </div>
             </div>
             <div className="row mb-3">
-              <div className="col" style={{ border: "0 solid #e5e7eb" }}>
+              <div className="col-lg-6 col-md-6 col-sm-12" style={{ border: "0 solid #e5e7eb" }}>
                 <PhoneInput
                   country={"np"}
                   value=""
@@ -244,7 +244,7 @@ function PostProperty() {
                 />
               </div>
 
-              <div className="col">
+              <div className="col-lg-6 col-md-6 col-sm-12">
                 <select
                   className="form-select uniform-input"
                   aria-label="Default select example"
@@ -261,7 +261,7 @@ function PostProperty() {
             </div>
 
             <div className="d-flex align-items-center">
-              <span>
+              <span className="fs-6">
                 Get updates on
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
