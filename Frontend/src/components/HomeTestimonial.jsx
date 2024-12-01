@@ -53,7 +53,7 @@ const HomeTestimonial = () => {
 
   return (
     <>
-      <div className="bg-slate-600 py-10 items-center md:flex hidden flex-col relative">
+      <div className="bg-slate-600 py-10 items-center md:flex hidden flex-col">
         <h1 className="text-white text-2xl">Our Customers Loves us</h1>
         <iframe
           width="560"
@@ -66,8 +66,9 @@ const HomeTestimonial = () => {
           allowFullScreen
           className="my-10"
         ></iframe>
-
-        <Testimonial review={review} />
+        <div className="w-11/12">
+          <Testimonial review={review} scrollBy={800} />
+        </div>
 
         <hr className="border-2 border-white w-11/12 mt-4 mb-10" />
         <div className=" underline cursor-pointer text-sm">

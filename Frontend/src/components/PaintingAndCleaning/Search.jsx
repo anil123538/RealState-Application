@@ -26,9 +26,9 @@ const Search = () => {
 
   return (
     <div>
-      <div className="bg-[#F0F4FC]">
-        <div className="flex relative w-6/12 items-center mx-auto pt-6 pb-2">
-          <CiSearch className="absolute left-2 text-2xl" />
+      <div className="bg-[#F0F4FC] mb-1.5">
+        <div className="flex relative md:w-6/12 items-center mx-auto pt-6 px-4 md:px-0">
+          <CiSearch className="absolute md:left-2 left-6 text-2xl" />
           <input
             type="search"
             name=""
@@ -36,33 +36,33 @@ const Search = () => {
             placeholder="Search a service"
             className="rounded-full border w-full p-2.5 pl-12"
           />
-          <FaMicrophone className="absolute right-2 text-2xl text-black/60" />
+          <FaMicrophone className="absolute md:right-2 right-6 text-2xl text-black/60" />
         </div>
 
-        <div className="flex px-36 gap-10 justify-between py-6 mb-4">
+        <div className="flex md:flex-row flex-col md:px-[140px] py-6 justify-between max-w-[1280px] mx-auto">
           <div className="grid grid-cols-4 items-center h-fit">
             {topData.map((item, i) => (
               <div
                 key={i}
-                className="flex flex-col items-center text-center gap-2 rounded-full"
+                className="flex flex-col items-center text-center md:gap-4 rounded-full md:p-2"
               >
-                <div className="bg-orange-200/70 text-[9px] font-medium px-1 rounded-full">
+                <div className="bg-orange-200/70 text-[9px] font-medium px-1 rounded-full absolute">
                   {item.offer}
                 </div>
                 <img
                   src={item.image}
                   alt=""
-                  className="m-0 w-12 rounded-full bg-white"
+                  className="m-0 w-14 rounded-full bg-white"
                 />
                 <div className="text-xs w-10/12">{item.title}</div>
               </div>
             ))}
           </div>
-          <div>
+          <div className="mx-auto pt-5 md:pt-0 w-full md:w-auto px-4 ">
             <img
               src="https://assets.nobroker.in/hs-new/public/Home/newServicesIcons/shimmerLazyLoad.gif"
               alt=""
-              className="m-0 w-[250px] h-[200px]"
+              className="m-0 w-full md:w-[350px] h-[250px]"
             />
           </div>
         </div>
