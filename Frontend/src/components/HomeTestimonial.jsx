@@ -66,8 +66,9 @@ const HomeTestimonial = () => {
           allowFullScreen
           className="my-10"
         ></iframe>
-
-        <Testimonial review={review} scrollBy={800} />
+        <div className="w-11/12">
+          <Testimonial review={review} scrollBy={800} />
+        </div>
 
         <hr className="border-2 border-white w-11/12 mt-4 mb-10" />
         <div className=" underline cursor-pointer text-sm">

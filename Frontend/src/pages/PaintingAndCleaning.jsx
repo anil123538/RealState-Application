@@ -156,7 +156,7 @@ const PaintingAndCleaning = () => {
         <div className="bg-[#E2EAF8] p-4 mb-1.5 md:px-[140px]">
           <Testimonial review={review} scrollBy={400} />
         </div>
-        <div className="bg-white">
+        <div className="bg-white md:px-[108px]">
           <FrequentAskedQuestion
             faq={faq}
             headingAlign={"text-center"}

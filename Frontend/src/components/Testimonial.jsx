@@ -42,7 +42,7 @@ const Testimonial = ({ review, scrollBy }) => {
   return (
     <div className="relative w-full">
       <div
-        className="flex gap-8 xl:gap-12 w-11/12 mx-auto flex-nowrap overflow-x-auto no-scrollbar behavior mt-10 scroll-smooth"
+        className="flex gap-8 xl:gap-12 mx-auto flex-nowrap overflow-x-auto no-scrollbar behavior mt-10 scroll-smooth"
         ref={testimonialContainerRef}
       >
         {[...review, ...review].map((item, index) => (
@@ -77,14 +77,14 @@ const Testimonial = ({ review, scrollBy }) => {
           </div>
         ))}
         <div
-          className="absolute right-4 shadow-lg shadow-white top-[45%] bg-white rounded-full cursor-pointer"
+          className="absolute -right-4 shadow-lg shadow-white top-[45%] bg-white rounded-full cursor-pointer"
           onClick={scrollRight}
         >
           <IoIosArrowRoundForward className="text-black text-3xl" />
         </div>
         {showLeftArrow && (
           <div
-            className="absolute left-4 top-[45%] shadow-md shadow-white bg-white rounded-full cursor-pointer"
+            className="absolute -left-4 top-[45%] shadow-md shadow-white bg-white rounded-full cursor-pointer"
             onClick={scrollLeft}
           >
             <IoIosArrowRoundBack className="text-black text-3xl" />
