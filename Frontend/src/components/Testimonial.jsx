@@ -77,7 +77,7 @@ const Testimonial = ({ review, scrollBy }) => {
           </div>
         ))}
         <div
-          className="absolute right-4 shadow-lg shadow-white top-[45%] bg-pink-800 rounded-full cursor-pointer"
+          className="absolute right-4 shadow-lg shadow-white top-[45%] bg-white rounded-full cursor-pointer"
           onClick={scrollRight}
         >
           <IoIosArrowRoundForward className="text-black text-3xl" />

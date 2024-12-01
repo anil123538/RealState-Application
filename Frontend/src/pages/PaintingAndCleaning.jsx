@@ -124,7 +124,7 @@ const PaintingAndCleaning = () => {
             Popular Services
           </div>
           <div>
-            <div className="flex gap-4 px-[140px]">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:px-16 lg:px-[140px]">
               {popularServices.map((item) => (
                 <div
                   className="bg-no-repeat h-40 w-full bg-cover rounded-md"

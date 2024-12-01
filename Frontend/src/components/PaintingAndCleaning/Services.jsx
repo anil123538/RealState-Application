@@ -34,7 +34,7 @@ const Services = ({ title }) => {
       <div className="flex items-center gap-4 px-2 md:justify-center overflow-x-scroll no-scrollbar">
         {service.map((item) => (
           <div
-            className="flex flex-col items-center gap-2 w-24 min-w-20"
+            className="flex flex-col items-center gap-2 w-24 min-w-36"
             key={item.id}
           >
             <img
@@ -42,7 +42,7 @@ const Services = ({ title }) => {
               alt=""
               className="m-0 border p-1 rounded-full border-[#fa3a57] md:w-20"
             />
-            <div className="text-sm">{item.title}</div>
+            <div className="text-sm text-center">{item.title}</div>
           </div>
         ))}
       </div>
