@@ -7,7 +7,7 @@ import Testimonial from "../components/Testimonial";
 import { FaStar } from "react-icons/fa";
 
 import VipMembership from "../components/PaintingAndCleaning/VipMembership";
-import SecondOffer from "../components/PaintingAndCleaning/secondOffer";
+import SecondOffer from "../components/PaintingAndCleaning/Secondoffer";
 
 const PaintingAndCleaning = () => {
   const faq = [
