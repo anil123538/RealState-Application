@@ -289,7 +289,7 @@ const CheckEligibility = ({ selectedOption }) => {
       <div className="hidden md:block">
         <div className="text-sm mt-4">
           {selectedOption === "Buy" || selectedOption === "Rent" ? (
-            <div className="bg-[#384d6c] p-3.5 flex items-center justify-center gap-2.5">
+            <div className="bg-[#004953] p-3.5 flex items-center justify-center gap-2.5">
               <img src="home/check_eligibility.png" alt="" className="mr-0" />
               <div className="text-white font-extralight">
                 <span>Do you know how much </span>
@@ -302,7 +302,7 @@ const CheckEligibility = ({ selectedOption }) => {
               </button>
             </div>
           ) : selectedOption === "Commercial" ? (
-            <div className="bg-[#384d6c] p-3.5 flex items-center justify-center gap-2.5">
+            <div className="bg-[#004958] p-3.5 flex items-center justify-center gap-2.5">
               <img
                 src="https://assets.nobroker.in/static/img/icon/homeCreditCard_icon.png"
                 alt=""
@@ -329,7 +329,7 @@ const CheckEligibility = ({ selectedOption }) => {
             >
               <div className="flex flex-col md:justify-center items-center text-center p-2 cursor-pointer !border md:!border-0 rounded-tl-2xl rounded-br-2xl">
                 {item.condition && (
-                  <span className="text-[11px] bg-orange-200/50 px-2 py-1 rounded-2xl mb-1 w-fit">
+                  <span className="text-[11px] bg-[orange-200/50] px-2 py-1 rounded-2xl mb-1 w-fit">
                     {item.condition}
                   </span>
                 )}
@@ -388,7 +388,7 @@ const CheckEligibility = ({ selectedOption }) => {
                 <div className="mb-10 opacity-70">
                   Get in touch with us to Sell or Rent Your Projects
                 </div>
-                <button className="bg-red-500 text-white p-3">
+                <button className="bg-[#ff5800] text-white p-3">
                   Enquire Now
                 </button>
                 <hr className="m-0 opacity-10" />
@@ -411,19 +411,19 @@ const CheckEligibility = ({ selectedOption }) => {
 
           <div className="flex justify-center items-center gap-14 mt-10">
             <div className="flex flex-col items-center gap-2">
-              <div className="border-2 border-red-500 text-red-500 text-4xl h-[170px] w-[170px] rounded-full text-center leading-[170px]">
+              <div className="border-2 border-[#ff5800] text-[#ff5800] text-4xl h-[170px] w-[170px] rounded-full text-center leading-[170px]">
                 R130 cr+
               </div>
               <div className="text-xl">Brokerage saved monthly</div>
             </div>
             <div className="flex flex-col items-center gap-2">
-              <div className="border-2 border-red-500 text-red-500 text-4xl h-[170px] w-[170px] rounded-full flex items-center text-center justify-center">
+              <div className="border-2 border-[#ff5800] text-[#ff5800] text-4xl h-[170px] w-[170px] rounded-full flex items-center text-center justify-center">
                 30 lakh +
               </div>
               <div className="text-xl">Customers Connected Monthly</div>
             </div>
             <div className="flex flex-col items-center gap-2">
-              <div className="border-2 border-red-500 text-red-500 text-4xl h-[170px] w-[170px] rounded-full flex items-center text-center justify-center">
+              <div className="border-2 border-[#ff5800] text-[#ff5800] text-4xl h-[170px] w-[170px] rounded-full flex items-center text-center justify-center">
                 2 lakh +
               </div>
               <div className="text-xl">New Listings Monthly</div>

@@ -64,6 +64,7 @@ import chatWithUs from "../../assets/small_nav_images/chatWithUs.png";
 import Modal from "../Modal";
 import LoginSignup from "../LoginSignup";
 import { NonceProvider } from "react-select";
+import { BiBrightness } from "react-icons/bi";
 
 function Navb() {
   const location = useLocation();
@@ -191,13 +192,13 @@ function Navb() {
 
   return (
     <>
-      <div className="d-flex font">
+      <div className="d-flex font" style={{}}>
         <Navbar
           user={user}
           expand="lg"
           className="bg-body-tertiary"
           fixed="top"
-          style={{ boxShadow: "0 5px 10px rgba(0,0,0,0.1)" }}
+          style={{ boxShadow: "0 5px 10px rgba(0,0,0,0.1)" , height:"70px"}}
         >
           <Container fluid className="">
             {/* Image as Navbar Brand */}
@@ -213,23 +214,46 @@ function Navb() {
               className="ms-auto my-2 my-lg-0 d-none d-lg-flex justify-content align-items-center"
               style={{ fontSize: "0.8rem" }}
             >
-              <Nav.Link href="pay-rent">
-                <span className="d-flex gap-2 align-items-center border p-1 nav-box">
+              <Nav.Link href="pay-rent" className="">
+                <span className="d-flex gap-2 align-items-center border nav-box px-2 py-5">
                   <div>
                     <img
                       src={rent} // Use your imported image here
                       alt="Brand Logo"
                       width="20" // Adjust width as needed
                       className="image-rent"
+                      style={{ filter: "brightness(1)" }} // Adjust value as needed
                     />
                   </div>
-                  <div style={{ color: "#A1A1A1" }}>|</div>
-                  <div style={{ color: "#A1A1A1" }}>Pay Rent</div>
+                  <div style={{ color: "#424242" }}>|</div>
+                  <div className="d-flex flex-column gap-0">
+                    <div style={{ color: "#424242",marginBottom:"-4px" }}>My Trips</div>
+                    <div className="" style={{ color: "#424242"}}>Manage your booking</div>
+                  </div>
                 </span>
               </Nav.Link>
-              <Nav.Link href="post-property">
-                <button className="nav-property nav-box">
-                  For Property Owners
+              <Nav.Link href="pay-rent">
+                <span className="d-flex gap-2 align-items-center border px-2 py-5 nav-box">
+                  <div>
+                    <img
+                      src={rent} // Use your imported image here
+                      alt="Brand Logo"
+                      width="20" // Adjust width as needed
+                      className="image-rent"
+                      style={{ filter: "brightness(1)" }} // Adjust value as needed
+                    />
+                  </div>
+                  <div style={{ color: "#424242" }}>|</div>
+
+                  <div style={{ color: "#424242" }}>Pay Rent</div>
+                </span>
+              </Nav.Link>
+              <Nav.Link href="post-property" className="">
+                <button
+                  className="nav-property px-2 py-2.5"
+                  style={{ backgroundColor: "#004953", borderRadius: "1px" }}
+                >
+                  <span>For Property Owners</span>
                 </button>
               </Nav.Link>
 

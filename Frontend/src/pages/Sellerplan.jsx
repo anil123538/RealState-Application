@@ -37,7 +37,7 @@ function Sellerplan() {
             />
             Get Buyer Faster &amp; Save Brokerage
           </div>
-          <div className="d-flex align-items-center justify-content-center py-3 px-28" style={{backgroundColor: "#fff7f3",borderTopRightRadius: "4px", borderTopLeftRadius: "4px",fontSize: "14px"}}>
+          <div className="d-flex align-items-center justify-content-center py-3 px-28" style={{backgroundColor: "#fff7f3",borderTopRightRadius: "4px", borderTopLeftRadius: "4px",fontSize: "14px", marginLeft: "-30px"}}>
             <img
               alt="propertyKeys"
               src="https://assets.nobroker.in/static/img/owner_plan_icons/house.svg"

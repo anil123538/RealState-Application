@@ -147,7 +147,7 @@ function Ownerplan() {
                 className=""
                 href="#"
                 style={{
-                  color: "green",
+                  color: "#004958",
                   textDecoration: "none",
                   fontWeight: "500",
                   fontSize: "17px",
@@ -268,7 +268,7 @@ function Ownerplan() {
                 style={{
                   fontSize: "15px",
                   backgroundColor:
-                    activeCard === card.id ? "#009587" : "",
+                    activeCard === card.id ? "#004958" : "",
                   color: activeCard === card.id ? "#fff" : "#000",
                   border: "1px solid #009587",
                 }}
@@ -676,7 +676,7 @@ function Ownerplan() {
                         For assistance call us at :
                         <a
                           href="tel:+91-92-430-099-80}"
-                          className="text-primary-color ml-2 text-danger"
+                          className="text-primary-color ml-2" style={{color: "#ff5800"}}
                         >
                           +91-92-430-099-80
                         </a>
@@ -733,7 +733,7 @@ function Ownerplan() {
                       />
                       <div className="card-body text-center">
                         <h5 className="card-title italic">{box.title}</h5>
-                        <p className="card-text" style={{color:"#009587"}}>{box.text}</p>
+                        <p className="card-text" style={{color:"#004958"}}>{box.text}</p>
                       </div>
                     </div>
                   </div>

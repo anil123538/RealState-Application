@@ -9,7 +9,7 @@ const QuickChat = () => {
           visibleChatbox ? "block" : "hidden"
         } bg-white w-80 fixed bottom-10 right-10 text-black shadow-2xl rounded-xl overflow-hidden z-50`}
       >
-        <div className="bg-stone-600 relative flex items-center justify-center py-2.5">
+        <div className="bg-[#004958] relative flex items-center justify-center py-2.5">
           <h1 className="font-semibold text-white text-sm">NoBroker Support</h1>
           <div className="absolute right-3 text-white flex gap-2">
             <span>-</span>
@@ -53,7 +53,7 @@ const QuickChat = () => {
         onClick={() => setVisibleChatbox(true)}
         className={`${
           visibleChatbox ? "hidden" : "block"
-        } fixed bottom-10 right-10 bg-stone-600 font-bold text-white px-4 py-2 rounded-2xl border-2 border-stone-400`}
+        } fixed bottom-10 right-10 bg-[#004958] font-bold text-white px-4 py-2 rounded-2xl border-2 border-[#004958]`}
       >
         <i className="fa-regular fa-comment"></i> Chat
       </button>
