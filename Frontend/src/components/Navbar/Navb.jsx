@@ -545,7 +545,7 @@ function Navb() {
 
                   <Dropdown.Item className="menu-dropdown text-decoration-none">
                     <Link
-                      to="/"
+                      to="/seller-plan"
                       className="menu-dropdown text-decoration-none"
                       style={{ fontSize: "normal" }}
                     >
@@ -580,7 +580,7 @@ function Navb() {
                         <Nav.Link href="/buyer-plan">Buyer Plan</Nav.Link>
                       </li>
                       <li>
-                        <Nav.Link href="/seller-plans">Seller Plans</Nav.Link>
+                        <Nav.Link href="/seller-plan">Seller Plans</Nav.Link>
                       </li>
                     </ul>
                   )}
