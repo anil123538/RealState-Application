@@ -4,6 +4,9 @@ import Offer from "../components/PaintingAndCleaning/Offer";
 import Services from "../components/PaintingAndCleaning/Services";
 import FrequentAskedQuestion from "../components/FrequentAskedQuestion";
 import Testimonial from "../components/Testimonial";
+import { FaStar } from "react-icons/fa";
+import SecondOffer from "../components/PaintingAndCleaning/secondOffer";
+import VipMembership from "../components/PaintingAndCleaning/VipMembership";
 
 const PaintingAndCleaning = () => {
   const faq = [
@@ -77,33 +80,89 @@ const PaintingAndCleaning = () => {
     },
   ];
 
+  const popularServices = [
+    {
+      id: 1,
+      image:
+        "https://assets.nobroker.in/hs-new/public/Home-Services/packers-moversOptimized.png",
+      title: "Packers & Movers",
+      rating: "4.8",
+    },
+    {
+      id: 2,
+      image:
+        "https://assets.nobroker.in/hs-new/public/Home-Services/home-paintingOptimized.png",
+      title: "Home Painting",
+      rating: "4.9",
+    },
+    {
+      id: 3,
+      image:
+        "https://assets.nobroker.in/hs-new/public/Home-Services/home-renovationOptimized.png",
+      title: "Home Renovation",
+      rating: "4.2",
+    },
+    {
+      id: 4,
+      image: "paintingAndCleaning/otherPanel.webp",
+      title: "Wall Painting",
+      rating: "4.8",
+    },
+  ];
+
   return (
-    <div>
+    <div className="bg-zinc-100">
       <div>
         <Search />
         <Offer />
+        <SecondOffer />
         <Services title={"Home Cleaning Services"} />
-        <div>
-          <div>Popular Services</div>
+
+        {/* Popular Services */}
+        <div className="px-6 pb-10 pt-5 bg-white mb-1.5">
+          <div className="mb-3.5 text-2xl text-center font-semibold">
+            Popular Services
+          </div>
           <div>
-            <div>
-              <img
-                src="https://assets.nobroker.in/hs-new/public/Home-Services/packers-moversOptimized.png"
-                alt=""
-              />
-              <div>Packers & Movers</div>
+            <div className="flex gap-4 px-[140px]">
+              {popularServices.map((item) => (
+                <div
+                  className="bg-no-repeat h-40 w-full bg-cover rounded-md"
+                  style={{
+                    backgroundImage: `url(${item.image})`,
+                    backgroundPosition: "center",
+                  }}
+                >
+                  <div className="h-full rounded-md flex  bg-gradient-to-t from-black to-70% to-transparent">
+                    <div className="flex w-full gap-4 p-2 items-end text-white ">
+                      <div className="text-white font-semibold w-10/12 text-[15px]">
+                        {item.title}
+                      </div>
+                      <div className="flex bg-black rounded-full px-1 items-center">
+                        <div className="text-[10px]">{item.rating}</div>
+                        <FaStar className="text-orange-400 text-[9px]" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
+
+        <VipMembership />
         <Services title={"Home Repair Services"} />
-        <div className="bg-[#E2EAF8] p-4 px-[140px]">
-          <Testimonial review={review} />
+        <SecondOffer title={"Relocation Simplified"} />
+        <div className="bg-[#E2EAF8] p-4 mb-1.5 md:px-[140px]">
+          <Testimonial review={review} scrollBy={400} />
         </div>
-        <FrequentAskedQuestion
-          faq={faq}
-          headingAlign={"text-center"}
-          textColor={"text-teal-600"}
-        />
+        <div className="bg-white">
+          <FrequentAskedQuestion
+            faq={faq}
+            headingAlign={"text-center"}
+            textColor={"text-teal-600"}
+          />
+        </div>
       </div>
     </div>
   );

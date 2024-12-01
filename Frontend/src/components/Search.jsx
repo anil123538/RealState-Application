@@ -97,7 +97,7 @@ const Search = ({ selectedOption, setSelectedOption }) => {
   return (
     <>
       <div className="flex flex-col justify-center items-center md:px-10">
-        <div className="flex flex-col gap-4 mt-2 md:mx-0 w-full p-4">
+        <div className="flex flex-col gap-4 mt-2 md:mx-0 w-full pt-4">
           <div className="text-3xl font-normal text-center text-[#787676] hidden md:block">
             World's Largest NoBrokerage Property Site
           </div>
@@ -158,7 +158,7 @@ const Search = ({ selectedOption, setSelectedOption }) => {
             <div>Zero Brokerage</div>
           </div>
 
-          <div className="grid grid-cols-3 items-center md:border border-zinc-200 md:w-7/12 w-full mx-auto text-center text-[15px]">
+          <div className="grid grid-cols-3 items-center md:border border-zinc-200 md:w-[400px] w-full mx-auto text-center text-sm">
             <div
               className={`p-2 cursor-pointer ${
                 selectedOption === "Buy"
@@ -275,7 +275,7 @@ const Search = ({ selectedOption, setSelectedOption }) => {
               placeholder="Search upto 3 localities or landmarks"
             />
             <div className="w-fit bg-[#fd3752] text-white flex items-center text-lg px-10 cursor-pointer hover:bg-[#d03c3c]">
-              <BiSearch className="text-2xl opacity-80" />
+              <BiSearch className="text-xl opacity-80" />
               <button type="submit">Search</button>
             </div>
           </div>
@@ -290,6 +290,7 @@ const Search = ({ selectedOption, setSelectedOption }) => {
                     name="land_type"
                     id="full_house"
                     value="full_house"
+                    checked
                   />
                   <label
                     htmlFor="full_house"
@@ -366,6 +367,7 @@ const Search = ({ selectedOption, setSelectedOption }) => {
                     name="land_type"
                     id="full_house"
                     value="full_house"
+                    checked
                   />
                   <label
                     htmlFor="full_house"
@@ -446,7 +448,13 @@ const Search = ({ selectedOption, setSelectedOption }) => {
             <div className="flex md:flex-row flex-col gap-2 border border-zinc-200  p-2.5 items-center text-sm">
               <div className="flex gap-2">
                 <div>
-                  <input type="radio" name="land_type" id="rent" value="rent" />
+                  <input
+                    type="radio"
+                    name="land_type"
+                    id="rent"
+                    value="rent"
+                    checked
+                  />
                   <label
                     htmlFor="full_house"
                     className="ml-1 cursor-pointer text-[13px]"

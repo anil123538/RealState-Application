@@ -29,15 +29,18 @@ const Services = ({ title }) => {
     },
   ];
   return (
-    <div className="p-5">
+    <div className="p-5 bg-white mb-1.5">
       <div className="font-semibold text-2xl text-center mb-4">{title}</div>
-      <div className="flex items-center justify-center gap-4">
+      <div className="flex items-center gap-4 px-2 md:justify-center overflow-x-scroll no-scrollbar">
         {service.map((item) => (
-          <div className="flex flex-col items-center gap-2">
+          <div
+            className="flex flex-col items-center gap-2 w-24 min-w-20"
+            key={item.id}
+          >
             <img
               src={item.image}
               alt=""
-              className="m-0  border p-1 rounded-full border-[#fa3a57] w-20"
+              className="m-0 border p-1 rounded-full border-[#fa3a57] md:w-20"
             />
             <div className="text-sm">{item.title}</div>
           </div>
