@@ -87,3 +87,8 @@
     left: 50%;
     transform: translateX(-50%);
   }
+
+  .gif-image{
+    width: 40px;
+    height: 27px;
+  }
