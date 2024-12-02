@@ -102,27 +102,27 @@ function Ownerplan() {
               >
                 <span className="d-flex align-items-center justify-content-end">
                   <img
-                    src="https://assets.NESTATE.in/nb-new/public/starNew.svg"
+                    src="../public/OwnerPlan/starNew.svg"
                     alt="review star"
                     className="img-fluid star-icon"
                   />
                   <img
-                    src="https://assets.NESTATE.in/nb-new/public/starNew.svg"
+                    src="../public/OwnerPlan/starNew.svg"
                     alt="review star"
                     className="img-fluid star-icon"
                   />
                   <img
-                    src="https://assets.NESTATE.in/nb-new/public/starNew.svg"
+                    src="../public/OwnerPlan/starNew.svg"
                     alt="review star"
                     className="img-fluid star-icon"
                   />
                   <img
-                    src="https://assets.NESTATE.in/nb-new/public/starNew.svg"
+                    src="../public/OwnerPlan/starNew.svg"
                     alt="review star"
                     className="img-fluid star-icon"
                   />
                   <img
-                    src="https://assets.NESTATE.in/nb-new/public/starNew.svg"
+                    src="../public/OwnerPlan/starNew.svg"
                     alt="review star"
                     className="img-fluid star-icon"
                   />

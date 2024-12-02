@@ -237,8 +237,13 @@ const RentalAgreement = () => {
               <div className="text-3xl mb-2">
                 Online Rent Agreement in Mumbai
               </div>
-              <span className="opacity-70 text-xs">
+              <span className="opacity-70 text-xs d-flex align-items-center gap-1">
                 Now available in 150+ cities in india
+                <img
+                  src="../public/rentalAgreement/legalPageCity.gif"
+                  className="gif-image"
+                  alt=""
+                />
               </span>
 
               <div className="flex md:hidden flex-col gap-2 text-sm mt-10">
@@ -278,6 +283,7 @@ const RentalAgreement = () => {
                   <div className="flex flex-col min-w-full">
                     <div className="flex items-center">
                       <div className="text-sm md:text-base">
+                        <img src="" alt="" srcset="" />
                         Renew Your Agreement
                       </div>
                       <div className="w-2 h-2 bg-[#ff5800] rounded-full ml-1"></div>

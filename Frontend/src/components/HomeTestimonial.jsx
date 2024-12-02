@@ -6,7 +6,7 @@ const HomeTestimonial = () => {
   const review = [
     {
       id: 1,
-      user_image: "testimonials/profile.jpg",
+      user_image: "home/t1.jpg",
       user_name: "Shubham Raibhandar",
       star: 5,
       heading: "Helps us to find good properties",
@@ -14,7 +14,7 @@ const HomeTestimonial = () => {
     },
     {
       id: 2,
-      user_image: "testimonials/profile.jpg",
+      user_image: "home/t2.jpg",
       user_name: "Shubham Raibhandar",
       star: 5,
       heading: "Helps us to find good properties",
@@ -22,7 +22,7 @@ const HomeTestimonial = () => {
     },
     {
       id: 3,
-      user_image: "testimonials/profile.jpg",
+      user_image: "home/t3.jpg",
       user_name: "Shubham Raibhandar",
       star: 5,
       heading: "Helps us to find good properties",
@@ -30,7 +30,7 @@ const HomeTestimonial = () => {
     },
     {
       id: 4,
-      user_image: "testimonials/profile.jpg",
+      user_image: "home/t4.jpg",
       user_name: "Shubham Raibhandar",
       star: 5,
       heading: "Helps us to find good properties",
@@ -38,7 +38,7 @@ const HomeTestimonial = () => {
     },
     {
       id: 5,
-      user_image: "testimonials/profile.jpg",
+      user_image: "home/t5.jpg",
       user_name: "Shubham Raibhandar",
       star: 5,
       heading: "Helps us to find good properties",
