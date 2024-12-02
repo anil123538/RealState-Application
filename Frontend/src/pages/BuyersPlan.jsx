@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../style/BuyersPlan.css";
 import "react-international-phone/style.css";
 import PhoneInput from "react-phone-number-input";
+import Accordion from 'react-bootstrap/Accordion';
 
 function BuyersPlan() {
   const [phone, setPhone] = useState("");
