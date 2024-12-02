@@ -99,7 +99,7 @@ const Search = ({ selectedOption, setSelectedOption }) => {
       <div className="flex flex-col justify-center items-center md:px-10">
         <div className="flex flex-col gap-4 mt-2 md:mx-0 w-full pt-4">
           <div className="text-3xl font-normal text-center text-[#787676] hidden md:block">
-            World's Largest NoBrokerage Property Site
+            Nepal's Largest NESTATE Property Site
           </div>
 
           <div className="md:flex hidden bg-[rgba(252,178,68,0.2)] h-14 gap-2 md:w-fit w-full mx-auto md:p-4 p-2 py-3 text-xs justify-center text-[#464646]">
@@ -108,7 +108,7 @@ const Search = ({ selectedOption, setSelectedOption }) => {
                 <>
                   <Link to="/home-interiors" className="flex items-center">
                     <img
-                      src="https://assets.nobroker.in/nob-common/HomeInteriorHome.svg"
+                      src="https://assets.NESTATE.in/nob-common/HomeInteriorHome.svg"
                       alt=""
                       className="mr-2"
                     />
@@ -119,7 +119,7 @@ const Search = ({ selectedOption, setSelectedOption }) => {
                 <>
                   <Link to="rental-agreement" className="flex items-center">
                     <img
-                      src="https://assets.nobroker.in/nb-new/public/Home/RAIcon.svg"
+                      src="https://assets.NESTATE.in/nb-new/public/Home/RAIcon.svg"
                       alt=""
                       className="mr-2"
                     />
@@ -133,7 +133,7 @@ const Search = ({ selectedOption, setSelectedOption }) => {
               {selectedOption === "Buy" ? (
                 <>
                   <img
-                    src="	https://assets.nobroker.in/nob-common/HomeInteriorDeliveryHome.svg"
+                    src="	https://assets.NESTATE.in/nob-common/HomeInteriorDeliveryHome.svg"
                     alt=""
                     className="mr-2"
                   />
@@ -142,7 +142,7 @@ const Search = ({ selectedOption, setSelectedOption }) => {
               ) : (
                 <>
                   <img
-                    src="	https://assets.nobroker.in/nb-new/public/Home/deliveryIcon.svg"
+                    src="	https://assets.NESTATE.in/nb-new/public/Home/deliveryIcon.svg"
                     alt=""
                     className="mr-2"
                   />

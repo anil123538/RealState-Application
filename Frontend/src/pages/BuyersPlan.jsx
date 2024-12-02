@@ -54,12 +54,12 @@ function BuyersPlan() {
         { text: "FREE Loan Assistance", value: "✔" },
         { text: "FREE Interior Design Consultation", value: "✔" },
       ],
-      image: "https://assets.nobroker.in/static/img/paymentModal/rm.png",
+      image: "https://assets.NESTATE.in/static/img/paymentModal/rm.png",
       buttonText: "Subscribe",
       bgColor: "#005580", // Darker blue background color
       term: "*100% Cashback T&C",
       conditation:
-        "100% Assured Cashback of the plan purchase amount if you avail loan services through NoBroker and which will be processed on home loandisbursal.",
+        "100% Assured Cashback of the plan purchase amount if you avail loan services through NESTATE and which will be processed on home loandisbursal.",
       subscribe: [
         { text: "Upto 50 Seller Contacts" },
         { text: "Instant New Property Alerts" },
@@ -89,7 +89,7 @@ function BuyersPlan() {
         { text: "FREE Loan Assistance", value: "✔" },
         { text: "FREE Interior Design Consultation", value: "✔" },
       ],
-      image: "https://assets.nobroker.in/static/img/paymentModal/rm.png",
+      image: "https://assets.NESTATE.in/static/img/paymentModal/rm.png",
       buttonText: "Subscribe",
       bgColor: "#D83B3B", // Red background color
       subscribe: [
@@ -228,7 +228,7 @@ function BuyersPlan() {
                                 {/* Left side */}
                                 <div className="hidden md:flex flex-col gap-2 bg-slate-100 p-6 md:justify-center w-[42%] text-sm">
                                   <img
-                                    src="https://assets.nobroker.in/nb-new/public/Signup/signupHome.png"
+                                    src="https://assets.NESTATE.in/nb-new/public/Signup/signupHome.png"
                                     alt=""
                                     width="30%"
                                   />
@@ -251,7 +251,7 @@ function BuyersPlan() {
                                 {/* Right side */}
                                 <div className="md:hidden flex flex-row-reverse md:justify-between gap-8 px-4 pt-4">
                                   <img
-                                    src="https://assets.nobroker.in/nb-new/public/Signup/signupHome.png"
+                                    src="https://assets.NESTATE.in/nb-new/public/Signup/signupHome.png"
                                     alt=""
                                     className="mr-0 w-20 h-20"
                                   />
@@ -366,7 +366,7 @@ function BuyersPlan() {
                   <ul className="ms-5 mt-2" style={{ listStyleType: "circle" }}>
                     <li>
                       The refund will be processed once you shift to your new
-                      property which is not available on NoBroker website.
+                      property which is not available on NESTATE website.
                     </li>
                     <li>
                       100% refund has to be claimed within a week of plan
@@ -378,12 +378,12 @@ function BuyersPlan() {
                     </li>
                     <li>
                       The sale deed should match the requirement given to
-                      NoBroker. NoBroker will verify the claim, this may include
+                      NESTATE. NESTATE will verify the claim, this may include
                       physical visit of the property premises.{" "}
                     </li>
                     <li>
                       The property price in the sale deed should be equal or
-                      lower than the one given to NoBroker property advisor at
+                      lower than the one given to NESTATE property advisor at
                       the time of plan subscription.{" "}
                     </li>
                   </ul>

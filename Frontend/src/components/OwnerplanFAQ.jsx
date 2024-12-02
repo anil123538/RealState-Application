@@ -18,11 +18,11 @@ function OwnerplanFAQ() {
         },
         {
             question: "What will happen in case of Social Media Marketing?",
-            ans: "Our expert marketing team will design promotional ads for your property and it will be posted through our NoBroker Social media channels like Facebook, which have 250 thousand+ active followers."
+            ans: "Our expert marketing team will design promotional ads for your property and it will be posted through our NESTATE Social media channels like Facebook, which have 250 thousand+ active followers."
         },
         {
             question: "How will my property get promoted?",
-            ans: "By subscribing to our subscription you will boost your NoBroker rank and your property will be listed higher on the property listing page."
+            ans: "By subscribing to our subscription you will boost your NESTATE rank and your property will be listed higher on the property listing page."
         },
         {
             question: "Are there any hidden charges?",

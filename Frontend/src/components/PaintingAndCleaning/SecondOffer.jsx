@@ -5,14 +5,14 @@ const SecondOffer = ({ title }) => {
     {
       id: 1,
       image:
-        "https://assets.nobroker.in/hs-new/public/Home/newServicesIcons/painting_hs.svg",
+        "https://assets.NESTATE.in/hs-new/public/Home/newServicesIcons/painting_hs.svg",
       title: "Festive Painting",
       offer: "Flat 25% off",
     },
     {
       id: 2,
       image:
-        "https://assets.nobroker.in/hs-new/public/Home/newServicesIcons/cleaning_hs.svg",
+        "https://assets.NESTATE.in/hs-new/public/Home/newServicesIcons/cleaning_hs.svg",
       title: "Deep Cleaning",
       offer: "Upto 60% off",
     },
@@ -31,7 +31,7 @@ const SecondOffer = ({ title }) => {
               <div className="font-bold md:text-xl text-sm flex item">
                 {item.title}
                 <img
-                  src="https://assets.nobroker.in/hs-new/public/Home-Services/arrow-icon-right.svg"
+                  src="https://assets.NESTATE.in/hs-new/public/Home-Services/arrow-icon-right.svg"
                   alt=""
                   className="m-0"
                 />
@@ -43,14 +43,14 @@ const SecondOffer = ({ title }) => {
 
         <div className="bg-white flex items-center justify-evenly gap-4 px-2 py-4 rounded-lg col-span-2">
           <img
-            src="https://assets.nobroker.in/hs-new/public/Home/newServicesIcons/repair_hs.png"
+            src="https://assets.NESTATE.in/hs-new/public/Home/newServicesIcons/repair_hs.png"
             alt=""
           />
           <div>
             <div className="font-bold text-sm md:text-xl flex">
               Home Repairs
               <img
-                src="https://assets.nobroker.in/hs-new/public/Home-Services/arrow-icon-right.svg"
+                src="https://assets.NESTATE.in/hs-new/public/Home-Services/arrow-icon-right.svg"
                 alt=""
                 className="m-0"
               />

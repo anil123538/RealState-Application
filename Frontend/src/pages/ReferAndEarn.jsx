@@ -6,17 +6,17 @@ const ReferAndEarn = () => {
     {
       id: 1,
       user_image:
-        "https://assets.nobroker.in/images/testimonials/ff80818155ac0fe40155af6ca8df1302_2016.10.06.12.05.00.jpg",
+        "https://assets.NESTATE.in/images/testimonials/ff80818155ac0fe40155af6ca8df1302_2016.10.06.12.05.00.jpg",
       user_name: "Mohamme Kouse",
       star: 5,
-      description: `The NoBroker app is very useful. I have also earned money by using the Refer & Earn option. I have also earned 21000 in last 30 days with the Refer & Earn option. The NoBroker company customer care is excellent at handling their customers. So I am giving them a 5-star rating.
+      description: `The NESTATE app is very useful. I have also earned money by using the Refer & Earn option. I have also earned 21000 in last 30 days with the Refer & Earn option. The NESTATE company customer care is excellent at handling their customers. So I am giving them a 5-star rating.
   
 `,
     },
     {
       id: 2,
       user_image:
-        "https://assets.nobroker.in/images/testimonials/ff8081814dc793fa014dc8d20faf1045_2016.10.06.12.03.04.jpg",
+        "https://assets.NESTATE.in/images/testimonials/ff8081814dc793fa014dc8d20faf1045_2016.10.06.12.03.04.jpg",
       user_name: "Ayan",
       star: 5,
       description: `Wow! I am really amazed. Refer n Earn is awesome, I really earn by just clicking pictures of To-Let boards. Even many of my friends are also earning by this. The processing of leads is very fast and me and my friends are very happy. This is a great concept`,
@@ -39,14 +39,14 @@ const ReferAndEarn = () => {
     {
       id: 1,
       que: "I had submitted my listing, but it has been rejected. Why?",
-      ans: "A Refer & Earn entry is not entitled to reward for the following reasons: 1. The house of the Owner was already listed on NoBroker.in 2. The house of the Owner has already been rented out. 3. The contact provided by you belongs to a Broker.",
+      ans: "A Refer & Earn entry is not entitled to reward for the following reasons: 1. The house of the Owner was already listed on NESTATE.in 2. The house of the Owner has already been rented out. 3. The contact provided by you belongs to a Broker.",
     },
     {
       id: 2,
       que: "How will I get the reward money?",
       ans: {
         1: "To redeem your reward money:",
-        2: "1. Download NoBroker App from App Store: ",
+        2: "1. Download NESTATE App from App Store: ",
       },
     },
     {
@@ -181,7 +181,7 @@ const ReferAndEarn = () => {
                   <div className="flex">
                     {Array.from({ length: item.star }).map((_, index) => (
                       <img
-                        src="https://assets.nobroker.in/nb-new/public/star.png"
+                        src="https://assets.NESTATE.in/nb-new/public/star.png"
                         alt=""
                         key={index}
                         className="w-4 mr-0"

@@ -32,7 +32,7 @@ const PayRent = () => {
 
       {/* forms */}
 
-      <div className="w-full bg-blue text-white flex justify-center md:py-8 md:px-14">
+      <div className="w-full bg-[#004958] text-white flex justify-center md:py-8 md:px-14">
         <div className="md:w-11/12 w-full flex md:flex-row flex-col">
           {/* left */}
 
@@ -40,7 +40,7 @@ const PayRent = () => {
             <h1 className="text-base font-bold md:ml-0 md:text-2xl">
               Pay Rent and Fees with Credit Cart
             </h1>
-            <div className="bg-dark_blue p-2 flex gap-1 items-center md:rounded-md md:w-96 w-full">
+            <div className="bg-[#12373f] p-2 flex gap-1 items-center md:rounded-md md:w-96 w-full">
               <img src={verified} alt="" />
               <span className="font-semibold text-sm">
                 Lowest Charges. Instant Transfers.
@@ -132,7 +132,7 @@ const PayRent = () => {
                 <div className="flex items-center">
                   <input type="checkbox" /> &nbsp;
                   <span>
-                    I agree to the NoBroker{" "}
+                    I agree to the NESTATE{" "}
                     <a href="" className="font-semibold">
                       Terms and Conditions
                     </a>
@@ -163,13 +163,13 @@ const PayRent = () => {
 
       <div className="w-full flex items-center justify-center gap-4 py-16 md:flex-row flex-col flex-wrap">
         <div className="md:w-4/12 w-11/12 md:text-left text-center">
-          <h1 className="text-xl mb-3">Earn money with NoBroker Pay</h1>
+          <h1 className="text-xl mb-3">Earn money with NESTATE Pay</h1>
           <h4 className="text-slate-400 text-xl">
             Start paying rent using your credit card and earn miles, cashback
             and reward points.
           </h4>
         </div>
-        <div className="md:w-4/12 w-11/12 px-6 py-8 border-2 bg-slate-50 border-blue flex gap-3 items-center">
+        <div className="md:w-4/12 w-11/12 px-6 py-8 border-2 bg-slate-50 border-[#004958] flex gap-3 items-center">
           <img src={bulb} alt="bulb" className="w-8 h-8" />
           <h3 className="text-base">
             You can earn up to ₹30,000* by just paying rent for a year by using
@@ -223,7 +223,7 @@ const PayRent = () => {
 
       <div className="flex items-center flex-col py-10 bg-slate-200">
         <h1 className="text-center text-xl">
-          Testimonials from our NoBroker Pay customers
+          Testimonials from our NESTATE Pay customers
         </h1>
         <Testmonials />
       </div>

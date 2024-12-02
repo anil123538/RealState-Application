@@ -13,24 +13,24 @@ function PostPropertyFAQ() {
 
     const faqQueAns = [
         {
-            question: "Is it free to Post home for rent on NoBroker's List Your Property page?",
-            ans: "Yes, it's entirely free to create and manage property listings for both sale and rent on NoBroker. Online property selling and renting is easier than ever using NoBroker–India’s best plot and home selling website."
+            question: "Is it free to Post home for rent on NESTATE's List Your Property page?",
+            ans: "Yes, it's entirely free to create and manage property listings for both sale and rent on NESTATE. Online property selling and renting is easier than ever using NESTATE–India’s best plot and home selling website."
         },
         {
-            question: "Why should I use NoBroker to advertise my home rental?",
-            ans: "NoBroker is the fastest way to rent out your home without Brokerage. It offers an easy listing process, and maximum visibility, and only connects you with genuine, verified tenants, speeding up the rental process."
+            question: "Why should I use NESTATE to advertise my home rental?",
+            ans: "NESTATE is the fastest way to rent out your home without Brokerage. It offers an easy listing process, and maximum visibility, and only connects you with genuine, verified tenants, speeding up the rental process."
         },
         {
-            question: "Can I advertise both residential and commercial properties on NoBroker's List Your Property page?",
-            ans: "Yes, you can list both residential and commercial properties for sale or rent on NoBroker's platform, expanding your options for property transactions."
+            question: "Can I advertise both residential and commercial properties on NESTATE's List Your Property page?",
+            ans: "Yes, you can list both residential and commercial properties for sale or rent on NESTATE's platform, expanding your options for property transactions."
         },
         {
-            question: "How does NoBroker ensure the security of my property listings and interactions with potential tenants or buyers?",
-            ans: "NoBroker prioritises your security by verifying interactions and ensuring that only genuine tenants or buyers can contact you. You have full control over your listings and can update them as needed to attract the right audience."
+            question: "How does NESTATE ensure the security of my property listings and interactions with potential tenants or buyers?",
+            ans: "NESTATE prioritises your security by verifying interactions and ensuring that only genuine tenants or buyers can contact you. You have full control over your listings and can update them as needed to attract the right audience."
         },
         {
-            question: "Can I receive extra support from NoBroker for Renting or selling my flat online?",
-            ans: "Yes, NoBroker can provide a dedicated relationship manager for smoother negotiations when renting or selling properties, ensuring a simpler and faster process."
+            question: "Can I receive extra support from NESTATE for Renting or selling my flat online?",
+            ans: "Yes, NESTATE can provide a dedicated relationship manager for smoother negotiations when renting or selling properties, ensuring a simpler and faster process."
         }
     ];
 

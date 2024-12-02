@@ -346,7 +346,7 @@ function Rentreceipt() {
                 </div>
               </div>
               <img
-                src="https://assets.nobroker.in/nb-new/public/LegalServices/ra_icon.svg"
+                src="https://assets.NESTATE.in/nb-new/public/LegalServices/ra_icon.svg"
                 className=""
                 alt="rental"
                 loading="lazy"
@@ -398,7 +398,7 @@ function Rentreceipt() {
                 </div>
               </div>
               <img
-                src="https://assets.nobroker.in/nb-new/public/LegalServices/tenant_verification_icon.svg"
+                src="https://assets.NESTATE.in/nb-new/public/LegalServices/tenant_verification_icon.svg"
                 className=""
                 alt="rental"
                 loading="lazy"
@@ -508,7 +508,7 @@ function Rentreceipt() {
           <p className="mb-5">
             <span style={{ fontWeight: "400" }}>You can look at this </span>
             <span style={{ fontWeight: "400" }}>
-              NoBroker rent receipt generator
+              NESTATE rent receipt generator
             </span>
             <span style={{ fontWeight: "400" }}>
               {" "}
@@ -699,7 +699,7 @@ function Rentreceipt() {
           </ul>
 
           <h2 className="mb-5">
-            <b>How NoBroker Can Help?</b>
+            <b>How NESTATE Can Help?</b>
           </h2>
           <p>
             <span style={{ fontWeight: "400" }}>
@@ -710,9 +710,9 @@ function Rentreceipt() {
               , it is a no-brainer that a rent receipt generator will benefit
               you greatly. It will help keep your rental finances in order and
               keep track of your expenses. It is also an official document
-              reflecting your reliability as a tenant. This is where NoBroker
+              reflecting your reliability as a tenant. This is where NESTATE
               comes into play- you can join hundreds of other trusted users who
-              use this, which NoBroker takes, to keep their rent receipts in
+              use this, which NESTATE takes, to keep their rent receipts in
               proper order and enjoy a hassle-free rental record system
             </span>
           </p>

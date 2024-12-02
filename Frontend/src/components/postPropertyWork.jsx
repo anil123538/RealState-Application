@@ -26,7 +26,7 @@ function PostPropertyWork() {
             </div>
             <div className="col">
               <img
-                src="https://assets.nobroker.in/static/img/listing/search.jpg"
+                src="https://assets.NESTATE.in/static/img/listing/search.jpg"
                 alt="Simple Listing Process"
               />
             </div>
@@ -35,7 +35,7 @@ function PostPropertyWork() {
           <div className="row mb-5">
             <div className="col">
               <img
-                src="https://assets.nobroker.in/static/img/listing/phonecall.jpg"
+                src="https://assets.NESTATE.in/static/img/listing/phonecall.jpg"
                 alt="Simple Listing Process"
               />
             </div>
@@ -57,13 +57,13 @@ function PostPropertyWork() {
                 Deal Closure
               </h4>
               <div className="fw-light " style={{ color: "#787676" }}>
-                Owner and tenant meet to close the deal directly. NoBroker can
+                Owner and tenant meet to close the deal directly. NESTATE can
                 help create a rental agreement and deliver it to your doorstep.
               </div>
             </div>
             <div className="col">
               <img
-                src="https://assets.nobroker.in/static/img/listing/shakeHands.jpg"
+                src="https://assets.NESTATE.in/static/img/listing/shakeHands.jpg"
                 alt="Simple Listing Process"
               />
             </div>

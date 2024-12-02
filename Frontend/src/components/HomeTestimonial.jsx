@@ -7,47 +7,47 @@ const HomeTestimonial = () => {
     {
       id: 1,
       user_image:
-        "https://assets.nobroker.in/images/testimonials/ff80818155da4ee20155dd9b3e161113_2016.08.18.11.41.41.jpg",
+        "https://assets.NESTATE.in/images/testimonials/ff80818155da4ee20155dd9b3e161113_2016.08.18.11.41.41.jpg",
       user_name: "Shubham Raibhandar",
       star: 5,
       heading: "Helps us to find good properties",
-      description: `"The site really helps us to find good properties in the least amount of time without any headache of brokerage. I was so scared in Pune due to the issues of high deposit as well as brokerage. I was new and had no time. But then I found NoBroker. It is simply a ..."`,
+      description: `"The site really helps us to find good properties in the least amount of time without any headache of brokerage. I was so scared in Pune due to the issues of high deposit as well as brokerage. I was new and had no time. But then I found NESTATE. It is simply a ..."`,
     },
     {
       id: 2,
       user_image:
-        "https://assets.nobroker.in/images/testimonials/ff80818155da4ee20155dd9b3e161113_2016.08.18.11.41.41.jpg",
+        "https://assets.NESTATE.in/images/testimonials/ff80818155da4ee20155dd9b3e161113_2016.08.18.11.41.41.jpg",
       user_name: "Shubham Raibhandar",
       star: 5,
       heading: "Helps us to find good properties",
-      description: `"The site really helps us to find good properties in the least amount of time without any headache of brokerage. I was so scared in Pune due to the issues of high deposit as well as brokerage. I was new and had no time. But then I found NoBroker. It is simply a ..."`,
+      description: `"The site really helps us to find good properties in the least amount of time without any headache of brokerage. I was so scared in Pune due to the issues of high deposit as well as brokerage. I was new and had no time. But then I found NESTATE. It is simply a ..."`,
     },
     {
       id: 3,
       user_image:
-        "https://assets.nobroker.in/images/testimonials/ff80818155da4ee20155dd9b3e161113_2016.08.18.11.41.41.jpg",
+        "https://assets.NESTATE.in/images/testimonials/ff80818155da4ee20155dd9b3e161113_2016.08.18.11.41.41.jpg",
       user_name: "Shubham Raibhandar",
       star: 5,
       heading: "Helps us to find good properties",
-      description: `"The site really helps us to find good properties in the least amount of time without any headache of brokerage. I was so scared in Pune due to the issues of high deposit as well as brokerage. I was new and had no time. But then I found NoBroker. It is simply a ..."`,
+      description: `"The site really helps us to find good properties in the least amount of time without any headache of brokerage. I was so scared in Pune due to the issues of high deposit as well as brokerage. I was new and had no time. But then I found NESTATE. It is simply a ..."`,
     },
     {
       id: 4,
       user_image:
-        "https://assets.nobroker.in/images/testimonials/ff80818155da4ee20155dd9b3e161113_2016.08.18.11.41.41.jpg",
+        "https://assets.NESTATE.in/images/testimonials/ff80818155da4ee20155dd9b3e161113_2016.08.18.11.41.41.jpg",
       user_name: "Shubham Raibhandar",
       star: 5,
       heading: "Helps us to find good properties",
-      description: `"The site really helps us to find good properties in the least amount of time without any headache of brokerage. I was so scared in Pune due to the issues of high deposit as well as brokerage. I was new and had no time. But then I found NoBroker. It is simply a ..."`,
+      description: `"The site really helps us to find good properties in the least amount of time without any headache of brokerage. I was so scared in Pune due to the issues of high deposit as well as brokerage. I was new and had no time. But then I found NESTATE. It is simply a ..."`,
     },
     {
       id: 5,
       user_image:
-        "https://assets.nobroker.in/images/testimonials/ff80818155da4ee20155dd9b3e161113_2016.08.18.11.41.41.jpg",
+        "https://assets.NESTATE.in/images/testimonials/ff80818155da4ee20155dd9b3e161113_2016.08.18.11.41.41.jpg",
       user_name: "Shubham Raibhandar",
       star: 5,
       heading: "Helps us to find good properties",
-      description: `"The site really helps us to find good properties in the least amount of time without any headache of brokerage. I was so scared in Pune due to the issues of high deposit as well as brokerage. I was new and had no time. But then I found NoBroker. It is simply a ..."`,
+      description: `"The site really helps us to find good properties in the least amount of time without any headache of brokerage. I was so scared in Pune due to the issues of high deposit as well as brokerage. I was new and had no time. But then I found NESTATE. It is simply a ..."`,
     },
   ];
 
@@ -59,7 +59,7 @@ const HomeTestimonial = () => {
           width="560"
           height="320"
           src="https://www.youtube.com/embed/0ChlgxhXVws"
-          title="NoBroker Reviews - Why our customers love us?"
+          title="NESTATE Reviews - Why our customers love us?"
           style={{ border: "none" }}
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerPolicy="strict-origin-when-cross-origin"
@@ -81,7 +81,7 @@ const HomeTestimonial = () => {
       <div className="md:flex hidden items-center justify-around p-10">
         <div>
           <img
-            src="https://assets.nobroker.in/nb-new/public/Home/homeAppPromotion.png"
+            src="https://assets.NESTATE.in/nb-new/public/Home/homeAppPromotion.png"
             alt=""
             width="80%"
           />

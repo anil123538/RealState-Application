@@ -60,7 +60,7 @@ const Search = () => {
           </div>
           <div className="mx-auto pt-5 md:pt-0 w-full md:w-auto px-4 ">
             <img
-              src="https://assets.nobroker.in/hs-new/public/Home/newServicesIcons/shimmerLazyLoad.gif"
+              src="https://assets.NESTATE.in/hs-new/public/Home/newServicesIcons/shimmerLazyLoad.gif"
               alt=""
               className="m-0 w-full md:w-[350px] h-[250px]"
             />

@@ -61,21 +61,21 @@ function Ownerplan() {
       id: 1,
       imgSrc: Pic1,
       title:
-        "NoBroker's customer service was impressively prompt and friendly. Listing my flat on rent was a memorable experience overall.",
+        "NESTATE's customer service was impressively prompt and friendly. Listing my flat on rent was a memorable experience overall.",
       text: "#ZeroBrokerage",
     },
     {
       id: 2,
       imgSrc: Pic2,
       title:
-        "NoBroker's customer service was impressively prompt and friendly. Listing my flat on rent was a memorable experience overall.",
+        "NESTATE's customer service was impressively prompt and friendly. Listing my flat on rent was a memorable experience overall.",
       text: "#ZeroBrokerage",
     },
     {
       id: 3,
       imgSrc: Pic1,
       title:
-        "NoBroker's customer service was impressively prompt and friendly. Listing my flat on rent was a memorable experience overall.",
+        "NESTATE's customer service was impressively prompt and friendly. Listing my flat on rent was a memorable experience overall.",
       text: "#ZeroBrokerage",
     },
   ];
@@ -102,27 +102,27 @@ function Ownerplan() {
               >
                 <span className="d-flex align-items-center justify-content-end">
                   <img
-                    src="https://assets.nobroker.in/nb-new/public/starNew.svg"
+                    src="https://assets.NESTATE.in/nb-new/public/starNew.svg"
                     alt="review star"
                     className="img-fluid star-icon"
                   />
                   <img
-                    src="https://assets.nobroker.in/nb-new/public/starNew.svg"
+                    src="https://assets.NESTATE.in/nb-new/public/starNew.svg"
                     alt="review star"
                     className="img-fluid star-icon"
                   />
                   <img
-                    src="https://assets.nobroker.in/nb-new/public/starNew.svg"
+                    src="https://assets.NESTATE.in/nb-new/public/starNew.svg"
                     alt="review star"
                     className="img-fluid star-icon"
                   />
                   <img
-                    src="https://assets.nobroker.in/nb-new/public/starNew.svg"
+                    src="https://assets.NESTATE.in/nb-new/public/starNew.svg"
                     alt="review star"
                     className="img-fluid star-icon"
                   />
                   <img
-                    src="https://assets.nobroker.in/nb-new/public/starNew.svg"
+                    src="https://assets.NESTATE.in/nb-new/public/starNew.svg"
                     alt="review star"
                     className="img-fluid star-icon"
                   />
@@ -200,7 +200,7 @@ function Ownerplan() {
               zIndex: 1,
               backgroundImage: `url(${
                 activeCard === card.id
-                  ? "https://assets.nobroker.in/nb-new/public/green-box-png-square.webp"
+                  ? "https://assets.NESTATE.in/nb-new/public/green-box-png-square.webp"
                   : card.background
               })`,
               backgroundSize: "cover",

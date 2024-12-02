@@ -10,7 +10,7 @@ const QuickChat = () => {
         } bg-white w-80 fixed bottom-10 right-10 text-black shadow-2xl rounded-xl overflow-hidden z-50`}
       >
         <div className="bg-[#004958] relative flex items-center justify-center py-2.5">
-          <h1 className="font-semibold text-white text-sm">NoBroker Support</h1>
+          <h1 className="font-semibold text-white text-sm">NESTATE Support</h1>
           <div className="absolute right-3 text-white flex gap-2">
             <span>-</span>
             <button onClick={() => setVisibleChatbox(false)}>

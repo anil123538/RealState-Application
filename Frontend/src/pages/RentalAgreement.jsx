@@ -14,19 +14,19 @@ const RentalAgreement = () => {
     {
       id: 1,
       text: "Rental Agreement + Police Intimation",
-      bgImage: "https://assets.nobroker.in/nob-common/pkgWithRaUpload.webp",
+      bgImage: "https://assets.NESTATE.in/nob-common/pkgWithRaUpload.webp",
       offer: "Upto ₹100 off",
     },
     {
       id: 2,
       text: "Rental Agreement with Biometric",
-      bgImage: "https://assets.nobroker.in/nob-common/pkgWithRaMh.webp",
+      bgImage: "https://assets.NESTATE.in/nob-common/pkgWithRaMh.webp",
       offer: "Upto ₹100 off",
     },
     {
       id: 3,
       text: "Rental Agreement with E-Stamp & Notary",
-      bgImage: "https://assets.nobroker.in/nob-common/pkgWithEstamp.webp",
+      bgImage: "https://assets.NESTATE.in/nob-common/pkgWithEstamp.webp",
       offer: "Upto ₹100 off",
     },
   ];
@@ -34,14 +34,14 @@ const RentalAgreement = () => {
   const availableAddOns = [
     {
       id: 1,
-      image: "https://assets.nobroker.in/nob-common/extraVisit.webp",
+      image: "https://assets.NESTATE.in/nob-common/extraVisit.webp",
       heading: "Extra Visit",
       desc: "Book additional biometric appointments in",
       bgColor: "#ffeff3",
     },
     {
       id: 2,
-      image: "https://assets.nobroker.in/nob-common/techAssistance.webp",
+      image: "https://assets.NESTATE.in/nob-common/techAssistance.webp",
       heading: "Tech Assistance",
       desc: "For distant registration via a biometric device",
       bgColor: "#f2f3ff",
@@ -49,21 +49,21 @@ const RentalAgreement = () => {
     {
       id: 3,
       image:
-        "https://assets.nobroker.in/nob-common/legalIDVerificationAddon.webp",
+        "https://assets.NESTATE.in/nob-common/legalIDVerificationAddon.webp",
       heading: "Tenant Verification",
       desc: "Verify your tenant's Identity Instantly.",
       bgColor: "#fff5e2",
     },
     {
       id: 4,
-      image: "https://assets.nobroker.in/nob-common/legalDeliveryAddon.webp",
+      image: "https://assets.NESTATE.in/nob-common/legalDeliveryAddon.webp",
       heading: "Standard Delivery",
       desc: "Hard copy delivery of your agreement",
       bgColor: "rgb(255, 236, 226)",
     },
     {
       id: 5,
-      image: "https://assets.nobroker.in/nob-common/powerOfAttorneyImg.svg",
+      image: "https://assets.NESTATE.in/nob-common/powerOfAttorneyImg.svg",
       heading: "Power Of Attorney",
       desc: "Drafting of Power Of Attorney.",
       bgColor: "rgb(242, 246, 253)",
@@ -111,7 +111,7 @@ const RentalAgreement = () => {
       heading: "E-Stamped Agreement",
       details: {
         1: "Agreement printed with legal E-Stamp",
-        2: "NoBroker Draft with custom clauses",
+        2: "NESTATE Draft with custom clauses",
         3: "Hardcopy Delivery with Same Day Delivery",
         4: "Agreement Delivery available for both Tenant/Owner",
         5: "Starting @ ₹399 + Stamp Paper",
@@ -122,7 +122,7 @@ const RentalAgreement = () => {
       heading: "Paperless Rental Agreement with Aadhar E-Sign",
       details: {
         1: "Agreement printed with legal E-Stamp",
-        2: "NoBroker Draft with custom clauses",
+        2: "NESTATE Draft with custom clauses",
         3: "Paperless, remote and secure Aadhar eSign",
 
         4: "Get agreement digital copy Instantly, legally valid in court of law",
@@ -135,21 +135,21 @@ const RentalAgreement = () => {
     {
       id: 1,
       image:
-        "https://assets.nobroker.in/hs-new/public/LegalServiceNew/nbDiscount.svg",
+        "https://assets.NESTATE.in/hs-new/public/LegalServiceNew/nbDiscount.svg",
       disPercent: "10% NB cash discount",
       upto: "Upto ₹250",
     },
     {
       id: 2,
       image:
-        "https://assets.nobroker.in/hs-new/public/LegalServiceNew/hdfcCoupon.png",
+        "https://assets.NESTATE.in/hs-new/public/LegalServiceNew/hdfcCoupon.png",
       disPercent: "5% HDFC bank",
       upto: "Upto ₹1500",
     },
     {
       id: 3,
       image:
-        "https://assets.nobroker.in/hs-new/public/LegalServiceNew/amazonCoupon.png",
+        "https://assets.NESTATE.in/hs-new/public/LegalServiceNew/amazonCoupon.png",
       disPercent: "₹100 Amazon pay discount",
       upto: "On spend of ₹2000",
     },
@@ -275,7 +275,7 @@ const RentalAgreement = () => {
               <div className="bg-white/10 w-fit p-2 rounded-md flex  gap-32 mt-4">
                 <div className="flex">
                   <img
-                    src="https://assets.nobroker.in/hs-new/public/LegalServiceNew/renew.svg"
+                    src="https://assets.NESTATE.in/hs-new/public/LegalServiceNew/renew.svg"
                     alt=""
                     className="w-10"
                   />
@@ -292,7 +292,7 @@ const RentalAgreement = () => {
                   </div>
                 </div>
                 <img
-                  src="https://assets.nobroker.in/hs-new/public/LegalServiceNew/leftAero.svg"
+                  src="https://assets.NESTATE.in/hs-new/public/LegalServiceNew/leftAero.svg"
                   alt=""
                   className="m-0"
                 />
@@ -324,7 +324,7 @@ const RentalAgreement = () => {
                     <div className="flex bg-gradient-to-r from-green-700/40 p-2 justify-between">
                       <div className="flex w-full items-center">
                         <img
-                          src="https://assets.nobroker.in/hs-new/public/LegalServiceNew/offuptoIcon.svg"
+                          src="https://assets.NESTATE.in/hs-new/public/LegalServiceNew/offuptoIcon.svg"
                           alt=""
                           className="mx-2 w-6"
                         />
@@ -333,7 +333,7 @@ const RentalAgreement = () => {
                         </div>
                       </div>
                       <img
-                        src="https://assets.nobroker.in/hs-new/public/LegalServiceNew/leftAeroPkg.svg"
+                        src="https://assets.NESTATE.in/hs-new/public/LegalServiceNew/leftAeroPkg.svg"
                         alt=""
                         className="m-0 w-6"
                       />
@@ -550,17 +550,17 @@ const RentalAgreement = () => {
             </div>
           </div>
 
-          {/* NoBroker Promise */}
+          {/* NESTATE Promise */}
           <div className="bg-white rounded-xl p-8 md:w-[90%] mx-auto">
             <div className="md:text-3xl text-xl font-medium opacity-80">
-              NoBroker Promise
+              NESTATE Promise
             </div>
             <div className="flex flex-col-reverse md:flex-row justify-between mt-10">
               <div className="flex flex-col gap-10">
                 <div className="flex gap-2">
                   <div>
                     <img
-                      src="https://assets.nobroker.in/hs-new/public/LegalServiceNew/lowestPrice.svg"
+                      src="https://assets.NESTATE.in/hs-new/public/LegalServiceNew/lowestPrice.svg"
                       alt=""
                       className="m-0"
                     />
@@ -577,7 +577,7 @@ const RentalAgreement = () => {
                 <div className="flex gap-4">
                   <div>
                     <img
-                      src="https://assets.nobroker.in/hs-new/public/LegalServiceNew/legallyValid.svg"
+                      src="https://assets.NESTATE.in/hs-new/public/LegalServiceNew/legallyValid.svg"
                       alt=""
                       className="m-0"
                     />
@@ -595,7 +595,7 @@ const RentalAgreement = () => {
                 <div className="flex gap-4">
                   <div>
                     <img
-                      src="https://assets.nobroker.in/hs-new/public/LegalServiceNew/convenient.svg"
+                      src="https://assets.NESTATE.in/hs-new/public/LegalServiceNew/convenient.svg"
                       alt=""
                       className="m-0"
                     />
@@ -689,7 +689,7 @@ const RentalAgreement = () => {
                       </div>
                       <div className="font-medium">{item.name}</div>
                       <img
-                        src="https://assets.nobroker.in/hs-new/public/Common/verifiedImg.svg"
+                        src="https://assets.NESTATE.in/hs-new/public/Common/verifiedImg.svg"
                         alt=""
                       />
                     </div>
@@ -952,7 +952,7 @@ const RentalAgreement = () => {
               These were some of the important aspects to consider before
               renting a property. If you wish to get through the online
               registration for the rent agreement process, you can simply log in
-              to the NoBroker portal and get doorstep delivery of your bangalore
+              to the NESTATE portal and get doorstep delivery of your bangalore
               rent agreement template.
             </p>
           </div>

@@ -3,29 +3,29 @@ import { Fragment } from "react";
 const Faqs = () => {
   const content = [
     {
-      question: "How secure is NoBroker Pay?",
+      question: "How secure is NESTATE Pay?",
       answer:
-        "Security is incredibly important to us, therefore when you pay on our website, we use sophisticated security measures to ensure your confidential information is secure and encrypted. NoBroker Pay does not store any of your financial information.",
+        "Security is incredibly important to us, therefore when you pay on our website, we use sophisticated security measures to ensure your confidential information is secure and encrypted. NESTATE Pay does not store any of your financial information.",
     },
     {
-      question: "How secure is NoBroker Pay?",
+      question: "How secure is NESTATE Pay?",
       answer:
-        "Security is incredibly important to us, therefore when you pay on our website, we use sophisticated security measures to ensure your confidential information is secure and encrypted. NoBroker Pay does not store any of your financial information.",
+        "Security is incredibly important to us, therefore when you pay on our website, we use sophisticated security measures to ensure your confidential information is secure and encrypted. NESTATE Pay does not store any of your financial information.",
     },
     {
-      question: "How secure is NoBroker Pay?",
+      question: "How secure is NESTATE Pay?",
       answer:
-        "Security is incredibly important to us, therefore when you pay on our website, we use sophisticated security measures to ensure your confidential information is secure and encrypted. NoBroker Pay does not store any of your financial information.",
+        "Security is incredibly important to us, therefore when you pay on our website, we use sophisticated security measures to ensure your confidential information is secure and encrypted. NESTATE Pay does not store any of your financial information.",
     },
     {
-      question: "How secure is NoBroker Pay?",
+      question: "How secure is NESTATE Pay?",
       answer:
-        "Security is incredibly important to us, therefore when you pay on our website, we use sophisticated security measures to ensure your confidential information is secure and encrypted. NoBroker Pay does not store any of your financial information.",
+        "Security is incredibly important to us, therefore when you pay on our website, we use sophisticated security measures to ensure your confidential information is secure and encrypted. NESTATE Pay does not store any of your financial information.",
     },
     {
-      question: "How secure is NoBroker Pay?",
+      question: "How secure is NESTATE Pay?",
       answer:
-        "Security is incredibly important to us, therefore when you pay on our website, we use sophisticated security measures to ensure your confidential information is secure and encrypted. NoBroker Pay does not store any of your financial information.",
+        "Security is incredibly important to us, therefore when you pay on our website, we use sophisticated security measures to ensure your confidential information is secure and encrypted. NESTATE Pay does not store any of your financial information.",
     },
   ];
   return (

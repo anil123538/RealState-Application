@@ -11,7 +11,7 @@ import {
   FaChevronRight,
   FaChevronUp,
 } from "react-icons/fa"; // Import the hamburger icon
-import logo from "../../assets/images/title.png";
+import logo from "../../assets/images/post-01.png";
 import rent from "../../assets/images/rent.png";
 
 import flogo from "../../assets/images/flogo.png";
@@ -65,6 +65,7 @@ import Modal from "../Modal";
 import LoginSignup from "../LoginSignup";
 import { NonceProvider } from "react-select";
 import { BiBrightness } from "react-icons/bi";
+import suitcase from '../../assets/images/suitcase.png'
 
 function Navb() {
   const location = useLocation();
@@ -87,7 +88,7 @@ function Navb() {
   const [showSmallCommercialPlans, setShowSmallCommercialPlans] =
     useState(false);
   const [showHomeServices, setshowHomeServices] = useState(false);
-  const [showNoBrokerPay, setshowNoBrokerPay] = useState(false);
+  const [showNESTATEPay, setshowNESTATEPay] = useState(false);
   const [showLegal, setShowLegal] = useState(false);
   const [showUtilities, setShowUtilities] = useState(false);
   const [showHelp, setShowHelp] = useState(false);
@@ -98,7 +99,7 @@ function Navb() {
   const [isLoginSignupModelOpen, setLoginSignupModelOpen] = useState(false);
 
   const videoSrc =
-    "blob:https://www.nobroker.in/cbd719f6-bc72-4621-8b6e-680031d0f281";
+    "blob:https://www.NESTATE.in/cbd719f6-bc72-4621-8b6e-680031d0f281";
 
   const toggleNav = () => {
     setShowNav(!showNav);
@@ -155,8 +156,8 @@ function Navb() {
   const handleHomeToggle = () => {
     setshowHomeServices(!showHomeServices);
   };
-  const handleNoBrokerToggle = () => {
-    setshowNoBrokerPay(!showNoBrokerPay);
+  const handleNESTATEToggle = () => {
+    setshowNESTATEPay(!showNESTATEPay);
   };
   const handleLegalToggle = () => {
     setShowLegal(!showLegal);
@@ -214,11 +215,11 @@ function Navb() {
               className="ms-auto my-2 my-lg-0 d-none d-lg-flex justify-content align-items-center"
               style={{ fontSize: "0.8rem" }}
             >
-              <Nav.Link href="pay-rent" className="">
+              <Nav.Link href="https://travel-website-one-cyan.vercel.app/" className="">
                 <span className="d-flex gap-2 align-items-center border nav-box px-2 py-5">
                   <div>
                     <img
-                      src={rent} // Use your imported image here
+                      src={suitcase} // Use your imported image here
                       alt="Brand Logo"
                       width="20" // Adjust width as needed
                       className="image-rent"
@@ -645,7 +646,7 @@ function Navb() {
                       className="menu-dropdown text-decoration-none"
                       style={{ fontSize: "normal" }}
                     >
-                      No Broker Support
+                      NESTATE Support
                     </Link>
                   </Dropdown.Item>
 
@@ -843,7 +844,7 @@ function Navb() {
                             autoPlay
                             loop
                             playsInline
-                            src="blob:https://www.nobroker.in/cbd719f6-bc72-4621-8b6e-680031d0f281"
+                            src="blob:https://www.NESTATE.in/cbd719f6-bc72-4621-8b6e-680031d0f281"
                             style={{
                               transition: "0.5s",
                               height: "12rem",
@@ -1273,21 +1274,21 @@ function Navb() {
 
                       <div
                         className="w-90 mx-4 my-2 pb-2 drop border-bottom border-white"
-                        onClick={handleNoBrokerToggle}
+                        onClick={handleNESTATEToggle}
                       >
                         <div
                           className="d-flex justify-content-between align-items-center w-100"
                           style={{ cursor: "pointer" }}
                         >
-                          <b> NoBroker Pay</b>
-                          {showNoBrokerPay ? (
+                          <b> NESTATE Pay</b>
+                          {showNESTATEPay ? (
                             <FaChevronUp className="ms-auto" />
                           ) : (
                             <FaChevronDown className="ms-auto" />
                           )}
                         </div>
 
-                        {showNoBrokerPay && (
+                        {showNESTATEPay && (
                           <li>
                             <ul className="custom-dropdown-ul">
                               <Nav.Link>
@@ -1603,7 +1604,7 @@ function Navb() {
                     absolute top-full left-0 w-full pl-4 bg-white z-50 shadow-lg rounded-md lg:hidden`}
                   >
                     <div id="navContainer" className="nav-container">
-                      <Nav.Link href="/">NoBroker Home</Nav.Link>
+                      <Nav.Link href="/">NESTATE Home</Nav.Link>
                       <Nav.Link href="/LoginSignup">Login</Nav.Link>
                       <Nav.Link href="/LoginSignup">SignUp</Nav.Link>
                     </div>

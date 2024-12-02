@@ -27,7 +27,7 @@ export const services = [
     img: instaCash,
     name: "NB InstaCash",
     des: "Get Instant Cash Upto ₹10 Lakhs",
-    link: "https://www.nobroker.in/instacash/landing?isHybrid=true&hybridActionBar=false&nbFr=rent_page_desktop",
+    link: "https://www.NESTATE.in/instacash/landing?isHybrid=true&hybridActionBar=false&nbFr=rent_page_desktop",
     linkName: "Withdraw Now",
   },
   // {
@@ -95,8 +95,8 @@ export const services = [
   },
   {
     img: no_broker_trust,
-    name: "NoBroker Trust",
-    des: "NoBroker Pay is a product by NoBroker and is 100% secure with PCI compliant payment gateway.",
+    name: "NESTATE Trust",
+    des: "NESTATE Pay is a product by NESTATE and is 100% secure with PCI compliant payment gateway.",
     link: "",
     linkName: "",
   },
