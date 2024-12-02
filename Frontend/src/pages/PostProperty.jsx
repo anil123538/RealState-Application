@@ -28,7 +28,7 @@ function PostProperty() {
           </h1>
           <p className="link mb-5" style={{ color: "#424949" }}>
             Looking for a property?
-            <a href="" style={{ color: "#097969" }}>
+            <a href="/" style={{ color: "#004950" }}>
               Click here
             </a>
           </p>

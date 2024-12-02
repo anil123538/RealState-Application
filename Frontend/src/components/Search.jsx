@@ -162,7 +162,7 @@ const Search = ({ selectedOption, setSelectedOption }) => {
             <div
               className={`p-2 cursor-pointer ${
                 selectedOption === "Buy"
-                  ? "border-b-4 border-red-400 font-semibold"
+                  ? "border-b-4 border-[#ff5800] font-semibold"
                   : "md:border-r border-zinc-200"
               } `}
               onClick={() => handleSelectedOption("Buy")}
@@ -170,7 +170,7 @@ const Search = ({ selectedOption, setSelectedOption }) => {
               <Link
                 className={`no-underline ${
                   selectedOption === "Buy"
-                    ? " text-red-400 font-semibold"
+                    ? " text-[#ff5800] font-semibold"
                     : "text-zinc-400"
                 }`}
               >
@@ -180,7 +180,7 @@ const Search = ({ selectedOption, setSelectedOption }) => {
             <div
               className={` p-2 cursor-pointer ${
                 selectedOption === "Rent"
-                  ? "border-b-4 border-red-400 font-semibold"
+                  ? "border-b-4  text-[#ff5800] font-semibold"
                   : "md:border-x border-zinc-200"
               } `}
               onClick={() => handleSelectedOption("Rent")}
@@ -188,7 +188,7 @@ const Search = ({ selectedOption, setSelectedOption }) => {
               <Link
                 className={`no-underline ${
                   selectedOption === "Rent"
-                    ? " text-red-400 font-semibold"
+                    ? "  text-[#ff5800] font-semibold"
                     : "text-zinc-400"
                 }`}
               >
@@ -198,7 +198,7 @@ const Search = ({ selectedOption, setSelectedOption }) => {
             <div
               className={` p-2 cursor-pointer ${
                 selectedOption === "Commercial"
-                  ? "border-b-4 border-red-400 font-semibold"
+                  ? "border-b-4  text-[#ff5800] font-semibold"
                   : "md:border-l border-zinc-200"
               } `}
               onClick={() => handleSelectedOption("Commercial")}
@@ -206,7 +206,7 @@ const Search = ({ selectedOption, setSelectedOption }) => {
               <Link
                 className={`no-underline ${
                   selectedOption === "Commercial"
-                    ? " text-red-400 font-semibold"
+                    ? "  text-[#ff5800] font-semibold"
                     : "text-zinc-400"
                 }`}
               >
@@ -219,7 +219,7 @@ const Search = ({ selectedOption, setSelectedOption }) => {
             <div className="p-4 border border-black rounded-xl opacity-40 ">
               Search by locality or landmark
             </div>
-            <div className="w-fit absolute top-2 right-2 bg-[#fd3752] text-white flex items-center text-lg px-3 py-2 cursor-pointer rounded-xl hover:bg-[#d03c3c]">
+            <div className="w-fit absolute top-2 right-2 bg-[#ff5800] text-white flex items-center text-lg px-3 py-2 cursor-pointer rounded-xl hover:bg-[#d03c3c]">
               <BiSearch className="text-2xl" />
             </div>
           </div>
@@ -237,7 +237,7 @@ const Search = ({ selectedOption, setSelectedOption }) => {
                 <div></div>
                 <div className="text-xs opacity-70">Pay ZERO brokerage</div>
               </div>
-              <button className="p-3 w-fit mt-4 rounded-md bg-red-500 font-semibold">
+              <button className="p-3 w-fit mt-4 rounded-md bg-[#ff5800] font-semibold">
                 Post FREE Property Ad
               </button>
             </div>
@@ -274,7 +274,7 @@ const Search = ({ selectedOption, setSelectedOption }) => {
               className="border border-zinc-200 px-4 text-sm w-full outline-none"
               placeholder="Search upto 3 localities or landmarks"
             />
-            <div className="w-fit bg-[#fd3752] text-white flex items-center text-lg px-10 cursor-pointer hover:bg-[#d03c3c]">
+            <div className="w-fit bg-[#ff5800] text-white flex items-center text-lg px-10 cursor-pointer hover:bg-[#d03c3c]">
               <BiSearch className="text-xl opacity-80" />
               <button type="submit">Search</button>
             </div>
@@ -501,7 +501,7 @@ const Search = ({ selectedOption, setSelectedOption }) => {
             </span>
             <hr className="border opacity-20  w-20" />
           </div>
-          <button className="px-4 py-2.5 w-fit bg-teal-600 hover:bg-teal-700">
+          <button className="px-4 py-2.5 w-fit hover:bg-teal-700" style={{backgroundColor:"#004953"}}>
             <Link to="/post-property" className="text-white">
               Post Free Property Ad
             </Link>

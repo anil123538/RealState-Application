@@ -12,3 +12,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
+ 
+body{
+  background-color: rgb(245, 255, 250);
+}

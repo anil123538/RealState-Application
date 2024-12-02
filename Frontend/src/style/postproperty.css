@@ -96,7 +96,7 @@ img {
 
 
 .custom-switch input:checked + .custom-slider {
-  background-color: #009587;
+  background-color: #004958;
 }
 
 .custom-switch input:checked + .custom-slider:before {
@@ -153,10 +153,10 @@ img {
 .property-type.active {
   font-weight: bold;
   background-color: #fff;
-  border-bottom: 3px solid #009587;
+  border-bottom: 3px solid #004958;
 }
 .ad-type.active {
-  background-color: #009587;
+  background-color: #004958;
   color: #fff;
 }
 
@@ -198,7 +198,7 @@ img {
   margin-top: 1em;
   border-radius: none;
   padding: 4px 40px;
-  background-color: #ff414d;
+  background-color: #ff5800;
 }
 
 .help-call {
@@ -238,7 +238,7 @@ img {
   align-items: center;
   cursor: pointer;
   font-size: 14px;
-  color: #009587;
+  color: #004958;
   transition: color 0.1s ease;
 }
 

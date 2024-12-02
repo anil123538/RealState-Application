@@ -87,7 +87,7 @@ const Careers = () => {
           <div className="opacity-60 text-sm my-4">
             We ignite opportunities by solving the biggest real-estate problem
           </div>
-          <button className="bg-teal-600 px-5 py-2.5 font-medium text-sm text-white">
+          <button className="bg-[#004958] px-5 py-2.5 font-medium text-sm text-white">
             See all opportunities
           </button>
         </div>

@@ -284,7 +284,7 @@ const RentalAgreement = () => {
                       <div className="text-sm md:text-base">
                         Renew Your Agreement
                       </div>
-                      <div className="w-2 h-2 bg-red-500 rounded-full ml-1"></div>
+                      <div className="w-2 h-2 bg-[#ff5800] rounded-full ml-1"></div>
                     </div>
                     <div className="text-xs opacity-60">
                       Renew your existing agreement
@@ -321,14 +321,14 @@ const RentalAgreement = () => {
                     <div className="md:text-2xl text-sm font-medium w-2/3 px-3">
                       {item.text}
                     </div>
-                    <div className="flex bg-gradient-to-r from-green-200/40 p-2 justify-between">
+                    <div className="flex bg-gradient-to-r from-green-700/40 p-2 justify-between">
                       <div className="flex w-full items-center">
                         <img
                           src="https://assets.nobroker.in/hs-new/public/LegalServiceNew/offuptoIcon.svg"
                           alt=""
                           className="mx-2 w-6"
                         />
-                        <div className="text-green-700 font-medium md:text-xl text-sm">
+                        <div className="text-[#004958] font-medium md:text-xl text-sm">
                           {item.offer}
                         </div>
                       </div>
@@ -347,17 +347,17 @@ const RentalAgreement = () => {
           {/* SELECT A RENT AGREEMENT */}
           <div className="md:flex hidden justify-center gap-2 text-xs">
             <div className="flex items-center gap-2">
-              <PiStamp className="text-3xl text-orange-800" />
+              <PiStamp className="text-3xl text-[#ff5800]" />
               <div className="opacity-80">Mahrashtra Govt. Registered</div>
               <div className="h-[80%] border border-black/40"></div>
             </div>
             <div className="flex items-center gap-2">
-              <AiOutlineSafety className="text-3xl text-orange-800" />
+              <AiOutlineSafety className="text-3xl text-[#ff5800]" />
               <div className="opacity-80">Legally Valid Agreement</div>
               <div className="h-[80%] border border-black/40"></div>
             </div>
             <div className="flex items-center gap-2">
-              <PiShareFatThin className="text-3xl text-orange-800" />
+              <PiShareFatThin className="text-3xl text-[#ff5800]" />
               <div className="opacity-80">Share form with tenant/Owner</div>
             </div>
           </div>
@@ -483,7 +483,7 @@ const RentalAgreement = () => {
                     className="md:flex hidden align-middle gap-2 text-base font-light"
                     key={index}
                   >
-                    <FaCheck className="mt-1  text-teal-600" />
+                    <FaCheck className="mt-1  text-[#004958]" />
                     {itemDetail}
                   </div>
                 ))}
@@ -500,7 +500,7 @@ const RentalAgreement = () => {
                       className="flex text-left gap-2 w-full text-sm font-light"
                       key={index}
                     >
-                      <FaCheck className="mt-1 text-teal-600" />
+                      <FaCheck className="mt-1 text-[teal-600]" />
                       {itemDetail} {/* Display the itemDetail */}
                     </div>
                   ))}

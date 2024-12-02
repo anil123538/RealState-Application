@@ -138,7 +138,7 @@ const PayRent = () => {
                     </a>
                   </span>
                 </div>
-                <button className="bg-red hover:bg-rose-700 py-2 text-white font-semibold">
+                <button className=" hover:bg-orange-600 py-2 text-white font-semibold" style={{background:"#FF5800"}}>
                   Get Started
                 </button>
                 <div className="bg-gray-200 flex gap-3 p-3 rounded-t-md mt-6 bg-slate-200">

@@ -69,7 +69,7 @@ const ReferAndEarn = () => {
         </p>
         <p>every property listing we publish.</p>
       </div>
-      <div className="md:text-3xl text-lg font-semibold text-teal-600 md:py-8 py-4 mdfont-extralight text-center">
+      <div className="md:text-3xl text-lg font-semibold text-[#004958] md:py-8 py-4 mdfont-extralight text-center">
         Cool! How do I do it ?
       </div>
 
@@ -83,7 +83,7 @@ const ReferAndEarn = () => {
           <div className="md:text-xl text-sm md:font-extralight font-medium w-4/6 md:w-full mx-auto my-5 md:mb-24">
             Share contact details of the property owner and get rewarded
           </div>
-          <button className="p-3 bg-teal-600 text-white">
+          <button className="p-3 bg-[#004958] text-white">
             Enter Owner Details
           </button>
         </div>
@@ -103,10 +103,10 @@ const ReferAndEarn = () => {
             </p>
           </div>
           <div className="flex md:block justify-center gap-4">
-            <button className="bg-teal-600 text-white font-bold text-sm px-4 py-3 rounded-sm hover:bg-teal-700">
+            <button className="bg-[#004958] text-white font-bold text-sm px-4 py-3 rounded-sm hover:bg-teal-700">
               Upload Photo
             </button>
-            <button className="bg-teal-600 text-white font-bold text-sm px-4 py-3 rounded-sm hover:bg-teal-700 md:hidden">
+            <button className="bg-[#004958] text-white font-bold text-sm px-4 py-3 rounded-sm hover:bg-teal-700 md:hidden">
               Take Photo
             </button>
           </div>
@@ -121,7 +121,7 @@ const ReferAndEarn = () => {
       </div>
 
       <div className="md:py-9 py-4 px-4">
-        <div className="md:text-3xl text-lg text-teal-600 text-center md:font-extralight font-medium">
+        <div className="md:text-3xl text-lg text-[#004958] text-center md:font-extralight font-medium">
           A little extra dough is always welcome
         </div>
         <div className="flex justify-around md:py-9 py-4">
@@ -143,7 +143,7 @@ const ReferAndEarn = () => {
                   What will <span className="font-semibold">You </span>do with
                   all that extra money ?
                 </p>
-                <button className="bg-teal-600 text-white md:font-bold text-sm px-4 py-3 rounded-sm hover:bg-teal-700 min-w-fit">
+                <button className="bg-[#004958] text-white md:font-bold text-sm px-4 py-3 rounded-sm hover:bg-teal-700 min-w-fit">
                   I'm In
                 </button>
               </div>
@@ -155,7 +155,7 @@ const ReferAndEarn = () => {
             What will <span className="font-semibold">You </span>do with all
             that extra money ?
           </p>
-          <button className="bg-teal-600 text-white md:font-bold text-sm px-4 py-3 rounded-sm hover:bg-teal-700 min-w-fit">
+          <button className="bg-[#004958] text-white md:font-bold text-sm px-4 py-3 rounded-sm hover:bg-teal-700 min-w-fit">
             I'm In
           </button>
         </div>
@@ -213,7 +213,7 @@ const ReferAndEarn = () => {
                 <div className="flex flex-col w-full">
                   <div
                     className={`font-medium flex justify-between ${
-                      multipleFaqExpanded.includes(i) ? "text-teal-600" : ""
+                      multipleFaqExpanded.includes(i) ? "text-[#004958" : ""
                     }`}
                   >
                     <div className="py-2 text-sm">{item.que}</div>

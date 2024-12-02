@@ -408,7 +408,7 @@ const Footer = () => {
             <div className="text-xs font-light">
               Select from thousands of options, without brokerage.
             </div>
-            <button className="bg-slate-800/80 text-white px-4 py-1 rounded-md text-[13px] mt-2">
+            <button className="bg-[#004958] text-white px-4 py-1 rounded-md text-[13px] mt-2">
               Find Now
             </button>
           </div>
@@ -420,7 +420,7 @@ const Footer = () => {
             <div className="text-xs font-light">
               For Free. Without any brokerage.
             </div>
-            <button className="bg-slate-800/80 text-white px-4 py-1 rounded-md text-[13px] mt-2">
+            <button className="bg-[#004958] text-white px-4 py-1 rounded-md text-[13px] mt-2">
               Free Posting
             </button>
           </div>
