@@ -148,26 +148,22 @@ const CheckEligibility = ({ selectedOption }) => {
   const assistedPlans = [
     {
       id: 1,
-      image:
-        "https://assets.nobroker.in/nb-new/public/Home/extraservicesprite_v1.svg",
+      image: "home/extraservicesprite_v1.svg",
       text: "Dedicated Property expert to guide you",
     },
     {
       id: 2,
-      image:
-        "https://assets.nobroker.in/nb-new/public/Home/extraservicesprite_v1.svg",
+      image: "home/extraservicesprite_v1.svg",
       text: "Guaranteed property or 100% refund",
     },
     {
       id: 3,
-      image:
-        "https://assets.nobroker.in/nb-new/public/Home/extraservicesprite_v1.svg",
+      image: "home/extraservicesprite_v1.svg",
       text: "Receive instant property alerts",
     },
     {
       id: 4,
-      image:
-        "https://assets.nobroker.in/nb-new/public/Home/extraservicesprite_v1.svg",
+      image: "home/extraservicesprite_v1.svg",
       text: "Explore More",
     },
   ];
@@ -175,26 +171,22 @@ const CheckEligibility = ({ selectedOption }) => {
   const legalServices = [
     {
       id: 1,
-      image:
-        "https://assets.nobroker.in/nb-new/public/Home/nb_dynamic_grid_new_v5_new.svg",
+      image: "home/nb_dynamic_grid_new_v5_new.svg",
       title: "Rental Agreement",
     },
     {
       id: 2,
-      image:
-        "https://assets.nobroker.in/nb-new/public/Home/nb_dynamic_grid_new_v5_new.svg",
+      image: "home/nb_dynamic_grid_new_v5_new.svg",
       title: "Tenant Verification",
     },
     {
       id: 3,
-      image:
-        "https://assets.nobroker.in/nb-new/public/Home/nb_dynamic_grid_new_v5_new.svg",
+      image: "home/nb_dynamic_grid_new_v5_new.svg",
       title: "Sale Agreement",
     },
     {
       id: 4,
-      image:
-        "https://assets.nobroker.in/nb-new/public/Home/nb_dynamic_grid_new_v5_new.svg",
+      image: "home/nb_dynamic_grid_new_v5_new.svg",
       title: "Property Legal Service",
     },
   ];
@@ -202,29 +194,25 @@ const CheckEligibility = ({ selectedOption }) => {
   const legalServicesDown = [
     {
       id: 1,
-      image:
-        "https://assets.nobroker.in/nb-new/public/Home/nb_dynamic_grid_new_v5_new.svg",
+      image: "home/nb_dynamic_grid_new_v5_new.svg",
       title: "Rent receipt Generator",
       text: "Generate rent receipts hassle-free",
     },
     {
       id: 2,
-      image:
-        "https://assets.nobroker.in/nb-new/public/Home/nb_dynamic_grid_new_v5_new.svg",
+      image: "home/nb_dynamic_grid_new_v5_new.svg",
       title: "NB Estimate",
       text: "Know realtime rent trends & market value",
     },
     {
       id: 3,
-      image:
-        "https://assets.nobroker.in/nb-new/public/Home/nb_dynamic_grid_new_v5_new.svg",
+      image: "home/nb_dynamic_grid_new_v5_new.svg",
       title: "Property ALerts",
       text: "Get tailor-made property recommendations",
     },
     {
       id: 3,
-      image:
-        "https://assets.nobroker.in/nb-new/public/Home/nb_dynamic_grid_new_v5_new.svg",
+      image: "home/nb_dynamic_grid_new_v5_new.svg",
       title: "Property ALerts",
       text: "Get tailor-made property recommendations",
     },
@@ -233,26 +221,22 @@ const CheckEligibility = ({ selectedOption }) => {
   const nobrokerForNris = [
     {
       id: 1,
-      image:
-        "https://assets.nobroker.in/nb-new/public/Home/nb_dynamic_grid_new_v5_new.svg",
+      image: "home/nb_dynamic_grid_new_v5_new.svg",
       text: "End-to-End Property Management Servicess",
     },
     {
       id: 2,
-      image:
-        "https://assets.nobroker.in/nb-new/public/Home/nb_dynamic_grid_new_v5_new.svg",
+      image: "home/nb_dynamic_grid_new_v5_new.svg",
       text: "24*7 Support on Intl. phone number",
     },
     {
       id: 3,
-      image:
-        "https://assets.nobroker.in/nb-new/public/Home/nb_dynamic_grid_new_v5_new.svg",
+      image: "home/nb_dynamic_grid_new_v5_new.svg",
       text: "Personal Field Assistant at your Property",
     },
     {
       id: 4,
-      image:
-        "https://assets.nobroker.in/nb-new/public/Home/nb_dynamic_grid_new_v5_new.svg",
+      image: "home/nb_dynamic_grid_new_v5_new.svg",
       text: "Explore More",
     },
   ];
@@ -260,26 +244,22 @@ const CheckEligibility = ({ selectedOption }) => {
   const financialServices = [
     {
       id: 1,
-      image:
-        "https://assets.nobroker.in/nb-new/public/Home/nb_dynamic_grid_new_v5_new.svg",
+      image: "home/nb_dynamic_grid_new_v5_new.svg",
       title: "Rent Payment",
     },
     {
       id: 2,
-      image:
-        "https://assets.nobroker.in/nb-new/public/Home/nb_dynamic_grid_new_v5_new.svg",
+      image: "home/nb_dynamic_grid_new_v5_new.svg",
       title: "Utility Bill Payment",
     },
     {
       id: 3,
-      image:
-        "https://assets.nobroker.in/nb-new/public/Home/nb_dynamic_grid_new_v5_new.svg",
+      image: "home/nb_dynamic_grid_new_v5_new.svg",
       title: "Maintenance Bill Payment",
     },
     {
       id: 4,
-      image:
-        "https://assets.nobroker.in/nb-new/public/Home/nb_dynamic_grid_new_v5_new.svg",
+      image: "home/nb_dynamic_grid_new_v5_new.svg",
       title: "Fees",
     },
   ];
@@ -492,7 +472,7 @@ const CheckEligibility = ({ selectedOption }) => {
         </div>
 
         <div className="p-4">
-          <div className="bg-[url(https://assets.nobroker.in/merchandise/media/instacash-home-banner-new.webp)] bg-cover px-4 pt-4 flex flex-col gap-2 w-full">
+          <div className="bg-[url(home/instacash-home-banner-new.webp)] bg-cover px-4 pt-4 flex flex-col gap-2 w-full">
             <div className="font-semibold">
               Get Upto <span className="text-teal-600">₹ 5Lakhs</span>
             </div>
@@ -502,10 +482,7 @@ const CheckEligibility = ({ selectedOption }) => {
             </button>
             <div className="flex text-[10px]">
               Safe. Secure. Quick |
-              <img
-                src="https://assets.nobroker.in/nb-new/public/Home/newHomeIcons/pcids.svg"
-                alt=""
-              />
+              <img src="home/pcids.svg" alt="" />
             </div>
           </div>
         </div>
@@ -516,16 +493,12 @@ const CheckEligibility = ({ selectedOption }) => {
             <div className="text-xs">
               Guaranteed on-time, safe delivery at great prices
             </div>
-            <img
-              src="https://assets.nobroker.in/nb-new/public/Home/RevampIcons/lowestPrice.png"
-              alt=""
-              className="w-24"
-            />
+            <img src="home/lowestPrice.png" alt="" className="w-24" />
             <div className="flex items-center gap-1 text-teal-600 font-semibold text-sm">
               Explore <BsArrowRight />
             </div>
           </div>
-          <div className="bg-[url(https://assets.nobroker.in/nb-new/public/Home/extraservicesprite_v1.svg)] bg-cover px-4 pt-4 flex flex-col gap-2 w-40 bg-[--208px_-51px]"></div>
+          <div className="bg-[url(home/extraservicesprite_v1.svg)] bg-cover px-4 pt-4 flex flex-col gap-2 w-40 bg-[--208px_-51px]"></div>
         </div>
 
         <div className="bg-[#EAE9F5] px-4 my-1">
@@ -556,7 +529,7 @@ const CheckEligibility = ({ selectedOption }) => {
           <div className="flex overflow-x-scroll no-scrollbar py-4">
             <div className="flex flex-col items-center text-center px-6">
               <img
-                src="https://assets.nobroker.in/nb-new/public/Home/nb_dynamic_grid_new_v5_new.svg"
+                src="home/nb_dynamic_grid_new_v5_new.svg"
                 alt=""
                 className="w-14"
               />
@@ -608,20 +581,12 @@ const CheckEligibility = ({ selectedOption }) => {
                 Trusted by 1Lac+ users <br />
                 with secure system
               </div>
-              <img
-                src="https://assets.nobroker.in/nb-new/public/Home/newOfferCard.svg"
-                alt=""
-                className="m-0 py-1"
-              />
+              <img src="home/newOfferCard.svg" alt="" className="m-0 py-1" />
               <div className=" rounded-full bg-[#B0D0BD] px-1.5 w-fit">
-                <img
-                  src="https://assets.nobroker.in/nb-new/public/Home/arrowIcon.svg"
-                  alt=""
-                  className="m-0"
-                />
+                <img src="home/arrowIcon.svg" alt="" className="m-0" />
               </div>
               <img
-                src="https://assets.nobroker.in/nb-new/public/Home/extraservicesprite_v1.svg"
+                src="home/extraservicesprite_v1.svg"
                 alt=""
                 className="w-28 m-0 absolute bottom-0 right-0"
               />
@@ -635,13 +600,10 @@ const CheckEligibility = ({ selectedOption }) => {
                   </div>
                   <div className="text-[10px]">24/7 instant transfer*</div>
                   <div className=" rounded-full bg-[#A9ABCC] px-1.5 w-fit">
-                    <img
-                      src="https://assets.nobroker.in/nb-new/public/Home/arrowIcon.svg"
-                      className="m-0"
-                    />
+                    <img src="home/arrowIcon.svg" className="m-0" />
                   </div>
                   <img
-                    src="https://assets.nobroker.in/nb-new/public/Home/extraservicesprite_v1.svg"
+                    src="home/extraservicesprite_v1.svg"
                     alt=""
                     className="w-20 m-0 absolute bottom-0 right-0"
                   />
@@ -651,11 +613,7 @@ const CheckEligibility = ({ selectedOption }) => {
                 <div className="text-xs font-medium">Utility Bill</div>
                 <div className="text-[10px] py-1">Faster & hassle-free</div>
                 <div className=" rounded-full bg-[#C6C6C6] px-1.5 w-fit">
-                  <img
-                    src="https://assets.nobroker.in/nb-new/public/Home/arrowIcon.svg"
-                    alt=""
-                    className="m-0"
-                  />
+                  <img src="home/arrowIcon.svg" alt="" className="m-0" />
                 </div>
                 <img
                   src="https://assets.nobroker.in/nb-new/public/Home/extraservicesprite_v1.svg"
@@ -669,11 +627,7 @@ const CheckEligibility = ({ selectedOption }) => {
 
         <div className="bg-white p-4 my-1">
           <div className="flex">
-            <img
-              src="https://assets.nobroker.in/nb-new/public/Home/extraservicesprite_v1.svg"
-              alt=""
-              className="w-24"
-            />
+            <img src="home/extraservicesprite_v1.svg" alt="" className="w-24" />
             <div className="flex flex-col gap-2">
               <div className="text-sm font-semibold">
                 Property Management Services
@@ -707,11 +661,7 @@ const CheckEligibility = ({ selectedOption }) => {
               <div className="text-sm font-medium">Rent Calculator</div>
               <div className="text-[10px]">AI-powered rent estimates</div>
             </div>
-            <img
-              src="https://assets.nobroker.in/nb-new/public/Home/RevampIcons/nbestimate.svg"
-              alt=""
-              className="m-0"
-            />
+            <img src="home/nbestimate.svg" alt="" className="m-0" />
           </div>
           <div className="bg-[rgb(237,233,245)] flex items-center gap-4 p-4 rounded-xl">
             <div className="">
@@ -750,8 +700,7 @@ const CheckEligibility = ({ selectedOption }) => {
           </div>
           <div>
             <img
-              src="
-          https://assets.nobroker.in/nb-new/public/Home/extraservicesprite_v1.svg"
+              src="home/extraservicesprite_v1.svg"
               alt=""
               className="m-0 w-48"
             />
@@ -765,11 +714,7 @@ const CheckEligibility = ({ selectedOption }) => {
               Chat with our team for assistance
             </div>
           </div>
-          <img
-            src="https://assets.nobroker.in/nb-new/public/AssistanceChatIcon.svg"
-            alt=""
-            className="m-0 w-8"
-          />
+          <img src="home/AssistanceChatIcon.svg" alt="" className="m-0 w-8" />
         </div>
       </div>
     </>

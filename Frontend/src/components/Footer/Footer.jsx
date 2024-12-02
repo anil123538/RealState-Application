@@ -121,9 +121,11 @@ const Footer = () => {
             <div className="text-xs font-light">
               Select from thousands of options, without brokerage.
             </div>
-            <button className="bg-[#004958] text-white px-4 py-1 rounded-md text-[13px] mt-2">
-              Find Now
-            </button>
+            <Link t0="/">
+              <button className="bg-[#004958] text-white px-4 py-1 rounded-md text-[13px] mt-2">
+                Find Now
+              </button>
+            </Link>
           </div>
           {/* right side */}
           <div className="flex flex-col items-center md:w-1/2 gap-2 pt-4">
@@ -133,20 +135,22 @@ const Footer = () => {
             <div className="text-xs font-light">
               For Free. Without any brokerage.
             </div>
-            <button className="bg-[#004958] text-white px-4 py-1 rounded-md text-[13px] mt-2">
-              Free Posting
-            </button>
+            <Link to="/post-property">
+              <button className="bg-[#004958] text-white px-4 py-1 rounded-md text-[13px] mt-2">
+                Free Posting
+              </button>
+            </Link>
           </div>
         </div>
 
         <div className="flex sm:flex-nowrap justify-center p-8 sm:gap-12 gap-2 flex-wrap opacity-80 text-[#464646]">
           <Link to="/about-us">About Us</Link>
-          <Link>Careers</Link>
-          <Link>Terms & Conditions</Link>
-          <Link>Privacy Policy</Link>
-          <Link>Testimonials</Link>
-          <Link>Sitemap</Link>
-          <Link>FAQs</Link>
+          <Link to="/careers">Careers</Link>
+          <Link to="/terns-and-conditions">Terms & Conditions</Link>
+          <Link to="/privacy-policy">Privacy Policy</Link>
+          <Link to="/testimonials">Testimonials</Link>
+          <Link to="/sitemap">Sitemap</Link>
+          <Link to="/faq">FAQs</Link>
         </div>
         <div className="mx-[20%] mb-9">
           <hr className="opacity-10" />
