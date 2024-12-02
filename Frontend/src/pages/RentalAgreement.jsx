@@ -14,19 +14,19 @@ const RentalAgreement = () => {
     {
       id: 1,
       text: "Rental Agreement + Police Intimation",
-      bgImage: "https://assets.NESTATE.in/nob-common/pkgWithRaUpload.webp",
+      bgImage: "rentalAgreement/pkgWithRaUpload.webp",
       offer: "Upto ₹100 off",
     },
     {
       id: 2,
       text: "Rental Agreement with Biometric",
-      bgImage: "https://assets.NESTATE.in/nob-common/pkgWithRaMh.webp",
+      bgImage: "rentalAgreement/pkgWithRaMh.webp",
       offer: "Upto ₹100 off",
     },
     {
       id: 3,
       text: "Rental Agreement with E-Stamp & Notary",
-      bgImage: "https://assets.NESTATE.in/nob-common/pkgWithEstamp.webp",
+      bgImage: "rentalAgreement/pkgWithEstamp.webp",
       offer: "Upto ₹100 off",
     },
   ];
@@ -34,36 +34,35 @@ const RentalAgreement = () => {
   const availableAddOns = [
     {
       id: 1,
-      image: "https://assets.NESTATE.in/nob-common/extraVisit.webp",
-      heading: "Extra Visit",
+      image: "rentalAgreement/extraVisit.webp",
+      heading: "Extra Visit for Biometric",
       desc: "Book additional biometric appointments in",
       bgColor: "#ffeff3",
     },
     {
       id: 2,
-      image: "https://assets.NESTATE.in/nob-common/techAssistance.webp",
+      image: "rentalAgreement//techAssistance.webp",
       heading: "Tech Assistance",
       desc: "For distant registration via a biometric device",
       bgColor: "#f2f3ff",
     },
     {
       id: 3,
-      image:
-        "https://assets.NESTATE.in/nob-common/legalIDVerificationAddon.webp",
+      image: "rentalAgreement//legalIDVerificationAddon.webp",
       heading: "Tenant Verification",
       desc: "Verify your tenant's Identity Instantly.",
       bgColor: "#fff5e2",
     },
     {
       id: 4,
-      image: "https://assets.NESTATE.in/nob-common/legalDeliveryAddon.webp",
-      heading: "Standard Delivery",
+      image: "rentalAgreement//legalDeliveryAddon.webp",
+      heading: "Hardcopy Delivery",
       desc: "Hard copy delivery of your agreement",
       bgColor: "rgb(255, 236, 226)",
     },
     {
       id: 5,
-      image: "https://assets.NESTATE.in/nob-common/powerOfAttorneyImg.svg",
+      image: "rentalAgreement//powerOfAttorneyImg.svg",
       heading: "Power Of Attorney",
       desc: "Drafting of Power Of Attorney.",
       bgColor: "rgb(242, 246, 253)",
@@ -134,22 +133,19 @@ const RentalAgreement = () => {
   const discountCoupons = [
     {
       id: 1,
-      image:
-        "https://assets.NESTATE.in/hs-new/public/LegalServiceNew/nbDiscount.svg",
+      image: "rentalAgreement/nbDiscount.svg",
       disPercent: "10% NB cash discount",
       upto: "Upto ₹250",
     },
     {
       id: 2,
-      image:
-        "https://assets.NESTATE.in/hs-new/public/LegalServiceNew/hdfcCoupon.png",
+      image: "rentalAgreement/hdfcCoupon.png",
       disPercent: "5% HDFC bank",
       upto: "Upto ₹1500",
     },
     {
       id: 3,
-      image:
-        "https://assets.NESTATE.in/hs-new/public/LegalServiceNew/amazonCoupon.png",
+      image: "rentalAgreement/amazonCoupon.png",
       disPercent: "₹100 Amazon pay discount",
       upto: "On spend of ₹2000",
     },
@@ -275,7 +271,7 @@ const RentalAgreement = () => {
               <div className="bg-white/10 w-fit p-2 rounded-md flex  gap-32 mt-4">
                 <div className="flex">
                   <img
-                    src="https://assets.NESTATE.in/hs-new/public/LegalServiceNew/renew.svg"
+                    src="rentalAgreement/renew.svg"
                     alt=""
                     className="w-10"
                   />
@@ -292,7 +288,7 @@ const RentalAgreement = () => {
                   </div>
                 </div>
                 <img
-                  src="https://assets.NESTATE.in/hs-new/public/LegalServiceNew/leftAero.svg"
+                  src="rentalAgreement/leftAero.svg"
                   alt=""
                   className="m-0"
                 />
@@ -324,16 +320,16 @@ const RentalAgreement = () => {
                     <div className="flex bg-gradient-to-r from-green-700/40 p-2 justify-between">
                       <div className="flex w-full items-center">
                         <img
-                          src="https://assets.NESTATE.in/hs-new/public/LegalServiceNew/offuptoIcon.svg"
+                          src="rentalAgreement/offuptoIcon.svg"
                           alt=""
                           className="mx-2 w-6"
                         />
-                        <div className="text-[#004958] font-medium md:text-xl text-sm">
+                        <div className="text-[#004958] font-medium md:text-base text-sm">
                           {item.offer}
                         </div>
                       </div>
                       <img
-                        src="https://assets.NESTATE.in/hs-new/public/LegalServiceNew/leftAeroPkg.svg"
+                        src="rentalAgreement/leftAeroPkg.svg"
                         alt=""
                         className="m-0 w-6"
                       />
@@ -483,7 +479,7 @@ const RentalAgreement = () => {
                     className="md:flex hidden align-middle gap-2 text-base font-light"
                     key={index}
                   >
-                    <FaCheck className="mt-1  text-[#004958]" />
+                    <FaCheck className="mt-1  text-green-600" />
                     {itemDetail}
                   </div>
                 ))}
@@ -500,7 +496,7 @@ const RentalAgreement = () => {
                       className="flex text-left gap-2 w-full text-sm font-light"
                       key={index}
                     >
-                      <FaCheck className="mt-1 text-[teal-600]" />
+                      <FaCheck className="mt-1 text-teal-600" />
                       {itemDetail} {/* Display the itemDetail */}
                     </div>
                   ))}
@@ -529,18 +525,18 @@ const RentalAgreement = () => {
             <div className="text-xs px-4">
               Apply Coupon at the summary Screen
             </div>
-            <div className="flex justify-between gap-4 mt-10 flex-nowrap overflow overflow-x-scroll">
+            <div className="flex justify-between gap-4 mt-10 flex-nowrap overflow overflow-x-scroll px-4">
               {discountCoupons.map((item, index) => (
                 <div
                   key={index}
-                  className="border border-zinc-300 shadow-md p-4 rounded-xl flex min-w-60 items-center h-20 md:h-auto gap-4"
+                  className="border border-zinc-300 shadow-md p-4 rounded-xl flex flex-row md:flex-col min-w-60 md:w-full items-center h-20 md:items-start md:h-auto gap-2"
                 >
-                  <div className="bg-zinc-200 p-2 md:m-auto w-16 flex items-center justify-center rounded-md">
+                  <div className="bg-zinc-200 p-2 w-10 flex items-center justify-center rounded-md">
                     <img src={item.image} alt="" className="m-0 w-10" />
                   </div>
-                  <hr className="m-2 opacity-80 hidden md:block text-zinc-300" />
+                  <hr className="m-0 opacity-80 hidden md:block text-zinc-300 w-full" />
                   <div>
-                    <div className="font-semibold md:text-lg text-sm">
+                    <div className="font-medium md:text-base text-sm">
                       {item.disPercent}
                     </div>
                     <div className="opacity-70 text-xs">{item.upto}</div>
@@ -552,7 +548,7 @@ const RentalAgreement = () => {
 
           {/* NESTATE Promise */}
           <div className="bg-white rounded-xl p-8 md:w-[90%] mx-auto">
-            <div className="md:text-3xl text-xl font-medium opacity-80">
+            <div className="md:text-2xl text-xl font-semibold opacity-80">
               NESTATE Promise
             </div>
             <div className="flex flex-col-reverse md:flex-row justify-between mt-10">
@@ -560,7 +556,7 @@ const RentalAgreement = () => {
                 <div className="flex gap-2">
                   <div>
                     <img
-                      src="https://assets.NESTATE.in/hs-new/public/LegalServiceNew/lowestPrice.svg"
+                      src="rentalAgreement/lowestPrice.svg"
                       alt=""
                       className="m-0"
                     />
@@ -577,7 +573,7 @@ const RentalAgreement = () => {
                 <div className="flex gap-4">
                   <div>
                     <img
-                      src="https://assets.NESTATE.in/hs-new/public/LegalServiceNew/legallyValid.svg"
+                      src="rentalAgreement/legallyValid.svg"
                       alt=""
                       className="m-0"
                     />
@@ -595,7 +591,7 @@ const RentalAgreement = () => {
                 <div className="flex gap-4">
                   <div>
                     <img
-                      src="https://assets.NESTATE.in/hs-new/public/LegalServiceNew/convenient.svg"
+                      src="rentalAgreement/convenient.svg"
                       alt=""
                       className="m-0"
                     />
@@ -626,7 +622,7 @@ const RentalAgreement = () => {
             <div className="font-medium opacity-80 md:text-2xl text-lg">
               Other legal services that we offer
             </div>
-            <div className="flex md:gap-8 gap-4 overflow-x-scroll flex-nowrap mt-10">
+            <div className="flex md:gap-8 gap-4 overflow-x-scroll flex-nowrap mt-10 no-scrollbar">
               {[...otherLegalServices, ...otherLegalServices].map(
                 (item, index) => (
                   <Link key={index}>
@@ -676,7 +672,7 @@ const RentalAgreement = () => {
                 4.5 rating out of 4,500 Reviews
               </div>
             </div>
-            <div className="flex gap-4 mt-10 overflow-x-auto overscroll-none">
+            <div className="flex gap-4 mt-10 overflow-x-auto no-scrollbar">
               {[...customerReviews, ...customerReviews, ...customerReviews].map(
                 (item, index) => (
                   <div
@@ -688,10 +684,7 @@ const RentalAgreement = () => {
                         {item.profile}
                       </div>
                       <div className="font-medium">{item.name}</div>
-                      <img
-                        src="https://assets.NESTATE.in/hs-new/public/Common/verifiedImg.svg"
-                        alt=""
-                      />
+                      <img src="rentalAgreement/verifiedImg.svg" alt="" />
                     </div>
                     <div className="text-sm">
                       {isExpanded
@@ -710,8 +703,12 @@ const RentalAgreement = () => {
           </div>
 
           {/* Frequently Asked Questions */}
-          <div className="md:w-[90%] mx-auto">
-            <FrequentAskedQuestion faq={faq} textColor={"text-blue"} />
+          <div className="md:w-[90%] w-full bg-white px-8 py-12 rounded-xl mx-auto">
+            <FrequentAskedQuestion
+              title={"Frequently Asked Questions"}
+              faq={faq}
+              textColor={"text-blue"}
+            />
           </div>
 
           {/* final text */}

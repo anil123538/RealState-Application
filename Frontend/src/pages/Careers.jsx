@@ -5,26 +5,25 @@ const Careers = () => {
   const howDidWeStart = [
     {
       id: 1,
-      image:
-        "https://assets.NESTATE.in/nb-new/public/Careers/propertyListed.png",
+      image: "careers/propertyListed.png",
       heading: "25 Lakhs+",
       text: "Property listed on NESTATE",
     },
     {
       id: 2,
-      image: "https://assets.NESTATE.in/nb-new/public/Careers/appDownload.png",
+      image: "careers/appDownload.png",
       heading: "20 Million+",
       text: "Cumulative App Downloads",
     },
     {
       id: 3,
-      image: "https://assets.NESTATE.in/nb-new/public/Careers/visitors.png",
+      image: "careers/visitors.png",
       heading: "200Million+",
       text: "Customers visited NESTATE",
     },
     {
       id: 4,
-      image: "https://assets.NESTATE.in/nb-new/public/Careers/transaction.png",
+      image: "careers/transaction.png",
       heading: "20 Million+",
       text: "Customer Transactions",
     },

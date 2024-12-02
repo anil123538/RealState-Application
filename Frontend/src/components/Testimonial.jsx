@@ -61,7 +61,7 @@ const Testimonial = ({ review, scrollBy }) => {
                 <div className="flex">
                   {Array.from({ length: item.star }).map((_, index) => (
                     <img
-                      src="https://assets.NESTATE.in/nb-new/public/star.png"
+                      src="testimonials/star.png"
                       alt=""
                       key={index}
                       className="w-4 mr-0"

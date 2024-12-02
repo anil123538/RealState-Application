@@ -37,7 +37,7 @@ const CheckEligibility = ({ selectedOption }) => {
     },
     {
       id: 6,
-      image: "home/NESTATE_for_nris.png",
+      image: "home/for_nris.png",
       text: "NESTATE For NRIs",
       condition: "",
     },
@@ -64,7 +64,7 @@ const CheckEligibility = ({ selectedOption }) => {
     },
     {
       id: 4,
-      image: "https://assets.NESTATE.in/nb-new/public/Home/ClicknEarn.svg",
+      image: "home/ClicknEarn.svg",
       text: "Click & Earn",
       condition: "",
     },
@@ -76,7 +76,7 @@ const CheckEligibility = ({ selectedOption }) => {
     },
     {
       id: 6,
-      image: "home/NESTATE_for_nris.png",
+      image: "home/for_nris.png",
       text: "NESTATE For NRIs",
       condition: "",
     },

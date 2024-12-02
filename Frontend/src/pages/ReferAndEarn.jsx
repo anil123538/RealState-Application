@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { FaPlus } from "react-icons/fa";
+import FrequentAskedQuestion from "../components/FrequentAskedQuestion";
 
 const ReferAndEarn = () => {
   const review = [
     {
       id: 1,
-      user_image:
-        "https://assets.NESTATE.in/images/testimonials/ff80818155ac0fe40155af6ca8df1302_2016.10.06.12.05.00.jpg",
+      user_image: "referAndEarn/profile.jpg",
       user_name: "Mohamme Kouse",
       star: 5,
       description: `The NESTATE app is very useful. I have also earned money by using the Refer & Earn option. I have also earned 21000 in last 30 days with the Refer & Earn option. The NESTATE company customer care is excellent at handling their customers. So I am giving them a 5-star rating.
@@ -15,25 +15,12 @@ const ReferAndEarn = () => {
     },
     {
       id: 2,
-      user_image:
-        "https://assets.NESTATE.in/images/testimonials/ff8081814dc793fa014dc8d20faf1045_2016.10.06.12.03.04.jpg",
+      user_image: "referAndEarn/profile2.jpg",
       user_name: "Ayan",
       star: 5,
       description: `Wow! I am really amazed. Refer n Earn is awesome, I really earn by just clicking pictures of To-Let boards. Even many of my friends are also earning by this. The processing of leads is very fast and me and my friends are very happy. This is a great concept`,
     },
   ];
-
-  const [multipleFaqExpanded, setMultipleFaqExpanded] = useState([]);
-
-  const toggleFaq = (index) => {
-    if (multipleFaqExpanded.includes(index)) {
-      setMultipleFaqExpanded(
-        multipleFaqExpanded.filter((item) => item != index)
-      );
-    } else {
-      setMultipleFaqExpanded([...multipleFaqExpanded, index]);
-    }
-  };
 
   const faq = [
     {
@@ -201,41 +188,11 @@ const ReferAndEarn = () => {
       </div>
       {/* Common questions */}
       <div className="md:w-10/12 mx-auto p-4">
-        <div className="font-semibold text-lg py-6">Common questions</div>
-        <div className="bg-white rounded-xl py-4">
-          {faq.map((item, i) => (
-            <div key={i}>
-              <hr className="text-black/80 m-2 md:hidden" />
-              <div
-                className="flex justify-between cursor-pointer md:px-0 p-2"
-                onClick={() => toggleFaq(i)}
-              >
-                <div className="flex flex-col w-full">
-                  <div
-                    className={`font-medium flex justify-between ${
-                      multipleFaqExpanded.includes(i) ? "text-[#004958" : ""
-                    }`}
-                  >
-                    <div className="py-2 text-sm">{item.que}</div>
-                    <div>
-                      <FaPlus
-                        className={`${
-                          multipleFaqExpanded.includes(i)
-                            ? "rotate-45 duration-200 ease-linear"
-                            : "duration-200 ease-linear"
-                        }`}
-                      />
-                    </div>
-                  </div>
-                  {multipleFaqExpanded.includes(i) && (
-                    <div className="text-sm font-light">{item.ans}</div>
-                  )}
-                </div>
-              </div>
-              <hr className="text-black/80 m-2 hidden md:block" />
-            </div>
-          ))}
-        </div>
+        <FrequentAskedQuestion
+          title={"Common Questions"}
+          faq={faq}
+          textColor={"text-teal-600"}
+        />
       </div>
     </div>
   );

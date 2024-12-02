@@ -4,15 +4,13 @@ const SecondOffer = ({ title }) => {
   const offer = [
     {
       id: 1,
-      image:
-        "https://assets.NESTATE.in/hs-new/public/Home/newServicesIcons/painting_hs.svg",
+      image: "paintingAndCleaning/painting_hs.svg",
       title: "Festive Painting",
       offer: "Flat 25% off",
     },
     {
       id: 2,
-      image:
-        "https://assets.NESTATE.in/hs-new/public/Home/newServicesIcons/cleaning_hs.svg",
+      image: "paintingAndCleaning/cleaning_hs.svg",
       title: "Deep Cleaning",
       offer: "Upto 60% off",
     },
@@ -20,7 +18,7 @@ const SecondOffer = ({ title }) => {
   return (
     <div className="bg-[#dae4f7] py-10 px-4 mb-1.5">
       <div className="text-center font-medium mb-4 text-3xl">{title}</div>
-      <div className="grid grid-cols-2 gap-3 md:px-[140px]">
+      <div className="grid grid-cols-2 gap-3 md:px-[140px] max-w-[1280px] mx-auto">
         {offer.map((item) => (
           <div
             key={item.id}
@@ -31,7 +29,7 @@ const SecondOffer = ({ title }) => {
               <div className="font-bold md:text-xl text-sm flex item">
                 {item.title}
                 <img
-                  src="https://assets.NESTATE.in/hs-new/public/Home-Services/arrow-icon-right.svg"
+                  src="paintingAndCleaning/arrow-icon-right.svg"
                   alt=""
                   className="m-0"
                 />
@@ -42,15 +40,12 @@ const SecondOffer = ({ title }) => {
         ))}
 
         <div className="bg-white flex items-center justify-evenly gap-4 px-2 py-4 rounded-lg col-span-2">
-          <img
-            src="https://assets.NESTATE.in/hs-new/public/Home/newServicesIcons/repair_hs.png"
-            alt=""
-          />
+          <img src="paintingAndCleaning/repair_hs.png" alt="" />
           <div>
             <div className="font-bold text-sm md:text-xl flex">
               Home Repairs
               <img
-                src="https://assets.NESTATE.in/hs-new/public/Home-Services/arrow-icon-right.svg"
+                src="paintingAndCleaning/arrow-icon-right.svg"
                 alt=""
                 className="m-0"
               />
