@@ -250,11 +250,11 @@ const Footer = () => {
     },
   ];
 
-  const noBrokerServiceForSell = [
+  const NESTATEServiceForSell = [
     { id: 1, service: "Property Legal Services" },
     { id: 2, service: "Interiors" },
     { id: 3, service: "Sale Agreement" },
-    { id: 4, service: "NoBroker For NRI's" },
+    { id: 4, service: "NESTATE For NRI's" },
     { id: 5, service: "New Builder Project" },
     { id: 6, service: "Home Loan EMI Calculator" },
     { id: 7, service: "Home Loan Balance Transfer" },
@@ -280,7 +280,7 @@ const Footer = () => {
     { id: 27, service: "Real Estate Legal Queries" },
   ];
 
-  const noBrokerServiceForRent = [
+  const NESTATEServiceForRent = [
     { id: 1, service: "Rental Agreement" },
     { id: 2, service: "Pay Rent" },
     { id: 3, service: "Refer and Earn" },
@@ -321,59 +321,19 @@ const Footer = () => {
   return (
     <>
       <footer className="my-4">
-        {path != "/testimonials" ? (
-          <>
-            <div className="flex text-center bg-zinc-100 cursor-pointer overflow-auto sm:overflow-auto">
-              <div className="p-4 w-full bg-zinc-300 ">
-                Properties & Flats for Sale
-              </div>
-              <div className="p-4 w-full">Flats for Rent</div>
-              <div className="p-4 w-full">PG / Hostels</div>
-              <div className="p-4 w-full">Flatmates</div>
-              <div className="p-4 w-full">Miscellaneous</div>
-              <div className="p-4 w-full">Commercial</div>
-              <div className="p-4 w-full">New Projects & Plots</div>
-              <div className="p-4 w-full">Independent Houses & Villas</div>
-            </div>
-            <div className="md:grid md:grid-cols-5 mx-6 my-2 flex overflow-auto">
-              {footerData.map((item) => (
-                <div className="p-4" key={item.id}>
-                  <h2 className="mb-2 text-sm">{item.flatsForSale}</h2>
-                  <div className="flex flex-col text-[11px] gap-2 font-light">
-                    {item.flatData &&
-                      item.flatData.map((names) => (
-                        <span key={names.id}>{names.name}</span>
-                      ))}
-                  </div>
-                  <h2 className="my-2 text-sm">{item.propertiesForSale}</h2>
-                  <div className="flex flex-col text-[11px] gap-2 font-light">
-                    {item.propertyData &&
-                      item.propertyData.map((item) => (
-                        <span key={item.id}>{item.name}</span>
-                      ))}
-                  </div>
-
-                  <h2 className="my-2 text-sm">{item.independentFloor}</h2>
-                </div>
-              ))}
-            </div>
-          </>
-        ) : (
-          ""
-        )}
-        <hr />
-        {/* no broker service */}
+        
+        {/* NESTATE service */}
         <div className="px-10 py-8">
           <div>
             <h2 className="font-semibold text-xl opacity-70 pb-6">
-              NoBroker services
+              NESTATE services
             </h2>
           </div>
           <div className="flex justify-between gap-8 flex-col md:flex-row">
             <div className="md:w-1/2 w-full">
               <h3 className="mb-4">Buy</h3>
               <div className="flex gap-4 flex-wrap">
-                {noBrokerServiceForSell.map((item) => (
+                {NESTATEServiceForSell.map((item) => (
                   <span
                     className="bg-[#e8e8e8] px-2 py-1 text-xs opacity-80"
                     key={item.id}
@@ -386,7 +346,7 @@ const Footer = () => {
             <div className="md:w-1/2 w-full">
               <h3 className="mb-4">Rent</h3>
               <div className="flex gap-4 flex-wrap">
-                {noBrokerServiceForRent.map((item) => (
+                {NESTATEServiceForRent.map((item) => (
                   <span
                     className="bg-[#e8e8e8] px-2 py-1 text-xs opacity-80"
                     key={item.id}
@@ -408,7 +368,7 @@ const Footer = () => {
             <div className="text-xs font-light">
               Select from thousands of options, without brokerage.
             </div>
-            <button className="bg-slate-800/80 text-white px-4 py-1 rounded-md text-[13px] mt-2">
+            <button className="bg-[#004958] text-white px-4 py-1 rounded-md text-[13px] mt-2">
               Find Now
             </button>
           </div>
@@ -420,7 +380,7 @@ const Footer = () => {
             <div className="text-xs font-light">
               For Free. Without any brokerage.
             </div>
-            <button className="bg-slate-800/80 text-white px-4 py-1 rounded-md text-[13px] mt-2">
+            <button className="bg-[#004958] text-white px-4 py-1 rounded-md text-[13px] mt-2">
               Free Posting
             </button>
           </div>
@@ -442,11 +402,11 @@ const Footer = () => {
         <div className="flex flex-col items-center gap-6">
           <div className="flex sm:gap-4 gap-0">
             <img
-              src="https://assets.nobroker.in/nb-new/public/Common/android_download.svg"
+              src="https://assets.NESTATE.in/nb-new/public/Common/android_download.svg"
               alt=""
             />
             <img
-              src="https://assets.nobroker.in/nb-new/public/Common/IOS_download.svg"
+              src="https://assets.NESTATE.in/nb-new/public/Common/IOS_download.svg"
               alt=""
             />
           </div>
@@ -469,7 +429,7 @@ const Footer = () => {
           </div>
 
           <div className="text-[13px] font-light">
-            &copy; 2013-24 NoBroker Technologies Solution Pvt. Ltd.
+            &copy; 2013-24 NESTATE Technologies Solution Pvt. Ltd.
           </div>
         </div>
       </footer>

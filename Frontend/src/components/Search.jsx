@@ -97,30 +97,34 @@ const Search = ({ selectedOption, setSelectedOption }) => {
   return (
     <>
       <div className="flex flex-col justify-center items-center md:px-10">
-        <div className="flex flex-col gap-4 mt-2 md:mx-0 w-full p-4">
+        <div className="flex flex-col gap-4 mt-2 md:mx-0 w-full pt-4">
           <div className="text-3xl font-normal text-center text-[#787676] hidden md:block">
-            World's Largest NoBrokerage Property Site
+            Nepal's Largest NESTATE Property Site
           </div>
 
           <div className="md:flex hidden bg-[rgba(252,178,68,0.2)] h-14 gap-2 md:w-fit w-full mx-auto md:p-4 p-2 py-3 text-xs justify-center text-[#464646]">
             <div className="flex items-center">
               {selectedOption === "Buy" ? (
                 <>
-                  <img
-                    src="https://assets.nobroker.in/nob-common/HomeInteriorHome.svg"
-                    alt=""
-                    className="mr-2"
-                  />
-                  Home Interiors
+                  <Link to="/home-interiors" className="flex items-center">
+                    <img
+                      src="https://assets.NESTATE.in/nob-common/HomeInteriorHome.svg"
+                      alt=""
+                      className="mr-2"
+                    />
+                    Home Interiors
+                  </Link>
                 </>
               ) : (
                 <>
-                  <img
-                    src="https://assets.nobroker.in/nb-new/public/Home/RAIcon.svg"
-                    alt=""
-                    className="mr-2"
-                  />
-                  Rental Agreement
+                  <Link to="rental-agreement" className="flex items-center">
+                    <img
+                      src="https://assets.NESTATE.in/nb-new/public/Home/RAIcon.svg"
+                      alt=""
+                      className="mr-2"
+                    />
+                    Rental Agreement
+                  </Link>
                 </>
               )}
             </div>
@@ -129,7 +133,7 @@ const Search = ({ selectedOption, setSelectedOption }) => {
               {selectedOption === "Buy" ? (
                 <>
                   <img
-                    src="	https://assets.nobroker.in/nob-common/HomeInteriorDeliveryHome.svg"
+                    src="	https://assets.NESTATE.in/nob-common/HomeInteriorDeliveryHome.svg"
                     alt=""
                     className="mr-2"
                   />
@@ -138,7 +142,7 @@ const Search = ({ selectedOption, setSelectedOption }) => {
               ) : (
                 <>
                   <img
-                    src="	https://assets.nobroker.in/nb-new/public/Home/deliveryIcon.svg"
+                    src="	https://assets.NESTATE.in/nb-new/public/Home/deliveryIcon.svg"
                     alt=""
                     className="mr-2"
                   />
@@ -154,11 +158,11 @@ const Search = ({ selectedOption, setSelectedOption }) => {
             <div>Zero Brokerage</div>
           </div>
 
-          <div className="grid grid-cols-3 items-center md:border border-zinc-200 md:w-7/12 w-full mx-auto text-center text-[15px]">
+          <div className="grid grid-cols-3 items-center md:border border-zinc-200 md:w-[400px] w-full mx-auto text-center text-sm">
             <div
               className={`p-2 cursor-pointer ${
                 selectedOption === "Buy"
-                  ? "border-b-4 border-red-400 font-semibold"
+                  ? "border-b-4 border-[#ff5800] font-semibold"
                   : "md:border-r border-zinc-200"
               } `}
               onClick={() => handleSelectedOption("Buy")}
@@ -166,7 +170,7 @@ const Search = ({ selectedOption, setSelectedOption }) => {
               <Link
                 className={`no-underline ${
                   selectedOption === "Buy"
-                    ? " text-red-400 font-semibold"
+                    ? " text-[#ff5800] font-semibold"
                     : "text-zinc-400"
                 }`}
               >
@@ -176,7 +180,7 @@ const Search = ({ selectedOption, setSelectedOption }) => {
             <div
               className={` p-2 cursor-pointer ${
                 selectedOption === "Rent"
-                  ? "border-b-4 border-red-400 font-semibold"
+                  ? "border-b-4  text-[#ff5800] font-semibold"
                   : "md:border-x border-zinc-200"
               } `}
               onClick={() => handleSelectedOption("Rent")}
@@ -184,7 +188,7 @@ const Search = ({ selectedOption, setSelectedOption }) => {
               <Link
                 className={`no-underline ${
                   selectedOption === "Rent"
-                    ? " text-red-400 font-semibold"
+                    ? "  text-[#ff5800] font-semibold"
                     : "text-zinc-400"
                 }`}
               >
@@ -194,7 +198,7 @@ const Search = ({ selectedOption, setSelectedOption }) => {
             <div
               className={` p-2 cursor-pointer ${
                 selectedOption === "Commercial"
-                  ? "border-b-4 border-red-400 font-semibold"
+                  ? "border-b-4  text-[#ff5800] font-semibold"
                   : "md:border-l border-zinc-200"
               } `}
               onClick={() => handleSelectedOption("Commercial")}
@@ -202,7 +206,7 @@ const Search = ({ selectedOption, setSelectedOption }) => {
               <Link
                 className={`no-underline ${
                   selectedOption === "Commercial"
-                    ? " text-red-400 font-semibold"
+                    ? "  text-[#ff5800] font-semibold"
                     : "text-zinc-400"
                 }`}
               >
@@ -215,7 +219,7 @@ const Search = ({ selectedOption, setSelectedOption }) => {
             <div className="p-4 border border-black rounded-xl opacity-40 ">
               Search by locality or landmark
             </div>
-            <div className="w-fit absolute top-2 right-2 bg-[#fd3752] text-white flex items-center text-lg px-3 py-2 cursor-pointer rounded-xl hover:bg-[#d03c3c]">
+            <div className="w-fit absolute top-2 right-2 bg-[#ff5800] text-white flex items-center text-lg px-3 py-2 cursor-pointer rounded-xl hover:bg-[#d03c3c]">
               <BiSearch className="text-2xl" />
             </div>
           </div>
@@ -233,8 +237,8 @@ const Search = ({ selectedOption, setSelectedOption }) => {
                 <div></div>
                 <div className="text-xs opacity-70">Pay ZERO brokerage</div>
               </div>
-              <button className="p-3 w-fit mt-4 rounded-md bg-red-500 font-semibold">
-                Posst FREE Property Ad
+              <button className="p-3 w-fit mt-4 rounded-md bg-[#ff5800] font-semibold">
+                Post FREE Property Ad
               </button>
             </div>
 
@@ -270,8 +274,8 @@ const Search = ({ selectedOption, setSelectedOption }) => {
               className="border border-zinc-200 px-4 text-sm w-full outline-none"
               placeholder="Search upto 3 localities or landmarks"
             />
-            <div className="w-fit bg-[#fd3752] text-white flex items-center text-lg px-10 cursor-pointer hover:bg-[#d03c3c]">
-              <BiSearch className="text-2xl opacity-80" />
+            <div className="w-fit bg-[#ff5800] text-white flex items-center text-lg px-10 cursor-pointer hover:bg-[#d03c3c]">
+              <BiSearch className="text-xl opacity-80" />
               <button type="submit">Search</button>
             </div>
           </div>
@@ -286,6 +290,7 @@ const Search = ({ selectedOption, setSelectedOption }) => {
                     name="land_type"
                     id="full_house"
                     value="full_house"
+                    checked
                   />
                   <label
                     htmlFor="full_house"
@@ -362,6 +367,7 @@ const Search = ({ selectedOption, setSelectedOption }) => {
                     name="land_type"
                     id="full_house"
                     value="full_house"
+                    checked
                   />
                   <label
                     htmlFor="full_house"
@@ -442,7 +448,13 @@ const Search = ({ selectedOption, setSelectedOption }) => {
             <div className="flex md:flex-row flex-col gap-2 border border-zinc-200  p-2.5 items-center text-sm">
               <div className="flex gap-2">
                 <div>
-                  <input type="radio" name="land_type" id="rent" value="rent" />
+                  <input
+                    type="radio"
+                    name="land_type"
+                    id="rent"
+                    value="rent"
+                    checked
+                  />
                   <label
                     htmlFor="full_house"
                     className="ml-1 cursor-pointer text-[13px]"
@@ -489,7 +501,7 @@ const Search = ({ selectedOption, setSelectedOption }) => {
             </span>
             <hr className="border opacity-20  w-20" />
           </div>
-          <button className="px-4 py-2.5 w-fit bg-teal-600 hover:bg-teal-700">
+          <button className="px-4 py-2.5 w-fit hover:bg-teal-700" style={{backgroundColor:"#004953"}}>
             <Link to="/post-property" className="text-white">
               Post Free Property Ad
             </Link>

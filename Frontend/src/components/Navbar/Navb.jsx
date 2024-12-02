@@ -11,7 +11,7 @@ import {
   FaChevronRight,
   FaChevronUp,
 } from "react-icons/fa"; // Import the hamburger icon
-import logo from "../../assets/images/title.png";
+import logo from "../../assets/images/post-01.png";
 import rent from "../../assets/images/rent.png";
 
 import flogo from "../../assets/images/flogo.png";
@@ -64,6 +64,8 @@ import chatWithUs from "../../assets/small_nav_images/chatWithUs.png";
 import Modal from "../Modal";
 import LoginSignup from "../LoginSignup";
 import { NonceProvider } from "react-select";
+import { BiBrightness } from "react-icons/bi";
+import suitcase from '../../assets/images/suitcase.png'
 
 function Navb() {
   const location = useLocation();
@@ -86,7 +88,7 @@ function Navb() {
   const [showSmallCommercialPlans, setShowSmallCommercialPlans] =
     useState(false);
   const [showHomeServices, setshowHomeServices] = useState(false);
-  const [showNoBrokerPay, setshowNoBrokerPay] = useState(false);
+  const [showNESTATEPay, setshowNESTATEPay] = useState(false);
   const [showLegal, setShowLegal] = useState(false);
   const [showUtilities, setShowUtilities] = useState(false);
   const [showHelp, setShowHelp] = useState(false);
@@ -97,7 +99,7 @@ function Navb() {
   const [isLoginSignupModelOpen, setLoginSignupModelOpen] = useState(false);
 
   const videoSrc =
-    "blob:https://www.nobroker.in/cbd719f6-bc72-4621-8b6e-680031d0f281";
+    "blob:https://www.NESTATE.in/cbd719f6-bc72-4621-8b6e-680031d0f281";
 
   const toggleNav = () => {
     setShowNav(!showNav);
@@ -154,8 +156,8 @@ function Navb() {
   const handleHomeToggle = () => {
     setshowHomeServices(!showHomeServices);
   };
-  const handleNoBrokerToggle = () => {
-    setshowNoBrokerPay(!showNoBrokerPay);
+  const handleNESTATEToggle = () => {
+    setshowNESTATEPay(!showNESTATEPay);
   };
   const handleLegalToggle = () => {
     setShowLegal(!showLegal);
@@ -191,13 +193,13 @@ function Navb() {
 
   return (
     <>
-      <div className="d-flex font">
+      <div className="d-flex font" style={{}}>
         <Navbar
           user={user}
           expand="lg"
           className="bg-body-tertiary"
           fixed="top"
-          style={{ boxShadow: "0 5px 10px rgba(0,0,0,0.1)" }}
+          style={{ boxShadow: "0 5px 10px rgba(0,0,0,0.1)" , height:"70px"}}
         >
           <Container fluid className="">
             {/* Image as Navbar Brand */}
@@ -213,23 +215,46 @@ function Navb() {
               className="ms-auto my-2 my-lg-0 d-none d-lg-flex justify-content align-items-center"
               style={{ fontSize: "0.8rem" }}
             >
+              <Nav.Link href="https://travel-website-one-cyan.vercel.app/" className="">
+                <span className="d-flex gap-2 align-items-center border nav-box px-2 py-5">
+                  <div>
+                    <img
+                      src={suitcase} // Use your imported image here
+                      alt="Brand Logo"
+                      width="20" // Adjust width as needed
+                      className="image-rent"
+                      style={{ filter: "brightness(1)" }} // Adjust value as needed
+                    />
+                  </div>
+                  <div style={{ color: "#424242" }}>|</div>
+                  <div className="d-flex flex-column gap-0">
+                    <div style={{ color: "#424242",marginBottom:"-4px" }}>My Trips</div>
+                    <div className="" style={{ color: "#424242"}}>Manage your booking</div>
+                  </div>
+                </span>
+              </Nav.Link>
               <Nav.Link href="pay-rent">
-                <span className="d-flex gap-2 align-items-center border p-1 nav-box">
+                <span className="d-flex gap-2 align-items-center border px-2 py-5 nav-box">
                   <div>
                     <img
                       src={rent} // Use your imported image here
                       alt="Brand Logo"
                       width="20" // Adjust width as needed
                       className="image-rent"
+                      style={{ filter: "brightness(1)" }} // Adjust value as needed
                     />
                   </div>
-                  <div style={{ color: "#A1A1A1" }}>|</div>
-                  <div style={{ color: "#A1A1A1" }}>Pay Rent</div>
+                  <div style={{ color: "#424242" }}>|</div>
+
+                  <div style={{ color: "#424242" }}>Pay Rent</div>
                 </span>
               </Nav.Link>
-              <Nav.Link href="post-property">
-                <button className="nav-property nav-box">
-                  For Property Owners
+              <Nav.Link href="post-property" className="">
+                <button
+                  className="nav-property px-2 py-2.5"
+                  style={{ backgroundColor: "#004953", borderRadius: "1px" }}
+                >
+                  <span>For Property Owners</span>
                 </button>
               </Nav.Link>
 
@@ -475,7 +500,7 @@ function Navb() {
                     style={{ fontSize: "normal" }} // Ensures normal font size
                   >
                     <Link
-                      to="/"
+                      to="/painting-&-cleaning"
                       className="menu-dropdown text-decoration-none"
                       style={{ fontSize: "normal" }} // Ensures normal font size
                     >
@@ -545,7 +570,7 @@ function Navb() {
 
                   <Dropdown.Item className="menu-dropdown text-decoration-none">
                     <Link
-                      to="/"
+                      to="/seller-plan"
                       className="menu-dropdown text-decoration-none"
                       style={{ fontSize: "normal" }}
                     >
@@ -580,7 +605,7 @@ function Navb() {
                         <Nav.Link href="/buyer-plan">Buyer Plan</Nav.Link>
                       </li>
                       <li>
-                        <Nav.Link href="/seller-plans">Seller Plans</Nav.Link>
+                        <Nav.Link href="/seller-plan">Seller Plans</Nav.Link>
                       </li>
                     </ul>
                   )}
@@ -621,7 +646,7 @@ function Navb() {
                       className="menu-dropdown text-decoration-none"
                       style={{ fontSize: "normal" }}
                     >
-                      No Broker Support
+                      NESTATE Support
                     </Link>
                   </Dropdown.Item>
 
@@ -750,7 +775,7 @@ function Navb() {
                         </Nav.Link>
 
                         <Nav.Link
-                          href="PostProperty"
+                          href="post-property"
                           style={{
                             backgroundColor: "white",
                             fontSize: "0.8rem",
@@ -819,7 +844,7 @@ function Navb() {
                             autoPlay
                             loop
                             playsInline
-                            src="blob:https://www.nobroker.in/cbd719f6-bc72-4621-8b6e-680031d0f281"
+                            src="blob:https://www.NESTATE.in/cbd719f6-bc72-4621-8b6e-680031d0f281"
                             style={{
                               transition: "0.5s",
                               height: "12rem",
@@ -1249,21 +1274,21 @@ function Navb() {
 
                       <div
                         className="w-90 mx-4 my-2 pb-2 drop border-bottom border-white"
-                        onClick={handleNoBrokerToggle}
+                        onClick={handleNESTATEToggle}
                       >
                         <div
                           className="d-flex justify-content-between align-items-center w-100"
                           style={{ cursor: "pointer" }}
                         >
-                          <b> NoBroker Pay</b>
-                          {showNoBrokerPay ? (
+                          <b> NESTATE Pay</b>
+                          {showNESTATEPay ? (
                             <FaChevronUp className="ms-auto" />
                           ) : (
                             <FaChevronDown className="ms-auto" />
                           )}
                         </div>
 
-                        {showNoBrokerPay && (
+                        {showNESTATEPay && (
                           <li>
                             <ul className="custom-dropdown-ul">
                               <Nav.Link>
@@ -1579,7 +1604,7 @@ function Navb() {
                     absolute top-full left-0 w-full pl-4 bg-white z-50 shadow-lg rounded-md lg:hidden`}
                   >
                     <div id="navContainer" className="nav-container">
-                      <Nav.Link href="/">NoBroker Home</Nav.Link>
+                      <Nav.Link href="/">NESTATE Home</Nav.Link>
                       <Nav.Link href="/LoginSignup">Login</Nav.Link>
                       <Nav.Link href="/LoginSignup">SignUp</Nav.Link>
                     </div>

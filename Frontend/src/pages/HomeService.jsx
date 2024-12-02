@@ -37,22 +37,22 @@ const HomeService = () => {
   ];
   const faqs = [
     {
-      question: "How to book a service on NoBroker?",
+      question: "How to book a service on NESTATE?",
       answer:
         "Just click on the service required by you, see the prices and fill some basic contact details to schedule the service.",
     },
     {
-      question: "How to book a service on NoBroker?",
+      question: "How to book a service on NESTATE?",
       answer:
         "Just click on the service required by you, see the prices and fill some basic contact details to schedule the service.",
     },
     {
-      question: "How to book a service on NoBroker?",
+      question: "How to book a service on NESTATE?",
       answer:
         "Just click on the service required by you, see the prices and fill some basic contact details to schedule the service.",
     },
     {
-      question: "How to book a service on NoBroker?",
+      question: "How to book a service on NESTATE?",
       answer:
         "Just click on the service required by you, see the prices and fill some basic contact details to schedule the service.",
     },

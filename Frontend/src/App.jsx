@@ -15,7 +15,7 @@ function App() {
     <>
       <ScrollToTop />
       <Navb />
-      <div className="mt-16">
+      <div className="mt-20">
         <Outlet />
       </div>
       {!hideFooterRoutes.includes(location.pathname) && <Footer />}

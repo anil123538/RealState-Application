@@ -6,28 +6,28 @@ function ReceiptrentCcard() {
   const cardDetails = [
     {
       imgSrc:
-        "https://assets.nobroker.in/nb-new/public/RentoPay/no_hidden_cost.svg",
+        "https://assets.NESTATE.in/nb-new/public/RentoPay/no_hidden_cost.svg",
       title: "Earn Rewards",
       desc: "Earn miles, get cash back and reward points on every rent payment with your card.",
     },
     {
       imgSrc:
-        "https://assets.nobroker.in/nb-new/public/RentoPay/credit_card.svg",
+        "https://assets.NESTATE.in/nb-new/public/RentoPay/credit_card.svg",
       title: "Pay with Credit Card",
       desc: "We accept major cards like Visa and Mastercard so your rent payment is hassle-free.",
       extraImg: card,
     },
     {
       imgSrc:
-        "https://assets.nobroker.in/nb-new/public/RentoPay/digital_rent_receipt.svg",
+        "https://assets.NESTATE.in/nb-new/public/RentoPay/digital_rent_receipt.svg",
       title: "Digital Rent Receipts",
       desc: "Generate rent receipts instantly and claim your HRA with ease. Get rent receipts sent directly to your email ID.",
     },
     {
       imgSrc:
-        "https://assets.nobroker.in/nb-new/public/RentoPay/no_broker_trust.svg",
-      title: "NoBroker Trust",
-      desc: "NoBroker Pay is a product by NoBroker and is 100% secure with PCI compliant payment gateway.",
+        "https://assets.NESTATE.in/nb-new/public/RentoPay/no_broker_trust.svg",
+      title: "NESTATE Trust",
+      desc: "NESTATE Pay is a product by NESTATE and is 100% secure with PCI compliant payment gateway.",
     },
   ];
 

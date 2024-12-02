@@ -18,8 +18,7 @@ function Ownerplan() {
       if (cardElement) {
         const cardRect = cardElement.getBoundingClientRect();
         setTrianglePosition({
-          // top: cardRect.top - 75, 
-          left: cardRect.left + cardRect.width / 2 - 145, 
+          left: cardRect.left + cardRect.width / 2 - 135, 
         });
       }
     }
@@ -62,21 +61,21 @@ function Ownerplan() {
       id: 1,
       imgSrc: Pic1,
       title:
-        "NoBroker's customer service was impressively prompt and friendly. Listing my flat on rent was a memorable experience overall.",
+        "NESTATE's customer service was impressively prompt and friendly. Listing my flat on rent was a memorable experience overall.",
       text: "#ZeroBrokerage",
     },
     {
       id: 2,
       imgSrc: Pic2,
       title:
-        "NoBroker's customer service was impressively prompt and friendly. Listing my flat on rent was a memorable experience overall.",
+        "NESTATE's customer service was impressively prompt and friendly. Listing my flat on rent was a memorable experience overall.",
       text: "#ZeroBrokerage",
     },
     {
       id: 3,
       imgSrc: Pic1,
       title:
-        "NoBroker's customer service was impressively prompt and friendly. Listing my flat on rent was a memorable experience overall.",
+        "NESTATE's customer service was impressively prompt and friendly. Listing my flat on rent was a memorable experience overall.",
       text: "#ZeroBrokerage",
     },
   ];
@@ -103,27 +102,27 @@ function Ownerplan() {
               >
                 <span className="d-flex align-items-center justify-content-end">
                   <img
-                    src="https://assets.nobroker.in/nb-new/public/starNew.svg"
+                    src="https://assets.NESTATE.in/nb-new/public/starNew.svg"
                     alt="review star"
                     className="img-fluid star-icon"
                   />
                   <img
-                    src="https://assets.nobroker.in/nb-new/public/starNew.svg"
+                    src="https://assets.NESTATE.in/nb-new/public/starNew.svg"
                     alt="review star"
                     className="img-fluid star-icon"
                   />
                   <img
-                    src="https://assets.nobroker.in/nb-new/public/starNew.svg"
+                    src="https://assets.NESTATE.in/nb-new/public/starNew.svg"
                     alt="review star"
                     className="img-fluid star-icon"
                   />
                   <img
-                    src="https://assets.nobroker.in/nb-new/public/starNew.svg"
+                    src="https://assets.NESTATE.in/nb-new/public/starNew.svg"
                     alt="review star"
                     className="img-fluid star-icon"
                   />
                   <img
-                    src="https://assets.nobroker.in/nb-new/public/starNew.svg"
+                    src="https://assets.NESTATE.in/nb-new/public/starNew.svg"
                     alt="review star"
                     className="img-fluid star-icon"
                   />
@@ -148,7 +147,7 @@ function Ownerplan() {
                 className=""
                 href="#"
                 style={{
-                  color: "green",
+                  color: "#004958",
                   textDecoration: "none",
                   fontWeight: "500",
                   fontSize: "17px",
@@ -201,7 +200,7 @@ function Ownerplan() {
               zIndex: 1,
               backgroundImage: `url(${
                 activeCard === card.id
-                  ? "https://assets.nobroker.in/nb-new/public/green-box-png-square.webp"
+                  ? "https://assets.NESTATE.in/nb-new/public/green-box-png-square.webp"
                   : card.background
               })`,
               backgroundSize: "cover",
@@ -269,7 +268,7 @@ function Ownerplan() {
                 style={{
                   fontSize: "15px",
                   backgroundColor:
-                    activeCard === card.id ? "#009587" : "",
+                    activeCard === card.id ? "#004958" : "",
                   color: activeCard === card.id ? "#fff" : "#000",
                   border: "1px solid #009587",
                 }}
@@ -677,7 +676,7 @@ function Ownerplan() {
                         For assistance call us at :
                         <a
                           href="tel:+91-92-430-099-80}"
-                          className="text-primary-color ml-2 text-danger"
+                          className="text-primary-color ml-2" style={{color: "#ff5800"}}
                         >
                           +91-92-430-099-80
                         </a>
@@ -704,21 +703,16 @@ function Ownerplan() {
 
           <div
             className="carousel-container mt-20"
-            style={{
-              overflow: "visible",
-            }}
           >
-            <Carousel interval={3000} controls={false} indicators={true}>
+            <Carousel interval={2000} controls={false} indicators={true} >
               {boxes.map((box) => (
-                <Carousel.Item key={box.id}>
+                <Carousel.Item key={box.id} >
                   <div className="d-flex justify-content-center">
                     <div
                       className="card"
                       style={{
                         width: "18rem",
-                        position: "relative",
                         paddingTop: "4rem",
-                        overflow: "visible",
                       }}
                     >
                       <img
@@ -738,8 +732,8 @@ function Ownerplan() {
                         }}
                       />
                       <div className="card-body text-center">
-                        <h5 className="card-title">{box.title}</h5>
-                        <p className="card-text">{box.text}</p>
+                        <h5 className="card-title italic">{box.title}</h5>
+                        <p className="card-text" style={{color:"#004958"}}>{box.text}</p>
                       </div>
                     </div>
                   </div>

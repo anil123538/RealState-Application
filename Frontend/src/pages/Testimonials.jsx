@@ -10,7 +10,7 @@ const Testimonials = () => {
       status: "tennant",
       star: 5,
       heading: "Helps us to find good properties",
-      description: `Getting a roommate through Nobroker was a cakewalk for me. I ve been in Mumbai for the last 6 years & have done a lot of house hunting. Looking for a room-mate was always challenging. This time Nobroker made it very simple & the assistance i received right from placing the ad till the end was magnificent. Thanks Nobroker.`,
+      description: `Getting a roommate through NESTATE was a cakewalk for me. I ve been in Mumbai for the last 6 years & have done a lot of house hunting. Looking for a room-mate was always challenging. This time NESTATE made it very simple & the assistance i received right from placing the ad till the end was magnificent. Thanks NESTATE.`,
     },
     {
       id: 2,
@@ -19,7 +19,7 @@ const Testimonials = () => {
       status: "tennant",
       star: 5,
       heading: "Helps us to find good properties",
-      description: `Getting a roommate through Nobroker was a cakewalk for me. I ve been in Mumbai for the last 6 years & have done a lot of house hunting. Looking for a room-mate was always challenging. This time Nobroker made it very simple & the assistance i received right from placing the ad till the end was magnificent. Thanks Nobroker.`,
+      description: `Getting a roommate through NESTATE was a cakewalk for me. I ve been in Mumbai for the last 6 years & have done a lot of house hunting. Looking for a room-mate was always challenging. This time NESTATE made it very simple & the assistance i received right from placing the ad till the end was magnificent. Thanks NESTATE.`,
     },
     {
       id: 3,
@@ -28,7 +28,7 @@ const Testimonials = () => {
       status: "tennant",
       star: 5,
       heading: "Helps us to find good properties",
-      description: `Getting a roommate through Nobroker was a cakewalk for me. I ve been in Mumbai for the last 6 years & have done a lot of house hunting. Looking for a room-mate was always challenging. This time Nobroker made it very simple & the assistance i received right from placing the ad till the end was magnificent. Thanks Nobroker.`,
+      description: `Getting a roommate through NESTATE was a cakewalk for me. I ve been in Mumbai for the last 6 years & have done a lot of house hunting. Looking for a room-mate was always challenging. This time NESTATE made it very simple & the assistance i received right from placing the ad till the end was magnificent. Thanks NESTATE.`,
     },
     {
       id: 4,
@@ -37,7 +37,7 @@ const Testimonials = () => {
       status: "tennant",
       star: 5,
       heading: "Helps us to find good properties",
-      description: `Getting a roommate through Nobroker was a cakewalk for me. I ve been in Mumbai for the last 6 years & have done a lot of house hunting. Looking for a room-mate was always challenging. This time Nobroker made it very simple & the assistance i received right from placing the ad till the end was magnificent. Thanks Nobroker.`,
+      description: `Getting a roommate through NESTATE was a cakewalk for me. I ve been in Mumbai for the last 6 years & have done a lot of house hunting. Looking for a room-mate was always challenging. This time NESTATE made it very simple & the assistance i received right from placing the ad till the end was magnificent. Thanks NESTATE.`,
     },
     {
       id: 5,
@@ -46,7 +46,7 @@ const Testimonials = () => {
       status: "tennant",
       star: 5,
       heading: "Helps us to find good properties",
-      description: `Getting a roommate through Nobroker was a cakewalk for me. I ve been in Mumbai for the last 6 years & have done a lot of house hunting. Looking for a room-mate was always challenging. This time Nobroker made it very simple & the assistance i received right from placing the ad till the end was magnificent. Thanks Nobroker.`,
+      description: `Getting a roommate through NESTATE was a cakewalk for me. I ve been in Mumbai for the last 6 years & have done a lot of house hunting. Looking for a room-mate was always challenging. This time NESTATE made it very simple & the assistance i received right from placing the ad till the end was magnificent. Thanks NESTATE.`,
     },
   ];
   return (
@@ -54,7 +54,7 @@ const Testimonials = () => {
       <img src="/testimonials/testimonial_bg.jpg" alt="" />
       <div className="p-5">
         <h3 className="text-center">
-          NoBroker Reviews - See What Our Valuable Customers Say
+          NESTATE Reviews - See What Our Valuable Customers Say
         </h3>
 
         <div className="flex gap-4 flex-nowrap overflow-x-scroll behavior mt-10 scroll-smooth">

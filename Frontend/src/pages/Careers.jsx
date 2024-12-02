@@ -6,25 +6,25 @@ const Careers = () => {
     {
       id: 1,
       image:
-        "https://assets.nobroker.in/nb-new/public/Careers/propertyListed.png",
+        "https://assets.NESTATE.in/nb-new/public/Careers/propertyListed.png",
       heading: "25 Lakhs+",
-      text: "Property listed on NoBroker",
+      text: "Property listed on NESTATE",
     },
     {
       id: 2,
-      image: "https://assets.nobroker.in/nb-new/public/Careers/appDownload.png",
+      image: "https://assets.NESTATE.in/nb-new/public/Careers/appDownload.png",
       heading: "20 Million+",
       text: "Cumulative App Downloads",
     },
     {
       id: 3,
-      image: "https://assets.nobroker.in/nb-new/public/Careers/visitors.png",
+      image: "https://assets.NESTATE.in/nb-new/public/Careers/visitors.png",
       heading: "200Million+",
-      text: "Customers visited NoBroker",
+      text: "Customers visited NESTATE",
     },
     {
       id: 4,
-      image: "https://assets.nobroker.in/nb-new/public/Careers/transaction.png",
+      image: "https://assets.NESTATE.in/nb-new/public/Careers/transaction.png",
       heading: "20 Million+",
       text: "Customer Transactions",
     },
@@ -35,19 +35,19 @@ const Careers = () => {
       id: 1,
       image: "/careers/amitagrawal.png",
       name: "Amit Agrawal",
-      text: "Amit Agrawal is the Founder and Chief Executive officer at NoBroker",
+      text: "Amit Agrawal is the Founder and Chief Executive officer at NESTATE",
     },
     {
       id: 2,
       image: "/careers/Saurabh@2x.png",
       name: "Saurabh Garg",
-      text: "Saurabh Garg is the Founder and Chief Business officer at NoBroker",
+      text: "Saurabh Garg is the Founder and Chief Business officer at NESTATE",
     },
     {
       id: 3,
       image: "/careers/Akhil.png",
       name: "Akhil Gupta",
-      text: "Akhil Gupta is the Founder and Chief Tech & Product officer at NoBroker",
+      text: "Akhil Gupta is the Founder and Chief Tech & Product officer at NESTATE",
     },
   ];
 
@@ -82,12 +82,12 @@ const Careers = () => {
       <div className="flex justify-between md:gap-10 items-center">
         <div className="text-white bg-black/60 p-6 pt-10 md:text-black md:bg-white md:pl-[100px] xl:w-[430px]">
           <div className="font-medium text-2xl xl:text-3xl">
-            Careers at NoBroker
+            Careers at NESTATE
           </div>
           <div className="opacity-60 text-sm my-4">
             We ignite opportunities by solving the biggest real-estate problem
           </div>
-          <button className="bg-teal-600 px-5 py-2.5 font-medium text-sm text-white">
+          <button className="bg-[#004958] px-5 py-2.5 font-medium text-sm text-white">
             See all opportunities
           </button>
         </div>
@@ -106,7 +106,7 @@ const Careers = () => {
               How did we Start
             </div>
             <p className="opacity-60 text-sm leading-6">
-              NoBroker was founded by IIT and IIM graduates Amit Kumar Agarwal,
+              NESTATE was founded by IIT and IIM graduates Amit Kumar Agarwal,
               Akhil Gupta and Saurabh Garg; because we know brokers don’t add a
               lot of value in real estate transactions, but still, charge a lot!
               This is why we work on technology and use it as the backbone to

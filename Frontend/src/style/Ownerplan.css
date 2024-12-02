@@ -59,7 +59,7 @@
 }
 
 .carousel-container .carousel-indicators .active {
-  background-color: #009587 !important;
+  background-color: #004958 !important;
 }
 
 
@@ -86,7 +86,7 @@
 }
 
 .ownerplanFAQ .faq-question.active {
-  color: #009587;
+  color: #004958;
 }
 
 .ownerplanFAQ .faq-icon {
@@ -105,5 +105,9 @@
   font-size: 14px;
 }
 
-
+.carousel-container .carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: visible;
+}
 

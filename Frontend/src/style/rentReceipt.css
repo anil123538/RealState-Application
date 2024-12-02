@@ -1,4 +1,3 @@
-
 .page-heading {
   color: #464646;
   font-size: 26px;
@@ -39,7 +38,7 @@ form input:focus {
 }
 
 .rent-receipt {
-  background: url(https://assets.nobroker.in/nb-new/public/RentoPay/landing_features_bgr.png)
+  background: url(https://assets.NESTATE.in/nb-new/public/RentoPay/landing_features_bgr.png)
     no-repeat center center;
   background-size: cover;
   color: #fff;
