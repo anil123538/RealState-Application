@@ -4,6 +4,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../style/BuyersPlan.css";
 import "react-international-phone/style.css";
 import PhoneInput from "react-phone-number-input";
+import Accordion from "react-bootstrap/Accordion";
+
 
 function BuyersPlan() {
   const [phone, setPhone] = useState("");
@@ -101,6 +103,61 @@ function BuyersPlan() {
     },
   ];
 
+  const faq = [
+    {
+      question: "What does a property Expert do?",
+      answer: "Purchasing one's first home is a complicated journey and our property experts have helped thousands of buyers find their dream home. Our property expert will help you throughout your property purchase journey from searching properties, arranging visits, and negotiating prices. If you require any additional information or assistance like Home Loan, Home interiors/renovation services, etc., our property expert will put you in touch with all these service teams so you do not need to spend extra effort in your home purchase."
+    },
+    {
+      question: "How does Property Expert/ Power Plan compare?",
+      answer: "Expert Plan subscribers get personalized services from dedicated property experts for up to 50 qualified seller contacts, while Power plan subscribers can take up to 25 seller contacts which you can contact on your own."
+    },
+    {
+      question: "What If I do not find a house after subscribing to Expert Plan?",
+      answer: "We provide the services to help you find a house as per your legitimate requirement and help you with up to 50 different seller properties. Usually, you would not need up to these many contacts as these are all qualified leads for house searching. However, in case you are not able to find a house; it will be unfortunate and you could modify your requirement for house hunt to avoid the same. Our additional services like Free Loan Assistance and 1 Free Interiors consultation can still be availed even if you do not finalize a house through NoBroker."
+    },
+    {
+      question: "What services do you provide after I subscribe to the Expert Plan?",
+      answer: "For any Expert Plan subscriber, we give the following services: Personalized Dedicated property expert assistance, up to 50 seller contacts, new property alerts as per your property requirement, home loan at attractive interest rates, and free Interiors Consultation from NoBroker."
+    },
+    {
+      question: "How soon can I get the house after I subscribe to the Expert Plan?",
+      answer: "Usually the timeline to get a house depends on how specific the requirement is. We do try to get you the house as soon as possible in case you are an Expert Plan subscriber, while it cannot be guaranteed how soon you will be able to get the house. However, we have seen that usually house hunt is completed within 4-5 weeks of the date of subscription of the plan."
+    },
+    {
+      question: "Will you be coming to show the house to me if I am an Expert Plan customer?",
+      answer: "We help our Expert Plan customer in searching out the properties and speaking with sellers to set the appointment for you. However, we do not visit on-site to accompany you for the house visit."
+    },
+    {
+      question: "Will you help me negotiate the price?",
+      answer: "Price and down-payment amount are on the sole discretion of the sellers. However, we do try to negotiate the price for our expert plan customers in case there are inconsistencies in price amount in the specific locality."
+    },
+    {
+      question: "Can you get me the house in some specific society?",
+      answer: "We always have sufficient number of properties at each location of the operating city, but finding a house in a specific locality will depend on the inventory we have at that point of time so we cannot guarantee a specific society."
+    },
+    {
+      question: "How do I give my requirements for the type of house I am looking for?",
+      answer: "Once you subscribe to the Expert Plan, our assigned dedicated property expert will call you and take your requirement over the phone and will begin working on the same day itself."
+    },
+    {
+      question: "Are there any hidden charges in the subscription plans?",
+      answer: "The charges to subscribe to the plans mentioned are inclusive of all kind of charges and there is no extra cost for the same. Free Home Loan Assistance and 1 free home inspection for interiors are included in this plan."
+    },
+    {
+      question: "Is it possible that I can pay for Expert Plan once I find the house?",
+      answer: "Unfortunately we have not started that kind of service yet and neither plan for the same. To enjoy the house hunting assistance with the help of a personalized property advisor, you need to subscribe to the plan first."
+    }
+  ];
+  
+    // Manage active accordion item and open status
+  const [activeKey, setActiveKey] = useState(null);
+  
+    // Handle Accordion item click
+  const handleSelect = (key) => {
+      setActiveKey(key === activeKey ? null : key); // Toggle active item
+    };
+
   return (
     <>
       <div className="container-fluid" style={{ marginTop: "105px" }}>
@@ -115,9 +172,9 @@ function BuyersPlan() {
           </h2>
         </div>
 
-        <div className="row mx-auto mt-5" style={{ columnGap: "25px" }}>
+        <div className="row mx-auto mt-5 g-5">
           {cards.map((card, index) => (
-            <div className="col-lg-3" style={{ width: "423px" }}>
+            <div className="col-lg-4" style={{ width: "" }}>
               <div
                 key={index}
                 className="d-flex justify-content-between align-items-center position-relative"
@@ -346,6 +403,96 @@ function BuyersPlan() {
 </div>
           <p>Click here for Seller Plans</p>
         </div>
+
+        <div className="container mt-5">
+          <h1 className="text-center text-xl">HOW ASSISTED PLANS WORK</h1>
+          <div className="row align-items-center position-relative">
+            <div className="col-lg-4 overflow-hidden d-flex flex-column align-items-center">
+              <img src="../public/BuyersPlan/1.png" alt="" srcset="" />
+              <div className="line-dashed"></div>
+            </div>
+            <div className="col-lg-4 ">
+              <h1 className="text-danger"> LOOKING FOR A HOUSE?</h1>
+              <p>Just get one of our Assisted Plans and make your lives simpler.</p>
+            </div>
+            <div className="col-lg-4"></div>
+            <div className="bottom-border"></div>
+          </div>
+          <div className="row align-items-center  position-relative">
+            <div className="col-lg-4"></div>
+            <div className="col-lg-4 ">
+              <h1 className="text-danger"> LOOKING FOR A HOUSE?</h1>
+              <p>Just get one of our Assisted Plans and make your lives simpler.</p>
+            </div>
+            <div className="col-lg-4 overflow-hidden d-flex flex-column align-items-center">
+            <div className="line-dashed"></div>
+              <img src="../public/BuyersPlan/2.png" alt="" srcset="" />
+              <div className="line-dashed"></div>
+            </div>
+            <div className="bottom-border"></div>
+          </div>
+          <div className="row align-items-center  position-relative">
+            <div className="col-lg-4 overflow-hidden  d-flex flex-column align-items-center">
+            <div className="line-dashed"></div>
+              <img src="../public/BuyersPlan/3.png" alt="" srcset="" />
+              <div className="line-dashed"></div>
+            </div>
+            <div className="col-lg-4 ">
+              <h1 className="text-danger"> LOOKING FOR A HOUSE?</h1>
+              <p>Just get one of our Assisted Plans and make your lives simpler.</p>
+            </div>
+            <div className="col-lg-4"></div>
+            <div className="bottom-border"></div>
+          </div>
+          <div className="row align-items-center  position-relative">
+             <div className="col-lg-4"></div>
+            <div className="col-lg-4 ">
+              <h1 className="text-danger"> LOOKING FOR A HOUSE?</h1>
+              <p>Just get one of our Assisted Plans and make your lives simpler.</p>
+            </div>
+            <div className="col-lg-4 overflow-hidden  d-flex flex-column align-items-center">
+            <div className="line-dashed"></div>
+              <img src="../public/BuyersPlan/4.png" alt="" srcset="" />
+              <div className="line-dashed"></div>
+              <div className="bottom-border"></div>
+            </div>
+          </div>
+          <div className="row align-items-center ">
+            <div className="col-lg-4 overflow-hidden  d-flex flex-column align-items-center">
+            <div className="line-dashed"></div>
+              <img src="../public/BuyersPlan/5.png" alt="" srcset="" />
+            </div>
+            <div className="col-lg-4 ">
+              <h1 className="text-danger"> LOOKING FOR A HOUSE?</h1>
+              <p>Just get one of our Assisted Plans and make your lives simpler.</p>
+            </div>
+            <div className="col-lg-4"></div>
+          </div>
+
+        </div>
+
+        <div className="container mt-5">
+      <h1 className="text-center mb-4">Frequently Asked Questions</h1>
+      <Accordion activeKey={activeKey} onSelect={handleSelect} flush>
+        {faq.map((item, index) => (
+          <Accordion.Item
+            eventKey={index.toString()}
+            key={index}
+            onClick={() => handleSelect(index.toString())}
+          >
+            <Accordion.Header
+              style={{
+                color: activeKey === index.toString() ? "green" : "black", // Change color to green if active
+                fontWeight: activeKey === index.toString() ? "bold" : "normal", // Make text bold when active
+              }}
+            >
+              {item.question}
+            </Accordion.Header>
+            <Accordion.Body className="text-dark">{item.answer}</Accordion.Body>
+          </Accordion.Item>
+        ))}
+      </Accordion>
+    </div>
       </div>
     </>
   );

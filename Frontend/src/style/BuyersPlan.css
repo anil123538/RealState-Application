@@ -71,3 +71,19 @@
     height: 20px;  /* Adjust image height */
     object-fit: contain; /* Make sure the flag scales proportionally */
   }
+
+  .line-dashed {
+    width: 2px; /* Thickness of the line */
+    height: 50px; /* Height of the line */
+    border-left: 2px dashed red; /* Create a dashed border */
+    background: none; /* Remove solid background */
+  }
+
+  .bottom-border{
+    width: 850px;
+    border-bottom: 2px red dashed;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
