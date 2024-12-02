@@ -13,11 +13,7 @@ const LoginSignup = () => {
         <div className="flex md:flex-row flex-col h-[500px] relative shadow-md shadow-slate-400">
           {/* <RxCross1 className="absolute right-4 top-4 cursor-pointer text-xl" /> */}
           <div className="hidden md:flex flex-col gap-2 bg-slate-100 p-6 md:justify-center w-[42%] text-sm">
-            <img
-              src="https://assets.NESTATE.in/nb-new/public/Signup/signupHome.png"
-              alt=""
-              width="30%"
-            />
+            <img src="loginSignup/signupHome.png" alt="" width="30%" />
             <div className="font-bold">Login / Sign up</div>
             <div className="flex items-center opacity-80 text-xs">
               <IoMdCheckmark /> Zero Brokerage.
@@ -32,7 +28,7 @@ const LoginSignup = () => {
 
           <div className="md:hidden flex flex-row-reverse md:justify-between gap-8 px-4 pt-4">
             <img
-              src="https://assets.NESTATE.in/nb-new/public/Signup/signupHome.png"
+              src="loginSignup/signupHome.png"
               alt=""
               className="mr-0 w-20 h-20"
             />

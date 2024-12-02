@@ -283,11 +283,7 @@ const CheckEligibility = ({ selectedOption }) => {
             </div>
           ) : selectedOption === "Commercial" ? (
             <div className="bg-[#004958] p-3.5 flex items-center justify-center gap-2.5">
-              <img
-                src="https://assets.nobroker.in/static/img/icon/homeCreditCard_icon.png"
-                alt=""
-                className="mr-0"
-              />
+              <img src="home/homeCreditCard_icon.png" alt="" className="mr-0" />
               <div className="text-white">
                 <span>Earn rewards upto </span>
                 <span className="font-bold">R.30,000 </span>
@@ -616,7 +612,7 @@ const CheckEligibility = ({ selectedOption }) => {
                   <img src="home/arrowIcon.svg" alt="" className="m-0" />
                 </div>
                 <img
-                  src="https://assets.nobroker.in/nb-new/public/Home/extraservicesprite_v1.svg"
+                  src="home/extraservicesprite_v1.svg"
                   alt=""
                   className="w-20 m-0 absolute bottom-0 right-0"
                 />
