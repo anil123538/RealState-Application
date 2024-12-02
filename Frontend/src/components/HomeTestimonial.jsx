@@ -7,7 +7,7 @@ const HomeTestimonial = () => {
     {
       id: 1,
       user_image:
-        "https://assets.NESTATE.in/images/testimonials/ff80818155da4ee20155dd9b3e161113_2016.08.18.11.41.41.jpg",
+        "home/t1.jpg",
       user_name: "Shubham Raibhandar",
       star: 5,
       heading: "Helps us to find good properties",
@@ -16,7 +16,7 @@ const HomeTestimonial = () => {
     {
       id: 2,
       user_image:
-        "https://assets.NESTATE.in/images/testimonials/ff80818155da4ee20155dd9b3e161113_2016.08.18.11.41.41.jpg",
+        "home/t2.jpg",
       user_name: "Shubham Raibhandar",
       star: 5,
       heading: "Helps us to find good properties",
@@ -25,7 +25,7 @@ const HomeTestimonial = () => {
     {
       id: 3,
       user_image:
-        "https://assets.NESTATE.in/images/testimonials/ff80818155da4ee20155dd9b3e161113_2016.08.18.11.41.41.jpg",
+        "home/t3.jpg",
       user_name: "Shubham Raibhandar",
       star: 5,
       heading: "Helps us to find good properties",
@@ -34,7 +34,7 @@ const HomeTestimonial = () => {
     {
       id: 4,
       user_image:
-        "https://assets.NESTATE.in/images/testimonials/ff80818155da4ee20155dd9b3e161113_2016.08.18.11.41.41.jpg",
+        "home/t4.jpg",
       user_name: "Shubham Raibhandar",
       star: 5,
       heading: "Helps us to find good properties",
@@ -43,7 +43,7 @@ const HomeTestimonial = () => {
     {
       id: 5,
       user_image:
-        "https://assets.NESTATE.in/images/testimonials/ff80818155da4ee20155dd9b3e161113_2016.08.18.11.41.41.jpg",
+        "home/t5.jpg",
       user_name: "Shubham Raibhandar",
       star: 5,
       heading: "Helps us to find good properties",
