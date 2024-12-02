@@ -48,7 +48,7 @@ const HomeTestimonial = () => {
 
   return (
     <>
-      <div className="bg-slate-600 py-10 items-center md:flex hidden flex-col">
+      <div className="bg-[#004953] py-10 items-center md:flex hidden flex-col">
         <h1 className="text-white text-2xl">Our Customers Loves us</h1>
         <iframe
           width="560"
