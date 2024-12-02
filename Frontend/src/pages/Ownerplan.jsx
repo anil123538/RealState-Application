@@ -200,7 +200,7 @@ function Ownerplan() {
               zIndex: 1,
               backgroundImage: `url(${
                 activeCard === card.id
-                  ? "https://assets.NESTATE.in/nb-new/public/green-box-png-square.webp"
+                  ? "https://assets.nobroker.in/nb-new/public/green-box-png-square.webp"
                   : card.background
               })`,
               backgroundSize: "cover",

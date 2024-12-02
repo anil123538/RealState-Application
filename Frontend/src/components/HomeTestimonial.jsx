@@ -81,7 +81,7 @@ const HomeTestimonial = () => {
       <div className="md:flex hidden items-center justify-around p-10">
         <div>
           <img
-            src="https://assets.NESTATE.in/nb-new/public/Home/homeAppPromotion.png"
+            src="home/homeAppPromotion.png"
             alt=""
             width="80%"
           />

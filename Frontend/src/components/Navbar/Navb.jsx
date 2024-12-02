@@ -215,15 +215,15 @@ function Navb() {
               className="ms-auto my-2 my-lg-0 d-none d-lg-flex justify-content align-items-center"
               style={{ fontSize: "0.8rem" }}
             >
-              <Nav.Link href="https://travel-website-one-cyan.vercel.app/" className="">
+              <Nav.Link href="https://travel-website-one-cyan.vercel.app/" className="makemytrip">
                 <span className="d-flex gap-2 align-items-center border nav-box px-2 py-5">
-                  <div>
+                  <div className="trip">
                     <img
                       src={suitcase} // Use your imported image here
                       alt="Brand Logo"
                       width="20" // Adjust width as needed
                       className="image-rent"
-                      style={{ filter: "brightness(1)" }} // Adjust value as needed
+                      style={{ opacity: "0.3" }} // Adjust value as needed
                     />
                   </div>
                   <div style={{ color: "#424242" }}>|</div>

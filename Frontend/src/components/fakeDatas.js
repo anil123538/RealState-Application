@@ -8,7 +8,7 @@ import money from "../assets/payrent_images/money.svg";
 import milestone from "../assets/payrent_images/milestone.svg";
 import digital_rent_receipt from "../assets/payrent_images/digital_rent_receipt.svg";
 import no_broker_trust from "../assets/payrent_images/no_broker_trust.svg";
-import logo from "../assets/payrent_images/logo.png";
+import logo from "../assets/payrent_images/post-02.png";
 import women from "../assets/images/womens.webp";
 import bathClean from "../assets/servicesImg/BathroomCleaning.webp";
 import fullHouse from "../assets/servicesImg/FullHouseCleaning.webp";

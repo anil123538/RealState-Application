@@ -25,7 +25,7 @@ const PayRent = () => {
       : document.body.classList.add("noScroll");
   };
   return (
-    <div className=" w-full h-auto flex justify-center flex-col">
+    <div className=" w-full h-auto flex justify-center flex-col" style={{marginTop: "-8px"}}>
       {/* quick chat button  */}
 
       <QuickChat />
@@ -81,7 +81,7 @@ const PayRent = () => {
 
           <div className="text-black w-full md:pl-16 pl-0">
             <div className="bg-white md:mt-4 mt-0 py-4 px-8 md:rounded-lg flex flex-col-reverse md:flex-col">
-              <Highlight data={offers} click={handleOfferBox} />
+              <Highlight data={offers} click={handleOfferBox}/>
               <Cards
                 data={offers}
                 visible={visibleAllOffers}
@@ -90,7 +90,7 @@ const PayRent = () => {
               <form
                 action=""
                 id="payRentForm"
-                className="flex flex-col gap-3 text-sm"
+                className="flex flex-col gap-3 text-sm mt-4"
               >
                 <div className="flex flex-col gap-1">
                   <label htmlFor="payment type" className="font-semibold">
@@ -184,7 +184,7 @@ const PayRent = () => {
 
       {/* How it works */}
 
-      <div className="w-full flex items-center justify-center bg-dark_blue text-white py-16 gap-4 px-10 md:flex-row flex-col">
+      <div className="w-full flex items-center justify-center bg-[#004958] text-white py-16 gap-4 px-10 md:flex-row flex-col">
         <div className="flex flex-col items-center justify-center gap-4">
           <img src={step1} alt="icon" className="w-20 h-20" />
           <h1 className="border-2 border-white rounded-full flex items-center justify-center h-6 w-6">

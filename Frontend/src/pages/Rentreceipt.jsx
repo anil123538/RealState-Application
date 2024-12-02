@@ -326,7 +326,7 @@ function Rentreceipt() {
               <button
                 className="submit-form btn rentReceipt-btn w-75 w-md-50"
                 type="submit"
-                style={{ backgroundColor: "#009587", color: "#fff" }}
+                style={{ backgroundColor: "#004958", color: "#fff" }}
               >
                 Generate Rent Receipt Now
               </button>
@@ -346,7 +346,7 @@ function Rentreceipt() {
                 </div>
               </div>
               <img
-                src="https://assets.NESTATE.in/nb-new/public/LegalServices/ra_icon.svg"
+                src="https://assets.nobroker.in/nb-new/public/LegalServices/ra_icon.svg"
                 className=""
                 alt="rental"
                 loading="lazy"
@@ -377,7 +377,7 @@ function Rentreceipt() {
               style={{
                 borderRadius: "6px",
                 marginTop: "7px",
-                backgroundColor: "#009587",
+                backgroundColor: "#004958",
                 color: "#fff",
               }}
               className="btn btn-default btn-sm fw-semibold"
@@ -398,7 +398,7 @@ function Rentreceipt() {
                 </div>
               </div>
               <img
-                src="https://assets.NESTATE.in/nb-new/public/LegalServices/tenant_verification_icon.svg"
+                src="https://assets.nobroker.in/nb-new/public/LegalServices/tenant_verification_icon.svg"
                 className=""
                 alt="rental"
                 loading="lazy"
@@ -423,7 +423,7 @@ function Rentreceipt() {
               style={{
                 borderRadius: "6px",
                 marginTop: "7px",
-                backgroundColor: "#009587",
+                backgroundColor: "#004958",
                 color: "#fff",
               }}
               className="btn btn-default btn-sm fw-semibold"

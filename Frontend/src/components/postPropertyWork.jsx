@@ -1,4 +1,7 @@
 import React from 'react'
+import search from '../assets/images/search.jpg'
+import SakeHands from '../assets/images/shakeHands.jpg'
+import phonecall from '../assets/images/phonecall.jpg'
 
 function PostPropertyWork() {
   return (
@@ -26,7 +29,7 @@ function PostPropertyWork() {
             </div>
             <div className="col">
               <img
-                src="https://assets.NESTATE.in/static/img/listing/search.jpg"
+                src={search}
                 alt="Simple Listing Process"
               />
             </div>
@@ -35,7 +38,7 @@ function PostPropertyWork() {
           <div className="row mb-5">
             <div className="col">
               <img
-                src="https://assets.NESTATE.in/static/img/listing/phonecall.jpg"
+                src={phonecall}
                 alt="Simple Listing Process"
               />
             </div>
@@ -63,7 +66,7 @@ function PostPropertyWork() {
             </div>
             <div className="col">
               <img
-                src="https://assets.NESTATE.in/static/img/listing/shakeHands.jpg"
+                src={SakeHands}
                 alt="Simple Listing Process"
               />
             </div>

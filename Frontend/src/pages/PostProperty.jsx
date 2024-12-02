@@ -8,6 +8,9 @@ import PostPropertyFAQ from "../components/postPropertyFAQ";
 import PostPropertyWork from "../components/postPropertyWork";
 import PostPropertyFeature from "../components/postPropertyFeature";
 import PostPropertyText from "../components/postPropertyText";
+import Zero_Brokerage from '../assets/images/Zero_Brokerage.svg'
+import Tenant from '../assets/images/Tenant.svg'
+import tenant_buyer_connections from '../assets/images/tenant_buyer_connections.svg'
 
 function PostProperty() {
   const [selectedType, setSelectedType] = useState("Residential");
@@ -46,8 +49,8 @@ function PostProperty() {
               style={{ padding: "8px 0" }}
             >
               <img
-                src="https://assets.NESTATE.in/static/img/postYourProperty/Zero_Brokerage.svg"
-                alt="zero"
+                src={Zero_Brokerage}
+                alt="Zero_Brokrage"
               />
               <div style={{ color: "#787676", fontSize: "14px" }}>
                 Zero Brokerage
@@ -58,7 +61,7 @@ function PostProperty() {
               style={{ padding: "8px 0" }}
             >
               <img
-                src="https://assets.NESTATE.in/static/img/postYourProperty/Tenant.svg"
+                src={Tenant}
                 alt="fast"
               />
               <div style={{ color: "#787676", fontSize: "14px" }}>
@@ -70,7 +73,7 @@ function PostProperty() {
               style={{ padding: "8px 0" }}
             >
               <img
-                src="https://assets.NESTATE.in/static/img/postYourProperty/tenant_buyer_connections.svg"
+                src={tenant_buyer_connections}
                 alt="connections"
               />
               <div style={{ color: "#787676", fontSize: "14px" }}>
@@ -98,7 +101,7 @@ function PostProperty() {
             >
               <Carousel.Item className="mb-4">
                 <p style={{ color: "#787676", fontSize: "14px" }}>
-                  I found NESTATE very helpful for house rent advertisements.
+                  I found nobroker very helpful for house rent advertisements.
                   The team was very responsive and enthusiastic to help us find
                   a good tenant in a very short span of time. Within a week this
                   property listing site was able to get me a tenant and exceed
@@ -114,7 +117,7 @@ function PostProperty() {
               </Carousel.Item>
               <Carousel.Item className="mb-4">
                 <p style={{ color: "#787676", fontSize: "14px" }}>
-                  NESTATE is doing a very good job out there saving us all from
+                  nobroker is doing a very good job out there saving us all from
                   the general brokers and from all those extra brokerage
                   expenses. They have a lot of real estate ads and options to
                   choose from, they will be with you until you find your house.
@@ -131,7 +134,7 @@ function PostProperty() {
               </Carousel.Item>
               <Carousel.Item className="mb-4">
                 <p style={{ color: "#787676", fontSize: "14px" }}>
-                  I posted a property ad online on NESTATE. Its an efficient
+                  I posted a property ad online on nobroker. Its an efficient
                   real estate website because despite my busy schedule they did
                   a great job of contacting me at the right times. To keep me
                   updated they sent mails &amp; messages. They found a great
@@ -147,7 +150,7 @@ function PostProperty() {
               </Carousel.Item>
               <Carousel.Item className="mb-4">
                 <p style={{ color: "#787676", fontSize: "14px" }}>
-                  I posted a property ad online on NESTATE. Its an efficient
+                  I posted a property ad online on nobroker. Its an efficient
                   real estate website because despite my busy schedule they did
                   a great job of contacting me at the right times. To keep me
                   updated they sent mails &amp; messages. They found a great
@@ -163,7 +166,7 @@ function PostProperty() {
               </Carousel.Item>
               <Carousel.Item className="mb-4">
                 <p style={{ color: "#787676", fontSize: "14px" }}>
-                  I posted a property ad online on NESTATE. Its an efficient
+                  I posted a property ad online on nobroker. Its an efficient
                   real estate website because despite my busy schedule they did
                   a great job of contacting me at the right times. To keep me
                   updated they sent mails &amp; messages. They found a great
@@ -179,7 +182,7 @@ function PostProperty() {
               </Carousel.Item>
               <Carousel.Item className="mb-4">
                 <p style={{ color: "#787676", fontSize: "14px" }}>
-                  I posted a property ad online on NESTATE. Its an efficient
+                  I posted a property ad online on nobroker. Its an efficient
                   real estate website because despite my busy schedule they did
                   a great job of contacting me at the right times. To keep me
                   updated they sent mails &amp; messages. They found a great
@@ -195,7 +198,7 @@ function PostProperty() {
               </Carousel.Item>
               <Carousel.Item className="mb-4">
                 <p style={{ color: "#787676", fontSize: "14px" }}>
-                  I posted a property ad online on NESTATE. Its an efficient
+                  I posted a property ad online on nobroker. Its an efficient
                   real estate website because despite my busy schedule they did
                   a great job of contacting me at the right times. To keep me
                   updated they sent mails &amp; messages. They found a great
