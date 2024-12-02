@@ -240,7 +240,7 @@ const RentalAgreement = () => {
               <span className="opacity-70 text-xs d-flex align-items-center gap-1">
                 Now available in 150+ cities in india
                 <img
-                  src="../public/rentalAgreement/legalPageCity.gif"
+                  src="rentalAgreement/legalPageCity.gif"
                   className="gif-image"
                   alt=""
                 />
