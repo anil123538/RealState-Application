@@ -14,19 +14,19 @@ const RentalAgreement = () => {
     {
       id: 1,
       text: "Rental Agreement + Police Intimation",
-      bgImage: "https://assets.NESTATE.in/nob-common/pkgWithRaUpload.webp",
+      bgImage: "../public/rentalAgreement/Intimation.png",
       offer: "Upto ₹100 off",
     },
     {
       id: 2,
       text: "Rental Agreement with Biometric",
-      bgImage: "https://assets.NESTATE.in/nob-common/pkgWithRaMh.webp",
+      bgImage: "../public/rentalAgreement/Stamp.png",
       offer: "Upto ₹100 off",
     },
     {
       id: 3,
       text: "Rental Agreement with E-Stamp & Notary",
-      bgImage: "https://assets.NESTATE.in/nob-common/pkgWithEstamp.webp",
+      bgImage: "../public/rentalAgreement/AdarEsign.png",
       offer: "Upto ₹100 off",
     },
   ];
@@ -34,36 +34,35 @@ const RentalAgreement = () => {
   const availableAddOns = [
     {
       id: 1,
-      image: "https://assets.NESTATE.in/nob-common/extraVisit.webp",
+      image: "../public/rentalAgreement/legalNotaryAddon.png",
       heading: "Extra Visit",
       desc: "Book additional biometric appointments in",
       bgColor: "#ffeff3",
     },
     {
       id: 2,
-      image: "https://assets.NESTATE.in/nob-common/techAssistance.webp",
+      image: "../public/rentalAgreement/AdarEsign.png",
       heading: "Tech Assistance",
       desc: "For distant registration via a biometric device",
       bgColor: "#f2f3ff",
     },
     {
       id: 3,
-      image:
-        "https://assets.NESTATE.in/nob-common/legalIDVerificationAddon.webp",
+      image: "../public/rentalAgreement/legalDeliveryAddon.png",
       heading: "Tenant Verification",
       desc: "Verify your tenant's Identity Instantly.",
       bgColor: "#fff5e2",
     },
     {
       id: 4,
-      image: "https://assets.NESTATE.in/nob-common/legalDeliveryAddon.webp",
+      image: "../public/rentalAgreement/legalIDVerificationAddon.png",
       heading: "Standard Delivery",
       desc: "Hard copy delivery of your agreement",
       bgColor: "rgb(255, 236, 226)",
     },
     {
       id: 5,
-      image: "https://assets.NESTATE.in/nob-common/powerOfAttorneyImg.svg",
+      image: "../public/rentalAgreement/legalMulticopyAddon.png",
       heading: "Power Of Attorney",
       desc: "Drafting of Power Of Attorney.",
       bgColor: "rgb(242, 246, 253)",
@@ -135,21 +134,21 @@ const RentalAgreement = () => {
     {
       id: 1,
       image:
-        "https://assets.NESTATE.in/hs-new/public/LegalServiceNew/nbDiscount.svg",
+        "https://assets.nobroker.in/hs-new/public/LegalServiceNew/nbDiscount.svg",
       disPercent: "10% NB cash discount",
       upto: "Upto ₹250",
     },
     {
       id: 2,
       image:
-        "https://assets.NESTATE.in/hs-new/public/LegalServiceNew/hdfcCoupon.png",
+        "../public/rentalAgreement/hdfcCoupon.png",
       disPercent: "5% HDFC bank",
       upto: "Upto ₹1500",
     },
     {
       id: 3,
       image:
-        "https://assets.NESTATE.in/hs-new/public/LegalServiceNew/amazonCoupon.png",
+        "../public/rentalAgreement/amazonCoupon.png",
       disPercent: "₹100 Amazon pay discount",
       upto: "On spend of ₹2000",
     },
@@ -536,7 +535,7 @@ const RentalAgreement = () => {
                   className="border border-zinc-300 shadow-md p-4 rounded-xl flex min-w-60 items-center h-20 md:h-auto gap-4"
                 >
                   <div className="bg-zinc-200 p-2 md:m-auto w-16 flex items-center justify-center rounded-md">
-                    <img src={item.image} alt="" className="m-0 w-10" />
+                    <img src={item.image} alt="" className="m-0 w-100 h-100" />
                   </div>
                   <hr className="m-2 opacity-80 hidden md:block text-zinc-300" />
                   <div>
