@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaPlus } from "react-icons/fa";
 
-const FrequentAskedQuestion = ({ faq, headingAlign, textColor }) => {
+const FrequentAskedQuestion = ({ title, faq, headingAlign, textColor }) => {
   const [multipleFaqExpanded, setMultipleFaqExpanded] = useState([]);
 
   const toggleFaq = (index) => {
@@ -15,9 +15,9 @@ const FrequentAskedQuestion = ({ faq, headingAlign, textColor }) => {
   };
 
   return (
-    <div className="bg-white rounded-xl px-8  py-12  mx-auto">
+    <>
       <div className={`font-medium md:text-3xl text-lg mb-4 ${headingAlign}`}>
-        Frequently Asked Questions
+        {title}
       </div>
       {faq.map((item, i) => (
         <div key={i}>
@@ -50,7 +50,7 @@ const FrequentAskedQuestion = ({ faq, headingAlign, textColor }) => {
           <hr className="text-zinc-300 opacity-60 m-2" />
         </div>
       ))}
-    </div>
+    </>
   );
 };
 
