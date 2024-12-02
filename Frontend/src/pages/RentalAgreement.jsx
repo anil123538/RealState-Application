@@ -134,7 +134,7 @@ const RentalAgreement = () => {
     {
       id: 1,
       image:
-        "https://assets.nobroker.in/hs-new/public/LegalServiceNew/nbDiscount.svg",
+        "../public/rentalAgreement/nbDiscount.svg",
       disPercent: "10% NB cash discount",
       upto: "Upto ₹250",
     },
@@ -280,13 +280,14 @@ const RentalAgreement = () => {
               <div className="bg-white/10 w-fit p-2 rounded-md flex  gap-32 mt-4">
                 <div className="flex">
                   <img
-                    src="https://assets.NESTATE.in/hs-new/public/LegalServiceNew/renew.svg"
+                    src="../public/rentalAgreement/renew.svg"
                     alt=""
                     className="w-10"
                   />
                   <div className="flex flex-col min-w-full">
                     <div className="flex items-center">
                       <div className="text-sm md:text-base">
+                        <img src="" alt="" srcset="" />
                         Renew Your Agreement
                       </div>
                       <div className="w-2 h-2 bg-[#ff5800] rounded-full ml-1"></div>
