@@ -1,12 +1,12 @@
 import React from "react";
-import Search from "../components/PaintingAndCleaning/Search";
-import Offer from "../components/PaintingAndCleaning/Offer";
-import Services from "../components/PaintingAndCleaning/Services";
+import Search from "../components/PaintingAndCleaningComponent/Search";
+import Offer from "../components/PaintingAndCleaningComponent/Offer";
+import Services from "../components/PaintingAndCleaningComponent/Services";
 import FrequentAskedQuestion from "../components/FrequentAskedQuestion";
 import Testimonial from "../components/Testimonial";
 import { FaStar } from "react-icons/fa";
-import SecondOffer from "../components/PaintingAndCleaning/secondOffer";
-import VipMembership from "../components/PaintingAndCleaning/VipMembership";
+import VipMembership from "../components/PaintingAndCleaningComponent/VipMembership";
+import SecondOffer from "../components/PaintingAndCleaningComponent/SecondOffer";
 
 const PaintingAndCleaning = () => {
   const faq = [
