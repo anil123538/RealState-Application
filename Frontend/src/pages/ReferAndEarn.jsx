@@ -49,7 +49,7 @@ const ReferAndEarn = () => {
   ];
   return (
     <div>
-      <div className=" md:h-72 h-20 w-full bg-no-repeat bg-contain"></div>
+      <div className="bg-[url(referAndEarn/clickAndEarnbanner.svg)] md:h-72 h-20 w-full bg-no-repeat bg-contain"></div>
       <div className="text-center md:text-3xl opacity-90 font-extralight md:py-8 py-4">
         <p className="text-sm md:text-3xl">
           Click a Pic or Refer owner details to <b>earn upto ₹120 </b>for
