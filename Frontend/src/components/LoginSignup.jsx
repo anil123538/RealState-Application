@@ -3,7 +3,7 @@ import { IoMdCheckmark } from "react-icons/io";
 import { RxCross1 } from "react-icons/rx";
 import { defaultCountries, PhoneInput } from "react-international-phone";
 import "react-international-phone/style.css";
-import signuphome from '../assets/images/signupHome.png'
+import signuphome from "../assets/images/signupHome.png";
 
 const LoginSignup = () => {
   const [phone, setPhone] = useState("");
@@ -14,11 +14,7 @@ const LoginSignup = () => {
         <div className="flex md:flex-row flex-col h-[500px] relative shadow-md shadow-slate-400">
           {/* <RxCross1 className="absolute right-4 top-4 cursor-pointer text-xl" /> */}
           <div className="hidden md:flex flex-col gap-2 bg-slate-100 p-6 md:justify-center w-[42%] text-sm">
-            <img
-              src={signuphome}
-              alt=""
-              width="30%"
-            />
+            <img src={signuphome} alt="" width="30%" />
             <div className="font-bold">Login / Sign up</div>
             <div className="flex items-center opacity-80 text-xs">
               <IoMdCheckmark /> Zero Brokerage.
@@ -45,7 +41,7 @@ const LoginSignup = () => {
               </div>
               <button
                 type="submit"
-                className="bg-[#ff5800] hover:bg-red-600 text-white w-full px-4 py-2 rounded-md"
+                className="bg-[#ff5800] hover:bg-[#ff5800]/90 text-white w-full px-4 py-2 rounded-md"
               >
                 Continue
               </button>

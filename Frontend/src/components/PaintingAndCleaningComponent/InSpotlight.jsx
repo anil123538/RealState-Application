@@ -11,10 +11,10 @@ const InSpotlight = () => {
           autoPlay
           loop
           controls="play"
-          className="w-5/12 2xl:w-8/12 rounded-lg"
+          className="w-5/12 2xl:w-7/12 rounded-lg"
         />
         <div className="flex flex-col gap-8 w-1/3">
-          <div className="w-3/4">
+          <div className="">
             <div className="text-3xl mb-2">Get Free Instant Quote</div>
             <div className="text-2xl opacity-80 ">
               Get guaranteed lowest priced quote for your shifting instantly

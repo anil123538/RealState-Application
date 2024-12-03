@@ -26,7 +26,7 @@ const Search = () => {
 
   return (
     <div>
-      <div className="bg-[#F0F4FC] mb-1.5">
+      <div className="bg-[#004953] mb-1.5">
         <div className="flex relative md:w-6/12 items-center mx-auto pt-6 px-4 md:px-0">
           <CiSearch className="absolute md:left-2 left-6 text-2xl" />
           <input
@@ -54,7 +54,7 @@ const Search = () => {
                   alt=""
                   className="m-0 w-14 rounded-full bg-white"
                 />
-                <div className="text-xs w-10/12">{item.title}</div>
+                <div className="text-xs text-white w-10/12">{item.title}</div>
               </div>
             ))}
           </div>

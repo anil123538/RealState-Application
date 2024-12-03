@@ -229,7 +229,7 @@ const RentalAgreement = () => {
 
   return (
     <>
-      <div className="bg-gradient-to-b from-[#1f235b] from-[410px] md:from-[450px] to-[#f0f0f0] to-[380px] md:py-10">
+      <div className="bg-gradient-to-b from-[#004953] from-[410px] md:from-[450px] to-[#f0f0f0] to-[380px] md:py-10">
         <div className="w-[98%] xl:w-9/12 mx-auto">
           {/* online rent Agreement */}
           <div className="text-white">
@@ -273,7 +273,7 @@ const RentalAgreement = () => {
                 </div>
               </div>
 
-              <div className="bg-white/10 w-fit p-2 rounded-md flex  gap-32 mt-4">
+              <div className="bg-[#F5FFFA]/10 w-fit p-2 rounded-md flex  gap-32 mt-4">
                 <div className="flex">
                   <img
                     src="rentalAgreement/renew.svg"
@@ -312,7 +312,7 @@ const RentalAgreement = () => {
                 {selectARentAgreement.map((item, index) => (
                   <div
                     key={index}
-                    className={`rounded-3xl bg-white text-black md:w-60 w-40 flex-grow md:h-80 h-60 flex flex-col justify-between py-4 shadow-lg`}
+                    className={`rounded-3xl bg-[#F5FFFA] text-black md:w-60 w-40 flex-grow md:h-80 h-60 flex flex-col justify-between py-4 shadow-lg`}
                     style={{
                       backgroundImage: `url(${item.bgImage})`,
                       backgroundRepeat: "no-repeat",
@@ -365,7 +365,7 @@ const RentalAgreement = () => {
           </div>
 
           {/* Available Add ons */}
-          <div className="md:p-8 p-4 bg-white md:rounded-2xl md:w-11/12 mx-auto md:my-10 mb-10">
+          <div className="md:p-8 p-4 bg-[#F5FFFA] md:rounded-2xl md:w-11/12 mx-auto md:my-10 mb-10">
             <div className="font-semibold md:text-2xl text-lg mb-8">
               Available Add ons
             </div>
@@ -403,7 +403,7 @@ const RentalAgreement = () => {
                         .map((item) => (
                           <div
                             key={item.id}
-                            className="cursor-pointer bg-white p-4 w-80 rounded-2xl"
+                            className="cursor-pointer bg-[#F5FFFA] p-4 w-80 rounded-2xl"
                           >
                             <div className="font-medium text-lg mt-2">
                               {item.heading}
@@ -435,7 +435,7 @@ const RentalAgreement = () => {
           </div>
 
           {/* How it works */}
-          <div className="p-8 bg-white md:rounded-2xl md:w-11/12 mx-auto w-full">
+          <div className="p-8 bg-[#F5FFFA] md:rounded-2xl md:w-11/12 mx-auto w-full">
             <div className="font-semibold text-lg md:text-3xl mb-8">
               How it works
             </div>
@@ -461,7 +461,7 @@ const RentalAgreement = () => {
       </div>
 
       {/* Select to Compare Agreement */}
-      <div className="text-white text-center py-10 bg-[#121a45]">
+      <div className="text-white text-center py-10 bg-[#004953]">
         <div className="xl:w-[90%] w-[96%] mx-auto">
           <div className="font-medium md:text-2xl text-lg text-left md:text-center">
             Select to Compare Agreement
@@ -472,10 +472,10 @@ const RentalAgreement = () => {
             {compareAgreement.map((item) => (
               <div
                 key={item.id}
-                className={`cursor-pointer focus:bg-white p-3 rounded-xl md:text-lg text-sm flex items-center md:block font-medium ${
+                className={`cursor-pointer focus:bg-[#F5FFFA] p-3 rounded-xl md:text-lg text-sm flex items-center md:block font-medium ${
                   selected === item.id
-                    ? "md:bg-white/15 bg-white text-black md:text-white"
-                    : "md:bg-white/0 bg-white/15"
+                    ? "md:bg-[#F5FFFA]/15 bg-[#F5FFFA] text-black md:text-white"
+                    : "md:bg-[#F5FFFA]/0 bg-[#F5FFFA]/15"
                 }`}
                 onClick={() => setSelected(item.id)}
               >
@@ -494,7 +494,7 @@ const RentalAgreement = () => {
           </div>
 
           {compareAgreement.map((item) => (
-            <div className="bg-white md:hidden text-black mt-4 rounded-md">
+            <div className="bg-[#F5FFFA] md:hidden text-black mt-4 rounded-md">
               {selected === item.id ? (
                 <div className="p-4">
                   {Object.values(item.details).map((itemDetail, index) => (
@@ -514,7 +514,7 @@ const RentalAgreement = () => {
             <button className="md:px-20 px-10 py-3 border border-white border-opacity-80 rounded-md">
               Preview
             </button>
-            <button className="md:px-20 px-10 py-3 bg-white font-medium text-lg rounded-md text-black flex items-center gap-2">
+            <button className="md:px-20 px-10 py-3 bg-[#F5FFFA] font-medium text-lg rounded-md text-black flex items-center gap-2">
               Proceed <FaChevronRight />
             </button>
           </div>
@@ -524,7 +524,7 @@ const RentalAgreement = () => {
       <div className="bg-[#f0f0f0] pb-10">
         <div className=" xl:w-9/12 mx-auto md:w-[98%] w-full flex flex-col gap-8">
           {/* Discount Coupons */}
-          <div className="bg-white rounded-xl md:p-8 md:w-[90%] mt-10 mx-auto opacity-80 w-full py-8">
+          <div className="bg-[#F5FFFA] rounded-xl md:p-8 md:w-[90%] mt-10 mx-auto opacity-80 w-full py-8">
             <div className="md:text-3xl text-lg font-semibold px-4">
               Discount Coupons
             </div>
@@ -553,7 +553,7 @@ const RentalAgreement = () => {
           </div>
 
           {/* NESTATE Promise */}
-          <div className="bg-white rounded-xl p-8 md:w-[90%] mx-auto">
+          <div className="bg-[#F5FFFA] rounded-xl p-8 md:w-[90%] mx-auto">
             <div className="md:text-2xl text-xl font-semibold opacity-80">
               NESTATE Promise
             </div>
@@ -568,7 +568,7 @@ const RentalAgreement = () => {
                     />
                   </div>
                   <div>
-                    <div className="md:text-lg text-sm text-blue font-semibold">
+                    <div className="md:text-lg text-sm text-[#004953] font-semibold">
                       Guaranteed Lowest Prices
                     </div>
                     <div className="text-xs">
@@ -585,7 +585,7 @@ const RentalAgreement = () => {
                     />
                   </div>
                   <div>
-                    <div className="md:text-lg text-sm text-blue font-semibold">
+                    <div className="md:text-lg text-sm text-[#004953] font-semibold">
                       Legally Valid
                     </div>
                     <div className="text-xs">
@@ -603,7 +603,7 @@ const RentalAgreement = () => {
                     />
                   </div>
                   <div>
-                    <div className="md:text-lg text-sm text-blue font-semibold">
+                    <div className="md:text-lg text-sm text-[#004953] font-semibold">
                       100% Convenience. 0% Stress.
                     </div>
                     <div className="text-xs">
@@ -624,7 +624,7 @@ const RentalAgreement = () => {
           </div>
 
           {/* Other legal services that we offer */}
-          <div className="bg-white rounded-xl px-8 py-12 md:w-[90%] mx-auto w-full">
+          <div className="bg-[#F5FFFA] rounded-xl px-8 py-12 md:w-[90%] mx-auto w-full">
             <div className="font-medium opacity-80 md:text-2xl text-lg">
               Other legal services that we offer
             </div>
@@ -662,7 +662,7 @@ const RentalAgreement = () => {
           </div>
 
           {/* Customer Reviews */}
-          <div className="bg-white rounded-xl px-8 py-12 md:w-[90%] mx-auto w-full">
+          <div className="bg-[#F5FFFA] rounded-xl px-8 py-12 md:w-[90%] mx-auto w-full">
             <div className="md:text-3xl text-lg font-medium">
               Customer Reviews
             </div>
@@ -709,16 +709,16 @@ const RentalAgreement = () => {
           </div>
 
           {/* Frequently Asked Questions */}
-          <div className="md:w-[90%] w-full bg-white px-8 py-12 rounded-xl mx-auto">
+          <div className="md:w-[90%] w-full bg-[#F5FFFA] px-8 py-12 rounded-xl mx-auto">
             <FrequentAskedQuestion
               title={"Frequently Asked Questions"}
               faq={faq}
-              textColor={"text-blue"}
+              textColor={"text-[#004953]"}
             />
           </div>
 
           {/* final text */}
-          <div className="bg-white rounded-xl px-8 py-12 md:w-[90%] mx-auto text-[12.5px]">
+          <div className="bg-[#F5FFFA] rounded-xl px-8 py-12 md:w-[90%] mx-auto text-[12.5px]">
             <h2 className="md:text-2xl text-lg font-semibold md:font-normal">
               Creation of Rental Agreements in Bangalore
             </h2>
