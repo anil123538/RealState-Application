@@ -109,7 +109,6 @@ const Search = ({ selectedOption, setSelectedOption }) => {
                   <Link to="/home-interiors" className="flex items-center">
                     <img
                       src="home/HomeInteriorHome.svg"
-                      src="home/HomeInteriorHome.svg"
                       alt=""
                       className="mr-2"
                     />
