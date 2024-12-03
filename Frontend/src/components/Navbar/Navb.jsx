@@ -65,7 +65,7 @@ import Modal from "../Modal";
 import LoginSignup from "../LoginSignup";
 import { NonceProvider } from "react-select";
 import { BiBrightness } from "react-icons/bi";
-import suitcase from '../../assets/images/suitcase.png'
+import suitcase from "../../assets/images/suitcase.png";
 
 function Navb() {
   const location = useLocation();
@@ -199,7 +199,7 @@ function Navb() {
           expand="lg"
           className="bg-body-tertiary"
           fixed="top"
-          style={{ boxShadow: "0 5px 10px rgba(0,0,0,0.1)" , height:"70px"}}
+          style={{ boxShadow: "0 5px 10px rgba(0,0,0,0.1)", height: "70px" }}
         >
           <Container fluid className="">
             {/* Image as Navbar Brand */}
@@ -215,7 +215,10 @@ function Navb() {
               className="ms-auto my-2 my-lg-0 d-none d-lg-flex justify-content align-items-center"
               style={{ fontSize: "0.8rem" }}
             >
-              <Nav.Link href="https://travel-website-one-cyan.vercel.app/" className="makemytrip">
+              <Nav.Link
+                href="https://travel-website-one-cyan.vercel.app/"
+                className="makemytrip"
+              >
                 <span className="d-flex gap-2 align-items-center border nav-box px-2 py-5">
                   <div className="trip">
                     <img
@@ -228,8 +231,12 @@ function Navb() {
                   </div>
                   <div style={{ color: "#424242" }}>|</div>
                   <div className="d-flex flex-column gap-0">
-                    <div style={{ color: "#424242",marginBottom:"-4px" }}>My Trips</div>
-                    <div className="" style={{ color: "#424242"}}>Manage your booking</div>
+                    <div style={{ color: "#424242", marginBottom: "-4px" }}>
+                      My Trips
+                    </div>
+                    <div className="" style={{ color: "#424242" }}>
+                      Manage your booking
+                    </div>
                   </div>
                 </span>
               </Nav.Link>
@@ -540,7 +547,7 @@ function Navb() {
 
                   <Dropdown.Item className="menu-dropdown text-decoration-none">
                     <Link
-                      to="/"
+                      to="/tenant-plan"
                       className="menu-dropdown text-decoration-none"
                       style={{ fontSize: "normal" }}
                     >

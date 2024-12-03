@@ -21,6 +21,7 @@ import BuyersPlan from "./pages/BuyersPlan.jsx";
 import Careers from "./pages/Careers.jsx";
 import PaintingAndCleaning from "./pages/PaintingAndCleaning.jsx";
 import Sellerplan from "./pages/Sellerplan.jsx";
+import TenantPlan from "./pages/TenantPlan.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -37,6 +38,7 @@ const router = createBrowserRouter(
       <Route path="/seller-plan" element={<Sellerplan />} />
       <Route path="/careers" element={<Careers />} />
       <Route path="/painting-&-cleaning" element={<PaintingAndCleaning />} />
+      <Route path="/tenant-plan" element={<TenantPlan />} />
       <Route path="*" element={<PageNotFound />} />
     </Route>
   )
