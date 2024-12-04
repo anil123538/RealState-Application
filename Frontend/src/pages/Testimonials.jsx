@@ -51,7 +51,11 @@ const Testimonials = () => {
   ];
   return (
     <div className="bg-neutral-200">
-      <img src="/testimonials/testimonial_bg.jpg" alt="" />
+      <img
+        src="/testimonials/testimonial_bg.jpg"
+        alt=""
+        className="w-full m-0"
+      />
       <div className="p-5">
         <h3 className="text-center">
           NESTATE Reviews - See What Our Valuable Customers Say
