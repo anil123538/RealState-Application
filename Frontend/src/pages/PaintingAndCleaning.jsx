@@ -152,7 +152,7 @@ const PaintingAndCleaning = () => {
 
         <Services title={"Home Repair Services"} />
         <SecondOffer title={"Relocation Simplified"} />
-        <div className="bg-[#E2EAF8] p-4 mb-1.5 md:px-[140px]">
+        <div className="bg-[#004953] p-4 mb-1.5 md:px-[140px]">
           <div className="max-w-[1280px] mx-auto">
             <Testimonial review={review} scrollBy={400} />
           </div>
