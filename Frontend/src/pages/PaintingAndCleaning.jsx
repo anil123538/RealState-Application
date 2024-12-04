@@ -7,6 +7,7 @@ import Testimonial from "../components/Testimonial";
 import { FaStar } from "react-icons/fa";
 import VipMembership from "../components/PaintingAndCleaningComponent/VipMembership";
 import SecondOffer from "../components/PaintingAndCleaningComponent/SecondOffer";
+import InSpotlight from "../components/PaintingAndCleaningComponent/InSpotlight";
 
 const PaintingAndCleaning = () => {
   const faq = [
@@ -35,8 +36,7 @@ const PaintingAndCleaning = () => {
   const review = [
     {
       id: 1,
-      user_image:
-        "https://assets.NESTATE.in/images/testimonials/ff80818155da4ee20155dd9b3e161113_2016.08.18.11.41.41.jpg",
+      user_image: "paintingAndCleaning/testimonial_daniel.webp",
       user_name: "Shubham Raibhandar",
       star: 5,
       heading: "Helps us to find good properties",
@@ -44,8 +44,7 @@ const PaintingAndCleaning = () => {
     },
     {
       id: 2,
-      user_image:
-        "https://assets.NESTATE.in/images/testimonials/ff80818155da4ee20155dd9b3e161113_2016.08.18.11.41.41.jpg",
+      user_image: "paintingAndCleaning/testimonial_daniel.webp",
       user_name: "Shubham Raibhandar",
       star: 5,
       heading: "Helps us to find good properties",
@@ -53,8 +52,7 @@ const PaintingAndCleaning = () => {
     },
     {
       id: 3,
-      user_image:
-        "https://assets.NESTATE.in/images/testimonials/ff80818155da4ee20155dd9b3e161113_2016.08.18.11.41.41.jpg",
+      user_image: "paintingAndCleaning/testimonial_daniel.webp",
       user_name: "Shubham Raibhandar",
       star: 5,
       heading: "Helps us to find good properties",
@@ -62,8 +60,7 @@ const PaintingAndCleaning = () => {
     },
     {
       id: 4,
-      user_image:
-        "https://assets.NESTATE.in/images/testimonials/ff80818155da4ee20155dd9b3e161113_2016.08.18.11.41.41.jpg",
+      user_image: "paintingAndCleaning/testimonial_daniel.webp",
       user_name: "Shubham Raibhandar",
       star: 5,
       heading: "Helps us to find good properties",
@@ -71,8 +68,7 @@ const PaintingAndCleaning = () => {
     },
     {
       id: 5,
-      user_image:
-        "https://assets.NESTATE.in/images/testimonials/ff80818155da4ee20155dd9b3e161113_2016.08.18.11.41.41.jpg",
+      user_image: "paintingAndCleaning/testimonial_daniel.webp",
       user_name: "Shubham Raibhandar",
       star: 5,
       heading: "Helps us to find good properties",
@@ -83,22 +79,19 @@ const PaintingAndCleaning = () => {
   const popularServices = [
     {
       id: 1,
-      image:
-        "https://assets.NESTATE.in/hs-new/public/Home-Services/packers-moversOptimized.png",
+      image: "paintingAndCleaning/packers-moversOptimized.png",
       title: "Packers & Movers",
       rating: "4.8",
     },
     {
       id: 2,
-      image:
-        "https://assets.NESTATE.in/hs-new/public/Home-Services/home-paintingOptimized.png",
+      image: "paintingAndCleaning/home-paintingOptimized.png",
       title: "Home Painting",
       rating: "4.9",
     },
     {
       id: 3,
-      image:
-        "https://assets.NESTATE.in/hs-new/public/Home-Services/home-renovationOptimized.png",
+      image: "paintingAndCleaning/home-renovationOptimized.png",
       title: "Home Renovation",
       rating: "4.2",
     },
@@ -116,17 +109,20 @@ const PaintingAndCleaning = () => {
         <Search />
         <Offer />
         <SecondOffer />
-        <Services title={"Home Cleaning Services"} />
+        <div className="bg-white md:px-[140px]">
+          <Services title={"Home Cleaning Services"} />
+        </div>
 
         {/* Popular Services */}
         <div className="px-6 pb-10 pt-5 bg-white mb-1.5">
           <div className="mb-3.5 text-2xl text-center font-semibold">
             Popular Services
           </div>
-          <div>
+          <div className="lg:max-w-[1280px] lg:mx-auto">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:px-16 lg:px-[140px]">
-              {popularServices.map((item) => (
+              {popularServices.map((item, i) => (
                 <div
+                  key={i}
                   className="bg-no-repeat h-40 w-full bg-cover rounded-md"
                   style={{
                     backgroundImage: `url(${item.image})`,
@@ -151,17 +147,25 @@ const PaintingAndCleaning = () => {
         </div>
 
         <VipMembership />
+
+        <InSpotlight />
+
         <Services title={"Home Repair Services"} />
         <SecondOffer title={"Relocation Simplified"} />
-        <div className="bg-[#E2EAF8] p-4 mb-1.5 md:px-[140px]">
-          <Testimonial review={review} scrollBy={400} />
+        <div className="bg-[#004953] p-4 mb-1.5 md:px-[140px]">
+          <div className="max-w-[1280px] mx-auto">
+            <Testimonial review={review} scrollBy={400} />
+          </div>
         </div>
-        <div className="bg-white md:px-[108px]">
-          <FrequentAskedQuestion
-            faq={faq}
-            headingAlign={"text-center"}
-            textColor={"text-teal-600"}
-          />
+        <div className="bg-white md:px-[140px] px-4 py-12">
+          <div className="max-w-[1280px] mx-auto">
+            <FrequentAskedQuestion
+              title={"Frequently Asked Questions"}
+              faq={faq}
+              headingAlign={"text-center"}
+              textColor={"text-teal-600"}
+            />
+          </div>
         </div>
       </div>
     </div>

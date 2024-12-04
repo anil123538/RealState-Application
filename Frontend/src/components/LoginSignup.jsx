@@ -3,6 +3,7 @@ import { IoMdCheckmark } from "react-icons/io";
 import { RxCross1 } from "react-icons/rx";
 import { defaultCountries, PhoneInput } from "react-international-phone";
 import "react-international-phone/style.css";
+import signuphome from "../assets/images/signupHome.png";
 
 const LoginSignup = () => {
   const [phone, setPhone] = useState("");
@@ -13,11 +14,7 @@ const LoginSignup = () => {
         <div className="flex md:flex-row flex-col h-[500px] relative shadow-md shadow-slate-400">
           {/* <RxCross1 className="absolute right-4 top-4 cursor-pointer text-xl" /> */}
           <div className="hidden md:flex flex-col gap-2 bg-slate-100 p-6 md:justify-center w-[42%] text-sm">
-            <img
-              src="https://assets.NESTATE.in/nb-new/public/Signup/signupHome.png"
-              alt=""
-              width="30%"
-            />
+            <img src={signuphome} alt="" width="30%" />
             <div className="font-bold">Login / Sign up</div>
             <div className="flex items-center opacity-80 text-xs">
               <IoMdCheckmark /> Zero Brokerage.
@@ -27,21 +24,6 @@ const LoginSignup = () => {
             </div>
             <div className="flex items-center opacity-80 text-xs">
               <IoMdCheckmark /> 100 Cr+ Brokerage saved monthly.
-            </div>
-          </div>
-
-          <div className="md:hidden flex flex-row-reverse md:justify-between gap-8 px-4 pt-4">
-            <img
-              src="https://assets.NESTATE.in/nb-new/public/Signup/signupHome.png"
-              alt=""
-              className="mr-0 w-20 h-20"
-            />
-            <div>
-              <h2>Login / Sign up</h2>
-              <span className="text-sm">
-                Zero Brokerage. Thousands of new listings daily. 100 Cr+
-                Brokerage saved monthly.
-              </span>
             </div>
           </div>
           <div className="flex flex-col md:h-auto h-full justify-between p-4 md:p-8 md:mt-4 md:w-7/12">
@@ -59,7 +41,7 @@ const LoginSignup = () => {
               </div>
               <button
                 type="submit"
-                className="bg-[#ff5800] hover:bg-red-600 text-white w-full px-4 py-2 rounded-md"
+                className="bg-[#ff5800] hover:bg-[#ff5800]/90 text-white w-full px-4 py-2 rounded-md"
               >
                 Continue
               </button>

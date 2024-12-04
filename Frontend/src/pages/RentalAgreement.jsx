@@ -14,19 +14,19 @@ const RentalAgreement = () => {
     {
       id: 1,
       text: "Rental Agreement + Police Intimation",
-      bgImage: "../public/rentalAgreement/Intimation.png",
+      bgImage: "rentalAgreement/pkgWithRaUpload.webp",
       offer: "Upto ₹100 off",
     },
     {
       id: 2,
       text: "Rental Agreement with Biometric",
-      bgImage: "../public/rentalAgreement/Stamp.png",
+      bgImage: "rentalAgreement/pkgWithRaMh.webp",
       offer: "Upto ₹100 off",
     },
     {
       id: 3,
       text: "Rental Agreement with E-Stamp & Notary",
-      bgImage: "../public/rentalAgreement/AdarEsign.png",
+      bgImage: "rentalAgreement/pkgWithEstamp.webp",
       offer: "Upto ₹100 off",
     },
   ];
@@ -34,35 +34,35 @@ const RentalAgreement = () => {
   const availableAddOns = [
     {
       id: 1,
-      image: "../public/rentalAgreement/legalNotaryAddon.png",
-      heading: "Extra Visit",
+      image: "rentalAgreement/extraVisit.webp",
+      heading: "Extra Visit for Biometric",
       desc: "Book additional biometric appointments in",
       bgColor: "#ffeff3",
     },
     {
       id: 2,
-      image: "../public/rentalAgreement/AdarEsign.png",
+      image: "rentalAgreement//techAssistance.webp",
       heading: "Tech Assistance",
       desc: "For distant registration via a biometric device",
       bgColor: "#f2f3ff",
     },
     {
       id: 3,
-      image: "../public/rentalAgreement/legalDeliveryAddon.png",
+      image: "rentalAgreement//legalIDVerificationAddon.webp",
       heading: "Tenant Verification",
       desc: "Verify your tenant's Identity Instantly.",
       bgColor: "#fff5e2",
     },
     {
       id: 4,
-      image: "../public/rentalAgreement/legalIDVerificationAddon.png",
-      heading: "Standard Delivery",
+      image: "rentalAgreement//legalDeliveryAddon.webp",
+      heading: "Hardcopy Delivery",
       desc: "Hard copy delivery of your agreement",
       bgColor: "rgb(255, 236, 226)",
     },
     {
       id: 5,
-      image: "../public/rentalAgreement/legalMulticopyAddon.png",
+      image: "rentalAgreement//powerOfAttorneyImg.svg",
       heading: "Power Of Attorney",
       desc: "Drafting of Power Of Attorney.",
       bgColor: "rgb(242, 246, 253)",
@@ -133,22 +133,19 @@ const RentalAgreement = () => {
   const discountCoupons = [
     {
       id: 1,
-      image:
-        "../public/rentalAgreement/nbDiscount.svg",
+      image: "rentalAgreement/nbDiscount.svg",
       disPercent: "10% NB cash discount",
       upto: "Upto ₹250",
     },
     {
       id: 2,
-      image:
-        "../public/rentalAgreement/hdfcCoupon.png",
+      image: "rentalAgreement/hdfcCoupon.png",
       disPercent: "5% HDFC bank",
       upto: "Upto ₹1500",
     },
     {
       id: 3,
-      image:
-        "../public/rentalAgreement/amazonCoupon.png",
+      image: "rentalAgreement/amazonCoupon.png",
       disPercent: "₹100 Amazon pay discount",
       upto: "On spend of ₹2000",
     },
@@ -232,7 +229,7 @@ const RentalAgreement = () => {
 
   return (
     <>
-      <div className="bg-gradient-to-b from-[#1f235b] from-[410px] md:from-[450px] to-[#f0f0f0] to-[380px] md:py-10">
+      <div className="bg-gradient-to-b from-[#004953] from-[410px] md:from-[450px] to-[#f0f0f0] to-[380px] md:py-10">
         <div className="w-[98%] xl:w-9/12 mx-auto">
           {/* online rent Agreement */}
           <div className="text-white">
@@ -243,11 +240,10 @@ const RentalAgreement = () => {
               <span className="opacity-70 text-xs d-flex align-items-center gap-1">
                 Now available in 150+ cities in india
                 <img
-                  src="../public/rentalAgreement/legalPageCity.gif"
+                  src="rentalAgreement/legalPageCity.gif"
                   className="gif-image"
                   alt=""
                 />
-                
               </span>
 
               <div className="flex md:hidden flex-col gap-2 text-sm mt-10">
@@ -277,10 +273,10 @@ const RentalAgreement = () => {
                 </div>
               </div>
 
-              <div className="bg-white/10 w-fit p-2 rounded-md flex  gap-32 mt-4">
+              <div className="bg-[#F5FFFA]/10 w-fit p-2 rounded-md flex  gap-32 mt-4">
                 <div className="flex">
                   <img
-                    src="../public/rentalAgreement/renew.svg"
+                    src="rentalAgreement/renew.svg"
                     alt=""
                     className="w-10"
                   />
@@ -298,7 +294,7 @@ const RentalAgreement = () => {
                   </div>
                 </div>
                 <img
-                  src="https://assets.NESTATE.in/hs-new/public/LegalServiceNew/leftAero.svg"
+                  src="rentalAgreement/leftAero.svg"
                   alt=""
                   className="m-0"
                 />
@@ -316,7 +312,7 @@ const RentalAgreement = () => {
                 {selectARentAgreement.map((item, index) => (
                   <div
                     key={index}
-                    className={`rounded-3xl bg-white text-black md:w-60 w-40 flex-grow md:h-80 h-60 flex flex-col justify-between py-4 shadow-lg`}
+                    className={`rounded-3xl bg-[#F5FFFA] text-black md:w-60 w-40 flex-grow md:h-80 h-60 flex flex-col justify-between py-4 shadow-lg`}
                     style={{
                       backgroundImage: `url(${item.bgImage})`,
                       backgroundRepeat: "no-repeat",
@@ -330,16 +326,16 @@ const RentalAgreement = () => {
                     <div className="flex bg-gradient-to-r from-green-700/40 p-2 justify-between">
                       <div className="flex w-full items-center">
                         <img
-                          src="https://assets.NESTATE.in/hs-new/public/LegalServiceNew/offuptoIcon.svg"
+                          src="rentalAgreement/offuptoIcon.svg"
                           alt=""
                           className="mx-2 w-6"
                         />
-                        <div className="text-[#004958] font-medium md:text-xl text-sm">
+                        <div className="text-[#004958] font-medium md:text-base text-sm">
                           {item.offer}
                         </div>
                       </div>
                       <img
-                        src="https://assets.NESTATE.in/hs-new/public/LegalServiceNew/leftAeroPkg.svg"
+                        src="rentalAgreement/leftAeroPkg.svg"
                         alt=""
                         className="m-0 w-6"
                       />
@@ -369,7 +365,7 @@ const RentalAgreement = () => {
           </div>
 
           {/* Available Add ons */}
-          <div className="md:p-8 p-4 bg-white md:rounded-2xl md:w-11/12 mx-auto md:my-10 mb-10">
+          <div className="md:p-8 p-4 bg-[#F5FFFA] md:rounded-2xl md:w-11/12 mx-auto md:my-10 mb-10">
             <div className="font-semibold md:text-2xl text-lg mb-8">
               Available Add ons
             </div>
@@ -407,7 +403,7 @@ const RentalAgreement = () => {
                         .map((item) => (
                           <div
                             key={item.id}
-                            className="cursor-pointer bg-white p-4 w-80 rounded-2xl"
+                            className="cursor-pointer bg-[#F5FFFA] p-4 w-80 rounded-2xl"
                           >
                             <div className="font-medium text-lg mt-2">
                               {item.heading}
@@ -439,7 +435,7 @@ const RentalAgreement = () => {
           </div>
 
           {/* How it works */}
-          <div className="p-8 bg-white md:rounded-2xl md:w-11/12 mx-auto w-full">
+          <div className="p-8 bg-[#F5FFFA] md:rounded-2xl md:w-11/12 mx-auto w-full">
             <div className="font-semibold text-lg md:text-3xl mb-8">
               How it works
             </div>
@@ -465,7 +461,7 @@ const RentalAgreement = () => {
       </div>
 
       {/* Select to Compare Agreement */}
-      <div className="text-white text-center py-10 bg-[#121a45]">
+      <div className="text-white text-center py-10 bg-[#004953]">
         <div className="xl:w-[90%] w-[96%] mx-auto">
           <div className="font-medium md:text-2xl text-lg text-left md:text-center">
             Select to Compare Agreement
@@ -476,10 +472,10 @@ const RentalAgreement = () => {
             {compareAgreement.map((item) => (
               <div
                 key={item.id}
-                className={`cursor-pointer focus:bg-white p-3 rounded-xl md:text-lg text-sm flex items-center md:block font-medium ${
+                className={`cursor-pointer focus:bg-[#F5FFFA] p-3 rounded-xl md:text-lg text-sm flex items-center md:block font-medium ${
                   selected === item.id
-                    ? "md:bg-white/15 bg-white text-black md:text-white"
-                    : "md:bg-white/0 bg-white/15"
+                    ? "md:bg-[#F5FFFA]/15 bg-[#F5FFFA] text-black md:text-white"
+                    : "md:bg-[#F5FFFA]/0 bg-[#F5FFFA]/15"
                 }`}
                 onClick={() => setSelected(item.id)}
               >
@@ -489,7 +485,7 @@ const RentalAgreement = () => {
                     className="md:flex hidden align-middle gap-2 text-base font-light"
                     key={index}
                   >
-                    <FaCheck className="mt-1  text-[#004958]" />
+                    <FaCheck className="mt-1  text-green-600" />
                     {itemDetail}
                   </div>
                 ))}
@@ -498,7 +494,7 @@ const RentalAgreement = () => {
           </div>
 
           {compareAgreement.map((item) => (
-            <div className="bg-white md:hidden text-black mt-4 rounded-md">
+            <div className="bg-[#F5FFFA] md:hidden text-black mt-4 rounded-md">
               {selected === item.id ? (
                 <div className="p-4">
                   {Object.values(item.details).map((itemDetail, index) => (
@@ -506,7 +502,7 @@ const RentalAgreement = () => {
                       className="flex text-left gap-2 w-full text-sm font-light"
                       key={index}
                     >
-                      <FaCheck className="mt-1 text-[teal-600]" />
+                      <FaCheck className="mt-1 text-teal-600" />
                       {itemDetail} {/* Display the itemDetail */}
                     </div>
                   ))}
@@ -518,7 +514,7 @@ const RentalAgreement = () => {
             <button className="md:px-20 px-10 py-3 border border-white border-opacity-80 rounded-md">
               Preview
             </button>
-            <button className="md:px-20 px-10 py-3 bg-white font-medium text-lg rounded-md text-black flex items-center gap-2">
+            <button className="md:px-20 px-10 py-3 bg-[#F5FFFA] font-medium text-lg rounded-md text-black flex items-center gap-2">
               Proceed <FaChevronRight />
             </button>
           </div>
@@ -528,25 +524,25 @@ const RentalAgreement = () => {
       <div className="bg-[#f0f0f0] pb-10">
         <div className=" xl:w-9/12 mx-auto md:w-[98%] w-full flex flex-col gap-8">
           {/* Discount Coupons */}
-          <div className="bg-white rounded-xl md:p-8 md:w-[90%] mt-10 mx-auto opacity-80 w-full py-8">
+          <div className="bg-[#F5FFFA] rounded-xl md:p-8 md:w-[90%] mt-10 mx-auto opacity-80 w-full py-8">
             <div className="md:text-3xl text-lg font-semibold px-4">
               Discount Coupons
             </div>
             <div className="text-xs px-4">
               Apply Coupon at the summary Screen
             </div>
-            <div className="flex justify-between gap-4 mt-10 flex-nowrap overflow overflow-x-scroll">
+            <div className="flex justify-between gap-4 mt-10 flex-nowrap overflow overflow-x-scroll px-4">
               {discountCoupons.map((item, index) => (
                 <div
                   key={index}
-                  className="border border-zinc-300 shadow-md p-4 rounded-xl flex min-w-60 items-center h-20 md:h-auto gap-4"
+                  className="border border-zinc-300 shadow-md p-4 rounded-xl flex flex-row md:flex-col min-w-60 md:w-full items-center h-20 md:items-start md:h-auto gap-2"
                 >
-                  <div className="bg-zinc-200 p-2 md:m-auto w-16 flex items-center justify-center rounded-md">
-                    <img src={item.image} alt="" className="m-0 w-100 h-100" />
+                  <div className="bg-zinc-200 p-2 w-10 flex items-center justify-center rounded-md">
+                    <img src={item.image} alt="" className="m-0 w-10" />
                   </div>
-                  <hr className="m-2 opacity-80 hidden md:block text-zinc-300" />
+                  <hr className="m-0 opacity-80 hidden md:block text-zinc-300 w-full" />
                   <div>
-                    <div className="font-semibold md:text-lg text-sm">
+                    <div className="font-medium md:text-base text-sm">
                       {item.disPercent}
                     </div>
                     <div className="opacity-70 text-xs">{item.upto}</div>
@@ -557,8 +553,8 @@ const RentalAgreement = () => {
           </div>
 
           {/* NESTATE Promise */}
-          <div className="bg-white rounded-xl p-8 md:w-[90%] mx-auto">
-            <div className="md:text-3xl text-xl font-medium opacity-80">
+          <div className="bg-[#F5FFFA] rounded-xl p-8 md:w-[90%] mx-auto">
+            <div className="md:text-2xl text-xl font-semibold opacity-80">
               NESTATE Promise
             </div>
             <div className="flex flex-col-reverse md:flex-row justify-between mt-10">
@@ -566,13 +562,13 @@ const RentalAgreement = () => {
                 <div className="flex gap-2">
                   <div>
                     <img
-                      src="https://assets.NESTATE.in/hs-new/public/LegalServiceNew/lowestPrice.svg"
+                      src="rentalAgreement/lowestPrice.svg"
                       alt=""
                       className="m-0"
                     />
                   </div>
                   <div>
-                    <div className="md:text-lg text-sm text-blue font-semibold">
+                    <div className="md:text-lg text-sm text-[#004953] font-semibold">
                       Guaranteed Lowest Prices
                     </div>
                     <div className="text-xs">
@@ -583,13 +579,13 @@ const RentalAgreement = () => {
                 <div className="flex gap-4">
                   <div>
                     <img
-                      src="https://assets.NESTATE.in/hs-new/public/LegalServiceNew/legallyValid.svg"
+                      src="rentalAgreement/legallyValid.svg"
                       alt=""
                       className="m-0"
                     />
                   </div>
                   <div>
-                    <div className="md:text-lg text-sm text-blue font-semibold">
+                    <div className="md:text-lg text-sm text-[#004953] font-semibold">
                       Legally Valid
                     </div>
                     <div className="text-xs">
@@ -601,13 +597,13 @@ const RentalAgreement = () => {
                 <div className="flex gap-4">
                   <div>
                     <img
-                      src="https://assets.NESTATE.in/hs-new/public/LegalServiceNew/convenient.svg"
+                      src="rentalAgreement/convenient.svg"
                       alt=""
                       className="m-0"
                     />
                   </div>
                   <div>
-                    <div className="md:text-lg text-sm text-blue font-semibold">
+                    <div className="md:text-lg text-sm text-[#004953] font-semibold">
                       100% Convenience. 0% Stress.
                     </div>
                     <div className="text-xs">
@@ -628,11 +624,11 @@ const RentalAgreement = () => {
           </div>
 
           {/* Other legal services that we offer */}
-          <div className="bg-white rounded-xl px-8 py-12 md:w-[90%] mx-auto w-full">
+          <div className="bg-[#F5FFFA] rounded-xl px-8 py-12 md:w-[90%] mx-auto w-full">
             <div className="font-medium opacity-80 md:text-2xl text-lg">
               Other legal services that we offer
             </div>
-            <div className="flex md:gap-8 gap-4 overflow-x-scroll flex-nowrap mt-10">
+            <div className="flex md:gap-8 gap-4 overflow-x-scroll flex-nowrap mt-10 no-scrollbar">
               {[...otherLegalServices, ...otherLegalServices].map(
                 (item, index) => (
                   <Link key={index}>
@@ -666,7 +662,7 @@ const RentalAgreement = () => {
           </div>
 
           {/* Customer Reviews */}
-          <div className="bg-white rounded-xl px-8 py-12 md:w-[90%] mx-auto w-full">
+          <div className="bg-[#F5FFFA] rounded-xl px-8 py-12 md:w-[90%] mx-auto w-full">
             <div className="md:text-3xl text-lg font-medium">
               Customer Reviews
             </div>
@@ -682,7 +678,7 @@ const RentalAgreement = () => {
                 4.5 rating out of 4,500 Reviews
               </div>
             </div>
-            <div className="flex gap-4 mt-10 overflow-x-auto overscroll-none">
+            <div className="flex gap-4 mt-10 overflow-x-auto no-scrollbar">
               {[...customerReviews, ...customerReviews, ...customerReviews].map(
                 (item, index) => (
                   <div
@@ -694,10 +690,7 @@ const RentalAgreement = () => {
                         {item.profile}
                       </div>
                       <div className="font-medium">{item.name}</div>
-                      <img
-                        src="https://assets.NESTATE.in/hs-new/public/Common/verifiedImg.svg"
-                        alt=""
-                      />
+                      <img src="rentalAgreement/verifiedImg.svg" alt="" />
                     </div>
                     <div className="text-sm">
                       {isExpanded
@@ -716,12 +709,16 @@ const RentalAgreement = () => {
           </div>
 
           {/* Frequently Asked Questions */}
-          <div className="md:w-[90%] mx-auto">
-            <FrequentAskedQuestion faq={faq} textColor={"text-blue"} />
+          <div className="md:w-[90%] w-full bg-[#F5FFFA] px-8 py-12 rounded-xl mx-auto">
+            <FrequentAskedQuestion
+              title={"Frequently Asked Questions"}
+              faq={faq}
+              textColor={"text-[#004953]"}
+            />
           </div>
 
           {/* final text */}
-          <div className="bg-white rounded-xl px-8 py-12 md:w-[90%] mx-auto text-[12.5px]">
+          <div className="bg-[#F5FFFA] rounded-xl px-8 py-12 md:w-[90%] mx-auto text-[12.5px]">
             <h2 className="md:text-2xl text-lg font-semibold md:font-normal">
               Creation of Rental Agreements in Bangalore
             </h2>

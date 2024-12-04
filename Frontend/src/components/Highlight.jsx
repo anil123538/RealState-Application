@@ -24,12 +24,12 @@ const Highlight = ({ data, click }) => {
             <div
               key={index}
               onClick={click}
-              className="flex p-3 gap-2 flex-shrink-0 w-full cursor-pointer"
+              className="flex p-3 gap-2 flex-shrink-0 w-full cursor-pointer" style={{height: "90px"}}
             >
               <div className="w-3/12">
-                <img src={img} alt="dhamaka" />
+                <img src={img} alt="dhamaka" style={{width: "50px"}} />
               </div>
-              <div className="text-sm w:9/12">
+              <div className="text-sm w:9/12" style={{marginLeft: "-25px"}}>
                 <h3 className="font-semibold text-base">{title}</h3>
                 <button className="text-xs capitalize text-blue">
                   view all offers

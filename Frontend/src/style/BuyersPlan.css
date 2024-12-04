@@ -46,32 +46,6 @@
     cursor: pointer;
 }
 
-.phone-input {
-    width: 100%;
-    padding: 12px 20px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 14px;
-    box-sizing: border-box;
-  }
-  
-  .phone-input input {
-    font-size: 16px;
-    padding-left: 10px;
-  }
-  
-  /* Adjust flag size */
-  .phone-input .PhoneInputCountry {
-    height: 25px;  /* Adjust flag container height */
-    width: 30px;   /* Adjust flag container width */
-  }
-  
-  .phone-input .PhoneInputCountry img {
-    width: 20px;   /* Adjust image width */
-    height: 20px;  /* Adjust image height */
-    object-fit: contain; /* Make sure the flag scales proportionally */
-  }
-
   .line-dashed {
     width: 2px; /* Thickness of the line */
     height: 50px; /* Height of the line */

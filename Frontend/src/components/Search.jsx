@@ -108,7 +108,7 @@ const Search = ({ selectedOption, setSelectedOption }) => {
                 <>
                   <Link to="/home-interiors" className="flex items-center">
                     <img
-                      src="https://assets.NESTATE.in/nob-common/HomeInteriorHome.svg"
+                      src="home/HomeInteriorHome.svg"
                       alt=""
                       className="mr-2"
                     />
@@ -119,7 +119,7 @@ const Search = ({ selectedOption, setSelectedOption }) => {
                 <>
                   <Link to="rental-agreement" className="flex items-center">
                     <img
-                      src="https://assets.NESTATE.in/nb-new/public/Home/RAIcon.svg"
+                      src="home/RAIcon.svg"
                       alt=""
                       className="mr-2"
                     />
@@ -133,7 +133,7 @@ const Search = ({ selectedOption, setSelectedOption }) => {
               {selectedOption === "Buy" ? (
                 <>
                   <img
-                    src="	https://assets.NESTATE.in/nob-common/HomeInteriorDeliveryHome.svg"
+                    src="	home/HomeInteriorDeliveryHome.svg"
                     alt=""
                     className="mr-2"
                   />
@@ -142,7 +142,7 @@ const Search = ({ selectedOption, setSelectedOption }) => {
               ) : (
                 <>
                   <img
-                    src="	https://assets.NESTATE.in/nb-new/public/Home/deliveryIcon.svg"
+                    src="	home/deliveryIcon.svg"
                     alt=""
                     className="mr-2"
                   />
@@ -501,7 +501,10 @@ const Search = ({ selectedOption, setSelectedOption }) => {
             </span>
             <hr className="border opacity-20  w-20" />
           </div>
-          <button className="px-4 py-2.5 w-fit hover:bg-teal-700" style={{backgroundColor:"#004953"}}>
+          <button
+            className="px-4 py-2.5 w-fit hover:bg-teal-700"
+            style={{ backgroundColor: "#004953" }}
+          >
             <Link to="/post-property" className="text-white">
               Post Free Property Ad
             </Link>

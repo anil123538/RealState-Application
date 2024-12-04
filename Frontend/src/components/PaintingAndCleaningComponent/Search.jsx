@@ -26,7 +26,7 @@ const Search = () => {
 
   return (
     <div>
-      <div className="bg-[#F0F4FC] mb-1.5">
+      <div className="bg-[#004953] mb-1.5">
         <div className="flex relative md:w-6/12 items-center mx-auto pt-6 px-4 md:px-0">
           <CiSearch className="absolute md:left-2 left-6 text-2xl" />
           <input
@@ -39,8 +39,8 @@ const Search = () => {
           <FaMicrophone className="absolute md:right-2 right-6 text-2xl text-black/60" />
         </div>
 
-        <div className="flex md:flex-row flex-col md:px-[140px] py-6 justify-between max-w-[1280px] mx-auto">
-          <div className="grid grid-cols-4 items-center h-fit">
+        <div className="flex md:flex-row flex-col md:px-[140px] py-6 justify-between 2xl:max-w-[1280px] gap-4 items-center mx-auto">
+          <div className="grid grid-cols-4 gap-8 px-4 md:px-0 md:gap-1 items-center h-fit">
             {topData.map((item, i) => (
               <div
                 key={i}
@@ -54,17 +54,18 @@ const Search = () => {
                   alt=""
                   className="m-0 w-14 rounded-full bg-white"
                 />
-                <div className="text-xs w-10/12">{item.title}</div>
+                <div className="text-xs text-white w-10/12">{item.title}</div>
               </div>
             ))}
           </div>
-          <div className="mx-auto pt-5 md:pt-0 w-full md:w-auto px-4 ">
-            <img
-              src="https://assets.NESTATE.in/hs-new/public/Home/newServicesIcons/shimmerLazyLoad.gif"
-              alt=""
-              className="m-0 w-full md:w-[350px] h-[250px]"
-            />
-          </div>
+          <video
+            src="videos/Diwali_cleaning.mp4"
+            alt="video"
+            autoPlay
+            loop
+            controls="play"
+            className="w-full p-4 md:w-6/12 rounded-lg"
+          />
         </div>
       </div>
     </div>

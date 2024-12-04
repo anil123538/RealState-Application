@@ -4,19 +4,19 @@ function PostPropertyFeature() {
 
   const brokerFeature = [
     {
-      img: "https://assets.NESTATE.in/static/img/listing/icon1.png",
+      img: "https://assets.nobroker.in/static/img/listing/icon1.png",
       title: "No Calls From Brokers",
       content: "Your information is kept confidential and you no longer have to worry about call from brokers.",
     },
     {
-      img: "https://assets.NESTATE.in/static/img/listing/icon2.png",
+      img: "https://assets.nobroker.in/static/img/listing/icon2.png",
       title: "Verified Tenants",
       content: "Thanks to our technology, only verified and genuine tenants can call you.",
     },
     {
-      img: "https://assets.NESTATE.in/static/img/listing/icon3.png",
+      img: "https://assets.nobroker.in/static/img/listing/icon3.png",
       title: "Save Brokerage",
-      content: "NESTATEs means NESTATEage! Buy yourself a gift",
+      content: "NESTATE means nobrokerage! Buy yourself a gift",
     },
   ];
 

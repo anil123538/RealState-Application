@@ -38,8 +38,7 @@ form input:focus {
 }
 
 .rent-receipt {
-  background: url(https://assets.NESTATE.in/nb-new/public/RentoPay/landing_features_bgr.png)
-    no-repeat center center;
+  background-color: #004958;
   background-size: cover;
   color: #fff;
   padding: 35px 20px;
@@ -130,7 +129,7 @@ ol li {
 }
 
 .Rentreceiptfaq .faq-question.active {
-  color: #009587;
+  color: #004958;
 }
 
 .Rentreceiptfaq .faq-icon {
