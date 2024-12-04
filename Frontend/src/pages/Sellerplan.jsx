@@ -1,6 +1,12 @@
 import React from "react";
 import "../style/Sellerplan.css";
 import SellerplanFAQ from "../components/SellerplanFAQ";
+import pic1 from "../assets/images/ownerplan_sprite_1.png";
+import pic2 from "../assets/images/ownerplan_sprite_2.png";
+import pic3 from "../assets/images/ownerplan_sprite_4.png";
+import pic4 from "../assets/images/ownerplan_sprite_5.png";
+import pic5 from "../assets/images/ownerplan_sprite_6.png";
+import pic6 from "../assets/images/ownerplan_sprite_7.png";
 
 function Sellerplan() {
   return (
@@ -45,7 +51,7 @@ function Sellerplan() {
           >
             <img
               alt="getTenants"
-              src="https://assets.NESTATE.in/static/img/owner_plan_icons/wallet.svg"
+              src="https://assets.nobroker.in/static/img/owner_plan_icons/wallet.svg"
             />
             Get Buyer Faster &amp; Save Brokerage
           </div>
@@ -61,7 +67,7 @@ function Sellerplan() {
           >
             <img
               alt="propertyKeys"
-              src="https://assets.NESTATE.in/static/img/owner_plan_icons/house.svg"
+              src="https://assets.nobroker.in/static/img/owner_plan_icons/house.svg"
             />
             <p>
               Leave your <b>House </b>
@@ -69,569 +75,592 @@ function Sellerplan() {
             </p>
           </div>
         </div>
-
-        <div className="row">
-          <div className="col-lg-3">
-            <div className="">Plans and Pricing</div>
-            <div className="">
-              <div className="d-flex">
-                <img
-                  style={{ width: "20px", height: "auto" }}
-                  alt="plansIcons"
-                  src="https://assets.NESTATE.in/static/img/owner_plan_icons/refund.png"
-                />
-                <div className=""> Guaranteed buyers or Moneyback</div>
-              </div>
-              <div className="d-flex">
-                <img
-                  style={{ width: "20px", height: "auto" }}
-                  alt="plansIcons"
-                  src="https://assets.NESTATE.in/static/img/owner_plan_icons/assistant.png"
-                />
-                <div className=""> Personal Field assistant</div>
-              </div>
-              <div className="d-flex">
-                <img
-                  style={{ width: "20px", height: "auto" }}
-                  alt="plansIcons"
-                  src="https://assets.NESTATE.in/static/img/owner_plan_icons/promotion.png"
-                />
-                <div className="">Property promotion on site</div>
-              </div>
-              <div className="d-flex">
-                <img
-                  style={{ width: "20px", height: "auto" }}
-                  alt="p"
-                  src="https://assets.NESTATE.in/static/img/owner_plan_icons/rm.png"
-                />
-                <div className=""> Relationship Manager (RM)</div>
-              </div>
-              <div className="d-flex">
-                <img
-                  style={{ width: "20px", height: "auto" }}
-                  alt="plansIcons"
-                  src="https://assets.NESTATE.in/static/img/owner_plan_icons/marketing.png"
-                />
-                <div className=""> Facebook Marketing Of Property</div>
-              </div>
-              <div className="d-flex">
-                <img
-                  style={{ width: "20px", height: "auto" }}
-                  alt="plansIcons"
-                  src="https://assets.NESTATE.in/static/img/owner_plan_icons/privacy.png"
-                />
-                <div className=""> Privacy of your phone number</div>
-              </div>
-              <div className="d-flex">
-                <img
-                  style={{ width: "20px", height: "auto" }}
-                  alt="plansIcons"
-                  src="https://assets.NESTATE.in/static/img/owner_plan_icons/showing-interest.png"
-                />
-                <div className=""> Showing property on your behalf</div>
-              </div>
-              <div className="d-flex">
-                <img
-                  style={{ width: "20px", height: "auto" }}
-                  alt="plansIcons"
-                  src="https://assets.NESTATE.in/static/img/owner_plan_icons/photoshoot.png"
-                />
-                <div className=""> Photoshoot of your property</div>
-              </div>
-              <div className="d-flex">
-                <img
-                  style={{ width: "20px", height: "auto" }}
-                  alt="plansIcons"
-                  src="https://assets.NESTATE.in/static/img/owner_plan_icons/validity.png"
-                />
-                <div className=""> Plan Validity</div>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-9 d-flex">
-            <div className="col">
-              <div className="">
-                <div className="">Relax Plan</div>
-                <div className="">
-                  <span>₹7,499 </span>
+        
+        <div className="d-flex flex-column align-items-center">
+          <div
+            className="row plantable "
+            style={{ border: "1px solid #e2e2e2", width: "90%" }}
+          >
+            <div
+              className="col-lg-3"
+              style={{ borderRight: "1px solid #e2e2e2" }}
+            >
+              <div className="title">Plans and Pricing</div>
+              <div className="tablerow" style={{ fontSize: "14px" }}>
+                <div className="d-flex firstrow">
+                  <img
+                    style={{ width: "30px", height: "30px" }}
+                    alt="plansIcons"
+                    src="https://assets.nobroker.in/static/img/owner_plan_icons/refund.png"
+                  />
+                  <div className=""> Guaranteed buyers or Moneyback</div>
                 </div>
-                <div>
-                  <span className="">
-                    <span
-                      data-toggle="dropdown"
-                      className=""
-                      id="gstFreedom"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                    >
-                      <span className="">
-                        +18% GST
-                        <img
-                          src="https://assets.NESTATE.in/nb-new/public/MaterialIcons/Help.png"
-                          alt=""
-                          className="ml-1 inline-block w-5 h-5"
-                        />
-                      </span>
-                      <div
-                        aria-labelledby="dLabel"
-                        className="dropdown-menu price-breakup-dropdown"
-                      >
-                        <div className="">
-                          <div className="">Plan Price</div>
-                          <div className="">₹ 7,499</div>
-                        </div>
-                        <div className="">
-                          <div className="">GST @ 18%</div>
-                          <div className="">₹ 1,349.82</div>
-                        </div>
-                        <div className="">
-                          <div className="heading-5 ">Amount Payable</div>
-                          <div className="heading-5 ">₹ 8,848.82</div>
-                        </div>
-                      </div>
-                    </span>
-                  </span>
+                <div className="d-flex secondrow">
+                  <img
+                    style={{ width: "30px", height: "30px" }}
+                    alt="plansIcons"
+                    src="https://assets.nobroker.in/static/img/owner_plan_icons/assistant.png"
+                  />
+                  <div className=""> Personal Field assistant</div>
                 </div>
-                <div className="">
-                  <button className=" btn btn-default" id="" type="button">
-                    <span className="flex items-center justify-center">
-                      Subscribe
-                    </span>
-                  </button>
+                <div className="d-flex comrow">
+                  <img
+                    style={{ width: "30px", height: "30px" }}
+                    alt="plansIcons"
+                    src="https://assets.nobroker.in/static/img/owner_plan_icons/promotion.png"
+                  />
+                  <div className="">Property promotion on site</div>
                 </div>
-                <div className="">
-                  <ul>
-                    <li>Get Buyers Quickly. Save Lakhs on Brokerage.</li>
-                  </ul>
-                  <div></div>
+                <div className="d-flex comrow">
+                  <img
+                    style={{ width: "30px", height: "30px" }}
+                    alt="p"
+                    src="https://assets.nobroker.in/static/img/owner_plan_icons/rm.png"
+                  />
+                  <div className=""> Relationship Manager (RM)</div>
                 </div>
-              </div>
-              <div className="">
-                <div className="">
-                  <div className=""></div>
+                <div className="d-flex comrow">
+                  <img
+                    style={{ width: "30px", height: "30px" }}
+                    alt="plansIcons"
+                    src="https://assets.nobroker.in/static/img/owner_plan_icons/marketing.png"
+                  />
+                  <div className=""> Facebook Marketing Of Property</div>
                 </div>
-                <div className="">
-                  <div className=""></div>
+                <div className="d-flex comrow">
+                  <img
+                    style={{ width: "30px", height: "30px" }}
+                    alt="plansIcons"
+                    src="https://assets.nobroker.in/static/img/owner_plan_icons/privacy.png"
+                  />
+                  <div className=""> Privacy of your phone number</div>
                 </div>
-                <div className="">
-                  <div className="">
-                    <img
-                      src="https://assets.NESTATE.in/nb-new/public/MaterialIcons/checkColor.svg"
-                      alt=""
-                    />
-                  </div>
+                <div className="d-flex comrow">
+                  <img
+                    style={{ width: "30px", height: "30px" }}
+                    alt="plansIcons"
+                    src="https://assets.nobroker.in/static/img/owner_plan_icons/showing-interest.png"
+                  />
+                  <div className=""> Showing property on your behalf</div>
                 </div>
-                <div className="">
-                  <div className="">
-                    <img
-                      src="https://assets.NESTATE.in/nb-new/public/MaterialIcons/checkColor.svg"
-                      alt=""
-                    />
-                  </div>
+                <div className="d-flex comrow">
+                  <img
+                    style={{ width: "30px", height: "30px" }}
+                    alt="plansIcons"
+                    src="https://assets.nobroker.in/static/img/owner_plan_icons/photoshoot.png"
+                  />
+                  <div className=""> Photoshoot of your property</div>
                 </div>
-                <div className="">
-                  <div className="">
-                    <img
-                      src="https://assets.NESTATE.in/nb-new/public/MaterialIcons/checkColor.svg"
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <div className="">
-                  <div className="">
-                    <img
-                      src="https://assets.NESTATE.in/nb-new/public/MaterialIcons/checkColor.svg"
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <div className="">
-                  <div className=""></div>
-                </div>
-                <div className="">
-                  <div className=""></div>
-                </div>
-                <div className="">
-                  <div className="">3 Months</div>
+                <div className="d-flex comrow">
+                  <img
+                    style={{ width: "30px", height: "30px" }}
+                    alt="plansIcons"
+                    src="https://assets.nobroker.in/static/img/owner_plan_icons/validity.png"
+                  />
+                  <div className=""> Plan Validity</div>
                 </div>
               </div>
             </div>
 
-            <div className="col">
-              <div className="">
-                <div className="">Relax Plan</div>
-                <div className="">
-                  <span>₹7,499 </span>
-                </div>
-                <div>
-                  <span className="">
-                    <span
-                      data-toggle="dropdown"
-                      className=""
-                      id="gstFreedom"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                    >
-                      <span className="">
-                        +18% GST
-                        <img
-                          src="https://assets.NESTATE.in/nb-new/public/MaterialIcons/Help.png"
-                          alt=""
-                          className="ml-1 inline-block w-5 h-5"
-                        />
-                      </span>
-                      <div
-                        aria-labelledby="dLabel"
-                        className="dropdown-menu price-breakup-dropdown"
+            <div className="col-lg-9 d-flex">
+              <div
+                className="col fstcol"
+                style={{ borderRight: "1px solid #e2e2e2" }}
+              >
+                <div className="coltitle">
+                  <div className="">Relax Plan</div>
+                  <div className="">
+                    <span>₹7,499 </span>
+                  </div>
+                  <div>
+                    <span className="">
+                      <span
+                        data-toggle="dropdown"
+                        className=""
+                        id="gstFreedom"
+                        aria-haspopup="true"
+                        aria-expanded="false"
                       >
-                        <div className="">
-                          <div className="">Plan Price</div>
-                          <div className="">₹ 7,499</div>
+                        <span className="">
+                          +18% GST
+                          <img
+                            src="https://assets.nobroker.in/nb-new/public/MaterialIcons/Help.png"
+                            alt=""
+                            className="ml-1 inline-block w-5 h-5"
+                          />
+                        </span>
+                        <div
+                          aria-labelledby="dLabel"
+                          className="dropdown-menu price-breakup-dropdown"
+                        >
+                          <div className="">
+                            <div className="">Plan Price</div>
+                            <div className="">₹ 7,499</div>
+                          </div>
+                          <div className="">
+                            <div className=" ">GST @ 18%</div>
+                            <div className="">₹ 1,349.82</div>
+                          </div>
+                          <div className="">
+                            <div className="heading-5 ">Amount Payable</div>
+                            <div className="heading-5">₹ 8,848.82</div>
+                          </div>
                         </div>
-                        <div className="">
-                          <div className="">GST @ 18%</div>
-                          <div className="">₹ 1,349.82</div>
-                        </div>
-                        <div className="">
-                          <div className="heading-5 ">Amount Payable</div>
-                          <div className="heading-5 ">₹ 8,848.82</div>
-                        </div>
-                      </div>
+                      </span>
                     </span>
-                  </span>
+                  </div>
+                  <div className="">
+                    <button
+                      className=" btn text-white"
+                      id=""
+                      type="button"
+                      style={{ backgroundColor: "#004958" }}
+                    >
+                      <span className="flex items-center justify-center">
+                        Subscribe
+                      </span>
+                    </button>
+                  </div>
+                  <div className="">
+                    <ul>
+                      <li>Get Buyers Quickly. Save Lakhs on Brokerage.</li>
+                    </ul>
+                    {/* <div></div> */}
+                  </div>
                 </div>
-                <div className="">
-                  <button className=" btn btn-default" id="" type="button">
-                    <span className="flex items-center justify-center">
-                      Subscribe
-                    </span>
-                  </button>
-                </div>
-                <div className="">
-                  <ul>
-                    <li>Get Buyers Quickly. Save Lakhs on Brokerage.</li>
-                  </ul>
-                  <div></div>
+                <div className="" style={{ fontSize: "14px" }}>
+                  <div className="">
+                    <div className=""></div>
+                  </div>
+                  <div className="">
+                    <div className=""></div>
+                  </div>
+                  <div className="">
+                    <div className="">
+                      <img
+                        src="https://assets.nobroker.in/nb-new/public/MaterialIcons/checkColor.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div className="">
+                    <div className="">
+                      <img
+                        src="https://assets.nobroker.in/nb-new/public/MaterialIcons/checkColor.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div className="">
+                    <div className="">
+                      <img
+                        src="https://assets.nobroker.in/nb-new/public/MaterialIcons/checkColor.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div className="">
+                    <div className="">
+                      <img
+                        src="https://assets.nobroker.in/nb-new/public/MaterialIcons/checkColor.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div className="">
+                    <div className=""></div>
+                  </div>
+                  <div className="">
+                    <div className=""></div>
+                  </div>
+                  <div className="">
+                    <div className="">3 Months</div>
+                  </div>
                 </div>
               </div>
-              <div className="">
-                <div className="">
-                  <div className=""></div>
-                </div>
-                <div className="">
-                  <div className="">
-                    <img
-                      src="https://assets.NESTATE.in/nb-new/public/MaterialIcons/checkColor.svg"
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <div className="">
-                  <div className="">
-                    <img
-                      src="https://assets.NESTATE.in/nb-new/public/MaterialIcons/checkColor.svg"
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <div className="">
-                  <div className="">
-                    <img
-                      src="https://assets.NESTATE.in/nb-new/public/MaterialIcons/checkColor.svg"
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <div className="">
-                  <div className="">
-                    <img
-                      src="https://assets.NESTATE.in/nb-new/public/MaterialIcons/checkColor.svg"
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <div className="">
-                  <div className="">
-                    <img
-                      src="https://assets.NESTATE.in/nb-new/public/MaterialIcons/checkColor.svg"
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <div className="">
-                  <div className="">
-                    <img
-                      src="https://assets.NESTATE.in/nb-new/public/MaterialIcons/checkColor.svg"
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <div className="">
-                  <div className="">
-                    <img
-                      src="https://assets.NESTATE.in/nb-new/public/MaterialIcons/checkColor.svg"
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <div className="">
-                  <div className="">3 Months</div>
-                </div>
-              </div>
-            </div>
 
-            <div className="col">
-              <div className="">
-                <div className="">Relax Plan</div>
-                <div className="">
-                  <span>₹7,499 </span>
-                </div>
-                <div>
-                  <span className="">
-                    <span
-                      data-toggle="dropdown"
-                      className=""
-                      id="gstFreedom"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                    >
-                      <span className="">
-                        +18% GST
-                        <img
-                          src="https://assets.NESTATE.in/nb-new/public/MaterialIcons/Help.png"
-                          alt=""
-                          className="ml-1 inline-block w-5 h-5"
-                        />
-                      </span>
-                      <div
-                        aria-labelledby="dLabel"
-                        className="dropdown-menu price-breakup-dropdown"
+              <div
+                className="col fstcol"
+                style={{ borderRight: "1px solid #e2e2e2" }}
+              >
+                <div className="coltitle">
+                  <div className="">Relax Plan</div>
+                  <div className="">
+                    <span>₹7,499 </span>
+                  </div>
+                  <div>
+                    <span className="">
+                      <span
+                        data-toggle="dropdown"
+                        className=""
+                        id="gstFreedom"
+                        aria-haspopup="true"
+                        aria-expanded="false"
                       >
-                        <div className="">
-                          <div className="">Plan Price</div>
-                          <div className="">₹ 7,499</div>
+                        <span className="">
+                          +18% GST
+                          <img
+                            src="https://assets.nobroker.in/nb-new/public/MaterialIcons/Help.png"
+                            alt=""
+                            className="ml-1 inline-block w-5 h-5"
+                          />
+                        </span>
+                        <div
+                          aria-labelledby="dLabel"
+                          className="dropdown-menu price-breakup-dropdown"
+                        >
+                          <div className="">
+                            <div className="">Plan Price</div>
+                            <div className="">₹ 7,499</div>
+                          </div>
+                          <div className="">
+                            <div className="">GST @ 18%</div>
+                            <div className="">₹ 1,349.82</div>
+                          </div>
+                          <div className="">
+                            <div className="heading-5 ">Amount Payable</div>
+                            <div className="heading-5 ">₹ 8,848.82</div>
+                          </div>
                         </div>
-                        <div className="">
-                          <div className="">GST @ 18%</div>
-                          <div className="">₹ 1,349.82</div>
-                        </div>
-                        <div className="">
-                          <div className="heading-5 ">Amount Payable</div>
-                          <div className="heading-5 ">₹ 8,848.82</div>
-                        </div>
-                      </div>
+                      </span>
                     </span>
-                  </span>
+                  </div>
+                  <div className="" style={{ fontSize: "14px" }}>
+                    <button className=" btn btn-default" id="" type="button">
+                      <span className="flex items-center justify-center">
+                        Subscribe
+                      </span>
+                    </button>
+                  </div>
+                  <div className="">
+                    <ul>
+                      <li>Get Buyers Quickly. Save Lakhs on Brokerage.</li>
+                    </ul>
+                    <div></div>
+                  </div>
                 </div>
                 <div className="">
-                  <button className=" btn btn-default" id="" type="button">
-                    <span className="flex items-center justify-center">
-                      Subscribe
-                    </span>
-                  </button>
-                </div>
-                <div className="">
-                  <ul>
-                    <li>Get Buyers Quickly. Save Lakhs on Brokerage.</li>
-                  </ul>
-                  <div></div>
+                  <div className="">
+                    <div className=""></div>
+                  </div>
+                  <div className="">
+                    <div className="">
+                      <img
+                        src="https://assets.nobroker.in/nb-new/public/MaterialIcons/checkColor.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div className="">
+                    <div className="">
+                      <img
+                        src="https://assets.nobroker.in/nb-new/public/MaterialIcons/checkColor.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div className="">
+                    <div className="">
+                      <img
+                        src="https://assets.nobroker.in/nb-new/public/MaterialIcons/checkColor.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div className="">
+                    <div className="">
+                      <img
+                        src="https://assets.nobroker.in/nb-new/public/MaterialIcons/checkColor.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div className="">
+                    <div className="">
+                      <img
+                        src="https://assets.nobroker.in/nb-new/public/MaterialIcons/checkColor.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div className="">
+                    <div className="">
+                      <img
+                        src="https://assets.nobroker.in/nb-new/public/MaterialIcons/checkColor.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div className="">
+                    <div className="">
+                      <img
+                        src="https://assets.nobroker.in/nb-new/public/MaterialIcons/checkColor.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div className="">
+                    <div className="">3 Months</div>
+                  </div>
                 </div>
               </div>
-              <div className="">
-                <div className="">
-                  <div className=""></div>
-                </div>
-                <div className="">
-                  <div className=""></div>
-                </div>
-                <div className="">
-                  <div className="">
-                    <img
-                      src="https://assets.NESTATE.in/nb-new/public/MaterialIcons/checkColor.svg"
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <div className="">
-                  <div className="">
-                    <img
-                      src="https://assets.NESTATE.in/nb-new/public/MaterialIcons/checkColor.svg"
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <div className="">
-                  <div className="">
-                    <img
-                      src="https://assets.NESTATE.in/nb-new/public/MaterialIcons/checkColor.svg"
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <div className="">
-                  <div className="">
-                    <img
-                      src="https://assets.NESTATE.in/nb-new/public/MaterialIcons/checkColor.svg"
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <div className="">
-                  <div className="">
-                    <img
-                      src="https://assets.NESTATE.in/nb-new/public/MaterialIcons/checkColor.svg"
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <div className="">
-                  <div className=""></div>
-                </div>
-                <div className="">
-                  <div className=""></div>
-                </div>
-                <div className="">
-                  <div className="">3 Months</div>
-                </div>
-              </div>
-            </div>
 
-            <div className="col">
-              <div className="">
-                <div className="">Relax Plan</div>
-                <div className="">
-                  <span>₹7,499 </span>
-                </div>
-                <div>
-                  <span className="">
-                    <span
-                      data-toggle="dropdown"
-                      className=""
-                      id="gstFreedom"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                    >
-                      <span className="">
-                        +18% GST
-                        <img
-                          src="https://assets.NESTATE.in/nb-new/public/MaterialIcons/Help.png"
-                          alt=""
-                          className="ml-1 inline-block w-5 h-5"
-                        />
-                      </span>
-                      <div
-                        aria-labelledby="dLabel"
-                        className="dropdown-menu price-breakup-dropdown"
+              <div
+                className="col fstcol"
+                style={{ borderRight: "1px solid #e2e2e2" }}
+              >
+                <div className="coltitle">
+                  <div className="">Relax Plan</div>
+                  <div className="">
+                    <span>₹7,499 </span>
+                  </div>
+                  <div>
+                    <span className="">
+                      <span
+                        data-toggle="dropdown"
+                        className=""
+                        id="gstFreedom"
+                        aria-haspopup="true"
+                        aria-expanded="false"
                       >
-                        <div className="">
-                          <div className="">Plan Price</div>
-                          <div className="">₹ 7,499</div>
+                        <span className="">
+                          +18% GST
+                          <img
+                            src="https://assets.nobroker.in/nb-new/public/MaterialIcons/Help.png"
+                            alt=""
+                            className="ml-1 inline-block w-5 h-5"
+                          />
+                        </span>
+                        <div
+                          aria-labelledby="dLabel"
+                          className="dropdown-menu price-breakup-dropdown"
+                        >
+                          <div className="">
+                            <div className="">Plan Price</div>
+                            <div className="">₹ 7,499</div>
+                          </div>
+                          <div className="">
+                            <div className="">GST @ 18%</div>
+                            <div className="">₹ 1,349.82</div>
+                          </div>
+                          <div className="">
+                            <div className="heading-5 ">Amount Payable</div>
+                            <div className="heading-5 ">₹ 8,848.82</div>
+                          </div>
                         </div>
-                        <div className="">
-                          <div className="">GST @ 18%</div>
-                          <div className="">₹ 1,349.82</div>
-                        </div>
-                        <div className="">
-                          <div className="heading-5 ">Amount Payable</div>
-                          <div className="heading-5 ">₹ 8,848.82</div>
-                        </div>
-                      </div>
+                      </span>
                     </span>
-                  </span>
+                  </div>
+                  <div className="">
+                    <button className=" btn btn-default" id="" type="button">
+                      <span className="flex items-center justify-center">
+                        Subscribe
+                      </span>
+                    </button>
+                  </div>
+                  <div className="">
+                    <ul>
+                      <li>Get Buyers Quickly. Save Lakhs on Brokerage.</li>
+                    </ul>
+                    <div></div>
+                  </div>
                 </div>
-                <div className="">
-                  <button className=" btn btn-default" id="" type="button">
-                    <span className="flex items-center justify-center">
-                      Subscribe
-                    </span>
-                  </button>
-                </div>
-                <div className="">
-                  <ul>
-                    <li>Get Buyers Quickly. Save Lakhs on Brokerage.</li>
-                  </ul>
-                  <div></div>
+                <div className="" style={{ fontSize: "14px" }}>
+                  <div className="">
+                    <div className=""></div>
+                  </div>
+                  <div className="">
+                    <div className=""></div>
+                  </div>
+                  <div className="">
+                    <div className="">
+                      <img
+                        src="https://assets.nobroker.in/nb-new/public/MaterialIcons/checkColor.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div className="">
+                    <div className="">
+                      <img
+                        src="https://assets.nobroker.in/nb-new/public/MaterialIcons/checkColor.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div className="">
+                    <div className="">
+                      <img
+                        src="https://assets.nobroker.in/nb-new/public/MaterialIcons/checkColor.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div className="">
+                    <div className="">
+                      <img
+                        src="https://assets.nobroker.in/nb-new/public/MaterialIcons/checkColor.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div className="">
+                    <div className="">
+                      <img
+                        src="https://assets.nobroker.in/nb-new/public/MaterialIcons/checkColor.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div className="">
+                    <div className=""></div>
+                  </div>
+                  <div className="">
+                    <div className=""></div>
+                  </div>
+                  <div className="">
+                    <div className="">3 Months</div>
+                  </div>
                 </div>
               </div>
-              <div className="">
-                <div className="">
-                  <div className=""></div>
-                </div>
-                <div className="">
-                  <div className=""></div>
-                </div>
-                <div className="">
+
+              <div className="col fstcol">
+                <div className="coltitle">
+                  <div className="">Relax Plan</div>
                   <div className="">
-                    <img
-                      src="https://assets.NESTATE.in/nb-new/public/MaterialIcons/checkColor.svg"
-                      alt=""
-                    />
+                    <span>₹7,499 </span>
+                  </div>
+                  <div>
+                    <span className="">
+                      <span
+                        data-toggle="dropdown"
+                        className=""
+                        id="gstFreedom"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        <span className="">
+                          +18% GST
+                          <img
+                            src="https://assets.nobroker.in/nb-new/public/MaterialIcons/Help.png"
+                            alt=""
+                            className="ml-1 inline-block w-5 h-5"
+                          />
+                        </span>
+                        <div
+                          aria-labelledby="dLabel"
+                          className="dropdown-menu price-breakup-dropdown"
+                        >
+                          <div className="">
+                            <div className="">Plan Price</div>
+                            <div className="">₹ 7,499</div>
+                          </div>
+                          <div className="">
+                            <div className="">GST @ 18%</div>
+                            <div className="">₹ 1,349.82</div>
+                          </div>
+                          <div className="">
+                            <div className="heading-5 ">Amount Payable</div>
+                            <div className="heading-5 ">₹ 8,848.82</div>
+                          </div>
+                        </div>
+                      </span>
+                    </span>
+                  </div>
+                  <div className="">
+                    <button className=" btn btn-default" id="" type="button">
+                      <span className="flex items-center justify-center">
+                        Subscribe
+                      </span>
+                    </button>
+                  </div>
+                  <div className="">
+                    <ul>
+                      <li>Get Buyers Quickly. Save Lakhs on Brokerage.</li>
+                    </ul>
+                    <div></div>
                   </div>
                 </div>
-                <div className="">
+                <div className="" style={{ fontSize: "14px" }}>
                   <div className="">
-                    <img
-                      src="https://assets.NESTATE.in/nb-new/public/MaterialIcons/checkColor.svg"
-                      alt=""
-                    />
+                    <div className=""></div>
                   </div>
-                </div>
-                <div className="">
                   <div className="">
-                    <img
-                      src="https://assets.NESTATE.in/nb-new/public/MaterialIcons/checkColor.svg"
-                      alt=""
-                    />
+                    <div className=""></div>
                   </div>
-                </div>
-                <div className="">
                   <div className="">
-                    <img
-                      src="https://assets.NESTATE.in/nb-new/public/MaterialIcons/checkColor.svg"
-                      alt=""
-                    />
+                    <div className="">
+                      <img
+                        src="https://assets.nobroker.in/nb-new/public/MaterialIcons/checkColor.svg"
+                        alt=""
+                      />
+                    </div>
                   </div>
-                </div>
-                <div className="">
                   <div className="">
-                    <img
-                      src="https://assets.NESTATE.in/nb-new/public/MaterialIcons/checkColor.svg"
-                      alt=""
-                    />
+                    <div className="">
+                      <img
+                        src="https://assets.nobroker.in/nb-new/public/MaterialIcons/checkColor.svg"
+                        alt=""
+                      />
+                    </div>
                   </div>
-                </div>
-                <div className="">
                   <div className="">
-                    <img
-                      src="https://assets.NESTATE.in/nb-new/public/MaterialIcons/checkColor.svg"
-                      alt=""
-                    />
+                    <div className="">
+                      <img
+                        src="https://assets.nobroker.in/nb-new/public/MaterialIcons/checkColor.svg"
+                        alt=""
+                      />
+                    </div>
                   </div>
-                </div>
-                <div className="">
                   <div className="">
-                    <img
-                      src="https://assets.NESTATE.in/nb-new/public/MaterialIcons/checkColor.svg"
-                      alt=""
-                    />
+                    <div className="">
+                      <img
+                        src="https://assets.nobroker.in/nb-new/public/MaterialIcons/checkColor.svg"
+                        alt=""
+                      />
+                    </div>
                   </div>
-                </div>
-                <div className="">
                   <div className="">
-                    <img
-                      src="https://assets.NESTATE.in/nb-new/public/MaterialIcons/checkColor.svg"
-                      alt=""
-                    />
+                    <div className="">
+                      <img
+                        src="https://assets.nobroker.in/nb-new/public/MaterialIcons/checkColor.svg"
+                        alt=""
+                      />
+                    </div>
                   </div>
-                </div>
-                <div className="">
-                  <div className=""></div>
-                </div>
-                <div className="">
-                  <div className=""></div>
-                </div>
-                <div className="">
-                  <div className="">3 Months</div>
+                  <div className="">
+                    <div className="">
+                      <img
+                        src="https://assets.nobroker.in/nb-new/public/MaterialIcons/checkColor.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div className="">
+                    <div className="">
+                      <img
+                        src="https://assets.nobroker.in/nb-new/public/MaterialIcons/checkColor.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div className="">
+                    <div className="">
+                      <img
+                        src="https://assets.nobroker.in/nb-new/public/MaterialIcons/checkColor.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div className="">
+                    <div className=""></div>
+                  </div>
+                  <div className="">
+                    <div className=""></div>
+                  </div>
+                  <div className="">
+                    <div className="">3 Months</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -650,120 +679,115 @@ function Sellerplan() {
           </div>
         </div>
 
-        <div>
-          <div className="">HOW ASSISTED PLANS WORK</div>
-          <div>
-            <div className="">
-              <div
-                className=""
-                style={{ backgroundPosition: "0px center" }}
-              ></div>
-              <div className="">
-                <div className="">LOOKING FOR A BUYER?</div>
-                <div className="">
-                  Get verified buyer leads through any one of our assisted
-                  plans.
-                </div>
-              </div>
+        <div className="container mt-10 ms-5 ">
+          <h1 className="text-center text-2xl mb-14">
+            HOW ASSISTED PLANS WORK
+          </h1>
+          <div className="row align-items-center position-relative">
+            <div className="col-lg-4 overflow-hidden d-flex flex-column align-items-center">
+              <img src={pic1} alt="" srcset="" />
+              <div className="line-dashed" style={{ marginTop: "-33px" }}></div>
             </div>
-
-            <div className="">
-              <div className=""> </div>
-              <span className=""></span>
+            <div className="col-lg-4 ">
+              <h1 className="text-danger text-xl"> LOOKING FOR A BUYER?</h1>
+              <p>
+                Get verified buyer leads through any one of our assisted plans.
+              </p>
             </div>
+            <div className="col-lg-4"></div>
+            <div className="bottom-border"></div>
+          </div>
 
-            <div className="">
-              <div className="">
-                <div className="">THE HELPING HAND</div>
-                <div className="">
-                  A dedicated <span>RELATIONSHIP MANAGER</span> to guide and
-                  support you
-                </div>
-              </div>
-              <div
-                className=""
-                style={{ backgroundPosition: "-231px center" }}
-              ></div>
+          <div
+            className="row align-items-center  position-relative"
+            style={{ marginTop: "" }}
+          >
+            <div className="col-lg-4"></div>
+            <div className="col-lg-4 ">
+              <h1 className="text-danger text-xl"> THE HELPING HAND</h1>
+              <p>
+                A dedicated{" "}
+                <span
+                  className=""
+                  style={{ color: "#004958", fontSize: "18px" }}
+                >
+                  RELATIONSHIP MANAGER
+                </span>{" "}
+                to guide and support you
+              </p>
             </div>
-
-            <div className="">
-              <div className=""> </div>
-              <span className=""></span>
+            <div className="col-lg-4 overflow-hidden d-flex flex-column align-items-center">
+              <div className="line-dashed"></div>
+              <img src={pic2} alt="" srcset="" />
+              <div className="line-dashed" style={{ marginTop: "-30px" }}></div>
             </div>
+            <div className="bottom-border"></div>
+          </div>
 
-            <div className="">
-              <div
-                className=""
-                style={{ backgroundPosition: "-462px center" }}
-              ></div>
-              <div className="">
-                <div className="">MARKETING &amp; PROMOTION</div>
-                <div className="">
-                  Boost your ranking on NESTATE listing page and promotion on
-                  social media
-                </div>
-              </div>
+          <div className="row align-items-center  position-relative">
+            <div className="col-lg-4 overflow-hidden  d-flex flex-column align-items-center">
+              <div className="line-dashed"></div>
+              <img src={pic3} alt="" srcset="" />
+              <div className="line-dashed" style={{ marginTop: "-60px" }}></div>
             </div>
-
-            <div className="">
-              <div className=""> </div>
-              <span className=""></span>
+            <div className="col-lg-4 ">
+              <h1 className="text-danger text-xl"> MARKETING & PROMOTION</h1>
+              <p>
+                Boost your ranking on NoBroker listing page and promotion on
+                social media
+              </p>
             </div>
+            <div className="col-lg-4"></div>
+            <div className="bottom-border"></div>
+          </div>
 
-            <div className="">
-              <div className="">
-                <div className="">FREEDOM FROM BOGUS CALLERS</div>
-                <div className="">
-                  Your relationship manager handles all enquiries on call
-                </div>
-              </div>
-              <div
-                className=""
-                style={{ backgroundPosition: "-701px center;" }}
-              ></div>
+          <div className="row align-items-center  position-relative">
+            <div className="col-lg-4"></div>
+            <div className="col-lg-4 ">
+              <h1 className="text-danger text-xl">
+                FREEDOM FROM BOGUS CALLERS
+              </h1>
+              <p>Your relationship manager handles all enquiries on call</p>
             </div>
-
-            <div className="">
-              <div className=""> </div>
-              <span className=""></span>
+            <div className="col-lg-4 overflow-hidden  d-flex flex-column align-items-center">
+              <div className="line-dashed"></div>
+              <img src={pic4} alt="" srcset="" />
+              <div className="line-dashed"></div>
+              <div className="bottom-border"></div>
             </div>
+          </div>
 
-            <div className="">
-              <div
-                className=""
-                style={{ backgroundPosition: "-928px center" }}
-              ></div>
-              <div className="">
-                <div className="">FILTER QUALIFIED BUYERS</div>
-                <div className="">
-                  Your Relationship Manager forwards you only buyer, meeting
-                  your requirements.
-                </div>
-              </div>
+          <div className="row align-items-center  position-relative">
+            <div className="col-lg-4 overflow-hidden  d-flex flex-column align-items-center">
+              <div className="line-dashed"></div>
+              <img src={pic5} alt="" srcset="" />
+              <div className="line-dashed" style={{ marginTop: "-60px" }}></div>
             </div>
-
-            <div className="">
-              <div className=""> </div>
-              <span className=""></span>
+            <div className="col-lg-4 ">
+              <h1 className="text-danger text-xl"> FILTER QUALIFIED BUYERS</h1>
+              <p>
+                Your Relationship Manager forwards you only buyer, meeting your
+                requirements.
+              </p>
             </div>
+            <div className="col-lg-4"></div>
+            <div className="bottom-border"></div>
+          </div>
 
-            <div class="nb__ZLmd3">
-              <div class="nb__2Vm_z">
-                <div class="nb__UeVcQ">FASTER CLOSURE</div>
-                <div class="nb__1O2cb">
-                  You get buyer quick and effectively at a fractional cost.
-                </div>
-              </div>
-              <div
-                class="nb__1Ib2A"
-                style={{ backgroundPosition: "-1164px center" }}
-              ></div>
+          <div className="row align-items-center  position-relative">
+            <div className="col-lg-4"></div>
+            <div className="col-lg-4 ">
+              <h1 className="text-danger text-xl">FASTER CLOSURE</h1>
+              <p>You get buyer quick and effectively at a fractional cost.</p>
+            </div>
+            <div className="col-lg-4 overflow-hidden  d-flex flex-column align-items-center">
+              <div className="line-dashed"></div>
+              <img src={pic6} alt="" srcset="" />
             </div>
           </div>
         </div>
 
-<SellerplanFAQ />
-
+        <SellerplanFAQ />
       </div>
     </>
   );

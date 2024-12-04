@@ -480,7 +480,7 @@ function Navb() {
 
                 {/* Dropdown menu items */}
                 <Dropdown.Menu className="dropdown-menu custom-scroll">
-                  <Dropdown.Item className="text-decoration-none menu-dropdown">
+                  <Dropdown.Item href="/post-property" className="text-decoration-none menu-dropdown">
                     <Link
                       to="/post-property"
                       className="menu-dropdown text-decoration-none"
@@ -489,7 +489,7 @@ function Navb() {
                     </Link>
                   </Dropdown.Item>
 
-                  <Dropdown.Item
+                  <Dropdown.Item href="/rental-agreement"
                     className="menu-dropdown text-decoration-none"
                     style={{ fontSize: "normal" }} // Ensures normal font size
                   >
@@ -502,7 +502,7 @@ function Navb() {
                     </Link>
                   </Dropdown.Item>
 
-                  <Dropdown.Item
+                  <Dropdown.Item href="/painting-&-cleaning"
                     className="menu-dropdown text-decoration-none"
                     style={{ fontSize: "normal" }} // Ensures normal font size
                   >
@@ -515,7 +515,7 @@ function Navb() {
                     </Link>
                   </Dropdown.Item>
 
-                  <Dropdown.Item className="menu-dropdown text-decoration-none">
+                  <Dropdown.Item href="/" className="menu-dropdown text-decoration-none">
                     <Link
                       to="/packers-and-movers"
                       className="menu-dropdown text-decoration-none"
@@ -525,7 +525,7 @@ function Navb() {
                     </Link>
                   </Dropdown.Item>
 
-                  <Dropdown.Item className="menu-dropdown text-decoration-none">
+                  <Dropdown.Item href="/refer-and-earn" className="menu-dropdown text-decoration-none">
                     <Link
                       to="/refer-and-earn"
                       className="menu-dropdown text-decoration-none"
@@ -535,7 +535,7 @@ function Navb() {
                     </Link>
                   </Dropdown.Item>
 
-                  <Dropdown.Item className="menu-dropdown text-decoration-none">
+                  <Dropdown.Item href="/rent-receipt" className="menu-dropdown text-decoration-none">
                     <Link
                       to="/rent-receipt"
                       className="menu-dropdown text-decoration-none"
@@ -545,7 +545,7 @@ function Navb() {
                     </Link>
                   </Dropdown.Item>
 
-                  <Dropdown.Item className="menu-dropdown text-decoration-none">
+                  <Dropdown.Item href="/" className="menu-dropdown text-decoration-none">
                     <Link
                       to="/tenant-plan"
                       className="menu-dropdown text-decoration-none"
@@ -555,7 +555,7 @@ function Navb() {
                     </Link>
                   </Dropdown.Item>
 
-                  <Dropdown.Item className="menu-dropdown text-decoration-none">
+                  <Dropdown.Item href="/owner-plan" className="menu-dropdown text-decoration-none">
                     <Link
                       to="/owner-plan"
                       className="menu-dropdown text-decoration-none"
@@ -565,7 +565,7 @@ function Navb() {
                     </Link>
                   </Dropdown.Item>
 
-                  <Dropdown.Item className="menu-dropdown text-decoration-none">
+                  <Dropdown.Item href="/buyers-plan" className="menu-dropdown text-decoration-none">
                     <Link
                       to="/buyers-plan"
                       className="menu-dropdown text-decoration-none"
@@ -575,7 +575,7 @@ function Navb() {
                     </Link>
                   </Dropdown.Item>
 
-                  <Dropdown.Item className="menu-dropdown text-decoration-none">
+                  <Dropdown.Item href="/seller-plan" className="menu-dropdown text-decoration-none">
                     <Link
                       to="/seller-plan"
                       className="menu-dropdown text-decoration-none"
@@ -585,7 +585,7 @@ function Navb() {
                     </Link>
                   </Dropdown.Item>
 
-                  <Dropdown.Item
+                  <Dropdown.Item href=""
                     className="menu-dropdown text-decoration-none"
                     onClick={toggleCommercialPlans}
                     style={{ cursor: "pointer", fontSize: "normal" }}
@@ -617,7 +617,7 @@ function Navb() {
                     </ul>
                   )}
 
-                  <Dropdown.Item className="menu-dropdown text-decoration-none">
+                  <Dropdown.Item href="/careers" className="menu-dropdown text-decoration-none">
                     <Link
                       to="/careers"
                       className="menu-dropdown text-decoration-none"
@@ -627,7 +627,7 @@ function Navb() {
                     </Link>
                   </Dropdown.Item>
 
-                  <Dropdown.Item className="menu-dropdown text-decoration-none">
+                  <Dropdown.Item href="/" className="menu-dropdown text-decoration-none">
                     <Link
                       to="/"
                       className="menu-dropdown text-decoration-none"
@@ -637,7 +637,7 @@ function Navb() {
                     </Link>
                   </Dropdown.Item>
 
-                  <Dropdown.Item className="menu-dropdown text-decoration-none">
+                  <Dropdown.Item href="/" className="menu-dropdown text-decoration-none">
                     <Link
                       to="/"
                       className="menu-dropdown text-decoration-none"
@@ -647,7 +647,7 @@ function Navb() {
                     </Link>
                   </Dropdown.Item>
 
-                  <Dropdown.Item className="menu-dropdown text-decoration-none">
+                  <Dropdown.Item href="/" className="menu-dropdown text-decoration-none">
                     <Link
                       to="/"
                       className="menu-dropdown text-decoration-none"
@@ -657,8 +657,7 @@ function Navb() {
                     </Link>
                   </Dropdown.Item>
 
-                  <Dropdown.Item
-                    href="#action3"
+                  <Dropdown.Item href=""
                     className="menu-dropdown text-decoration-none"
                     onClick={toggleContactUs}
                     style={{ fontSize: "normal" }} // Ensures normal font size
