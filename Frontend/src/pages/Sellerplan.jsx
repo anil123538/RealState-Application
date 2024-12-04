@@ -11,7 +11,7 @@ import pic6 from "../assets/images/ownerplan_sprite_7.png";
 function Sellerplan() {
   return (
     <>
-      <div className="container ">
+      <div className="container">
         <div className="top text-center pb-5 mt-28">
           <div
             className=""
@@ -23,25 +23,25 @@ function Sellerplan() {
             }}
           >
             Get Buyers Quickly.
-            <span className="" style={{ color: "#fd3752" }}>
+            <span className="" style={{ color: "#ff5800" }}>
               SAVE LAKHS{" "}
             </span>
             on Brokerage
           </div>
           <div className="" style={{ fontSize: "22px", color: "#464646" }}>
             For assistance call us at :
-            <span className="" style={{ color: "#fd3752" }}>
+            <span className="" style={{ color: "#ff5800" }}>
               +91-83-060-037-65
             </span>
           </div>
         </div>
 
         <div
-          className="d-flex justify-content-evenly align-items-center"
-          style={{ paddingTop: "10px", color: "#464646", marginLeft: "17%" }}
+          className="row d-flex align-items-center"
+          style={{ paddingTop: "10px", color: "#464646", width: "76%", marginLeft: "300px" }}
         >
           <div
-            className="d-flex align-items-center justify-content-center py-4 px-24"
+            className="col d-flex align-items-center justify-content-center py-4 px-4"
             style={{
               backgroundColor: "#f8f8f8",
               borderTopRightRadius: "4px",
@@ -52,38 +52,39 @@ function Sellerplan() {
             <img
               alt="getTenants"
               src="https://assets.nobroker.in/static/img/owner_plan_icons/wallet.svg"
+              style={{ marginRight: "8px" }}
             />
             Get Buyer Faster &amp; Save Brokerage
           </div>
           <div
-            className="d-flex align-items-center justify-content-center py-3 px-28"
+            className="col d-flex align-items-center justify-content-center py-3 px-4"
             style={{
               backgroundColor: "#fff7f3",
               borderTopRightRadius: "4px",
               borderTopLeftRadius: "4px",
               fontSize: "14px",
-              marginLeft: "-30px",
             }}
           >
             <img
               alt="propertyKeys"
               src="https://assets.nobroker.in/static/img/owner_plan_icons/house.svg"
+              style={{ marginRight: "8px" }}
             />
-            <p>
+            <p className="mb-0">
               Leave your <b>House </b>
               <b>Keys &amp; Worries</b> to us!
             </p>
           </div>
         </div>
-        
+
         <div className="d-flex flex-column align-items-center">
           <div
             className="row plantable "
-            style={{ border: "1px solid #e2e2e2", width: "90%" }}
+            style={{ border: "1px solid #e2e2e2", width: "100%" }}
           >
             <div
               className="col-lg-3"
-              style={{ borderRight: "1px solid #e2e2e2" }}
+              style={{ borderRight: "1px solid #e2e2e2", color: "#464646" }}
             >
               <div className="title">Plans and Pricing</div>
               <div className="tablerow" style={{ fontSize: "14px" }}>
@@ -162,18 +163,20 @@ function Sellerplan() {
               </div>
             </div>
 
-            <div className="col-lg-9 d-flex">
+            <div className="col-lg-9 d-flex" style={{ color: "#464646" }}>
               <div
                 className="col fstcol"
                 style={{ borderRight: "1px solid #e2e2e2" }}
               >
                 <div className="coltitle">
-                  <div className="">Relax Plan</div>
+                  <div className="" style={{ fontSize: "16px" }}>
+                    Relax Plan
+                  </div>
                   <div className="">
-                    <span>₹7,499 </span>
+                    <span style={{ fontSize: "22px" }}>₹7,499 </span>
                   </div>
                   <div>
-                    <span className="">
+                    <span className="smt">
                       <span
                         data-toggle="dropdown"
                         className=""
@@ -181,7 +184,7 @@ function Sellerplan() {
                         aria-haspopup="true"
                         aria-expanded="false"
                       >
-                        <span className="">
+                        <span className="" style={{ fontSize: "12px" }}>
                           +18% GST
                           <img
                             src="https://assets.nobroker.in/nb-new/public/MaterialIcons/Help.png"
@@ -189,53 +192,73 @@ function Sellerplan() {
                             className="ml-1 inline-block w-5 h-5"
                           />
                         </span>
-                        <div
-                          aria-labelledby="dLabel"
-                          className="dropdown-menu price-breakup-dropdown"
-                        >
-                          <div className="">
-                            <div className="">Plan Price</div>
-                            <div className="">₹ 7,499</div>
+                        <div className="tooltip-box d-flex flex-column justify-content-center">
+                          <div
+                            className="1strow pb-2 d-flex justify-content-between"
+                            style={{ fontSize: "14px" }}
+                          >
+                            <span>Plan Price</span>
+                            <span>Rs. 2999</span>
                           </div>
-                          <div className="">
-                            <div className=" ">GST @ 18%</div>
-                            <div className="">₹ 1,349.82</div>
+                          <div
+                            className="2ndrow pb-2 d-flex justify-content-between"
+                            style={{ fontSize: "14px" }}
+                          >
+                            <span>GST @ 18%</span>
+                            <span>Rs. 299</span>
                           </div>
-                          <div className="">
-                            <div className="heading-5 ">Amount Payable</div>
-                            <div className="heading-5">₹ 8,848.82</div>
+                          <hr className="pb-2" />
+                          <div
+                            className="3rdrow d-flex justify-content-between"
+                            style={{ fontSize: "18px" }}
+                          >
+                            <span>Amount Payable</span>
+                            <span>Rs. 3424</span>
                           </div>
                         </div>
                       </span>
                     </span>
                   </div>
-                  <div className="">
+                  <div className="button mb-3 mt-3">
                     <button
                       className=" btn text-white"
                       id=""
                       type="button"
                       style={{ backgroundColor: "#004958" }}
                     >
-                      <span className="flex items-center justify-center">
+                      <span
+                        className="flex items-center justify-center"
+                        style={{ fontSize: "16px" }}
+                      >
                         Subscribe
                       </span>
                     </button>
                   </div>
                   <div className="">
                     <ul>
-                      <li>Get Buyers Quickly. Save Lakhs on Brokerage.</li>
+                      <li
+                        className="ms-10"
+                        style={{
+                          fontSize: "14px",
+                          listStyle: "disc",
+                          width: "80%",
+                        }}
+                      >
+                        Get Buyers Quickly. Save Lakhs on Brokerage.
+                      </li>
                     </ul>
                     {/* <div></div> */}
                   </div>
                 </div>
                 <div className="" style={{ fontSize: "14px" }}>
-                  <div className="">
-                    <div className=""></div>
-                  </div>
-                  <div className="">
-                    <div className=""></div>
-                  </div>
-                  <div className="">
+                  <div
+                    className="d-flex flex-column align-items-center justify-content-center"
+                    style={{
+                      height: "45px",
+                      backgroundColor: "#e9f6f0",
+                      width: "232px",
+                    }}
+                  >
                     <div className="">
                       <img
                         src="https://assets.nobroker.in/nb-new/public/MaterialIcons/checkColor.svg"
@@ -243,38 +266,112 @@ function Sellerplan() {
                       />
                     </div>
                   </div>
-                  <div className="">
-                    <div className="">
-                      <img
-                        src="https://assets.nobroker.in/nb-new/public/MaterialIcons/checkColor.svg"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                  <div className="">
-                    <div className="">
-                      <img
-                        src="https://assets.nobroker.in/nb-new/public/MaterialIcons/checkColor.svg"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                  <div className="">
-                    <div className="">
-                      <img
-                        src="https://assets.nobroker.in/nb-new/public/MaterialIcons/checkColor.svg"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                  <div className="">
+                  <div
+                    className=""
+                    style={{
+                      height: "45px",
+                      backgroundColor: "#eeedf7",
+                      width: "232px",
+                    }}
+                  >
                     <div className=""></div>
                   </div>
-                  <div className="">
+                  <div
+                    className="d-flex flex-column align-items-center justify-content-center"
+                    style={{
+                      height: "45px",
+                      backgroundColor: "#fff",
+                      width: "232px",
+                    }}
+                  >
+                    <div className="">
+                      <img
+                        src="https://assets.nobroker.in/nb-new/public/MaterialIcons/checkColor.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div
+                    className="d-flex flex-column align-items-center justify-content-center"
+                    style={{
+                      height: "45px",
+                      backgroundColor: "#f8f8f8",
+                      width: "232px",
+                    }}
+                  >
+                    <div className="">
+                      <img
+                        src="https://assets.nobroker.in/nb-new/public/MaterialIcons/checkColor.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div
+                    className=" d-flex flex-column align-items-center justify-content-center"
+                    style={{
+                      height: "45px",
+                      backgroundColor: "#fff",
+                      width: "232px",
+                    }}
+                  >
+                    <div className="">
+                      <img
+                        src="https://assets.nobroker.in/nb-new/public/MaterialIcons/checkColor.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div
+                    className="d-flex flex-column align-items-center justify-content-center"
+                    style={{
+                      height: "45px",
+                      backgroundColor: "#f8f8f8",
+                      width: "232px",
+                    }}
+                  >
+                    <div className="">
+                      <img
+                        src="https://assets.nobroker.in/nb-new/public/MaterialIcons/checkColor.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div
+                    className="d-flex flex-column align-items-center justify-content-center"
+                    style={{
+                      height: "45px",
+                      backgroundColor: "#fff",
+                      width: "232px",
+                    }}
+                  >
+                    <div className="">
+                      <img
+                        src="https://assets.nobroker.in/nb-new/public/MaterialIcons/checkColor.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div
+                    className=""
+                    style={{
+                      height: "45px",
+                      backgroundColor: "#f8f8f8",
+                      width: "232px",
+                    }}
+                  >
                     <div className=""></div>
                   </div>
-                  <div className="">
-                    <div className="">3 Months</div>
+                  <div
+                    className="d-flex flex-column align-items-center justify-content-center"
+                    style={{
+                      height: "45px",
+                      backgroundColor: "#fff",
+                      width: "232px",
+                    }}
+                  >
+                    <div className="" style={{ fontSize: "14px" }}>
+                      3 Months
+                    </div>
                   </div>
                 </div>
               </div>
@@ -284,12 +381,14 @@ function Sellerplan() {
                 style={{ borderRight: "1px solid #e2e2e2" }}
               >
                 <div className="coltitle">
-                  <div className="">Relax Plan</div>
+                  <div className="" style={{ fontSize: "16px" }}>
+                    Relax Plan
+                  </div>
                   <div className="">
-                    <span>₹7,499 </span>
+                    <span style={{ fontSize: "22px" }}>₹7,499 </span>
                   </div>
                   <div>
-                    <span className="">
+                    <span className="smt">
                       <span
                         data-toggle="dropdown"
                         className=""
@@ -297,7 +396,7 @@ function Sellerplan() {
                         aria-haspopup="true"
                         aria-expanded="false"
                       >
-                        <span className="">
+                        <span className="" style={{ fontSize: "12px" }}>
                           +18% GST
                           <img
                             src="https://assets.nobroker.in/nb-new/public/MaterialIcons/Help.png"
@@ -305,45 +404,93 @@ function Sellerplan() {
                             className="ml-1 inline-block w-5 h-5"
                           />
                         </span>
-                        <div
-                          aria-labelledby="dLabel"
-                          className="dropdown-menu price-breakup-dropdown"
-                        >
-                          <div className="">
-                            <div className="">Plan Price</div>
-                            <div className="">₹ 7,499</div>
+                        <div className="tooltip-box d-flex flex-column justify-content-center">
+                          <div
+                            className="1strow pb-2 d-flex justify-content-between"
+                            style={{ fontSize: "14px" }}
+                          >
+                            <span>Plan Price</span>
+                            <span>Rs. 2999</span>
                           </div>
-                          <div className="">
-                            <div className="">GST @ 18%</div>
-                            <div className="">₹ 1,349.82</div>
+                          <div
+                            className="2ndrow pb-2 d-flex justify-content-between"
+                            style={{ fontSize: "14px" }}
+                          >
+                            <span>GST @ 18%</span>
+                            <span>Rs. 299</span>
                           </div>
-                          <div className="">
-                            <div className="heading-5 ">Amount Payable</div>
-                            <div className="heading-5 ">₹ 8,848.82</div>
+                          <hr className="pb-2" />
+                          <div
+                            className="3rdrow d-flex justify-content-between"
+                            style={{ fontSize: "18px" }}
+                          >
+                            <span>Amount Payable</span>
+                            <span>Rs. 3424</span>
                           </div>
                         </div>
                       </span>
                     </span>
                   </div>
-                  <div className="" style={{ fontSize: "14px" }}>
-                    <button className=" btn btn-default" id="" type="button">
-                      <span className="flex items-center justify-center">
+                  <div className="button mb-3 mt-3">
+                    <button
+                      className=" btn text-white"
+                      id=""
+                      type="button"
+                      style={{ backgroundColor: "#004958" }}
+                    >
+                      <span
+                        className="flex items-center justify-center"
+                        style={{ fontSize: "16px" }}
+                      >
                         Subscribe
                       </span>
                     </button>
                   </div>
                   <div className="">
                     <ul>
-                      <li>Get Buyers Quickly. Save Lakhs on Brokerage.</li>
+                      <li
+                        className="ms-10"
+                        style={{
+                          fontSize: "14px",
+                          listStyle: "disc",
+                          width: "80%",
+                        }}
+                      >
+                        Get Buyers Quickly. Save Lakhs on Brokerage.
+                      </li>
                     </ul>
-                    <div></div>
+                    {/* <div></div> */}
                   </div>
                 </div>
                 <div className="">
-                  <div className="">
+                  <div
+                    className="d-flex flex-column align-items-center justify-content-center"
+                    style={{
+                      height: "45px",
+                      backgroundColor: "#e9f6f0",
+                      width: "232px",
+                    }}
+                  >
                     <div className=""></div>
                   </div>
-                  <div className="">
+                  <div
+                    className="d-flex flex-column align-items-center justify-content-center"
+                    style={{
+                      height: "45px",
+                      backgroundColor: "#eeedf7",
+                      width: "232px",
+                    }}
+                  >
+                    <div className=""></div>
+                  </div>
+                  <div
+                    className="d-flex flex-column align-items-center justify-content-center"
+                    style={{
+                      height: "45px",
+                      backgroundColor: "#fff",
+                      width: "232px",
+                    }}
+                  >
                     <div className="">
                       <img
                         src="https://assets.nobroker.in/nb-new/public/MaterialIcons/checkColor.svg"
@@ -351,7 +498,14 @@ function Sellerplan() {
                       />
                     </div>
                   </div>
-                  <div className="">
+                  <div
+                    className="d-flex flex-column align-items-center justify-content-center"
+                    style={{
+                      height: "45px",
+                      backgroundColor: "#f8f8f8",
+                      width: "232px",
+                    }}
+                  >
                     <div className="">
                       <img
                         src="https://assets.nobroker.in/nb-new/public/MaterialIcons/checkColor.svg"
@@ -359,7 +513,14 @@ function Sellerplan() {
                       />
                     </div>
                   </div>
-                  <div className="">
+                  <div
+                    className="d-flex flex-column align-items-center justify-content-center"
+                    style={{
+                      height: "45px",
+                      backgroundColor: "#fff",
+                      width: "232px",
+                    }}
+                  >
                     <div className="">
                       <img
                         src="https://assets.nobroker.in/nb-new/public/MaterialIcons/checkColor.svg"
@@ -367,7 +528,14 @@ function Sellerplan() {
                       />
                     </div>
                   </div>
-                  <div className="">
+                  <div
+                    className="d-flex flex-column align-items-center justify-content-center"
+                    style={{
+                      height: "45px",
+                      backgroundColor: "#f8f8f8",
+                      width: "232px",
+                    }}
+                  >
                     <div className="">
                       <img
                         src="https://assets.nobroker.in/nb-new/public/MaterialIcons/checkColor.svg"
@@ -375,7 +543,14 @@ function Sellerplan() {
                       />
                     </div>
                   </div>
-                  <div className="">
+                  <div
+                    className="d-flex flex-column align-items-center justify-content-center"
+                    style={{
+                      height: "45px",
+                      backgroundColor: "#fff",
+                      width: "232px",
+                    }}
+                  >
                     <div className="">
                       <img
                         src="https://assets.nobroker.in/nb-new/public/MaterialIcons/checkColor.svg"
@@ -383,23 +558,24 @@ function Sellerplan() {
                       />
                     </div>
                   </div>
-                  <div className="">
-                    <div className="">
-                      <img
-                        src="https://assets.nobroker.in/nb-new/public/MaterialIcons/checkColor.svg"
-                        alt=""
-                      />
-                    </div>
+                  <div
+                    className="d-flex flex-column align-items-center justify-content-center"
+                    style={{
+                      height: "45px",
+                      backgroundColor: "#f8f8f8",
+                      width: "232px",
+                    }}
+                  >
+                    <div className=""></div>
                   </div>
-                  <div className="">
-                    <div className="">
-                      <img
-                        src="https://assets.nobroker.in/nb-new/public/MaterialIcons/checkColor.svg"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                  <div className="">
+                  <div
+                    className="d-flex flex-column align-items-center justify-content-center"
+                    style={{
+                      height: "45px",
+                      backgroundColor: "#fff",
+                      width: "232px",
+                    }}
+                  >
                     <div className="">3 Months</div>
                   </div>
                 </div>
@@ -410,12 +586,14 @@ function Sellerplan() {
                 style={{ borderRight: "1px solid #e2e2e2" }}
               >
                 <div className="coltitle">
-                  <div className="">Relax Plan</div>
+                  <div className="" style={{ fontSize: "16px" }}>
+                    Relax Plan
+                  </div>
                   <div className="">
-                    <span>₹7,499 </span>
+                    <span style={{ fontSize: "22px" }}>₹7,499 </span>
                   </div>
                   <div>
-                    <span className="">
+                    <span className="smt">
                       <span
                         data-toggle="dropdown"
                         className=""
@@ -423,7 +601,7 @@ function Sellerplan() {
                         aria-haspopup="true"
                         aria-expanded="false"
                       >
-                        <span className="">
+                        <span className="" style={{ fontSize: "12px" }}>
                           +18% GST
                           <img
                             src="https://assets.nobroker.in/nb-new/public/MaterialIcons/Help.png"
@@ -431,48 +609,94 @@ function Sellerplan() {
                             className="ml-1 inline-block w-5 h-5"
                           />
                         </span>
-                        <div
-                          aria-labelledby="dLabel"
-                          className="dropdown-menu price-breakup-dropdown"
-                        >
-                          <div className="">
-                            <div className="">Plan Price</div>
-                            <div className="">₹ 7,499</div>
+                        <div className="tooltip-box d-flex flex-column justify-content-center">
+                          <div
+                            className="1strow pb-2 d-flex justify-content-between"
+                            style={{ fontSize: "14px" }}
+                          >
+                            <span>Plan Price</span>
+                            <span>Rs. 2999</span>
                           </div>
-                          <div className="">
-                            <div className="">GST @ 18%</div>
-                            <div className="">₹ 1,349.82</div>
+                          <div
+                            className="2ndrow pb-2 d-flex justify-content-between"
+                            style={{ fontSize: "14px" }}
+                          >
+                            <span>GST @ 18%</span>
+                            <span>Rs. 299</span>
                           </div>
-                          <div className="">
-                            <div className="heading-5 ">Amount Payable</div>
-                            <div className="heading-5 ">₹ 8,848.82</div>
+                          <hr className="pb-2" />
+                          <div
+                            className="3rdrow d-flex justify-content-between"
+                            style={{ fontSize: "18px" }}
+                          >
+                            <span>Amount Payable</span>
+                            <span>Rs. 3424</span>
                           </div>
                         </div>
                       </span>
                     </span>
                   </div>
-                  <div className="">
-                    <button className=" btn btn-default" id="" type="button">
-                      <span className="flex items-center justify-center">
+                  <div className="button mb-3 mt-3">
+                    <button
+                      className=" btn text-white"
+                      id=""
+                      type="button"
+                      style={{ backgroundColor: "#004958" }}
+                    >
+                      <span
+                        className="flex items-center justify-center"
+                        style={{ fontSize: "16px" }}
+                      >
                         Subscribe
                       </span>
                     </button>
                   </div>
                   <div className="">
                     <ul>
-                      <li>Get Buyers Quickly. Save Lakhs on Brokerage.</li>
+                      <li
+                        className="ms-10"
+                        style={{
+                          fontSize: "14px",
+                          listStyle: "disc",
+                          width: "80%",
+                        }}
+                      >
+                        Get Buyers Quickly. Save Lakhs on Brokerage.
+                      </li>
                     </ul>
-                    <div></div>
+                    {/* <div></div> */}
                   </div>
                 </div>
+
                 <div className="" style={{ fontSize: "14px" }}>
-                  <div className="">
+                  <div
+                    className="d-flex flex-column align-items-center justify-content-center"
+                    style={{
+                      height: "45px",
+                      backgroundColor: "#e9f6f0",
+                      width: "232px",
+                    }}
+                  >
                     <div className=""></div>
                   </div>
-                  <div className="">
+                  <div
+                    className="d-flex flex-column align-items-center justify-content-center"
+                    style={{
+                      height: "45px",
+                      backgroundColor: "#eeedf7",
+                      width: "232px",
+                    }}
+                  >
                     <div className=""></div>
                   </div>
-                  <div className="">
+                  <div
+                    className="d-flex flex-column align-items-center justify-content-center"
+                    style={{
+                      height: "45px",
+                      backgroundColor: "#fff",
+                      width: "232px",
+                    }}
+                  >
                     <div className="">
                       <img
                         src="https://assets.nobroker.in/nb-new/public/MaterialIcons/checkColor.svg"
@@ -480,7 +704,14 @@ function Sellerplan() {
                       />
                     </div>
                   </div>
-                  <div className="">
+                  <div
+                    className="d-flex flex-column align-items-center justify-content-center"
+                    style={{
+                      height: "45px",
+                      backgroundColor: "#f8f8f8",
+                      width: "232px",
+                    }}
+                  >
                     <div className="">
                       <img
                         src="https://assets.nobroker.in/nb-new/public/MaterialIcons/checkColor.svg"
@@ -488,7 +719,14 @@ function Sellerplan() {
                       />
                     </div>
                   </div>
-                  <div className="">
+                  <div
+                    className="d-flex flex-column align-items-center justify-content-center"
+                    style={{
+                      height: "45px",
+                      backgroundColor: "#fff",
+                      width: "232px",
+                    }}
+                  >
                     <div className="">
                       <img
                         src="https://assets.nobroker.in/nb-new/public/MaterialIcons/checkColor.svg"
@@ -496,7 +734,14 @@ function Sellerplan() {
                       />
                     </div>
                   </div>
-                  <div className="">
+                  <div
+                    className="d-flex flex-column align-items-center justify-content-center"
+                    style={{
+                      height: "45px",
+                      backgroundColor: "#f8f8f8",
+                      width: "232px",
+                    }}
+                  >
                     <div className="">
                       <img
                         src="https://assets.nobroker.in/nb-new/public/MaterialIcons/checkColor.svg"
@@ -504,7 +749,14 @@ function Sellerplan() {
                       />
                     </div>
                   </div>
-                  <div className="">
+                  <div
+                    className="d-flex flex-column align-items-center justify-content-center"
+                    style={{
+                      height: "45px",
+                      backgroundColor: "#fff",
+                      width: "232px",
+                    }}
+                  >
                     <div className="">
                       <img
                         src="https://assets.nobroker.in/nb-new/public/MaterialIcons/checkColor.svg"
@@ -512,13 +764,24 @@ function Sellerplan() {
                       />
                     </div>
                   </div>
-                  <div className="">
+                  <div
+                    className="d-flex flex-column align-items-center justify-content-center"
+                    style={{
+                      height: "45px",
+                      backgroundColor: "#f8f8f8",
+                      width: "232px",
+                    }}
+                  >
                     <div className=""></div>
                   </div>
-                  <div className="">
-                    <div className=""></div>
-                  </div>
-                  <div className="">
+                  <div
+                    className="d-flex flex-column align-items-center justify-content-center"
+                    style={{
+                      height: "45px",
+                      backgroundColor: "#fff",
+                      width: "232px",
+                    }}
+                  >
                     <div className="">3 Months</div>
                   </div>
                 </div>
@@ -526,12 +789,14 @@ function Sellerplan() {
 
               <div className="col fstcol">
                 <div className="coltitle">
-                  <div className="">Relax Plan</div>
+                  <div className="" style={{ fontSize: "16px" }}>
+                    Relax Plan
+                  </div>
                   <div className="">
-                    <span>₹7,499 </span>
+                    <span style={{ fontSize: "22px" }}>₹7,499 </span>
                   </div>
                   <div>
-                    <span className="">
+                    <span className="smt">
                       <span
                         data-toggle="dropdown"
                         className=""
@@ -539,7 +804,7 @@ function Sellerplan() {
                         aria-haspopup="true"
                         aria-expanded="false"
                       >
-                        <span className="">
+                        <span className="" style={{ fontSize: "12px" }}>
                           +18% GST
                           <img
                             src="https://assets.nobroker.in/nb-new/public/MaterialIcons/Help.png"
@@ -547,48 +812,73 @@ function Sellerplan() {
                             className="ml-1 inline-block w-5 h-5"
                           />
                         </span>
-                        <div
-                          aria-labelledby="dLabel"
-                          className="dropdown-menu price-breakup-dropdown"
-                        >
-                          <div className="">
-                            <div className="">Plan Price</div>
-                            <div className="">₹ 7,499</div>
+                        <div className="tooltip-box d-flex flex-column justify-content-center">
+                          <div
+                            className="1strow pb-2 d-flex justify-content-between"
+                            style={{ fontSize: "14px" }}
+                          >
+                            <span>Plan Price</span>
+                            <span>Rs. 2999</span>
                           </div>
-                          <div className="">
-                            <div className="">GST @ 18%</div>
-                            <div className="">₹ 1,349.82</div>
+                          <div
+                            className="2ndrow pb-2 d-flex justify-content-between"
+                            style={{ fontSize: "14px" }}
+                          >
+                            <span>GST @ 18%</span>
+                            <span>Rs. 299</span>
                           </div>
-                          <div className="">
-                            <div className="heading-5 ">Amount Payable</div>
-                            <div className="heading-5 ">₹ 8,848.82</div>
+                          <hr className="pb-2" />
+                          <div
+                            className="3rdrow d-flex justify-content-between"
+                            style={{ fontSize: "18px" }}
+                          >
+                            <span>Amount Payable</span>
+                            <span>Rs. 3424</span>
                           </div>
                         </div>
                       </span>
                     </span>
                   </div>
-                  <div className="">
-                    <button className=" btn btn-default" id="" type="button">
-                      <span className="flex items-center justify-center">
+                  <div className="button mb-3 mt-3">
+                    <button
+                      className=" btn text-white"
+                      id=""
+                      type="button"
+                      style={{ backgroundColor: "#004958" }}
+                    >
+                      <span
+                        className="flex items-center justify-center"
+                        style={{ fontSize: "16px" }}
+                      >
                         Subscribe
                       </span>
                     </button>
                   </div>
                   <div className="">
                     <ul>
-                      <li>Get Buyers Quickly. Save Lakhs on Brokerage.</li>
+                      <li
+                        className="ms-10"
+                        style={{
+                          fontSize: "14px",
+                          listStyle: "disc",
+                          width: "80%",
+                        }}
+                      >
+                        Get Buyers Quickly. Save Lakhs on Brokerage.
+                      </li>
                     </ul>
-                    <div></div>
+                    {/* <div></div> */}
                   </div>
                 </div>
                 <div className="" style={{ fontSize: "14px" }}>
-                  <div className="">
-                    <div className=""></div>
-                  </div>
-                  <div className="">
-                    <div className=""></div>
-                  </div>
-                  <div className="">
+                  <div
+                    className="d-flex flex-column align-items-center justify-content-center"
+                    style={{
+                      height: "45px",
+                      backgroundColor: "#e9f6f0",
+                      width: "232px",
+                    }}
+                  >
                     <div className="">
                       <img
                         src="https://assets.nobroker.in/nb-new/public/MaterialIcons/checkColor.svg"
@@ -596,7 +886,14 @@ function Sellerplan() {
                       />
                     </div>
                   </div>
-                  <div className="">
+                  <div
+                    className="d-flex flex-column align-items-center justify-content-center"
+                    style={{
+                      height: "45px",
+                      backgroundColor: "#eeedf7",
+                      width: "232px",
+                    }}
+                  >
                     <div className="">
                       <img
                         src="https://assets.nobroker.in/nb-new/public/MaterialIcons/checkColor.svg"
@@ -604,7 +901,14 @@ function Sellerplan() {
                       />
                     </div>
                   </div>
-                  <div className="">
+                  <div
+                    className="d-flex flex-column align-items-center justify-content-center"
+                    style={{
+                      height: "45px",
+                      backgroundColor: "#fff",
+                      width: "232px",
+                    }}
+                  >
                     <div className="">
                       <img
                         src="https://assets.nobroker.in/nb-new/public/MaterialIcons/checkColor.svg"
@@ -612,7 +916,14 @@ function Sellerplan() {
                       />
                     </div>
                   </div>
-                  <div className="">
+                  <div
+                    className="d-flex flex-column align-items-center justify-content-center"
+                    style={{
+                      height: "45px",
+                      backgroundColor: "#f8f8f8",
+                      width: "232px",
+                    }}
+                  >
                     <div className="">
                       <img
                         src="https://assets.nobroker.in/nb-new/public/MaterialIcons/checkColor.svg"
@@ -620,7 +931,14 @@ function Sellerplan() {
                       />
                     </div>
                   </div>
-                  <div className="">
+                  <div
+                    className="d-flex flex-column align-items-center justify-content-center"
+                    style={{
+                      height: "45px",
+                      backgroundColor: "#fff",
+                      width: "232px",
+                    }}
+                  >
                     <div className="">
                       <img
                         src="https://assets.nobroker.in/nb-new/public/MaterialIcons/checkColor.svg"
@@ -628,7 +946,14 @@ function Sellerplan() {
                       />
                     </div>
                   </div>
-                  <div className="">
+                  <div
+                    className="d-flex flex-column align-items-center justify-content-center"
+                    style={{
+                      height: "45px",
+                      backgroundColor: "#f8f8f8",
+                      width: "232px",
+                    }}
+                  >
                     <div className="">
                       <img
                         src="https://assets.nobroker.in/nb-new/public/MaterialIcons/checkColor.svg"
@@ -636,7 +961,14 @@ function Sellerplan() {
                       />
                     </div>
                   </div>
-                  <div className="">
+                  <div
+                    className="d-flex flex-column align-items-center justify-content-center"
+                    style={{
+                      height: "45px",
+                      backgroundColor: "#fff",
+                      width: "232px",
+                    }}
+                  >
                     <div className="">
                       <img
                         src="https://assets.nobroker.in/nb-new/public/MaterialIcons/checkColor.svg"
@@ -644,7 +976,14 @@ function Sellerplan() {
                       />
                     </div>
                   </div>
-                  <div className="">
+                  <div
+                    className="d-flex flex-column align-items-center justify-content-center"
+                    style={{
+                      height: "45px",
+                      backgroundColor: "#f8f8f8",
+                      width: "232px",
+                    }}
+                  >
                     <div className="">
                       <img
                         src="https://assets.nobroker.in/nb-new/public/MaterialIcons/checkColor.svg"
@@ -652,13 +991,14 @@ function Sellerplan() {
                       />
                     </div>
                   </div>
-                  <div className="">
-                    <div className=""></div>
-                  </div>
-                  <div className="">
-                    <div className=""></div>
-                  </div>
-                  <div className="">
+                  <div
+                    className="d-flex flex-column align-items-center justify-content-center"
+                    style={{
+                      height: "45px",
+                      backgroundColor: "#fff",
+                      width: "232px",
+                    }}
+                  >
                     <div className="">3 Months</div>
                   </div>
                 </div>
@@ -667,14 +1007,14 @@ function Sellerplan() {
           </div>
         </div>
 
-        <div className="text-center">
+        <div className="text-center mt-5">
           <div className="">
             <div className="">
               <div></div>
             </div>
-            <div> T&amp;C apply.</div>
+            <div style={{ color: "#ff5800" }}> T&amp;C apply.</div>
           </div>
-          <div className="">
+          <div className="mt-5" style={{ color: "#999999" }}>
             <a href="">Click here for Buyer Plans</a>
           </div>
         </div>
@@ -689,7 +1029,10 @@ function Sellerplan() {
               <div className="line-dashed" style={{ marginTop: "-33px" }}></div>
             </div>
             <div className="col-lg-4 ">
-              <h1 className="text-danger text-xl"> LOOKING FOR A BUYER?</h1>
+              <h1 className="text-xl" style={{ color: "#ff5800" }}>
+                {" "}
+                LOOKING FOR A BUYER?
+              </h1>
               <p>
                 Get verified buyer leads through any one of our assisted plans.
               </p>
@@ -704,7 +1047,10 @@ function Sellerplan() {
           >
             <div className="col-lg-4"></div>
             <div className="col-lg-4 ">
-              <h1 className="text-danger text-xl"> THE HELPING HAND</h1>
+              <h1 className="text-xl" style={{ color: "#ff5800" }}>
+                {" "}
+                THE HELPING HAND
+              </h1>
               <p>
                 A dedicated{" "}
                 <span
@@ -731,7 +1077,10 @@ function Sellerplan() {
               <div className="line-dashed" style={{ marginTop: "-60px" }}></div>
             </div>
             <div className="col-lg-4 ">
-              <h1 className="text-danger text-xl"> MARKETING & PROMOTION</h1>
+              <h1 className="text-xl" style={{ color: "#ff5800" }}>
+                {" "}
+                MARKETING & PROMOTION
+              </h1>
               <p>
                 Boost your ranking on NoBroker listing page and promotion on
                 social media
@@ -744,7 +1093,7 @@ function Sellerplan() {
           <div className="row align-items-center  position-relative">
             <div className="col-lg-4"></div>
             <div className="col-lg-4 ">
-              <h1 className="text-danger text-xl">
+              <h1 className=" text-xl" style={{ color: "#ff5800" }}>
                 FREEDOM FROM BOGUS CALLERS
               </h1>
               <p>Your relationship manager handles all enquiries on call</p>
@@ -764,7 +1113,10 @@ function Sellerplan() {
               <div className="line-dashed" style={{ marginTop: "-60px" }}></div>
             </div>
             <div className="col-lg-4 ">
-              <h1 className="text-danger text-xl"> FILTER QUALIFIED BUYERS</h1>
+              <h1 className=" text-xl" style={{ color: "#ff5800" }}>
+                {" "}
+                FILTER QUALIFIED BUYERS
+              </h1>
               <p>
                 Your Relationship Manager forwards you only buyer, meeting your
                 requirements.
@@ -777,7 +1129,9 @@ function Sellerplan() {
           <div className="row align-items-center  position-relative">
             <div className="col-lg-4"></div>
             <div className="col-lg-4 ">
-              <h1 className="text-danger text-xl">FASTER CLOSURE</h1>
+              <h1 className=" text-xl" style={{ color: "#ff5800" }}>
+                FASTER CLOSURE
+              </h1>
               <p>You get buyer quick and effectively at a fractional cost.</p>
             </div>
             <div className="col-lg-4 overflow-hidden  d-flex flex-column align-items-center">

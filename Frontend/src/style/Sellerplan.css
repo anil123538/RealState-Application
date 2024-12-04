@@ -1,13 +1,13 @@
 .line-dashed {
   width: 2px;
   height: 50px;
-  border-left: 2px dashed red;
+  border-left: 2px dashed #ff5800;
   background: none;
 }
 
 .bottom-border {
   width: 825px;
-  border-bottom: 2px red dashed;
+  border-bottom: 2px #ff5800 dashed;
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -64,4 +64,57 @@
   flex-direction: column;
   transition: box-shadow 0.3s;
   width: 100%;
+}
+.fstcol:hover{
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.smt {
+  position: relative;
+  cursor: pointer;
+}
+
+.smt .tooltip-box {
+  visibility: hidden;
+  opacity: 0;
+  height: 120px;
+  width: 260px;
+  margin-left: -80px;
+  position: absolute;
+  transform: translateY(10%);
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  color: #464646;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+  font-size: 10px;
+  z-index: 10;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.smt:hover .tooltip-box {
+  visibility: visible;
+  opacity: 1;
+}
+.button button {
+  align-items: center;
+  border: none;
+  display: flex;
+  height: 35px;
+  padding: 8px 75px;
+}
+
+.col-lg-3{
+padding-left: unset;
+padding-right: unset;
+}
+
+.col-lg-9{
+  padding-left: unset;
+  padding-right: unset;
+}
+
+li::marker{
+  color: #ff5800;
 }
