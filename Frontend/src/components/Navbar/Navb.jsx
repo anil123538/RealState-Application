@@ -517,7 +517,7 @@ function Navb() {
 
                   <Dropdown.Item href="/" className="menu-dropdown text-decoration-none">
                     <Link
-                      to="/"
+                      to="/packers-and-movers"
                       className="menu-dropdown text-decoration-none"
                       style={{ fontSize: "normal" }} // Ensures normal font size
                     >
