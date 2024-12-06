@@ -1,7 +1,7 @@
 import React from "react";
 import { GoDotFill } from "react-icons/go";
 
-const VipMembership = () => {
+const VipMembership = ({ title, titlePosition }) => {
   const data = [
     {
       id: 1,
@@ -23,9 +23,9 @@ const VipMembership = () => {
     },
   ];
   return (
-    <div className="bg-white mb-1.5 px-6 py-5">
-      <div className="text-center text-2xl font-medium mb-4">
-        VIP Membership
+    <>
+      <div className={`${titlePosition} text-2xl font-medium mb-4`}>
+        {title}
       </div>
       <div className="bg-black rounded-xl p-4 relative mx-auto px-5 xl:max-w-[1280px]">
         <div className="flex gap-4 w-[76%] flex-nowrap overflow-x-scroll no-scrollbar">
@@ -87,7 +87,7 @@ const VipMembership = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
