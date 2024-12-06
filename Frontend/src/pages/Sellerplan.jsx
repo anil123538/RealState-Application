@@ -38,7 +38,12 @@ function Sellerplan() {
 
         <div
           className="row d-flex align-items-center"
-          style={{ paddingTop: "10px", color: "#464646", width: "76%", marginLeft: "300px" }}
+          style={{
+            paddingTop: "10px",
+            color: "#464646",
+            width: "76%",
+            marginLeft: "300px",
+          }}
         >
           <div
             className="col d-flex align-items-center justify-content-center py-4 px-4"
@@ -1009,13 +1014,114 @@ function Sellerplan() {
 
         <div className="text-center mt-5">
           <div className="">
-            <div className="">
-              <div></div>
+              <div
+                className="text-danger"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal1"
+              >
+                {" "}
+                T&C apply.
+              </div>
+            <div
+              class="modal fade"
+              id="exampleModal1"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1
+                      class="modal-title fs-5 text-decoration-underline"
+                      id="exampleModalLabel"
+                    >
+                      Terms and Conditions
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body text-start">
+                    <h4 className="fw-semibold">MoneyBack plan:</h4>
+                    <ul
+                      className="ms-5 mt-2"
+                      style={{ listStyleType: "circle" }}
+                    >
+                      <li>
+                        The refund will be processed once you shift to your new
+                        property which is not available on NESTATE website.
+                      </li>
+                      <li>
+                        100% refund has to be claimed within a week of plan
+                        expiry.{" "}
+                      </li>
+                      <li>
+                        For claiming the refund, you just need to submit a valid
+                        copy of your sale deed.{" "}
+                      </li>
+                      <li>
+                        The sale deed should match the requirement given to
+                        NESTATE. NESTATE will verify the claim, this may include
+                        physical visit of the property premises.{" "}
+                      </li>
+                      <li>
+                        The property price in the sale deed should be equal or
+                        lower than the one given to NESTATE property advisor at
+                        the time of plan subscription.{" "}
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="modal-body text-start">
+                    <h4 className="fw-semibold">For CPMS Premium Plans:</h4>
+                    <ul
+                      className="ms-5 mt-2"
+                      style={{ listStyleType: "circle" }}
+                    >
+                      <li>
+                        The refund will be processed once you shift to your new
+                        property which is not available on NESTATE website.
+                      </li>
+                      <li>
+                        100% refund has to be claimed within a week of plan
+                        expiry.{" "}
+                      </li>
+                      <li>
+                        For claiming the refund, you just need to submit a valid
+                        copy of your sale deed.{" "}
+                      </li>
+                      <li>
+                        The sale deed should match the requirement given to
+                        NESTATE. NESTATE will verify the claim, this may include
+                        physical visit of the property premises.{" "}
+                      </li>
+                      <li>
+                        The property price in the sale deed should be equal or
+                        lower than the one given to NESTATE property advisor at
+                        the time of plan subscription.{" "}
+                      </li>
+                    </ul>
+                    <p className="text-center  mt-3 ">
+                      Click here for detailed
+                      <span className="text-decoration-underline ms-1">
+                        Terms & Conditions
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div style={{ color: "#ff5800" }}> T&amp;C apply.</div>
           </div>
-          <div className="mt-5" style={{ color: "#999999" }}>
-            <a href="">Click here for Buyer Plans</a>
+          <div className="mt-5">
+            <a
+              href="buyers-plan"
+              style={{ color: "#999999", fontSize: "18px" }}
+            >
+              Click here for Buyer Plans
+            </a>
           </div>
         </div>
 

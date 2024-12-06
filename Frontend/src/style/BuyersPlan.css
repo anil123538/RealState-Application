@@ -54,7 +54,7 @@
   }
 
   .bottom-border{
-    width: 825px;
+    width: 67%;
     border-bottom: 2px red dashed;
     position: absolute;
     bottom: 0;

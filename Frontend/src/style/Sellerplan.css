@@ -6,7 +6,7 @@
 }
 
 .bottom-border {
-  width: 825px;
+  width: 66.5%;
   border-bottom: 2px #ff5800 dashed;
   position: absolute;
   bottom: 0;
@@ -69,12 +69,12 @@
   box-shadow: 0 5px 10px rgba(0,0,0,0.1);
 }
 
-.smt {
+.coltitle .smt {
   position: relative;
   cursor: pointer;
 }
 
-.smt .tooltip-box {
+.coltitle .smt .tooltip-box {
   visibility: hidden;
   opacity: 0;
   height: 120px;
@@ -115,6 +115,6 @@ padding-right: unset;
   padding-right: unset;
 }
 
-li::marker{
+.coltitle li::marker{
   color: #ff5800;
 }
