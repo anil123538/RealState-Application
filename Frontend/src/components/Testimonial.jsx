@@ -51,7 +51,7 @@ const Testimonial = ({ review, scrollBy, title }) => {
         {[...review, ...review].map((item, index) => (
           <div
             key={index}
-            className="bg-white p-3 min-w-[300px] xl:min-w-[430px] xl:h-64 h-56 overflow-y-scroll no-scrollbar mb-2"
+            className="bg-white p-3 min-w-[300px] xl:min-w-[430px] xl:h-64 h-56 overflow-y-scroll no-scrollbar mb-2 shadow-[0px_3px_18px#0000000A]"
           >
             <div className="flex items-center">
               <img

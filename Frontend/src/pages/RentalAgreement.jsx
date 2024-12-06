@@ -710,11 +710,10 @@ const RentalAgreement = () => {
 
           {/* Frequently Asked Questions */}
           <div className="md:w-[90%] w-full bg-[#F5FFFA] px-8 py-12 rounded-xl mx-auto">
-            <FrequentAskedQuestion
-              title={"Frequently Asked Questions"}
-              faq={faq}
-              textColor={"text-[#004953]"}
-            />
+            <div className={`font-medium md:text-3xl text-lg mb-4 `}>
+              Frequently Asked Questions
+            </div>
+            <FrequentAskedQuestion faq={faq} textColor={"text-[#004953]"} />
           </div>
 
           {/* final text */}

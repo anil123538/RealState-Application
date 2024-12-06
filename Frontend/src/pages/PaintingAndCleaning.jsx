@@ -108,7 +108,11 @@ const PaintingAndCleaning = () => {
       <div>
         <Search />
         <Offer />
-        <SecondOffer />
+        <div className="bg-[#004953] py-10 px-4 mb-1.5">
+          <div className="md:px-[140px] max-w-[1280px] mx-auto">
+            <SecondOffer titlePosition={"text-center"} />
+          </div>
+        </div>
         <div className="bg-white md:px-[140px]">
           <Services title={"Home Cleaning Services"} />
         </div>
@@ -146,12 +150,21 @@ const PaintingAndCleaning = () => {
           </div>
         </div>
 
-        <VipMembership />
+        <div className="bg-white mb-1.5 px-6 py-5">
+          <VipMembership title="VIP Membership" titlePosition="text-center" />
+        </div>
 
         <InSpotlight />
 
         <Services title={"Home Repair Services"} />
-        <SecondOffer title={"Relocation Simplified"} />
+        <div className="bg-[#004953] py-10 px-4 mb-1.5">
+          <div className="md:px-[140px] max-w-[1280px] mx-auto">
+            <SecondOffer
+              title={"Relocation Simplified"}
+              titlePosition={"text-center"}
+            />
+          </div>
+        </div>
         <div className="bg-[#004953] p-4 mb-1.5 md:px-[140px]">
           <div className="max-w-[1280px] mx-auto">
             <Testimonial review={review} scrollBy={400} />
@@ -159,12 +172,10 @@ const PaintingAndCleaning = () => {
         </div>
         <div className="bg-white md:px-[140px] px-4 py-12">
           <div className="max-w-[1280px] mx-auto">
-            <FrequentAskedQuestion
-              title={"Frequently Asked Questions"}
-              faq={faq}
-              headingAlign={"text-center"}
-              textColor={"text-teal-600"}
-            />
+            <div className={`font-medium md:text-3xl text-lg mb-4 text-center`}>
+              Frequently Asked Questions
+            </div>
+            <FrequentAskedQuestion faq={faq} textColor={"text-teal-600"} />
           </div>
         </div>
       </div>

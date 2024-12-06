@@ -20,10 +20,10 @@ const CheckPrice = () => {
   ];
 
   return (
-    <div className="bg-[#f3f1f1] rounded-t-xl p-4">
+    <>
       <div>
         <div className="font-medium mb-5">Where are you going to relocate?</div>
-        <div className="flex gap-1 justify-between p-2 h-12 bg-zinc-200 w-full rounded-xl text-zinc-500">
+        <div className="flex gap-1 justify-between text-center p-2 h-10 md:h-16 xl:h-12 bg-zinc-100 w-full rounded-xl text-zinc-500">
           <div
             className={`items-center flex text-sm p-4 ${
               selectedButton === 1
@@ -83,12 +83,12 @@ const CheckPrice = () => {
           </div>
         </div>
 
-        <div className="w-full mb-6">
-          <div className="mb-2">Select City</div>
+        <div className="w-full mb-6 mt-4">
+          <div className="mb-2 text-xs">Select City</div>
           <select
             name="city"
             id="city"
-            className="w-full p-2 rounded-md border border-black/30"
+            className="w-full p-2 rounded-md border border-black/30 text-sm"
           >
             {cities.map((item) => (
               <option value={item.city}>{item.city}</option>
@@ -97,7 +97,7 @@ const CheckPrice = () => {
         </div>
 
         <div className="flex flex-col gap-2">
-          <div className="text-sm">Search your Locality</div>
+          <div className="text-xs">Search your Locality</div>
           <div className="flex flex-col gap-6 text-sm mb-4">
             <div className="relative">
               <input
@@ -105,7 +105,7 @@ const CheckPrice = () => {
                 name=""
                 id=""
                 placeholder="Shifting From"
-                className="p-2 pl-8 w-full rounded-md border border-black/30"
+                className="p-2 pl-8 w-full text-sm rounded-md border border-black/30"
               />
               <MdOutlineLocationOn className="absolute top-1.5 left-1 text-2xl" />
             </div>
@@ -116,14 +116,14 @@ const CheckPrice = () => {
                 name=""
                 id=""
                 placeholder="Shifting To"
-                className="p-2 pl-8 w-full rounded-md border border-black/30"
+                className="p-2 pl-8 w-full text-sm rounded-md border border-black/30"
               />
               <MdOutlineLocationOn className="absolute top-1.5 left-1 text-2xl" />
             </div>
           </div>
 
           <div className="flex flex-col gap-2">
-            <div className="text-sm">Select Shifting Date</div>
+            <div className="text-xs font-medium">Select Shifting Date</div>
 
             <DatePicker
               wrapperClassName="w-full"
@@ -132,7 +132,7 @@ const CheckPrice = () => {
               selected={startDate}
               onChange={(date) => setStartDate(date)}
               placeholderText="Shifting Date"
-              className="pl-8 w-full rounded-md border border-black/30"
+              className="pl-8 w-full rounded-md border text-sm border-black/30"
             />
           </div>
 
@@ -167,7 +167,7 @@ const CheckPrice = () => {
           }
         `}
       </style>
-    </div>
+    </>
   );
 };
 

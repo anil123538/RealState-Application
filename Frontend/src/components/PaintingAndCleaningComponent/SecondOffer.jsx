@@ -1,6 +1,6 @@
 import React from "react";
 
-const SecondOffer = ({ title }) => {
+const SecondOffer = ({ title, titlePosition }) => {
   const offer = [
     {
       id: 1,
@@ -16,11 +16,11 @@ const SecondOffer = ({ title }) => {
     },
   ];
   return (
-    <div className="bg-[#004953] py-10 px-4 mb-1.5">
-      <div className="text-center font-medium mb-4 text-white text-3xl">
+    <>
+      <div className={`${titlePosition} font-medium mb-4 text-white text-3xl`}>
         {title}
       </div>
-      <div className="grid grid-cols-2 gap-3 md:px-[140px] max-w-[1280px] mx-auto">
+      <div className="grid grid-cols-2 gap-3">
         {offer.map((item) => (
           <div
             key={item.id}
@@ -56,7 +56,7 @@ const SecondOffer = ({ title }) => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
