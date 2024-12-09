@@ -24,7 +24,7 @@ const ServiceComparison = ({ serviceComparison }) => {
               <div className="w-[50%] border-r p-4 border-zinc-300">
                 {item.service}
               </div>
-              <div className="w-[25%]">
+              <div className="w-[25%] content-center">
                 {item.local === "yes" ? (
                   <IoCheckmark className="mx-auto" />
                 ) : item.local === "no" ? (
@@ -33,7 +33,7 @@ const ServiceComparison = ({ serviceComparison }) => {
                   ""
                 )}
               </div>
-              <div className="w-[25%] border-l border-zinc-300">
+              <div className="w-[25%] content-center border-l border-zinc-300">
                 {item.nestate === "yes" ? (
                   <IoCheckmark className="mx-auto" />
                 ) : item.local === "no" ? (

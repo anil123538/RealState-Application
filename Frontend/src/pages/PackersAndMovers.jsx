@@ -243,7 +243,7 @@ const PackersAndMovers = () => {
           </div>
           <div className="mt-8">
             <div className="flex flex-col gap-4">
-              <div className="flex gap-4 overflow-x-auto px-4 md:px-0">
+              <div className="flex gap-4 overflow-x-auto px-4 md:px-0 no-scrollbar">
                 {service.map((item, i) => (
                   <div
                     key={i}
