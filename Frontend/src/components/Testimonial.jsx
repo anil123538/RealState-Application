@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { IoIosArrowRoundBack, IoIosArrowRoundForward } from "react-icons/io";
 
-const Testimonial = ({ review, scrollBy, title }) => {
+const Testimonial = ({ review, scrollBy, title, titleColor }) => {
   const testimonialContainerRef = useRef(null);
   const [showLeftArrow, setShowLeftArrow] = useState(false);
 
@@ -40,10 +40,15 @@ const Testimonial = ({ review, scrollBy, title }) => {
     };
   }, []);
   return (
-    <div className="relative w-full mt-14 mb-14">
-      <div className={"font-serif text-[#464646] text-center mb-4"} style={{fontSize: "26px"}}>
-        {title}
-      </div>
+    <div className="relative w-full">
+      {title ? (
+        <div
+          className={`font-serif ${titleColor} text-center mb-12`}
+          style={{ fontSize: "26px" }}
+        >
+          {title}
+        </div>
+      ) : null}
       <div
         className="flex gap-8 xl:gap-12 mx-auto flex-nowrap overflow-x-auto no-scrollbar behavior  scroll-smooth"
         ref={testimonialContainerRef}

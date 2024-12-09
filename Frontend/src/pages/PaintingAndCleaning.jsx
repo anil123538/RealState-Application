@@ -167,7 +167,12 @@ const PaintingAndCleaning = () => {
         </div>
         <div className="bg-[#004953] p-4 mb-1.5 md:px-[140px]">
           <div className="max-w-[1280px] mx-auto">
-            <Testimonial review={review} scrollBy={400} />
+            <Testimonial
+              review={review}
+              title={"Customer Reviews"}
+              scrollBy={400}
+              titleColor="text-white"
+            />
           </div>
         </div>
         <div className="bg-white md:px-[140px] px-4 py-12">

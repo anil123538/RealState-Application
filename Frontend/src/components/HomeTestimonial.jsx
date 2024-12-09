@@ -75,11 +75,7 @@ const HomeTestimonial = () => {
 
       <div className="md:flex hidden items-center justify-around p-10">
         <div>
-          <img
-            src="home/homeAppPromotion.png"
-            alt=""
-            width="80%"
-          />
+          <img src="home/homeAppPromotion.png" alt="" width="80%" />
         </div>
         <div>
           <h2 className="text-3xl font-normal text-red-500">

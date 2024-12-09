@@ -39,7 +39,7 @@ const router = createBrowserRouter(
       <Route path="/owner-plan" element={<Ownerplan />} />
       <Route path="/seller-plan" element={<Sellerplan />} />
       <Route path="/careers" element={<Careers />} />
-      <Route path="/painting-&-cleaning" element={<PaintingAndCleaning />} />
+      <Route path="/painting-and-cleaning" element={<PaintingAndCleaning />} />
       <Route path="/tenant-plan" element={<TenantPlan />} />
       <Route path="/packers-and-movers" element={<PackersAndMovers />} />
       <Route path="/blog" element={<Blog />} />

@@ -375,7 +375,7 @@ const PackersAndMovers = () => {
         </div>
 
         <div className="bg-[#F7F9FD] rounded-md p-6 md:m-4 my-1.5">
-          <div className="text-xl font-semibold -mb-4">Our Happy Customer</div>
+          <div className="text-xl font-semibold mb-4">Our Happy Customer</div>
           <Testimonial review={review} />
         </div>
 

@@ -291,7 +291,7 @@ const CheckEligibility = ({ selectedOption }) => {
                 <span className="font-bold">credit card</span>
               </div>
               <button className="bg-white px-2 py-1.5 rounded-md text-xs">
-                <Link to="/PayRent">Pay Rent Now</Link>
+                <Link to="/pay-rent">Pay Rent Now</Link>
               </button>
             </div>
           ) : null}
@@ -300,7 +300,14 @@ const CheckEligibility = ({ selectedOption }) => {
         <div className="flex justify-between items-end overflow-x-auto gap-4 px-20">
           {(selectedOption === "Buy" ? buyData : rentData).map((item) => (
             <Link
-              to={`/${item.text.toLowerCase().replaceAll(" ", "-")}`}
+              to={`${
+                item.text === "Click & Earn"
+                  ? "refer-and-earn"
+                  : item.text
+                      .toLowerCase()
+                      .replaceAll(" ", "-")
+                      .replaceAll("&", "and")
+              }`}
               key={item.id}
             >
               <div className="flex flex-col md:justify-center items-center text-center p-2 cursor-pointer !border md:!border-0 rounded-tl-2xl rounded-br-2xl">
@@ -331,7 +338,14 @@ const CheckEligibility = ({ selectedOption }) => {
           <div>
             <div className="flex flex-row justify-between gap-4 mt-8">
               {whyUsenobroker.map((item) => (
-                <Link key={item.id}>
+                <Link
+                  to={`${
+                    item.heading === "Free Listing"
+                      ? "post-property"
+                      : item.heading.toLowerCase().replaceAll(" ", "-")
+                  }`}
+                  key={item.id}
+                >
                   <div className="flex flex-col gap-2 items-center text-center">
                     <img
                       src={item.image}
