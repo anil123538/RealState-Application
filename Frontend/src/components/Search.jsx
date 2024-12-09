@@ -79,7 +79,6 @@ const Search = ({ selectedOption, setSelectedOption }) => {
     { value: "Chuchchech", label: "Chuchchech" },
     { value: "Brahmapuri", label: "Brahmapuri" },
   ];
-  
 
   const [selectedCityOption, setSelectedCityOption] = useState(cities[0]);
   const [selectedPropertyStatusOption, setSelectedPropertyStatusOption] =
@@ -184,11 +183,7 @@ const Search = ({ selectedOption, setSelectedOption }) => {
               ) : (
                 <>
                   <Link to="rental-agreement" className="flex items-center">
-                    <img
-                      src="home/RAIcon.svg"
-                      alt=""
-                      className="mr-2"
-                    />
+                    <img src="home/RAIcon.svg" alt="" className="mr-2" />
                     Rental Agreement
                   </Link>
                 </>
@@ -207,11 +202,7 @@ const Search = ({ selectedOption, setSelectedOption }) => {
                 </>
               ) : (
                 <>
-                  <img
-                    src="	home/deliveryIcon.svg"
-                    alt=""
-                    className="mr-2"
-                  />
+                  <img src="	home/deliveryIcon.svg" alt="" className="mr-2" />
                   Next Day Delivery
                 </>
               )}
@@ -322,12 +313,13 @@ const Search = ({ selectedOption, setSelectedOption }) => {
               defaultValue={selectedCityOption}
               onChange={setSelectedCityOption}
               options={cities}
-              className="min-w-fit text-sm"
+              className="min-w-44 text-sm"
               isSearchable={false}
               styles={{
                 control: (base) => ({
                   ...base,
-                  minHeight: "50px", // Set a fixed height
+                  minHeight: "50px", // Set a fixed height\
+                  // minWidth: "150px",
                   padding: "0 10px", // Add horizontal padding instead
                   border: "1px solid #d1d5db", // Adjust border color
                 }),

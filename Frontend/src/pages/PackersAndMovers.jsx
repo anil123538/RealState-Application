@@ -184,6 +184,32 @@ const PackersAndMovers = () => {
     },
   ];
 
+  const serviceComparison = [
+    { id: 1, service: "Vehicle Assurance", local: "yes", nestate: "yes" },
+    { id: 2, service: "Regular Update", local: "no", nestate: "yes" },
+    {
+      id: 3,
+      service: "Packaging & Unpacking Of household goods",
+      local: "no",
+      nestate: "yes",
+    },
+    {
+      id: 4,
+      service: "Dismantling & Re-Assemble Of Cot",
+      local: "yes",
+      nestate: "yes",
+    },
+    { id: 5, service: "Labour", local: "yes", nestate: "yes" },
+    { id: 6, service: "Bubble/ Foam Wrapping Of", local: "no", nestate: "yes" },
+    {
+      id: 7,
+      service: "On Demand Warehouse Storage",
+      local: "no",
+      nestate: "yes",
+    },
+    { id: 8, service: "Damage Assurance", local: "no", nestate: "yes" },
+  ];
+
   const rentalAndLegal = [
     {
       id: 1,
@@ -246,7 +272,7 @@ const PackersAndMovers = () => {
           </div>
         </div>
 
-        <div className="bg-white md:m-6 my-1.5 p-6 pb-16">
+        <div className="bg-white rounded-md md:m-4 my-1.5 p-6 pb-16">
           <div className="text-2xl font-medium mb-8">Services we offer</div>
           <div className="flex justify-around relative">
             {serviceWeOffer.map((item) => (
@@ -265,11 +291,11 @@ const PackersAndMovers = () => {
           </div>
         </div>
 
-        <div className="bg-white md:m-6 my-1.5 px-6 py-5">
+        <div className="bg-white rounded-md md:m-4 my-1.5 px-6 py-5">
           <VipMembership title={"In Spotlight"} />
         </div>
 
-        <div className="bg-white md:m-6 my-1.5 px-6 py-5">
+        <div className="bg-white rounded-md md:m-4 my-1.5 px-6 py-5">
           <div className="text-xl font-medium mb-10">How it Works?</div>
 
           <div className="flex flex-col gap-6">
@@ -301,7 +327,7 @@ const PackersAndMovers = () => {
           </div>
         </div>
 
-        <div className="bg-white md:m-6 my-1.5 px-6 py-5">
+        <div className="bg-white rounded-md md:m-4 my-1.5 px-6 py-5">
           <div className="text-xl font-medium mb-10">
             Why Nestate's Packers and Movers?
           </div>
@@ -321,7 +347,7 @@ const PackersAndMovers = () => {
           </div>
         </div>
 
-        <div className="bg-white md:m-6 my-1.5 p-6">
+        <div className="bg-white rounded-md md:m-4 my-1.5 p-6">
           <div className="text-xl font-semibold mb-8">
             Rental Agreements & Legal Services
           </div>
@@ -340,20 +366,20 @@ const PackersAndMovers = () => {
           </div>
         </div>
 
-        <div className="bg-[#004953] py-10 px-8 md:m-6 my-1.5">
+        <div className="bg-[#004953] rounded-md py-10 px-8 md:m-4 my-1.5">
           <SecondOffer title={"AC Summer Needs"} />
         </div>
 
-        <div className="bg-white md:m-6 my-1.5 p-6">
-          <ServiceComparison />
+        <div className="bg-white md:m-4 rounded-md my-1.5 p-6">
+          <ServiceComparison serviceComparison={serviceComparison} />
         </div>
 
-        <div className="bg-[#F7F9FD] p-6 md:m-6 my-1.5">
+        <div className="bg-[#F7F9FD] rounded-md p-6 md:m-4 my-1.5">
           <div className="text-xl font-semibold -mb-4">Our Happy Customer</div>
           <Testimonial review={review} />
         </div>
 
-        <div className="md:m-6 my-1.5 bg-white p-4">
+        <div className="md:m-4 my-1.5 rounded-md bg-white p-4">
           <div className={`font-medium md:text-xl text-lg mb-4 `}>
             Frequently Asked Questions
           </div>
