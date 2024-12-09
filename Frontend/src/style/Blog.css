@@ -1,0 +1,36 @@
+.slider-1{
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: -50px #D6E5F5;
+    margin: 40px 0;
+}
+
+.real-btn{
+    display: inline-block;
+    border: 1px solid #4B9C76;
+    border-radius: 10px;
+    font-size: 13px;
+    color: #4B9C76;
+    padding: 5px;
+    font-weight: 700;
+
+}
+
+.real-btn.active{
+    background: #4B9C76;
+    color: white;
+}
+
+.button-rental{
+    border: 2px solid #FD3753;
+    color: #FD3753;
+    background: transparent;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.button-rental a{
+    font-size: 15px;
+    color: #FD3753;
+}

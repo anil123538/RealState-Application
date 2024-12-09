@@ -22,7 +22,7 @@ import Careers from "./pages/Careers.jsx";
 import PaintingAndCleaning from "./pages/PaintingAndCleaning.jsx";
 import Sellerplan from "./pages/Sellerplan.jsx";
 import TenantPlan from "./pages/TenantPlan.jsx";
-import PackersAndMovers from "./pages/PackersAndMovers.jsx";
+import Blog from "./pages/Blog.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -40,7 +40,7 @@ const router = createBrowserRouter(
       <Route path="/careers" element={<Careers />} />
       <Route path="/painting-&-cleaning" element={<PaintingAndCleaning />} />
       <Route path="/tenant-plan" element={<TenantPlan />} />
-      <Route path="/packers-and-movers" element={<PackersAndMovers />} />
+      <Route path="/blog" element={<Blog />} />
       <Route path="*" element={<PageNotFound />} />
     </Route>
   )
