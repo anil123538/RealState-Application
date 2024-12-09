@@ -102,27 +102,27 @@ function Ownerplan() {
               >
                 <span className="d-flex align-items-center justify-content-end">
                   <img
-                    src="../public/OwnerPlan/starNew.svg"
+                    src="OwnerPlan/starNew.svg"
                     alt="review star"
                     className="img-fluid star-icon"
                   />
                   <img
-                    src="../public/OwnerPlan/starNew.svg"
+                    src="OwnerPlan/starNew.svg"
                     alt="review star"
                     className="img-fluid star-icon"
                   />
                   <img
-                    src="../public/OwnerPlan/starNew.svg"
+                    src="OwnerPlan/starNew.svg"
                     alt="review star"
                     className="img-fluid star-icon"
                   />
                   <img
-                    src="../public/OwnerPlan/starNew.svg"
+                    src="OwnerPlan/starNew.svg"
                     alt="review star"
                     className="img-fluid star-icon"
                   />
                   <img
-                    src="../public/OwnerPlan/starNew.svg"
+                    src="OwnerPlan/starNew.svg"
                     alt="review star"
                     className="img-fluid star-icon"
                   />

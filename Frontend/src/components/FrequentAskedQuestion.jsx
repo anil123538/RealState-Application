@@ -16,9 +16,6 @@ const FrequentAskedQuestion = ({ title, faq, headingAlign, textColor }) => {
 
   return (
     <>
-      <div className={`font-medium md:text-3xl text-lg mb-4 ${headingAlign}`}>
-        {title}
-      </div>
       {faq.map((item, i) => (
         <div key={i}>
           <div

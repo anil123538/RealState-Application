@@ -53,7 +53,7 @@ const QuickChat = () => {
         onClick={() => setVisibleChatbox(true)}
         className={`${
           visibleChatbox ? "hidden" : "block"
-        } fixed bottom-10 right-10 bg-[#004958] font-bold text-white px-4 py-2 rounded-2xl border-2 border-[#004958]`}
+        } fixed bottom-10 right-10 bg-[#004958] font-bold text-white px-4 py-2 rounded-2xl border-2 border-[#004958] z-[9999]`}
       >
         <i className="fa-regular fa-comment"></i> Chat
       </button>

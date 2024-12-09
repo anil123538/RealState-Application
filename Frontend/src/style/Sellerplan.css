@@ -1,0 +1,120 @@
+.line-dashed {
+  width: 2px;
+  height: 50px;
+  border-left: 2px dashed #ff5800;
+  background: none;
+}
+
+.bottom-border {
+  width: 66.5%;
+  border-bottom: 2px #ff5800 dashed;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.plantable .title {
+  align-items: center;
+  display: flex;
+  font-size: 22px;
+  height: 285px;
+  justify-content: center;
+  width: 100%;
+}
+
+.coltitle {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 285px;
+  padding-top: 5px;
+}
+
+.firstrow {
+  align-items: center;
+  background-color: #e9f6f0;
+  display: flex;
+  height: 45px;
+  padding-left: 10px;
+  font-size: 14px;
+}
+
+.secondrow {
+  align-items: center;
+  background-color: #eeedf7;
+  display: flex;
+  font-size: 14px;
+  height: 45px;
+  padding-left: 10px;
+}
+
+.comrow {
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+  height: 45px;
+  padding-left: 10px;
+}
+
+.fstcol {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.3s;
+  width: 100%;
+}
+.fstcol:hover{
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.coltitle .smt {
+  position: relative;
+  cursor: pointer;
+}
+
+.coltitle .smt .tooltip-box {
+  visibility: hidden;
+  opacity: 0;
+  height: 120px;
+  width: 260px;
+  margin-left: -80px;
+  position: absolute;
+  transform: translateY(10%);
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  color: #464646;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+  font-size: 10px;
+  z-index: 10;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.smt:hover .tooltip-box {
+  visibility: visible;
+  opacity: 1;
+}
+.button button {
+  align-items: center;
+  border: none;
+  display: flex;
+  height: 35px;
+  padding: 8px 75px;
+}
+
+.col-lg-3{
+padding-left: unset;
+padding-right: unset;
+}
+
+.col-lg-9{
+  padding-left: unset;
+  padding-right: unset;
+}
+
+.coltitle li::marker{
+  color: #ff5800;
+}

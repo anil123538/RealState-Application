@@ -188,11 +188,10 @@ const ReferAndEarn = () => {
       </div>
       {/* Common questions */}
       <div className="md:w-10/12 mx-auto p-4">
-        <FrequentAskedQuestion
-          title={"Common Questions"}
-          faq={faq}
-          textColor={"text-teal-600"}
-        />
+        <div className={`font-semibold md:text-xl text-lg mb-4 `}>
+          Common Questions
+        </div>
+        <FrequentAskedQuestion faq={faq} textColor={"text-teal-600"} />
       </div>
     </div>
   );
