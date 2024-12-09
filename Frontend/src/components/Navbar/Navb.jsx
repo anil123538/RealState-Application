@@ -639,7 +639,7 @@ function Navb() {
 
                   <Dropdown.Item href="/" className="menu-dropdown text-decoration-none">
                     <Link
-                      to="/"
+                      to="/blog"
                       className="menu-dropdown text-decoration-none"
                       style={{ fontSize: "normal" }}
                     >
