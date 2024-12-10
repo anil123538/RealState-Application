@@ -1,20 +1,6 @@
 import React from "react";
 
-const SecondOffer = ({ title, titlePosition }) => {
-  const offer = [
-    {
-      id: 1,
-      image: "paintingAndCleaning/painting_hs.svg",
-      title: "Festive Painting",
-      offer: "Flat 25% off",
-    },
-    {
-      id: 2,
-      image: "paintingAndCleaning/cleaning_hs.svg",
-      title: "Deep Cleaning",
-      offer: "Upto 60% off",
-    },
-  ];
+const SecondOffer = ({ offer, title, titlePosition }) => {
   return (
     <>
       <div className={`${titlePosition} font-medium mb-4 text-white text-3xl`}>

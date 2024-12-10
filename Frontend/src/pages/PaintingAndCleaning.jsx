@@ -103,6 +103,21 @@ const PaintingAndCleaning = () => {
     },
   ];
 
+  const offer = [
+    {
+      id: 1,
+      image: "paintingAndCleaning/painting_hs.svg",
+      title: "Festive Painting",
+      offer: "Flat 25% off",
+    },
+    {
+      id: 2,
+      image: "paintingAndCleaning/cleaning_hs.svg",
+      title: "Deep Cleaning",
+      offer: "Upto 60% off",
+    },
+  ];
+
   return (
     <div className="bg-zinc-100">
       <div>
@@ -110,7 +125,7 @@ const PaintingAndCleaning = () => {
         <Offer />
         <div className="bg-[#004953] py-10 px-4 mb-1.5">
           <div className="md:px-[140px] max-w-[1280px] mx-auto">
-            <SecondOffer titlePosition={"text-center"} />
+            <SecondOffer offer={offer} titlePosition={"text-center"} />
           </div>
         </div>
         <div className="bg-white md:px-[140px]">
@@ -160,6 +175,7 @@ const PaintingAndCleaning = () => {
         <div className="bg-[#004953] py-10 px-4 mb-1.5">
           <div className="md:px-[140px] max-w-[1280px] mx-auto">
             <SecondOffer
+              offer={offer}
               title={"Relocation Simplified"}
               titlePosition={"text-center"}
             />
