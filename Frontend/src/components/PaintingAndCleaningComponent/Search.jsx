@@ -181,35 +181,37 @@ const Search = () => {
                     </div>
                   </div>
                 )}
-                {modalNumber === i ? (
+                {modalNumber === i && (
                   <Modal
                     onClose={() => setServiceModalOpen(false)}
-                    isOpen={setServiceModalOpen}
+                    isOpen={serviceModalOpen}
                   >
                     <div className="bg-white p-8 rounded-xl">
                       <div>{item.title}</div>
                       <div className="grid grid-cols-3">
-                        {item?.insideTitle?.map((item) => (
-                          <div className="grid flex-col items-center text-center md:gap-4 rounded-full md:p-2">
-                            <div className="bg-orange-200/70 text-[9px] font-medium px-1 rounded-full absolute">
-                              {item.offer}
+                        {item?.insideTitle?.map((item, index) => (
+                          <Link to={`/${item.title}`} key={index}>
+                            <div className="grid flex-col items-center text-center md:gap-4 rounded-full md:p-2">
+                              <div className="bg-orange-200/70 text-[9px] font-medium px-1 rounded-full absolute">
+                                {item.offer}
+                              </div>
+                              <div className="rounded-full w-fit mx-auto bg-zinc-100 p-3 cursor-pointer">
+                                <img
+                                  src={item.image}
+                                  alt=""
+                                  className="m-0 w-8"
+                                />
+                              </div>
+                              <div className="text-[11px] w-10/12 mx-auto">
+                                {item.title}
+                              </div>
                             </div>
-                            <div className="rounded-full w-fit mx-auto bg-zinc-100 p-3 cursor-pointer">
-                              <img
-                                src={item.image}
-                                alt=""
-                                className="m-0 w-8"
-                              />
-                            </div>
-                            <div className="text-[11px] w-10/12 mx-auto">
-                              {item.title}
-                            </div>
-                          </div>
+                          </Link>
                         ))}
                       </div>
                     </div>
                   </Modal>
-                ) : null}
+                )}
               </div>
             ))}
           </div>
