@@ -420,7 +420,7 @@ function Blog() {
             <div className="container">
             <div className="row ">
                 <div className="col-lg-5 mt-5">
-                    <h1 style={{fontSize:'60px',fontWeight:'600'}}>The NoBroker Times</h1>
+                    <h1 style={{fontSize:'60px',fontWeight:'600'}}>The NESTATE Times</h1>
                     <p style={{fontSize:'40px',fontWeight:'400'}}>Real Estate, Services & Inspiration Unbounded</p>
                     <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Subscribe to our blogs
@@ -563,25 +563,25 @@ function Blog() {
             </div>
         </section>
         <section className='my-5'>
-        <div className="container mt-5">
+        <div className="container mt-5"  style={{background:'#EBEDFB',borderRadius:'10px',padding:'10px'}}>
       <div
         className="p-4 rounded shadow-sm row"
       >
-        <div className="col-lg-4">
-        <h3 className="mb-2">Subscribe to our newsletter</h3>
-        <p className="text-muted">
+        <div className="col-lg-5">
+        <h3 className="mb-2" style={{fontSize:'24px',fontWeight:'700',color:'rgb(68, 68, 68)'}}>Subscribe to our newsletter</h3>
+        <p className="text-muted" style={{fontSize:'16px',fontWeight:'500',color:'rgb(68, 68, 68)'}}>  
           Get the latest news delivered straight to your inbox
         </p>
         </div>
-        <div className="col-lg-8">
+        <div className="col-lg-7">
         <div className="d-flex align-items-center">
           <input
             type="email"
             className="form-control me-2"
             placeholder="Enter your email address"
-            style={{ maxWidth: "400px" }}
+            style={{ maxWidth: "500px",height:'58px' }}
           />
-          <button className="btn btn-danger">Subscribe Now</button>
+          <button className="btn btn-danger" style={{width:'179px',height:'43px'}}>Subscribe Now</button>
         </div>
         </div>
       </div>
@@ -1258,6 +1258,197 @@ function Blog() {
                 </Swiper>
                 </div>
             </div>
+        </section>
+        <section className='my-5'>
+        <div className="container">
+        <div className="d-flex gap-4 mb-5">
+                {realbtn5.map((category5,a)=>(
+                    <div className=' '>
+                        <button
+                className={`${selectedCategory4 === category5 ? 'active' : ''}`}
+                onClick={() => setSelectedCategory5(category5)}
+              >
+                {category5}
+              </button>
+                    </div>
+                ))}
+        </div>
+        <div className={selectedCategory5 === 'Home & Garden' ? '' : 'd-none'}>
+        <ul>
+    <li>4 BHK House Plans</li>
+    <li>Garden Makeover</li>
+    <li>Ways to Get Rid Of Houseflies</li>
+    <li>Lohri 2024: The Importance and Significance Of Lohri Festival</li>
+    <li>Lawn Care</li>
+    <li>Best Wood for Beds</li>
+    <li>Climbing Plants with Flowers</li>
+    <li>How to Keep Your House Smelling Good</li>
+    <li>Indoor Air Purifying Plants</li>
+    <li>Best out of Waste Ideas for Home Decoration</li>
+    <li>Home Decoration Ideas for Diwali</li>
+    <li>5 Signs You Need to Hire A Professional Cleaner</li>
+    <li>Indian Kitchen Garden Plants</li>
+    <li>Christmas Decorations Ideas</li>
+    <li>Space Management Tips</li>
+    <li>DIY Christmas Decoration</li>
+    <li>Christmas Decorations for Kids</li>
+    <li>Winter Plants</li>
+    <li>Flowering Plants</li>
+    <li>Onam Festival</li>
+    <li>Ceramic Tiles vs Vitrified Tiles - Understanding the Differences</li>
+    <li>Plants That Need Only Water to Grow and How it is Different from Hydroponics</li>
+</ul>
+
+        </div>
+        <div className={selectedCategory5 === 'Commercial Loan' ? '' : 'd-none'}>
+                  <ul>
+                <li>what is a bank loan</li>
+                <li>commercial property loan interest rates</li>
+                </ul>     
+        </div>
+        <div className={selectedCategory5 === 'NoBroker News' ? '' : 'd-none'}>
+        <ul>
+    <li>BDA 279 Illegal Layouts</li>
+    <li>Earn Money Online without Investment for Students via NoBroker Ambassador Club</li>
+    <li>Use NoBroker Pay To Jump The Queue And Pay Your College Fees Online</li>
+    <li>Find Out Which is The Best Credit Card For Paying Rent Every Month</li>
+    <li>Too busy and have no time, don’t worry! Switch to NoBroker Shop Rent Payment</li>
+    <li>Check Out How NoBroker’s Rent Payment Service can make Your Life Easier</li>
+    <li>All About World Environment Day 2024: #Onlyoneearth</li>
+    <li>Coming Back to your House After the Pandemic? You Need to Book These Services ASAP</li>
+    <li>Covid Fuels NoBrokerHood Expansion to 5 more cities</li>
+    <li>NoBroker.com ties-up with OYO LIFE, to scale up its co-living services</li>
+    <li>NoBrokerHOOD Adds a Bundle of Security Features to Help Residents Fight Covid-19</li>
+    <li>Cut the Crap!</li>
+    <li>NoBroker अब दिल्ली-एनसीआर में</li>
+    <li>Interns at NoBroker 2019</li>
+    <li>NoBroker is Now in DELHI NCR</li>
+    <li>#NoBrokerNumbers</li>
+    <li>#Citygrapher</li>
+    <li>How NHB directive on subvention schemes will impact residential real estate sector</li>
+    <li>The Always “ON” Mode of the Indian Worker</li>
+    <li>Life Score By NoBroker</li>
+</ul>
+
+        </div>
+        <div className={selectedCategory5 === 'Property Sellers Guide' ? '' : 'd-none'}>
+        <ul>
+    <li>Capital Gain on Sale of Property</li>
+    <li>How Location Impacts Property Sale Prices</li>
+    <li>Real Estate ROI Comparisons: India vs. Other Countries</li>
+    <li>TDS on Sale of Property</li>
+    <li>Capital Gain Account Scheme</li>
+    <li>Section 54 of Transfer of Property Act</li>
+    <li>Capital Gain on Sale of Agricultural Land</li>
+    <li>How Location Impacts Property Sale Prices</li>
+    <li>Difference Between Sale and Agreement to Sell</li>
+    <li>Sale Deed Format</li>
+    <li>Section 54F of the Income Tax Act</li>
+    <li>Section 54 of Income Tax Act</li>
+    <li>Section 27 of Income Tax Act 1961</li>
+    <li>Section 50C of Income Tax Act 1961</li>
+    <li>Short Term Capital Gains Tax</li>
+    <li>Increase the Value of Your Home</li>
+    <li>Marketing Strategies to Sell a House</li>
+    <li>Things to Do After Selling Your House</li>
+    <li>Selling a House with Solar Panels</li>
+    <li>Delhi Apartment Ownership Act</li>
+</ul>
+
+        </div>
+        <div className={selectedCategory5 === 'Property Buyers Guide' ? '' : 'd-none'}>
+        <ul>
+    <li>Construction Cost in Bangalore</li>
+    <li>Best Places to Invest in Bangalore</li>
+    <li>Top 10 Real Estate Companies in India</li>
+    <li>Real Estate Investment in Pune</li>
+    <li>Bhumi Pujan Muhurat</li>
+    <li>Best Place to Invest in Noida</li>
+    <li>Auspicious Dates for Property Registration</li>
+    <li>Luxury Apartments in Mumbai: Exclusive Homes with World-Class Amenities and Iconic City Views in 2024</li>
+    <li>Leasehold vs Freehold</li>
+    <li>Most Expensive Apartments in Pune</li>
+    <li>Most Expensive Houses in Mumbai</li>
+    <li>Most Expensive House in Delhi</li>
+    <li>Real Estate Company in Noida</li>
+    <li>Real Estate Company in Coimbatore</li>
+    <li>Real Estate Company in Kolkata</li>
+    <li>Most Expensive Houses in Bangalore</li>
+    <li>Property Consultant in Delhi</li>
+    <li>Best Commercial Investment in Noida</li>
+    <li>Mumbai Pune Expressway</li>
+    <li>Real Estate Companies in Chennai</li>
+</ul>
+
+        </div>
+        <div className={selectedCategory5 === 'Property Rental Guide' ? '' : 'd-none'}>
+        <ul>
+    <li>Best Property Inspection Apps</li>
+    <li>Magenta Line Delhi Metro</li>
+    <li>Best Society Management Apps in India</li>
+    <li>Rent Control Act Kerala</li>
+    <li>Rent Slip</li>
+    <li>Room Rent Receipt Format</li>
+    <li>Rent Receipt Format</li>
+    <li>Type of Rental Property</li>
+    <li>Rental Yield in Delhi</li>
+    <li>Rental Yield in Mumbai</li>
+    <li>Rental Yield in Bangalore</li>
+    <li>Best App for Rent House in Bangalore</li>
+    <li>Best App for Rent House in Hyderabad</li>
+    <li>Paying Guest Apps</li>
+    <li>Flat Searching App</li>
+    <li>Renting a House vs Renting an Apartment</li>
+    <li>Best App for House Rent</li>
+    <li>Best App for House Rent in Chennai</li>
+    <li>Best Home Search Apps</li>
+    <li>Bangalore vs Gurgaon</li>
+</ul>
+
+        </div>
+        <div className={selectedCategory5 === 'Celebrity Homes' ? '' : 'd-none'}>
+        <ul>
+    <li>Allu Arjun House</li>
+    <li>Nora Fatehi House</li>
+    <li>Vijay Sethupathi House</li>
+    <li>Most Expensive House in India</li>
+    <li>Hrithik Roshan’s House: Inside House Picture and Address</li>
+    <li>Harshad Mehta House</li>
+    <li>Mahesh Babu House</li>
+    <li>Akshay Kumar's House</li>
+    <li>Rajinikanth House</li>
+    <li>Inside Janhvi Kapoor House</li>
+    <li>Saif Ali Khan House</li>
+    <li>Mukesh Ambani House</li>
+    <li>Kartik Aaryan House</li>
+    <li>Expensive House in the World</li>
+    <li>Rohit Sharma’s House</li>
+    <li>Yashasvi Jaiswal House</li>
+    <li>Manoj Bajpayee House</li>
+    <li>Rishabh Pant House</li>
+    <li>Shubman Gill House</li>
+    <li>Celebrity Houses in Mumbai</li>
+</ul>
+
+        </div>
+        </div>
+        </section>
+        <section className='my-5'>
+        <div className="d-flex justify-center align-items-center">
+                  <div className="">
+                <img src="https://assets.nobroker.in/nb-new/public/Home/homeAppPromotion.png" alt="" />
+                  </div>
+                  <div className="">
+                    <p className='my-5' style={{fontSize:'24px',color:'rgb(253, 55, 82)',fontWeight:'500 '}}>Find A New Home On The Go</p>
+                    <p className='mt-3' style={{fontSize:'19px',fontWeight:'500',color:'rgb(70, 70, 70)'}}>Download our app</p>
+                    <p className='mb-5' style={{fontSize:'16px',fontWeight:'300',color:'rgb(70, 70, 70)'}}>Where convenience is at your fingertip</p>
+                    <div className='d-flex gap-5 mt-5'>
+                      <a style={{width:'150px',height:'45px'}} href="#"><img src="https://www.nobroker.in/locality-iq/images/en_badge_web_generic-1.png" alt="" srcset="" /></a>
+                      <a style={{width:'150px',height:'45px'}} href="#"><img src="https://www.nobroker.in/locality-iq/images/Download_on_the_App_Store_Badge-1.png" alt="" /></a>
+                    </div>
+                  </div>
+          </div>
+           
         </section>
     </>
   )
