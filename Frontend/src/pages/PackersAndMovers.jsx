@@ -184,6 +184,32 @@ const PackersAndMovers = () => {
     },
   ];
 
+  const serviceComparison = [
+    { id: 1, service: "Vehicle Assurance", local: "yes", nestate: "yes" },
+    { id: 2, service: "Regular Update", local: "no", nestate: "yes" },
+    {
+      id: 3,
+      service: "Packaging & Unpacking Of household goods",
+      local: "no",
+      nestate: "yes",
+    },
+    {
+      id: 4,
+      service: "Dismantling & Re-Assemble Of Cot",
+      local: "yes",
+      nestate: "yes",
+    },
+    { id: 5, service: "Labour", local: "yes", nestate: "yes" },
+    { id: 6, service: "Bubble/ Foam Wrapping Of", local: "no", nestate: "yes" },
+    {
+      id: 7,
+      service: "On Demand Warehouse Storage",
+      local: "no",
+      nestate: "yes",
+    },
+    { id: 8, service: "Damage Assurance", local: "no", nestate: "yes" },
+  ];
+
   const rentalAndLegal = [
     {
       id: 1,
@@ -205,167 +231,224 @@ const PackersAndMovers = () => {
     },
   ];
 
+  const offer = [
+    {
+      id: 1,
+      image: "packersAndMovers/ac-gas-charging.svg",
+      title: "AC Gas Charging",
+      offer: "Starting @ Rs. 2329",
+    },
+    {
+      id: 2,
+      image: "packersAndMovers/ac-repair.svg",
+      title: "AC Repair",
+      offer: "Starting @ Rs. 259",
+    },
+  ];
+
   return (
-    <div className="flex justify-around bg-gradient-to-b from-[#5e458f] from-[450px] lg:from-[500px] xl:from-[650px] to-[#ecefec] to-10%">
-      <div className="md:w-[60%] w-full">
-        <div className="md:px-6 mt-10">
-          <div className="text-white text-xl md:text-3xl px-4 md:px-0 font-medium">
-            India’s Largest Packers And Movers
+    <div className="bg-gradient-to-b from-[#5e458f] from-[450px] lg:from-[500px] xl:from-[650px] to-[#ecefec] to-10%">
+      <div className="flex xl:w-9/12 mx-auto justify-around">
+        <div className="md:w-[60%] w-full">
+          <div className="md:px-6 mt-10">
+            <div className="text-white text-xl md:text-3xl px-4 md:px-0 font-medium">
+              India’s Largest Packers And Movers
+            </div>
+            <div className="text-white text-sm px-4 md:px-0 opacity-80">
+              Service that fits your budget with quality assurance!
+            </div>
+            <div className="mt-8">
+              <div className="flex flex-col gap-4">
+                <div className="flex gap-4 overflow-x-auto px-4 md:px-0 no-scrollbar">
+                  {service.map((item, i) => (
+                    <div
+                      key={i}
+                      className="flex bg-white gap-2 rounded-md items-center p-2 min-w-60"
+                    >
+                      <img src={item.image} alt="" className="m-0 w-8 h-8" />
+                      <div className="text-sm">
+                        <div>{item.title}</div>
+                        <div className="text-[11px]">{item.description}</div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                <div className="bg-white rounded-t-xl p-4 block md:hidden">
+                  <CheckPrice />
+                </div>
+                <div className="px-4 md:px-0">
+                  <video
+                    src="videos/Diwali_cleaning.mp4"
+                    autoPlay
+                    content="play"
+                    className="rounded-xl"
+                  ></video>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="text-white text-sm px-4 md:px-0 opacity-80">
-            Service that fits your budget with quality assurance!
+
+          <div className="bg-white rounded-md md:m-4 my-1.5 p-6 pb-16">
+            <div className="text-2xl font-medium mb-8">Services we offer</div>
+            <div className="flex justify-around relative">
+              {serviceWeOffer.map((item) => (
+                <div className="flex flex-col gap-3 items-center text-center">
+                  <div className="bg-[#ffe8c3] text-xs absolute px-1 rounded-full">
+                    {item.discount}
+                  </div>
+                  <img
+                    src={item.image}
+                    alt=""
+                    className="m-0 w-20 h-20 rounded-full bg-zinc-200"
+                  />
+                  <div className="text-sm">{item.text}</div>
+                </div>
+              ))}
+            </div>
           </div>
-          <div className="mt-8">
-            <div className="flex flex-col gap-4">
-              <div className="flex gap-4 overflow-x-auto px-4 md:px-0">
-                {service.map((item, i) => (
-                  <div
-                    key={i}
-                    className="flex bg-white gap-2 rounded-md items-center p-2 min-w-60"
-                  >
-                    <img src={item.image} alt="" className="m-0 w-8 h-8" />
-                    <div className="text-sm">
-                      <div>{item.title}</div>
-                      <div className="text-[11px]">{item.description}</div>
+
+          <div className="bg-white rounded-md md:m-4 my-1.5 px-6 py-5">
+            <VipMembership title={"In Spotlight"} />
+          </div>
+
+          <div className="bg-white rounded-md md:m-4 my-1.5 px-6 py-5">
+            <div className="text-xl font-medium mb-10">How it Works?</div>
+
+            <div className="flex flex-col gap-6">
+              {howItWorks.map((item) => (
+                <div className="flex items-center gap-2">
+                  <div className="bg-zinc-100 rounded-full p-3">
+                    <img src={item.image} alt="" className="m-0 w-6 h-6" />
+                  </div>
+                  <div>
+                    <div className="text-xs font-medium">{item.title}</div>
+                    <div className="text-[10.5px] opacity-80">
+                      {item.description}
                     </div>
                   </div>
-                ))}
-              </div>
-              <div className="bg-white rounded-t-xl p-4 block md:hidden">
-                <CheckPrice />
-              </div>
-              <div className="px-4 md:px-0">
-                <video
-                  src="videos/Diwali_cleaning.mp4"
-                  autoPlay
-                  content="play"
-                  className="rounded-xl"
-                ></video>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="bg-white md:m-6 my-1.5 p-6 pb-16">
-          <div className="text-2xl font-medium mb-8">Services we offer</div>
-          <div className="flex justify-around relative">
-            {serviceWeOffer.map((item) => (
-              <div className="flex flex-col gap-3 items-center text-center">
-                <div className="bg-[#ffe8c3] text-xs absolute px-1 rounded-full">
-                  {item.discount}
                 </div>
+              ))}
+            </div>
+            <div className="flex gap-4 w-full mt-10">
+              <div>
                 <img
-                  src={item.image}
+                  src="packersAndMovers/multi-layer-packaging-esp.webp"
                   alt=""
-                  className="m-0 w-20 h-20 rounded-full bg-zinc-200"
+                  className="m-0"
                 />
-                <div className="text-sm">{item.text}</div>
               </div>
-            ))}
-          </div>
-        </div>
-
-        <div className="bg-white md:m-6 my-1.5 px-6 py-5">
-          <VipMembership title={"In Spotlight"} />
-        </div>
-
-        <div className="bg-white md:m-6 my-1.5 px-6 py-5">
-          <div className="text-xl font-medium mb-10">How it Works?</div>
-
-          <div className="flex flex-col gap-6">
-            {howItWorks.map((item) => (
-              <div className="flex items-center gap-2">
-                <div className="bg-zinc-100 rounded-full p-3">
-                  <img src={item.image} alt="" className="m-0 w-6 h-6" />
-                </div>
-                <div>
-                  <div className="text-xs font-medium">{item.title}</div>
-                  <div className="text-[10.5px] opacity-80">
-                    {item.description}
-                  </div>
-                </div>
+              <div>
+                <img src="packersAndMovers/expert-serivce-esp.webp" alt="" />
               </div>
-            ))}
-          </div>
-          <div className="flex gap-4 w-full mt-10">
-            <div>
-              <img
-                src="packersAndMovers/multi-layer-packaging-esp.webp"
-                alt=""
-                className="m-0"
-              />
-            </div>
-            <div>
-              <img src="packersAndMovers/expert-serivce-esp.webp" alt="" />
             </div>
           </div>
-        </div>
 
-        <div className="bg-white md:m-6 my-1.5 px-6 py-5">
-          <div className="text-xl font-medium mb-10">
-            Why Nestate's Packers and Movers?
+          <div className="bg-white rounded-md md:m-4 my-1.5 px-6 py-5">
+            <div className="text-xl font-medium mb-10">
+              Why Nestate's Packers and Movers?
+            </div>
+            <div className="flex flex-col gap-6">
+              {whyPackersAndMovers.map((item) => (
+                <div className="flex items-center gap-2">
+                  <img src={item.image} alt="" className="m-0 w-12 h-12" />
+
+                  <div>
+                    <div className="text-xs font-medium">{item.title}</div>
+                    <div className="text-[10.5px] opacity-80">
+                      {item.description}
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
-          <div className="flex flex-col gap-6">
-            {whyPackersAndMovers.map((item) => (
-              <div className="flex items-center gap-2">
-                <img src={item.image} alt="" className="m-0 w-12 h-12" />
 
+          <div className="bg-white rounded-md md:m-4 my-1.5 p-6">
+            <div className="text-xl font-semibold mb-8">
+              Rental Agreements & Legal Services
+            </div>
+            <div className="flex justify-between">
+              {rentalAndLegal.map((item) => (
+                <div className="flex flex-col border items-center rounded-t-full pb-4  gap-4">
+                  <img src={item.image} alt="" className="m-0 w-full" />
+                  <div className="flex flex-col items-center text-center gap-4 w-10/12">
+                    <div className="text-[15px] font-semibold">
+                      {item.title}
+                    </div>
+                    <div className="bg-[#212365] text-white text-xs px-2 py-1">
+                      {item.price}
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="bg-[#004953] rounded-md py-10 px-8 md:m-4 my-1.5">
+            <div className={` font-medium mb-4 text-white text-3xl`}>
+              AC Summer Needs
+            </div>
+            <div className="grid grid-cols-2 gap-3">
+              {offer.map((item) => (
+                <div
+                  key={item.id}
+                  className="bg-white flex flex-col px-2 py-3 justify-between rounded-lg h-40 gap-3"
+                >
+                  <img src={item.image} className="m-0 w-24 mx-auto" alt="" />
+                  <div className="text-left flex flex-col">
+                    <div className="font-bold text-sm flex">
+                      {item.title}
+                      <img
+                        src="paintingAndCleaning/arrow-icon-right.svg"
+                        alt=""
+                        className="m-0"
+                      />
+                    </div>
+                    <div className="opacity-50 text-sm">Flat 25% off</div>
+                  </div>
+                </div>
+              ))}
+
+              <div className="bg-white flex items-center justify-evenly gap-4 px-2 py-4 rounded-lg col-span-2">
+                <img src="packersAndMovers/ac-installation.svg" alt="" />
                 <div>
-                  <div className="text-xs font-medium">{item.title}</div>
-                  <div className="text-[10.5px] opacity-80">
-                    {item.description}
+                  <div className="font-bold text-sm flex">
+                    AC Installation
+                    <img
+                      src="paintingAndCleaning/arrow-icon-right.svg"
+                      alt=""
+                      className="m-0"
+                    />
                   </div>
+                  <div className="opacity-50 text-sm">Starting @ Rs. 719</div>
                 </div>
               </div>
-            ))}
+            </div>
+          </div>
+
+          <div className="bg-white md:m-4 rounded-md my-1.5 p-6">
+            <ServiceComparison serviceComparison={serviceComparison} />
+          </div>
+
+          <div className="bg-[#F7F9FD] rounded-md p-6 md:m-4 my-1.5">
+            <div className="text-xl font-semibold mb-4">Our Happy Customer</div>
+            <Testimonial review={review} />
+          </div>
+
+          <div className="md:m-4 my-1.5 rounded-md bg-white p-4">
+            <div className={`font-medium md:text-xl text-lg mb-4 `}>
+              Frequently Asked Questions
+            </div>
+            <FrequentAskedQuestion
+              faq={faq}
+              title={"Frequently Asked Questions"}
+            />
           </div>
         </div>
-
-        <div className="bg-white md:m-6 my-1.5 p-6">
-          <div className="text-xl font-semibold mb-8">
-            Rental Agreements & Legal Services
+        <div className="hidden md:block md:w-[40%] relative">
+          <div className="sticky z-50 top-20 mt-16 bg-white rounded-t-xl p-4">
+            <CheckPrice />
           </div>
-          <div className="flex justify-between">
-            {rentalAndLegal.map((item) => (
-              <div className="flex flex-col border items-center rounded-t-full pb-4  gap-4">
-                <img src={item.image} alt="" className="m-0 w-full" />
-                <div className="flex flex-col items-center text-center gap-4 w-10/12">
-                  <div className="text-[15px] font-semibold">{item.title}</div>
-                  <div className="bg-[#212365] text-white text-xs px-2 py-1">
-                    {item.price}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div className="bg-[#004953] py-10 px-8 md:m-6 my-1.5">
-          <SecondOffer title={"AC Summer Needs"} />
-        </div>
-
-        <div className="bg-white md:m-6 my-1.5 p-6">
-          <ServiceComparison />
-        </div>
-
-        <div className="bg-[#F7F9FD] p-6 md:m-6 my-1.5">
-          <div className="text-xl font-semibold -mb-4">Our Happy Customer</div>
-          <Testimonial review={review} />
-        </div>
-
-        <div className="md:m-6 my-1.5 bg-white p-4">
-          <div className={`font-medium md:text-xl text-lg mb-4 `}>
-            Frequently Asked Questions
-          </div>
-          <FrequentAskedQuestion
-            faq={faq}
-            title={"Frequently Asked Questions"}
-          />
-        </div>
-      </div>
-      <div className="hidden md:block md:w-[40%] relative">
-        <div className="sticky z-50 top-20 mt-16 bg-white rounded-t-xl p-4">
-          <CheckPrice />
         </div>
       </div>
     </div>

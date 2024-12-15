@@ -74,90 +74,103 @@ const TenantPlan = () => {
       <Subscription />
 
       <div className="container mt-6">
-          <h1 className="text-center text-2xl mb-14">HOW ASSISTED PLANS WORK</h1>
-          <div className="row align-items-center position-relative">
-            <div className="col-lg-4 overflow-hidden d-flex flex-column align-items-center">
-              <img src="BuyersPlan/1.png" alt="" srcset="" />
-              <div className="line-dashed"></div>
-            </div>
-            <div className="col-lg-4 ">
-              <h1 className="text-danger" style={{fontSize: "22px"}}> LOOKING FOR A HOUSE?</h1>
-              <p style={{fontSize: "18px"}}>
-                Just get one of our Assisted Plans and make your lives simpler.
-              </p>
-            </div>
-            <div className="col-lg-4"></div>
-            <div className="bottom-border"></div>
+        <h1 className="text-center text-2xl mb-14">HOW ASSISTED PLANS WORK</h1>
+        <div className="row align-items-center position-relative">
+          <div className="col-lg-4 overflow-hidden d-flex flex-column align-items-center">
+            <img src="BuyersPlan/1.png" alt="" srcset="" />
+            <div className="line-dashed"></div>
           </div>
-          <div className="row align-items-center  position-relative">
-            <div className="col-lg-4"></div>
-            <div className="col-lg-4 ">
-            <p className="mb-1" style={{fontSize: "18px"}}>
+          <div className="col-lg-4 ">
+            <h1 className="text-danger" style={{ fontSize: "22px" }}>
+              {" "}
+              LOOKING FOR A HOUSE?
+            </h1>
+            <p style={{ fontSize: "18px" }}>
+              Just get one of our Assisted Plans and make your lives simpler.
+            </p>
+          </div>
+          <div className="col-lg-4"></div>
+          <div className="bottom-border"></div>
+        </div>
+        <div className="row align-items-center  position-relative">
+          <div className="col-lg-4"></div>
+          <div className="col-lg-4 ">
+            <p className="mb-1" style={{ fontSize: "18px" }}>
               Say HELLO to your
-              </p>
-              <h1 className="" style={{color: "#004958",fontSize: "22px"}}> 
-              HOUSE-HUNT ASSISTANT</h1>
-             
-            </div>
-            <div className="col-lg-4 overflow-hidden d-flex flex-column align-items-center">
-              <div className="line-dashed"></div>
-              <img src="BuyersPlan/2.png" alt="" srcset="" />
-              <div className="line-dashed"></div>
-            </div>
-            <div className="bottom-border"></div>
+            </p>
+            <h1 className="" style={{ color: "#004958", fontSize: "22px" }}>
+              HOUSE-HUNT ASSISTANT
+            </h1>
           </div>
-          <div className="row align-items-center  position-relative">
-            <div className="col-lg-4 overflow-hidden  d-flex flex-column align-items-center">
-              <div className="line-dashed"></div>
-              <img src="BuyersPlan/3.png" alt="" srcset="" />
-              <div className="line-dashed"></div>
-            </div>
-            <div className="col-lg-4 " style={{fontSize: "22px"}}>
-            <p className="mb-1" style={{fontSize: "18px"}}>
+          <div className="col-lg-4 overflow-hidden d-flex flex-column align-items-center">
+            <div className="line-dashed"></div>
+            <img src="BuyersPlan/2.png" alt="" srcset="" />
+            <div className="line-dashed"></div>
+          </div>
+          <div className="bottom-border"></div>
+        </div>
+        <div className="row align-items-center  position-relative">
+          <div className="col-lg-4 overflow-hidden  d-flex flex-column align-items-center">
+            <div className="line-dashed"></div>
+            <img src="BuyersPlan/3.png" alt="" srcset="" />
+            <div className="line-dashed"></div>
+          </div>
+          <div className="col-lg-4 " style={{ fontSize: "22px" }}>
+            <p className="mb-1" style={{ fontSize: "18px" }}>
               Who gather all your requirements and provides you with
-              
-              </p>
-              <h1 className="" style={{color: "#004958"}}> CITY LEVEL EXPERTISE</h1>
-              
-            </div>
-            <div className="col-lg-4"></div>
+            </p>
+            <h1 className="" style={{ color: "#004958" }}>
+              {" "}
+              CITY LEVEL EXPERTISE
+            </h1>
+          </div>
+          <div className="col-lg-4"></div>
+          <div className="bottom-border"></div>
+        </div>
+        <div className="row align-items-center  position-relative">
+          <div className="col-lg-4"></div>
+          <div className="col-lg-4 ">
+            <p className="mb-1" style={{ fontSize: "18px" }}>
+              Contacts Owners, Schedule property visits, and
+            </p>
+            <h1 className="text-danger" style={{ fontSize: "22px" }}>
+              {" "}
+              Negotiates Rent *
+            </h1>
+          </div>
+          <div className="col-lg-4 overflow-hidden  d-flex flex-column align-items-center">
+            <div className="line-dashed"></div>
+            <img src="BuyersPlan/4.png" alt="" srcset="" />
+            <div className="line-dashed"></div>
             <div className="bottom-border"></div>
-          </div>
-          <div className="row align-items-center  position-relative">
-            <div className="col-lg-4"></div>
-            <div className="col-lg-4 ">
-            <p className="mb-1" style={{fontSize: "18px"}}>
-              Contacts Owners, Schedule property visits, and 
-              </p>
-              <h1 className="text-danger" style={{fontSize: "22px"}}> Negotiates Rent *</h1>
-              
-            </div>
-            <div className="col-lg-4 overflow-hidden  d-flex flex-column align-items-center">
-              <div className="line-dashed"></div>
-              <img src="BuyersPlan/4.png" alt="" srcset="" />
-              <div className="line-dashed"></div>
-              <div className="bottom-border"></div>
-            </div>
-          </div>
-          <div className="row align-items-center ">
-            <div className="col-lg-4 overflow-hidden  d-flex flex-column align-items-center">
-              <div className="line-dashed"></div>
-              <img src="BuyersPlan/5.png" alt="" srcset="" />
-            </div>
-            <div className="col-lg-4 ">
-              
-              <p className="mb-1" style={{fontSize: "18px"}}>
-              Helping you find best
-              
-              </p>
-              <h1 className="" style={{color: "#004958",fontSize: "22px"}}> HOUSE FOR YOUR NEEDS</h1>
-            </div>
-            <div className="col-lg-4"></div>
           </div>
         </div>
+        <div className="row align-items-center ">
+          <div className="col-lg-4 overflow-hidden  d-flex flex-column align-items-center">
+            <div className="line-dashed"></div>
+            <img src="BuyersPlan/5.png" alt="" srcset="" />
+          </div>
+          <div className="col-lg-4 ">
+            <p className="mb-1" style={{ fontSize: "18px" }}>
+              Helping you find best
+            </p>
+            <h1 className="" style={{ color: "#004958", fontSize: "22px" }}>
+              {" "}
+              HOUSE FOR YOUR NEEDS
+            </h1>
+          </div>
+          <div className="col-lg-4"></div>
+        </div>
+      </div>
 
       <div className="w-10/12 mx-auto">
-        <Testimonial title={"Our Customers Loved US :"} review={review} scrollBy={400} />
+        <div className="mb-10">
+          <Testimonial
+            title={"Our Customers Loved US :"}
+            review={review}
+            scrollBy={400}
+          />
+        </div>
         <FrequentAskedQuestion
           title={"Frequently Asked Questions"}
           faq={faq}

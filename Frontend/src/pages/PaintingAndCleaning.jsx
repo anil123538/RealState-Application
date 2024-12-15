@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Search from "../components/PaintingAndCleaningComponent/Search";
 import Offer from "../components/PaintingAndCleaningComponent/Offer";
 import Services from "../components/PaintingAndCleaningComponent/Services";
@@ -8,28 +8,35 @@ import { FaStar } from "react-icons/fa";
 import VipMembership from "../components/PaintingAndCleaningComponent/VipMembership";
 import SecondOffer from "../components/PaintingAndCleaningComponent/SecondOffer";
 import InSpotlight from "../components/PaintingAndCleaningComponent/InSpotlight";
+import Modal from "../components/Modal";
+import { Link } from "react-router-dom";
 
 const PaintingAndCleaning = () => {
   const faq = [
     {
       id: 1,
-      que: "Do I need to visit any government office?",
-      ans: "Not even once. We will conduct the whole process for you online / at your home.",
+      que: "How to book a service on NoBroker?",
+      ans: "Just click on the service required by you, see the prices and fill some basic contact details to schedule the service.",
     },
     {
       id: 2,
-      que: "How much will it cost?",
-      ans: "Please click here to know the charges. Apart from our convenience fee, the charges typically include stamp duty, registration charges, etc.",
+      que: "Who is going to fulfill the service?",
+      ans: "We will assign a NoBroker Partner to complete your service at your preferred time slot.",
     },
     {
       id: 3,
-      que: "Landlord and tenant are in different locations?",
-      ans: "You can use the Aadhar eSign based digital signature service.",
+      que: "Who is a NoBroker Partner?",
+      ans: "NoBroker Partners are selected individuals / companies who meet our stringent criteria for delivering quality home services.",
     },
     {
       id: 4,
-      que: "Is Aadhar e-sign valid?",
-      ans: "Yes, Aadhaar eSign based digital signatures are a legally accepted and secure manner of electronically signing documents, under effect of Gazette Notification No. 2015 Jan -GSR 61(E) Electronic Signature or Electronic Authentication Technique and Procedure Rules, 2015.",
+      que: "What all services are available on NoBroker?",
+      ans: "We provide services like Home Painting, Home Cleaning, Electrician, Plumbing, Carpentry.",
+    },
+    {
+      id: 5,
+      que: "How are NoBroker services different from other online portals?",
+      ans: "Other online portals merely put you in touch with the service providers leaving the service quality upto individual vendors. On the other hand, all NoBroker services are owned and fulfilled by NoBroker Partners who adhere to a strict quality criteria.",
     },
   ];
 
@@ -82,12 +89,34 @@ const PaintingAndCleaning = () => {
       image: "paintingAndCleaning/packers-moversOptimized.png",
       title: "Packers & Movers",
       rating: "4.8",
+      items: [
+        {
+          id: 1,
+          title: "Within City",
+          image: "home/distance.png",
+        },
+        { id: 2, title: "Between Cities", image: "home/distance.png" },
+        {
+          id: 3,
+          title: "Vehicle Shifting",
+          image: "home/truck-carrying-car.png",
+        },
+        { id: 4, title: "City Tempo", image: "home/truck.png" },
+      ],
     },
     {
       id: 2,
       image: "paintingAndCleaning/home-paintingOptimized.png",
       title: "Home Painting",
       rating: "4.9",
+      items: [
+        {
+          id: 1,
+          title: "Painting",
+          image: "home/paint-roller.png",
+        },
+        { id: 2, title: "One Wall Painting", image: "home/painting.png" },
+      ],
     },
     {
       id: 3,
@@ -103,14 +132,160 @@ const PaintingAndCleaning = () => {
     },
   ];
 
+  const offer = [
+    {
+      id: 1,
+      image: "paintingAndCleaning/painting_hs.svg",
+      title: "Festive Painting",
+      offer: "Flat 25% off",
+      items: [
+        {
+          id: 1,
+          title: "Painting",
+          image: "home/paint-roller.png",
+        },
+        { id: 2, title: "One Wall Painting", image: "home/painting.png" },
+      ],
+    },
+    {
+      id: 2,
+      image: "paintingAndCleaning/cleaning_hs.svg",
+      title: "Deep Cleaning",
+      offer: "Upto 60% off",
+      items: [
+        {
+          id: 1,
+          title: "Full House Cleaning",
+          image: "home/painting_&_cleaning.png",
+        },
+        { id: 2, title: "Kitchen Cleaning", image: "home/kitchen.png" },
+        { id: 3, title: "Sofa Cleaning", image: "home/cleaning.png" },
+        { id: 4, title: "Weekly Cleaning", image: "home/mop.png" },
+        { id: 5, title: "Bathroom Cleaning", image: "home/toilet.png" },
+      ],
+    },
+  ];
+  const offerTwo = [
+    {
+      id: 1,
+      image: "paintingAndCleaning/pnmWithinCity.png",
+      title: "Between Cities",
+      offer: "Get Free QUote",
+      items: [
+        {
+          id: 1,
+          title: "Within City",
+          image: "home/distance.png",
+        },
+        { id: 2, title: "Between Cities", image: "home/distance.png" },
+        {
+          id: 3,
+          title: "Vehicle Shifting",
+          image: "home/truck-carrying-car.png",
+        },
+        { id: 4, title: "City Tempo", image: "home/truck.png" },
+      ],
+    },
+    {
+      id: 2,
+      image: "paintingAndCleaning/pnm-betwwen-city.png",
+      title: "Within City",
+      offer: "Upto 30% off",
+      items: [
+        {
+          id: 1,
+          title: "Within City",
+          image: "home/distance.png",
+        },
+        { id: 2, title: "Between Cities", image: "home/distance.png" },
+        {
+          id: 3,
+          title: "Vehicle Shifting",
+          image: "home/truck-carrying-car.png",
+        },
+        { id: 4, title: "City Tempo", image: "home/truck.png" },
+      ],
+    },
+  ];
+
+  const offerData = [
+    {
+      items: [
+        {
+          id: 1,
+          title: "Painting",
+          image: "home/paint-roller.png",
+        },
+        { id: 2, title: "One Wall Painting", image: "home/painting.png" },
+      ],
+    },
+    {
+      items: [
+        {
+          id: 1,
+          title: "Full House Cleaning",
+          image: "home/painting_&_cleaning.png",
+        },
+        { id: 2, title: "Kitchen Cleaning", image: "home/kitchen.png" },
+        { id: 3, title: "Sofa Cleaning", image: "home/cleaning.png" },
+        { id: 4, title: "Weekly Cleaning", image: "home/mop.png" },
+        { id: 5, title: "Bathroom Cleaning", image: "home/toilet.png" },
+      ],
+    },
+    {
+      items: [
+        {
+          id: 1,
+          title: "Within City",
+          image: "home/distance.png",
+        },
+        { id: 2, title: "Between Cities", image: "home/distance.png" },
+        {
+          id: 3,
+          title: "Vehicle Shifting",
+          image: "home/truck-carrying-car.png",
+        },
+        { id: 4, title: "City Tempo", image: "home/truck.png" },
+      ],
+    },
+  ];
+
+  const [openModal, setOpenModal] = useState(false);
+  console.log("🚀 ~ PaintingAndCleaning ~ openModal:", openModal);
+  const [modalNumber, setModalNumber] = useState(null);
+
+  const toggleModalOpenClose = (id) => {
+    setModalNumber(modalNumber === id ? null : id);
+    setOpenModal(!openModal);
+  };
+
+  const closeModal = () => {
+    setModalNumber(null);
+    setOpenModal(false);
+  };
+
   return (
     <div className="bg-zinc-100">
       <div>
         <Search />
-        <Offer />
+        <Offer offerData={offerData} />
         <div className="bg-[#004953] py-10 px-4 mb-1.5">
           <div className="md:px-[140px] max-w-[1280px] mx-auto">
-            <SecondOffer titlePosition={"text-center"} />
+            <SecondOffer offer={offer} titlePosition={"text-center"} />
+            <div className="bg-white mt-3 flex items-center justify-evenly gap-4 px-2 py-4 rounded-lg">
+              <img src="paintingAndCleaning/repair_hs.png" alt="" />
+              <div>
+                <div className="font-bold text-sm md:text-xl flex">
+                  Home Repairs
+                  <img
+                    src="paintingAndCleaning/arrow-icon-right.svg"
+                    alt=""
+                    className="m-0"
+                  />
+                </div>
+                <div className="opacity-50 text-sm">Starting @ ₹99</div>
+              </div>
+            </div>
           </div>
         </div>
         <div className="bg-white md:px-[140px]">
@@ -132,17 +307,66 @@ const PaintingAndCleaning = () => {
                     backgroundImage: `url(${item.image})`,
                     backgroundPosition: "center",
                   }}
+                  onClick={() => toggleModalOpenClose(item.id)}
                 >
-                  <div className="h-full rounded-md flex  bg-gradient-to-t from-black to-70% to-transparent">
-                    <div className="flex w-full gap-4 p-2 items-end text-white ">
-                      <div className="text-white font-semibold w-10/12 text-[15px]">
-                        {item.title}
+                  {item.title === "Home Renovation" ||
+                  item.title === "Wall Painting" ? (
+                    <Link
+                      to={`/${item.title.toLowerCase().replaceAll(" ", "-")}`}
+                    >
+                      <div className="h-full rounded-md flex  bg-gradient-to-t from-black to-70% to-transparent">
+                        <div className="flex w-full gap-4 p-2 items-end text-white ">
+                          <div className="text-white font-semibold w-10/12 text-[15px]">
+                            {item.title}
+                          </div>
+                          <div className="flex bg-black rounded-full px-1 items-center">
+                            <div className="text-[10px]">{item.rating}</div>
+                            <FaStar className="text-orange-400 text-[9px]" />
+                          </div>
+                        </div>
                       </div>
-                      <div className="flex bg-black rounded-full px-1 items-center">
-                        <div className="text-[10px]">{item.rating}</div>
-                        <FaStar className="text-orange-400 text-[9px]" />
+                    </Link>
+                  ) : (
+                    <div className="h-full rounded-md flex  bg-gradient-to-t from-black to-70% to-transparent">
+                      <div className="flex w-full gap-4 p-2 items-end text-white ">
+                        <div className="text-white font-semibold w-10/12 text-[15px]">
+                          {item.title}
+                        </div>
+                        <div className="flex bg-black rounded-full px-1 items-center">
+                          <div className="text-[10px]">{item.rating}</div>
+                          <FaStar className="text-orange-400 text-[9px]" />
+                        </div>
                       </div>
                     </div>
+                  )}
+                  <div>
+                    {modalNumber === item.id ? (
+                      <Modal onClose={() => closeModal()} isOpen={openModal}>
+                        <div className="bg-white p-8 rounded-xl">
+                          <div className="grid grid-cols-3">
+                            {item?.items?.map((item, index) => (
+                              <Link to={`/${item.title}`} key={index}>
+                                <div className="grid flex-col items-center text-center md:gap-4 rounded-full md:p-2">
+                                  <div className="bg-orange-200/70 text-[9px] font-medium px-1 rounded-full absolute">
+                                    {item.offer}
+                                  </div>
+                                  <div className="rounded-full w-fit mx-auto bg-zinc-100 p-3 cursor-pointer">
+                                    <img
+                                      src={item.image}
+                                      alt=""
+                                      className="m-0 w-8"
+                                    />
+                                  </div>
+                                  <div className="text-[11px] w-10/12 mx-auto">
+                                    {item.title}
+                                  </div>
+                                </div>
+                              </Link>
+                            ))}
+                          </div>
+                        </div>
+                      </Modal>
+                    ) : null}
                   </div>
                 </div>
               ))}
@@ -160,14 +384,34 @@ const PaintingAndCleaning = () => {
         <div className="bg-[#004953] py-10 px-4 mb-1.5">
           <div className="md:px-[140px] max-w-[1280px] mx-auto">
             <SecondOffer
+              offer={offerTwo}
               title={"Relocation Simplified"}
               titlePosition={"text-center"}
             />
+            <div className="bg-white mt-3 flex items-center justify-evenly gap-4 px-2 py-4 rounded-lg">
+              <img src="paintingAndCleaning/pnm-CityTempo.png" alt="" />
+              <div>
+                <div className="font-bold text-sm md:text-xl flex">
+                  Home Repairs
+                  <img
+                    src="paintingAndCleaning/arrow-icon-right.svg"
+                    alt=""
+                    className="m-0"
+                  />
+                </div>
+                <div className="opacity-50 text-sm">Starting @ ₹99</div>
+              </div>
+            </div>
           </div>
         </div>
         <div className="bg-[#004953] p-4 mb-1.5 md:px-[140px]">
           <div className="max-w-[1280px] mx-auto">
-            <Testimonial review={review} scrollBy={400} />
+            <Testimonial
+              review={review}
+              title={"Customer Reviews"}
+              scrollBy={400}
+              titleColor="text-white"
+            />
           </div>
         </div>
         <div className="bg-white md:px-[140px] px-4 py-12">

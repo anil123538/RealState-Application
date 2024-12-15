@@ -31,10 +31,7 @@ const ReferAndEarn = () => {
     {
       id: 2,
       que: "How will I get the reward money?",
-      ans: {
-        1: "To redeem your reward money:",
-        2: "1. Download NESTATE App from App Store: ",
-      },
+      ans: "To redeem your reward money 1. Download NESTATE App from App Store ",
     },
     {
       id: 3,

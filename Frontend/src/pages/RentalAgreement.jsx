@@ -206,6 +206,11 @@ const RentalAgreement = () => {
       que: "Is Aadhar e-sign valid?",
       ans: "Yes, Aadhaar eSign based digital signatures are a legally accepted and secure manner of electronically signing documents, under effect of Gazette Notification No. 2015 Jan -GSR 61(E) Electronic Signature or Electronic Authentication Technique and Procedure Rules, 2015.",
     },
+    {
+      id: 5,
+      que: "Which documents are required?",
+      and: "Our form will help with the process step-by-step. Please login and create your agreement.",
+    },
   ];
 
   const [selected, setSelected] = useState(2);
