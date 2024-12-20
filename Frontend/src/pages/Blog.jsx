@@ -587,8 +587,8 @@ function Blog() {
       </div>
     </div>
         </section>
-        <section className='my-5'>
-            <div className="container">
+        <section className='my-5 '>
+            <div className="container section-box">
                 <h1 className='mb-5' style={{fontSize:'24px',fontWeight:'600'}}>Real Estate</h1>
                 <div className="d-flex gap-4">
                 {realbtn.map((category,a)=>(
@@ -690,7 +690,7 @@ function Blog() {
             </div>
         </section>
         <section className="my-5">
-      <div className="container">
+      <div className="container section-box">
         <h1 className='mb-5' style={{ fontSize: "24px", fontWeight: "600" }}>Home Services</h1>
         <div className="d-flex gap-4 my-4">
           {realbtn1.map((category1) => (
@@ -897,7 +897,7 @@ function Blog() {
       </div>
         </section>
         <section className='my-5'>
-            <div className="container">
+            <div className="container section-box">
                 <h1 className='mb-5' style={{fontSize:'24px',fontWeight:'600'}}>Home Interiors</h1>
                 <div className="d-flex gap-4">
                 {realbtn2.map((category2,a)=>(
@@ -1003,8 +1003,8 @@ function Blog() {
                 </div>
             </div>
         </section>
-        <section className='my-5'>
-            <div className="container">
+        <section className='my-5'> 
+            <div className="container section-box">
                 <h1 className='mb-5' style={{fontSize:'24px',fontWeight:'600'}}>Finance</h1>
                 <div className="d-flex gap-4">
                 {realbtn3.map((category3,a)=>(
@@ -1081,7 +1081,7 @@ function Blog() {
             </div>
         </section>
         <section className='my-5'>
-            <div className="container">
+            <div className="container section-box">
                 <h1 className='mb-5' style={{fontSize:'24px',fontWeight:'600'}}>Trending News in Real Estate</h1>
                 <div className="d-flex gap-4 mb-5">
                 {realbtn4.map((category4,a)=>(

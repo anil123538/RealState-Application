@@ -34,3 +34,10 @@
     font-size: 15px;
     color: #FD3753;
 }
+
+.section-box{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    background-color: #F6F6F6;
+    padding: 30px 20px;
+}
