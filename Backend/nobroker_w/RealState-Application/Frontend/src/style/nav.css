@@ -1,0 +1,58 @@
+/* Remove arrow beside "Menu" dropdown */
+.no-arrow::after {
+  display: none !important;
+}
+
+/* for the pointer beside the inside dropdown  */
+.custom-dropdown-ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.custom-dropdown-ul li {
+  padding: 5px 0;
+}
+
+/* for the whole menu  */
+.dropdown-menu {
+  min-width: 230px;
+  font-size: small;
+  padding: 20px;
+}
+
+/* Add a border line between each dropdown item */
+.dropdown-menu .dropdown-item:not(:last-child) {
+  border-bottom: 1px solid #8d0c0c;
+}
+
+/* to increase the padding between menu items  */
+.dropdown-menu .dropdown-item {
+  padding: 10px;
+}
+
+/* Remove border for items inside the toggled sections */
+.no-border {
+  border-bottom: none !important;
+  outline: none;
+}
+
+body.noScroll {
+  overflow: hidden;
+}
+
+.nav-property {
+  background-color: cadetblue;
+  color: white;
+  padding: 5px;
+}
+
+.drop {
+  background-color: rgb(249, 252, 255);
+}
+
+.custom-scroll {
+  max-height: 100vh;
+  overflow-y: auto;
+  overflow-x: auto;
+}
